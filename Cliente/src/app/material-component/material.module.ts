@@ -28,6 +28,29 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { TipousuarioComponent } from './tipousuario/tipousuario.component';
+import { TipousuarioEditComponent } from './tipousuario/tipousuario-edit/tipousuario-edit.component';
+import { TipousuarioIndexComponent } from './tipousuario/tipousuario-index/tipousuario-index.component';
+import { TipousuarioCreateComponent } from './tipousuario/tipousuario-create/tipousuario-create.component';
+import { PrivilegioComponent } from './privilegio/privilegio.component';
+import { PrivilegioIndexComponent } from './privilegio/privilegio-index/privilegio-index.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { UsuarioIndexComponent } from './usuario/usuario-index/usuario-index.component';
+import { UsuarioEditComponent } from './usuario/usuario-edit/usuario-edit.component';
+import { UsuarioCreateComponent } from './usuario/usuario-create/usuario-create.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaIndexComponent } from './categoria/categoria-index/categoria-index.component';
+import { CategoriaEditComponent } from './categoria/categoria-edit/categoria-edit.component';
+import { CategoriaCreateComponent } from './categoria/categoria-create/categoria-create.component';
+import { ProductoComponent } from './producto/producto.component';
+import { ProductoIndexComponent } from './producto/producto-index/producto-index.component';
+import { ProductoEditComponent } from './producto/producto-edit/producto-edit.component';
+import { ProductoCreateComponent } from './producto/producto-create/producto-create.component';
+import {PrivilegioService} from './privilegio/privilegio.service';
+import {UsuarioService} from './usuario/usuario.service';
+import {TipousuarioService} from './tipousuario/tipousuario.service';
+import {CategoriaService} from './categoria/categoria.service';
+import {ProductoService} from './producto/producto.service';
 
 @NgModule({
   imports: [
@@ -41,7 +64,11 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     CdkTableModule
   ],
   providers: [
-
+      PrivilegioService,
+      UsuarioService,
+      TipousuarioService,
+      CategoriaService,
+      ProductoService
   ],
   entryComponents: [
     DialogOverviewExampleDialog
@@ -63,7 +90,25 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     TooltipComponent,
     SnackbarComponent,
     SliderComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    TipousuarioComponent,
+    TipousuarioEditComponent,
+    TipousuarioIndexComponent,
+    TipousuarioCreateComponent,
+    PrivilegioComponent,
+    PrivilegioIndexComponent,
+    UsuarioComponent,
+    UsuarioIndexComponent,
+    UsuarioEditComponent,
+    UsuarioCreateComponent,
+    CategoriaComponent,
+    CategoriaIndexComponent,
+    CategoriaEditComponent,
+    CategoriaCreateComponent,
+    ProductoComponent,
+    ProductoIndexComponent,
+    ProductoEditComponent,
+    ProductoCreateComponent
   ]
 })
 
