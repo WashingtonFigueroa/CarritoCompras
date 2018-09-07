@@ -2,7 +2,8 @@ import { Routes } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
 
-export const AppRoutes: Routes = [{
+export const AppRoutes: Routes = [
+  {
   path: '',
   component: FullComponent,
   children: [{ path: '', redirectTo: '/starter', pathMatch: 'full' }, {
@@ -12,5 +13,12 @@ export const AppRoutes: Routes = [{
     path: 'starter',
     loadChildren: './starter/starter.module#StarterModule'
   }]
-}];
+}, {
+    path: 'cliente',
+    loadChildren: './cliente/cliente.module#ClienteModule'
+  }, {
+    path: '',
+    redirectTo: 'cliente',
+    pathMatch: 'full'
+  }];
 

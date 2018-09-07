@@ -21,11 +21,15 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css",
               "src/assets/styles/style.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "src/assets/scripts/jquery.min.js",
+              "src/assets/scripts/bootstrap.min.js",
+              "src/assets/scripts/slick.min.js",
+              "src/assets/scripts/nouislider.min.js",
+              "src/assets/scripts/jquery.zoom.min.js",
+              "src/assets/scripts/main.js"
             ]
           },
           "configurations": {
@@ -73,10 +77,14 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/scripts/bootstrap.min.js",
+              "src/assets/scripts/slick.min.js",
+              "src/assets/scripts/nouislider.min.js",
+              "src/assets/scripts/jquery.zoom.min.js",
+              "src/assets/scripts/main.js"
             ],
             "styles": [
-              "src/styles.css",
               "src/assets/styles/style.scss"
             ],
             "assets": [
