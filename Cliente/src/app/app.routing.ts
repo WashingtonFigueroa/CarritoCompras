@@ -16,9 +16,5 @@ export const AppRoutes: Routes = [
 }, {
     path: 'cliente',
     loadChildren: './cliente/cliente.module#ClienteModule'
-  }, {
-    path: '',
-    redirectTo: 'cliente',
-    pathMatch: 'full'
   }];
 

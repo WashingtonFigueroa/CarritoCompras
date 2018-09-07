@@ -30,7 +30,6 @@ import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { TipousuarioComponent } from './tipousuario/tipousuario.component';
 import { TipousuarioEditComponent } from './tipousuario/tipousuario-edit/tipousuario-edit.component';
-import { TipousuarioIndexComponent } from './tipousuario/tipousuario-index/tipousuario-index.component';
 import { TipousuarioCreateComponent } from './tipousuario/tipousuario-create/tipousuario-create.component';
 import { PrivilegioComponent } from './privilegio/privilegio.component';
 import { PrivilegioIndexComponent } from './privilegio/privilegio-index/privilegio-index.component';
@@ -93,7 +92,6 @@ import {ProductoService} from './producto/producto.service';
     SlideToggleComponent,
     TipousuarioComponent,
     TipousuarioEditComponent,
-    TipousuarioIndexComponent,
     TipousuarioCreateComponent,
     PrivilegioComponent,
     PrivilegioIndexComponent,
