@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material": {
+    "admin-press-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -21,15 +21,17 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/assets/styles/style.scss"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/scss/style.scss",
+              "src/assets/scss/colors/default-dark.scss"
             ],
             "scripts": [
-              "src/assets/scripts/jquery.min.js",
-              "src/assets/scripts/bootstrap.min.js",
-              "src/assets/scripts/slick.min.js",
-              "src/assets/scripts/nouislider.min.js",
-              "src/assets/scripts/jquery.zoom.min.js",
-              "src/assets/scripts/main.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+              "node_modules/pace-js/pace.min.js"
             ]
           },
           "configurations": {
@@ -55,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "material:build"
+            "browserTarget": "admin-press-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "material:build:production"
+              "browserTarget": "admin-press-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material:build"
+            "browserTarget": "admin-press-angular:build"
           }
         },
         "test": {
@@ -78,14 +80,16 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/scripts/bootstrap.min.js",
-              "src/assets/scripts/slick.min.js",
-              "src/assets/scripts/nouislider.min.js",
-              "src/assets/scripts/jquery.zoom.min.js",
-              "src/assets/scripts/main.js"
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+              "node_modules/pace-js/pace.min.js"
             ],
             "styles": [
-              "src/assets/styles/style.scss"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/colors/default.css"
             ],
             "assets": [
               "src/assets",
@@ -107,7 +111,7 @@
         }
       }
     },
-    "material-e2e": {
+    "admin-press-angular-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -116,7 +120,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "material:serve"
+            "devServerTarget": "admin-press-angular:serve"
           }
         },
         "lint": {
@@ -133,7 +137,7 @@
       }
     }
   },
-  "defaultProject": "material",
+  "defaultProject": "admin-press-angular",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
