@@ -7,7 +7,7 @@
     <!-- User profile -->
     <div class="user-profile">
       <!-- User profile image -->
-      <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" />
+      <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" width="200"/>
         <!-- this is blinking heartbit-->
         <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
       </div>
@@ -16,19 +16,11 @@
         <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <i class="fa fa-angle-down"></i></a>
         <div class="dropdown-menu animated flipInY">
           <!-- text-->
-          <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-          <!-- text-->
-          <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
-          <!-- text-->
-          <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+          <a routerLink="/privilegios" [routerLinkActive]="['router-link-active']" class="dropdown-item"><i class="ti-settings"></i>Privilegios</a>
           <!-- text-->
           <div class="dropdown-divider"></div>
           <!-- text-->
-          <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-          <!-- text-->
-          <div class="dropdown-divider"></div>
-          <!-- text-->
-          <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+          <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Salir</a>
           <!-- text-->
         </div>
       </div>
@@ -40,36 +32,25 @@
         <li class="nav-devider"></li>
         <li class="nav-small-cap">PERSONAL</li>
         <li [class.active]="showMenu === 'start'">
-            <a routerLink="/starter" (click)="addExpandClass('start')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Starter Page</span></a>
-        </li>
-        <li class="nav-small-cap">UI COMPONENTS</li>
-        <li [class.active]="showMenu === 'component'">
-            <a class="has-arrow" href="javascript:void(0)" (click)="addExpandClass('component')" aria-expanded="false"><i class="icon-bulb"></i><span class="hide-menu">Component</span></a>
-            <ul aria-expanded="false" class="collapse" [class.in]="showMenu === 'component'">
-                <li><a routerLink="/accordion" [routerLinkActive]="['router-link-active']">Accordion</a></li>
-                <li><a routerLink="/alert" [routerLinkActive]="['router-link-active']">Alert</a></li>
-                <li><a routerLink="/carousel" [routerLinkActive]="['router-link-active']">Carousel</a></li>
-                <li><a routerLink="/datepicker" [routerLinkActive]="['router-link-active']">Datepicker</a></li>
-                <li><a routerLink="/dropdown" [routerLinkActive]="['router-link-active']">Dropdown - Collapse</a></li>
-                <li><a routerLink="/modal" [routerLinkActive]="['router-link-active']">Modal</a></li>
-                <li><a routerLink="/pagination" [routerLinkActive]="['router-link-active']">Pagination</a></li>
-                <li><a routerLink="/poptool" [routerLinkActive]="['router-link-active']">Popover & Tooltip</a></li>
-                <li><a routerLink="/progressbar" [routerLinkActive]="['router-link-active']">Progressbar</a></li>
-                <li><a routerLink="/rating" [routerLinkActive]="['router-link-active']">Ratings</a></li>
-                <li><a routerLink="/tabs" [routerLinkActive]="['router-link-active']">Tabs</a></li>
-                <li><a routerLink="/timepicker" [routerLinkActive]="['router-link-active']">Timepicker</a></li>
-                <li><a routerLink="/typehead" [routerLinkActive]="['router-link-active']">Typehead</a></li>
-            </ul>
-        </li>
-        <li class="m-t-40 p-20 upgrade-btn">
-           <a href="https://wrappixel.com/templates/elite-angular-admin/" target="_blank" class="btn btn-danger text-white">Upgrade To Pro</a>
-        </li>
+          <a routerLink="/starter" (click)="addExpandClass('start')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Principal</a>
+          <a routerLink="/tipousuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Tipo Usuario</a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Usuario</a>
+          <a routerLink="/accordion" [routerLinkActive]="['router-link-active']">Accordion</a>
+          <a routerLink="/carousel" [routerLinkActive]="['router-link-active']">Carousel</a>
+          <a routerLink="/datepicker" [routerLinkActive]="['router-link-active']">Datepicker</a>
+          <a routerLink="/dropdown" [routerLinkActive]="['router-link-active']">Dropdown - Collapse</a>
+          <!--<a routerLink="/modal" [routerLinkActive]="['router-link-active']">Modal</a>-->
+          <!--<a routerLink="/pagination" [routerLinkActive]="['router-link-active']">Pagination</a>-->
+          <!--<a routerLink="/poptool" [routerLinkActive]="['router-link-active']">Popover & Tooltip</a>-->
+          <!--<a routerLink="/progressbar" [routerLinkActive]="['router-link-active']">Progressbar</a>-->
+          <!--<a routerLink="/rating" [routerLinkActive]="['router-link-active']">Ratings</a>-->
+          <!--<a routerLink="/tabs" [routerLinkActive]="['router-link-active']">Tabs</a>-->
+          <!--<a routerLink="/timepicker" [routerLinkActive]="['router-link-active']">Timepicker</a>-->
+          <!--<a routerLink="/typehead" [routerLinkActive]="['router-link-active']">Typehead</a>-->
+          </li>
       </ul>
     </nav>
     <!-- End Sidebar navigation -->
   </div>
   <!-- End Sidebar scroll-->
 </aside>
-<!-- ============================================================== -->
-<!-- End Left Sidebar - style you can find in sidebar.scss  -->
-<!-- ============================================================== -->
