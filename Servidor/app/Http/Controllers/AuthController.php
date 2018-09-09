@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LoginAuth;
 use App\TipoUsuario;
 use App\Usuario;
 use Illuminate\Http\Request;
@@ -10,7 +11,7 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
-    public function login(Request $request) {
+    public function login(LoginAuth $request) {
         $credentials = $request->only('cuenta', 'password');
         try {
             if (! $token = JWTAuth::attempt($credentials)) {

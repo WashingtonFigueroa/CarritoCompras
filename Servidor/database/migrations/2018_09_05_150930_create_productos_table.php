@@ -26,6 +26,7 @@ class CreateProductosTable extends Migration
             $table->float('largo');
             $table->float('ancho');
             $table->float('alto');
+            $table->integer('puntos')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

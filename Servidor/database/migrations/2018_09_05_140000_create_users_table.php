@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('nombres');
             $table->string('cuenta')->unique();
             $table->string('password');
+            $table->integer('puntos')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });
