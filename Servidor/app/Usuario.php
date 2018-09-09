@@ -33,4 +33,7 @@ class Usuario extends Authenticatable
     public function tipoUsuario() {
         return $this->belongsTo(TipoUsuario::class, 'tipo_usuario_id');
     }
+    public function retiroPromociones() {
+        return $this->hasMany(RetiroPromocion::class, 'usuario_id');
+    }
 }
