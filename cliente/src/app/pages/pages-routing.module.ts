@@ -192,7 +192,8 @@ const routes: Routes = [
             { path: 'timepicker', loadChildren: './component/timepicker/timepicker.module#TimepickerModule' },
             { path: 'typehead', loadChildren: './component/typehead/typehead.module#TypeheadModule' }
         ]
-    }];
+    }
+    ];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

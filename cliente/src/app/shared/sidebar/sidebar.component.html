@@ -32,21 +32,13 @@
         <li class="nav-devider"></li>
         <li class="nav-small-cap">PERSONAL</li>
         <li [class.active]="showMenu === 'start'">
-          <a routerLink="/starter" (click)="addExpandClass('start')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Principal</a>
-          <a routerLink="/tipousuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Tipo Usuario</a>
-          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>Usuario</a>
-          <a routerLink="/accordion" [routerLinkActive]="['router-link-active']">Accordion</a>
-          <a routerLink="/carousel" [routerLinkActive]="['router-link-active']">Carousel</a>
-          <a routerLink="/datepicker" [routerLinkActive]="['router-link-active']">Datepicker</a>
-          <a routerLink="/dropdown" [routerLinkActive]="['router-link-active']">Dropdown - Collapse</a>
-          <!--<a routerLink="/modal" [routerLinkActive]="['router-link-active']">Modal</a>-->
-          <!--<a routerLink="/pagination" [routerLinkActive]="['router-link-active']">Pagination</a>-->
-          <!--<a routerLink="/poptool" [routerLinkActive]="['router-link-active']">Popover & Tooltip</a>-->
-          <!--<a routerLink="/progressbar" [routerLinkActive]="['router-link-active']">Progressbar</a>-->
-          <!--<a routerLink="/rating" [routerLinkActive]="['router-link-active']">Ratings</a>-->
-          <!--<a routerLink="/tabs" [routerLinkActive]="['router-link-active']">Tabs</a>-->
-          <!--<a routerLink="/timepicker" [routerLinkActive]="['router-link-active']">Timepicker</a>-->
-          <!--<a routerLink="/typehead" [routerLinkActive]="['router-link-active']">Typehead</a>-->
+          <a routerLink="/starter" (click)="addExpandClass('start')" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Principal</span></a>
+          <a routerLink="/tipousuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Tipo usuario</span></a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Usuario</span></a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Categorias</span></a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Producto</span></a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Articulo</span></a>
+          <a routerLink="/usuarios" [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i><span class="hide-menu">Compras</span></a>
           </li>
       </ul>
     </nav>
