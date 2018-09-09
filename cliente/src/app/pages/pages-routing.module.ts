@@ -34,6 +34,19 @@ const routes: Routes = [
     {
         path: '', component: PageComponent,
         children: [
+            // ruta principal
+            {
+                path: 'principal',
+                // canActivate: [AuthGuard],
+                component: ComprasComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: ComprasIndexComponent,
+                    data: {
+                        title: 'Bienvenidos'
+                    }
+                }]
+            },
             // rutas  tipo usuariuo
             {
                 path: 'tipousuarios',
