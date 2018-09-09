@@ -1,0 +1,53 @@
+<div class="card" style="width: 60%">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+              <h4 class="card-title">Seleccione tipo usuario</h4>
+              <form (submit)="update()">
+                <section class="form-group">
+                  <select (change)="loadPrivilegios(idtipo)" class="form-control" name="idtipo" [(ngModel)]="idtipo">
+                    <option [value]="tipo_usuario.idtipo" *ngFor="let tipo_usuario of tipo_usuarios">
+                      {{ tipo_usuario.nombre }}
+                    </option>
+                  </select>
+                </section>
+                <section class="form-group">
+                  <label>Gestine permisos</label> <br>
+                  <input type="checkbox" name="tipousuarios" [value]="privilegio.tipousuarios" [(ngModel)]="privilegio.tipousuarios">
+                  Cargos <br>
+                  <input type="checkbox" name="usuarios" [value]="privilegio.usuarios" [(ngModel)]="privilegio.usuarios">
+                  Usuarios <br>
+                  <input type="checkbox" name="privilegios" [value]="privilegio.privilegios" [(ngModel)]="privilegio.privilegios">
+                  Privilegios <br>
+                  <input type="checkbox" name="materiales" [value]="privilegio.materiales" [(ngModel)]="privilegio.materiales">
+                  Inventario <br>
+                  <input type="checkbox" name="inventarios" [value]="privilegio.inventarios" [(ngModel)]="privilegio.inventarios">
+                  Kardex <br>
+                  <input type="checkbox" name="movimientos" [value]="privilegio.movimientos" [(ngModel)]="privilegio.movimientos">
+                  Administracion <br>
+                  <input type="checkbox" name="estadisticas" [value]="privilegio.estadisticas" [(ngModel)]="privilegio.estadisticas">
+                  Estadisticas <br>
+                  <input type="checkbox" name="parametros" [value]="privilegio.parametros" [(ngModel)]="privilegio.parametros">
+                  Parametros <br>
+                  <input type="checkbox" name="clientes" [value]="privilegio.clientes" [(ngModel)]="privilegio.clientes">
+                  Cliente <br>
+                  <input type="checkbox" name="medidores" [value]="privilegio.medidores" [(ngModel)]="privilegio.medidores">
+                  Medidores <br>
+                  <input type="checkbox" name="servicios" [value]="privilegio.servicios" [(ngModel)]="privilegio.servicios">
+                  Servicios <br>
+                  <input type="checkbox" name="multas" [value]="privilegio.multas" [(ngModel)]="privilegio.multas">
+                  Multas <br>
+                  <input type="checkbox" name="lecturas" [value]="privilegio.lecturas" [(ngModel)]="privilegio.lecturas">
+                  Lecturas <br>
+                  <input type="checkbox" name="facturas" [value]="privilegio.facturas" [(ngModel)]="privilegio.facturas">
+                  Pago Planilla <br>
+                </section>
+                <button class="btn btn-primary">Asignar privilegio</button>
+              </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

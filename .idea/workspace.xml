@@ -2,15 +2,947 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a961ddf3-580e-4a11-819d-2374ed2501bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cliente/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/404/not-found-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/404/not-found.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/404/not-found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/404/not-found.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/404/not-found.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/login/login.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/accordion/accordion.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/accordion/accordion.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/accordion/accordion.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/alert/alert.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/alert/alert.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-create/articulos-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-create/articulos-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-create/articulos-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-edit/articulos-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-edit/articulos-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-edit/articulos-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-index/articulos-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-index/articulos-index.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-index/articulos-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/carousel/carousel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/carousel/carousel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/carousel/carousel.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-create/categorias-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-create/categorias-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-create/categorias-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-index/categorias-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-index/categorias-index.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-index/categorias-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-create/compras-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-create/compras-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-create/compras-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-edit/compras-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-edit/compras-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-edit/compras-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-index/compras-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-index/compras-index.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-index/compras-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/datepicker/datepicker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/datepicker/datepicker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/datepicker/datepicker.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/dropdown-collapse/dropdown-collapse.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/dropdown-collapse/dropdown-collapse.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/dropdown-collapse/dropdown-collapse.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/modal/modal.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/modal/modal.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/modal/modal.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/pagination/pagination.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/pagination/pagination.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/pagination/pagination.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/popover-tooltip/popover-tooltip.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/popover-tooltip/popover-tooltip.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/popover-tooltip/popover-tooltip.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-create/privilegio-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-create/privilegio-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-create/privilegio-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-edit/privilegio-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-edit/privilegio-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-edit/privilegio-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-index/privilegio-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-index/privilegio-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/progressbar/progressbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/progressbar/progressbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/progressbar/progressbar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/rating/rating.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/rating/rating.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/rating/rating.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tabs/tabs.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tabs/tabs.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tabs/tabs.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/timepicker/timepicker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/timepicker/timepicker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/timepicker/timepicker.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-create/tipousuario-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-create/tipousuario-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-index/tipousuario-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-index/tipousuario-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/typehead/typehead.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/typehead/typehead.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/typehead/typehead.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-create/usuario-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-create/usuario-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-index/usuario-index.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-index/usuario-index.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/pages.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/starter/starter.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/starter/starter.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/pages/starter/starter.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/breadcrumb/breadcrumb.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/breadcrumb/breadcrumb.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/guard/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/guard/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/header-navigation/navigation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/header-navigation/navigation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/sidebar.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/shared/sidebar/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/app/signup/signup.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/blue-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/default-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/green-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/megna-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/megna.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/purple-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/red-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/colors/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/icons/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/icons/font-awesome/old/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/icons/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/spinners.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/alert7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/model2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/alert/model3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/error-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/login-register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/megamenubg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/profile-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/socialbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/user-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/background/weatherbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/chrome-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/firefox-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/internet-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/opera-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/photoshop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/safari-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/browser/sketch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/document/colors.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/document/sidebar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/document/template-strucutre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/gallery/chair.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/gallery/chair2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/gallery/chair3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/gallery/chair4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/icon/danger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/icon/success.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/icon/warning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/logo-light-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/logo-light-text1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/Euclid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/shape1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/shape2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/shape3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/tooltip1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/tooltip2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/images/tooltip/tooltip3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/prepros-6.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/blue-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/blue.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/default-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/green-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/megna-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/megna.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/purple-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/purple.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/red-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/colors/red.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flag-icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ae.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/af.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ai.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/al.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/am.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/aq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/as.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/au.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/aw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ax.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/az.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ba.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/be.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/br.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/by.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/bz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ci.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/co.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/cz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/de.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/dj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/dk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/dm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/do.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/dz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ec.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/eg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/eh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/er.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/es.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/et.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/fr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ga.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/gy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/hk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/hm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/hn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/hr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ht.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/hu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/id.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/il.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/im.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/io.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/iq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/is.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/it.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/je.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/jm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/jo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/jp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ki.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/km.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ky.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/kz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/la.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/li.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ls.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/lv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ly.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/md.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/me.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ml.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/my.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/mz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ne.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ng.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ni.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/np.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/nz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/om.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/pw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/py.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/qa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/re.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/rs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ru.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/rw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/se.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/si.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/so.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/st.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/sz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/td.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/th.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/to.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/tz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ua.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/um.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/uy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/uz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/va.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/vc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ve.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/vg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/vi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/vn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/vu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/wf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ws.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/ye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/yt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/za.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/zm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/flag-icon-css/flags/zw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont-old.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/extras.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/spinning.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_extras.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_spinning.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/old/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-arrows-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-arrows-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-arrows-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-arrows-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-ecommerce-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-ecommerce-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-ecommerce-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-ecommerce-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-music-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-music-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-music-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-music-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-software-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-software-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-software-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-software-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-weather-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-weather-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-weather-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/fonts/linea-weather-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/linea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/linea.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/linea-icons/linea.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/less/simple-line-icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/simple-line-icons/scss/simple-line-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/themify-icons/themify-icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons-wind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons-wind.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/fonts/weathericons-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/fonts/weathericons-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/fonts/weathericons-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/fonts/weathericons-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-beaufort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-day.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-direction.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-misc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-moon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-neutral.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-time.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/css/variables-wind-names.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-beaufort.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-day.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-direction.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-misc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-moon-aliases.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-moon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-neutral.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-night.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-time.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-wind-aliases.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-wind-degrees.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-classes/classes-wind.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-beaufort.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-day.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-direction.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-misc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-moon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-neutral.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-night.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-time.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/icon-variables/variables-wind-names.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/mappings/wi-forecast-io.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/mappings/wi-owm.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/mappings/wi-wmo4680.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/mappings/wi-yahoo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons-classes.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons-core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons-variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons-wind.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons-wind.min.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/less/weather-icons.min.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-beaufort.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-day.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-direction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-moon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-neutral.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-night.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-time.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-classes/classes-wind.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-beaufort.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-day.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-direction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-moon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-neutral.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-night.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-time.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/icon-variables/variables-wind-names.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/mappings/wi-forecast-io.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/mappings/wi-owm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/mappings/wi-wmo4680.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/mappings/wi-yahoo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons-classes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons-core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons-wind.min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons-wind.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons.min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/sass/weather-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/material.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/prepros-6.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/src/assets/scss/widgets.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CarritoCompras.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarritoCompras.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cliente/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/e2e/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/e2e/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/app.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/cliente-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/cliente.module.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/cliente.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-create/articulos-create.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-edit/articulos-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/index/index.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/index/index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/index/index.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/index/index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/store/store.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos-index/articulos-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/store/store.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/store/store.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/cliente/store/store.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/demo-material-module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/full.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/full.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/sidebar/sidebar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/layouts/full/sidebar/sidebar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/buttons/buttons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/buttons/buttons.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/buttons/buttons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-create/categoria-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-create/categoria-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-create/categoria-create.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-create/categoria-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-edit/categoria-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-create/categorias-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-edit/categoria-edit.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-edit/categoria-edit.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-edit/categoria-edit.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-index/categoria-index.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-index/categoria-index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-index/categoria-index.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria-index/categoria-index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias-index/categorias-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/articulos/articulos.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/categoria/categoria.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/chips/chips.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/chips/chips.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/chips/chips.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/dialog/dialog-overview-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/dialog/dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/dialog/dialog.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/dialog/dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/expansion/expansion.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/expansion/expansion.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/expansion/expansion.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/grid/grid.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/grid/grid.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/grid/grid.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/lists/lists.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/lists/lists.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-create/compras-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/lists/lists.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/material.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/material.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/menu/menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/menu/menu.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-edit/compras-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/menu/menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio-index/privilegio-index.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras-index/compras-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio-index/privilegio-index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio-index/privilegio-index.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-index/privilegio-index.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio-index/privilegio-index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/privilegio/privilegio.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-create/producto-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-create/privilegio-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-create/producto-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-create/producto-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-create/producto-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-create/producto-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-create/producto-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-create/producto-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-edit/producto-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-edit/privilegio-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-edit/producto-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-edit/producto-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-edit/producto-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-edit/producto-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-edit/producto-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-edit/producto-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-index/producto-index.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio-index/privilegio-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-index/producto-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-index/producto-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-index/producto-index.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-index/producto-index.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto-index/producto-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-index/producto-index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/privilegio/privilegio.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/producto/producto.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress-snipper/progress-snipper.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress-snipper/progress-snipper.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-create/producto-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress-snipper/progress-snipper.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress/progress.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress/progress.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/progress/progress.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slide-toggle/slide-toggle.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slide-toggle/slide-toggle.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slide-toggle/slide-toggle.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slider/slider.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slider/slider.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-edit/producto-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/slider/slider.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/snackbar/snackbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/snackbar/snackbar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto-index/producto-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/snackbar/snackbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/stepper/stepper.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/stepper/stepper.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/producto/producto.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/stepper/stepper.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tabs/tabs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tabs/tabs.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tabs/tabs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-create/tipousuario-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-create/tipousuario-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-create/tipousuario-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-create/tipousuario-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-create/tipousuario-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-create/tipousuario-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-edit/tipousuario-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-edit/tipousuario-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-edit/tipousuario-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-edit/tipousuario-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-edit/tipousuario-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-edit/tipousuario-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-edit/tipousuario-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-edit/tipousuario-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-index/tipousuario-index.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-index/tipousuario-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-index/tipousuario-index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-index/tipousuario-index.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario-index/tipousuario-index.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario-index/tipousuario-index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/categorias/categorias.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/tipousuario/tipousuario.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tipousuario/tipousuario.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/toolbar/toolbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/toolbar/toolbar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/toolbar/toolbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tooltip/tooltip.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tooltip/tooltip.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/tooltip/tooltip.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-create/usuario-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-create/usuario-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-create/usuario-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-create/usuario-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-create/usuario-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-create/usuario-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-edit/usuario-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-edit/usuario-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-edit/usuario-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-edit/usuario-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-edit/usuario-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-edit/usuario-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-edit/usuario-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-edit/usuario-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-index/usuario-index.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-index/usuario-index.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-index/usuario-index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-index/usuario-index.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario-index/usuario-index.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario-index/usuario-index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/compras/compras.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/app/pages/component/usuario/usuario.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/material-component/usuario/usuario.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/accordion/accordion.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/accordion/accordionanchor.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/accordion/accordionlink.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/accordion/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/menu-items/menu-items.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/shared/spinner.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/starter/starter.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/starter/starter.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/weather-icons/css/weather-icons-variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/starter/starter.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/starter/starter.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/app/starter/starter.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/company.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/scss/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/background/user-info.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/background/user-info.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/big/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/big/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/big/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/big/img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/big/img3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/big/img3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/big/img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/big/img4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/big/img5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/big/img5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/logo-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/logo-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/logo-light-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/logo-light-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/logo-light-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/logo-light-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/logo-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/logo-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/hotdeal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/logocompleto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/product09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/shop01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/shop02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/productos/shop03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/users/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/users/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/users/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/users/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/users/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/users/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/users/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/users/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/images/users/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/images/users/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/jquery.zoom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/scripts/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/nouislider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/slick-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/spinner.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/assets/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/assets/styles/variable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/environments/environment.prod.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cliente/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_140000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_140000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cliente/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,14 +998,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="SCHEMA:manillasdb" value="3" />
+          <entry key="SCHEMA:manillasdb" value="4" />
           <entry key="css" value="3" />
           <entry key="html" value="7" />
           <entry key="js" value="2" />
-          <entry key="json" value="5" />
+          <entry key="json" value="6" />
           <entry key="php" value="12" />
           <entry key="scss" value="4" />
-          <entry key="sql" value="1" />
+          <entry key="sql" value="2" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
@@ -81,13 +1013,13 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="7" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="JavaScript" value="2" />
           <entry key="PHP" value="12" />
           <entry key="SCSS" value="4" />
-          <entry key="Scratch" value="1" />
+          <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="2" />
-          <entry key="UML" value="3" />
+          <entry key="UML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -99,17 +1031,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="35" />
-          <entry key="json" value="71" />
+          <entry key="json" value="75" />
           <entry key="php" value="541" />
-          <entry key="sql" value="30" />
+          <entry key="sql" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="35" />
-          <entry key="JSON" value="71" />
+          <entry key="JSON" value="75" />
           <entry key="PHP" value="541" />
-          <entry key="Scratch" value="30" />
+          <entry key="Scratch" value="42" />
         </counts>
       </usages-collector>
     </session>
@@ -117,10 +1049,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php">
+        <entry file="file://$PROJECT_DIR$/Cliente/angular.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="294">
+              <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -142,13 +1074,13 @@
         <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/AuthController.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Http/Requests/LoginAuth.php" />
         <option value="$PROJECT_DIR$/Cliente/src/index.html" />
-        <option value="$PROJECT_DIR$/Cliente/angular.json" />
         <option value="$PROJECT_DIR$/Cliente/src/assets/styles/style.css" />
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_140000_create_users_table.php" />
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e17e5c9a-383c-444e-af4f-5ce99e76f4a9/console.sql" />
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php" />
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e17e5c9a-383c-444e-af4f-5ce99e76f4a9/console.sql" />
+        <option value="$PROJECT_DIR$/Cliente/angular.json" />
       </list>
     </option>
   </component>
@@ -157,9 +1089,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/Cliente/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -292,7 +1221,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;retir&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php&#10;productotabl&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;promocion&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;userstable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_140000_create_users_table.php&#10;angular&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/assets/styles/style.scss&#10;index&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html&#10;login&#9;null&#9;null&#10;auth&#9;null&#9;null&#10;angularjs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;app.rou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/app/app.routing.ts&#10;footer&#9;null&#9;null&#10;index.html&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="angular&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;pro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;retir&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php&#10;productotabl&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;promocion&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;userstable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_140000_create_users_table.php&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/assets/styles/style.scss&#10;index&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html&#10;login&#9;null&#9;null&#10;auth&#9;null&#9;null&#10;angularjs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;app.rou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/app/app.routing.ts&#10;footer&#9;null&#9;null&#10;index.html&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../manillasKonva" />
@@ -328,12 +1257,12 @@
       <workItem from="1536349818627" duration="4197000" />
       <workItem from="1536362053347" duration="206000" />
       <workItem from="1536408659595" duration="1937000" />
-      <workItem from="1536497859390" duration="1159000" />
+      <workItem from="1536497859390" duration="1447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8734000" />
+    <option name="totallyTimeSpent" value="9022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
@@ -431,13 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cliente/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cliente/src/assets/styles/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -472,6 +1394,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e17e5c9a-383c-444e-af4f-5ce99e76f4a9/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -485,25 +1421,26 @@
           <ID>DATABASE</ID>
           <OriginalElement>e17e5c9a-383c-444e-af4f-5ce99e76f4a9.SCHEMA:manillasdb</OriginalElement>
           <nodes>
-            <node x="104.25" y="234.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.productos</node>
-            <node x="513.25" y="0.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.tipo_usuarios</node>
-            <node x="905.75" y="0.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.promociones</node>
-            <node x="2.0" y="944.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.imagenes</node>
-            <node x="104.25" y="11.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.categorias</node>
-            <node x="390.75" y="267.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.usuarios</node>
-            <node x="635.75" y="289.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.privilegios</node>
-            <node x="70.75" y="622.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.descripcion_productos</node>
-            <node x="297.0" y="922.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.detalle_compras</node>
-            <node x="402.75" y="578.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.compras</node>
+            <node x="978.75" y="0.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.migrations</node>
+            <node x="208.625" y="234.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.productos</node>
+            <node x="586.25" y="0.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.tipo_usuarios</node>
+            <node x="0.0" y="622.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.promociones</node>
+            <node x="314.0" y="944.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.imagenes</node>
+            <node x="208.625" y="11.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.categorias</node>
+            <node x="463.75" y="267.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.usuarios</node>
+            <node x="708.75" y="289.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.privilegios</node>
+            <node x="382.75" y="622.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.descripcion_productos</node>
+            <node x="609.0" y="922.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.detalle_compras</node>
+            <node x="714.75" y="578.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.compras</node>
             <node x="0.0" y="1173.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.password_resets</node>
-            <node x="1167.75" y="0.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.migrations</node>
+            <node x="42.0" y="944.0">e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.retiro_promociones</node>
           </nodes>
           <notes />
           <edges>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.privilegios" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.tipo_usuarios">
               <point x="0.0" y="-92.0" />
-              <point x="748.25" y="209.0" />
-              <point x="682.0" y="209.0" />
+              <point x="821.25" y="209.0" />
+              <point x="755.0" y="209.0" />
               <point x="56.25" y="92.0" />
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.productos" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.categorias">
@@ -512,21 +1449,45 @@
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.descripcion_productos" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.productos">
               <point x="0.0" y="-103.0" />
-              <point x="0.0" y="147.0" />
+              <point x="520.25" y="548.0" />
+              <point x="364.625" y="548.0" />
+              <point x="52.0" y="147.0" />
+            </edge>
+            <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.retiro_promociones" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.promociones">
+              <point x="-63.0" y="-81.0" />
+              <point x="105.0" y="897.0" />
+              <point x="108.5" y="897.0" />
+              <point x="0.0" y="103.0" />
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.detalle_compras" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.compras">
               <point x="68.75" y="-103.0" />
               <point x="0.0" y="147.0" />
             </edge>
+            <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.promociones" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.productos">
+              <point x="0.0" y="-103.0" />
+              <point x="108.5" y="558.0" />
+              <point x="260.625" y="558.0" />
+              <point x="-52.0" y="147.0" />
+            </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.usuarios" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.tipo_usuarios">
               <point x="0.0" y="-114.0" />
-              <point x="503.25" y="209.0" />
-              <point x="569.5" y="209.0" />
+              <point x="576.25" y="209.0" />
+              <point x="642.5" y="209.0" />
               <point x="-56.25" y="92.0" />
+            </edge>
+            <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.retiro_promociones" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.usuarios">
+              <point x="63.0" y="-81.0" />
+              <point x="231.0" y="897.0" />
+              <point x="284.125" y="897.0" />
+              <point x="284.125" y="558.0" />
+              <point x="520.0" y="558.0" />
+              <point x="-56.25" y="114.0" />
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.compras" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.usuarios">
               <point x="0.0" y="-147.0" />
-              <point x="0.0" y="114.0" />
+              <point x="815.25" y="558.0" />
+              <point x="632.5" y="558.0" />
+              <point x="56.25" y="114.0" />
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.imagenes" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.descripcion_productos">
               <point x="0.0" y="-81.0" />
@@ -534,12 +1495,12 @@
             </edge>
             <edge source="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.detalle_compras" target="e17e5c9a-383c-444e-af4f-5ce99e76f4a9.TABLE:manillasdb.descripcion_productos">
               <point x="-68.75" y="-103.0" />
-              <point x="365.75" y="897.0" />
-              <point x="277.0" y="897.0" />
+              <point x="677.75" y="897.0" />
+              <point x="589.0" y="897.0" />
               <point x="68.75" y="103.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="747.9315123518777" y="91.40168708576016" />
+          <settings layout="Hierarchic Group" zoom="1.6506211180124224" x="515.1036302274874" y="435.13380445463815" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
@@ -548,17 +1509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php">
+    <entry file="file://$PROJECT_DIR$/Cliente/angular.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="294">
+          <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
         </state>
       </provider>
     </entry>
