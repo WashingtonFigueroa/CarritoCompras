@@ -3,83 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\RetiroPromocion;
+use App\RetiroRetiroPromocion;
 use Illuminate\Http\Request;
 
-class RetiroPromocionController extends Controller
+class RetiroRetiroPromocionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return response()->json(RetiroPromocion::with('usuario', 'promocion')->paginate(10), 200);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        return response()->json(RetiroPromocion::create($request->all()), 201);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\RetiroPromocion  $retiroPromocion
-     * @return \Illuminate\Http\Response
-     */
-    public function show(RetiroPromocion $retiroPromocion)
+    public function show($id)
     {
-        //
+        return response()->json(RetiroPromocion::find($id), 200);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\RetiroPromocion  $retiroPromocion
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(RetiroPromocion $retiroPromocion)
+    public function update(Request $request, $id)
     {
-        //
+        $retiro_promocion = RetiroPromocion::find($id);
+        $retiro_promocion->update($request->all());
+        return response()->json($retiro_promocion, 200);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\RetiroPromocion  $retiroPromocion
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, RetiroPromocion $retiroPromocion)
+    public function destroy($id)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\RetiroPromocion  $retiroPromocion
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(RetiroPromocion $retiroPromocion)
-    {
-        //
+        $retiro_promocion = RetiroPromocion::find($id);
+        $retiro_promocion->delete();
+        return response()->json($retiro_promocion, 200);
     }
 }

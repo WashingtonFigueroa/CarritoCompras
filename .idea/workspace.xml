@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d6f8d75-322f-4aba-aa5b-75281cbbca13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/PromocionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/PromocionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/RetiroPromocionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/RetiroPromocionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Producto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Promocion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Promocion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/RetiroPromocion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/RetiroPromocion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,23 +30,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="manillasDB@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="manillasDB@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="manillasDB@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="manillasdb: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -63,10 +52,11 @@
         <counts>
           <entry key="SCHEMA:manillasdb" value="4" />
           <entry key="css" value="3" />
+          <entry key="env" value="1" />
           <entry key="html" value="9" />
           <entry key="js" value="2" />
           <entry key="json" value="6" />
-          <entry key="php" value="17" />
+          <entry key="php" value="57" />
           <entry key="scss" value="4" />
           <entry key="sql" value="2" />
           <entry key="ts" value="6" />
@@ -74,11 +64,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key=".env file" value="1" />
           <entry key="CSS" value="3" />
           <entry key="HTML" value="9" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="17" />
+          <entry key="PHP" value="57" />
           <entry key="SCSS" value="4" />
           <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="6" />
@@ -93,17 +84,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="env" value="15" />
           <entry key="html" value="35" />
           <entry key="json" value="75" />
-          <entry key="php" value="766" />
+          <entry key="php" value="1519" />
           <entry key="sql" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key=".env file" value="15" />
           <entry key="HTML" value="35" />
           <entry key="JSON" value="75" />
-          <entry key="PHP" value="766" />
+          <entry key="PHP" value="1519" />
           <entry key="Scratch" value="42" />
         </counts>
       </usages-collector>
@@ -167,10 +160,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Kernel.php">
+        <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/RetiroPromocionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="396">
+              <caret line="12" column="98" lean-forward="true" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="98" />
+              <folding>
+                <element signature="e#40#64#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,6 +177,7 @@
     <findStrings>
       <find>po</find>
       <find>servi</find>
+      <find>tipo_u</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,6 +200,14 @@
         <option value="$PROJECT_DIR$/../cliente2/src/index.html" />
         <option value="$PROJECT_DIR$/Servidor/app/Http/Middleware/Cors.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/Servidor/.env" />
+        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/PromocionController.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Usuario.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Promocion.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Producto.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/RetiroPromocion.php" />
+        <option value="$PROJECT_DIR$/Servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/RetiroPromocionController.php" />
       </list>
     </option>
   </component>
@@ -2184,7 +2189,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="kern&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Kernel.php&#10;cors&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Middleware/Cors.php&#10;appmo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/app.module.ts&#10;index&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/electro-master/index.html&#10;angular&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;pro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;retir&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php&#10;productotabl&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;promocion&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;userstable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_140000_create_users_table.php&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/assets/styles/style.scss&#10;login&#9;null&#9;null&#10;auth&#9;null&#9;null&#10;angularjs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;app.rou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/app/app.routing.ts&#10;footer&#9;null&#9;null&#10;index.html&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/RetiroPromocionController.php&#10;retiro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/RetiroPromocionController.php&#10;api&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;promocioncontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/PromocionController.php&#10;retiropro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/RetiroPromocionController.php&#10;retirop&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/RetiroPromocion.php&#10;produc&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Producto.php&#10;PRodu&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Producto.php&#10;usersta&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_140000_create_users_table.php&#10;usuario.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Usuario.php&#10;api.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;promo&#9;null&#9;null&#10;productocontr&#9;null&#9;null&#10;descripcion&#9;null&#9;null&#10;promocion.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Promocion.php&#10;promocion&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;.env&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/.env&#10;tipousuariocontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/TipoUsuarioController.php&#10;kern&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Kernel.php&#10;cors&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Middleware/Cors.php&#10;appmo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/app.module.ts&#10;index&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/electro-master/index.html&#10;angular&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;pro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php&#10;retir&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_09_131143_create_retiro_promocions_table.php&#10;productotabl&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;userstable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_140000_create_users_table.php&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/assets/styles/style.scss&#10;login&#9;null&#9;null&#10;auth&#9;null&#9;null&#10;angularjs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/angular.json&#10;app.rou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/app/app.routing.ts&#10;footer&#9;null&#9;null&#10;index.html&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Cliente/src/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../manillasKonva" />
@@ -2223,18 +2228,18 @@
       <workItem from="1536497859390" duration="1447000" />
       <workItem from="1536500894920" duration="126000" />
       <workItem from="1536501274068" duration="591000" />
-      <workItem from="1536501891944" duration="2196000" />
+      <workItem from="1536501891944" duration="4988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12030000" />
+    <option name="totallyTimeSpent" value="14822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2298177" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2298177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2264,14 +2269,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../electro-master/js/nouislider.min.js" />
-    <entry file="file://$PROJECT_DIR$/Cliente/src/app/cliente/footer/footer.component.ts" />
-    <entry file="file://$PROJECT_DIR$/cliente/src/app/cliente/footer/footer.component.html" />
-    <entry file="file://$PROJECT_DIR$/Cliente/src/app/app.routing.ts" />
-    <entry file="file://$PROJECT_DIR$/../Servidor/app/Http/Requests/LoginAuth.php" />
-    <entry file="file://$PROJECT_DIR$/../Servidor/app/Http/Controllers/AuthController.php" />
-    <entry file="file://$PROJECT_DIR$/cliente/karma.conf.js" />
-    <entry file="file://$PROJECT_DIR$/cliente/src/styles.css" />
     <entry file="file://$PROJECT_DIR$/cliente/src/index.html" />
     <entry file="file://$PROJECT_DIR$/Cliente/src/assets/styles/style.scss" />
     <entry file="file://$PROJECT_DIR$/Cliente/src/assets/styles/app.scss" />
@@ -2451,8 +2448,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
+        <state relative-caret-position="164">
           <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/TipoUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/TipoUsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_09_130041_create_promocions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/DescripcionProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="9" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_140000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Promocion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/PromocionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/RetiroPromocion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/RetiroPromocionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="98" lean-forward="true" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="98" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

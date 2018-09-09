@@ -27,3 +27,5 @@ Route::resource('descripcion_productos', 'DescripcionProductoController', ['exce
 Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
 Route::resource('imagenes', 'ImagenController', ['except' => ['create', 'edit']]);
+Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
+Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);

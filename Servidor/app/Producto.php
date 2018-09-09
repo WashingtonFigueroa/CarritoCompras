@@ -24,11 +24,15 @@ class Producto extends Model
     public function descripcionProductos() {
         return $this->hasMany(DescripcionProducto::class, 'producto_id');
     }
+    public function promociones() {
+        return $this->hasMany(Promocion::class, 'producto_id');
+    }
     public static function boot()
     {
         parent::boot();
         self::deleting(function ($parent) {
             $parent->descripcionProductos()->delete();
+            $parent->productos()->delete();
         });
     }
 }
