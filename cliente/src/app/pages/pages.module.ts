@@ -26,6 +26,27 @@ import {TipousuarioService} from './component/tipousuario/tipousuario.service';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {JsonpModule} from '@angular/http';
+import { CategoriasComponent } from './component/categorias/categorias.component';
+
+import { ProductoComponent } from './component/producto/producto.component';
+import { ProductoIndexComponent } from './component/producto/producto-index/producto-index.component';
+import { ProductoEditComponent } from './component/producto/producto-edit/producto-edit.component';
+import { ProductoCreateComponent } from './component/producto/producto-create/producto-create.component';
+import { ArticulosComponent } from './component/articulos/articulos.component';
+import { ArticulosIndexComponent } from './component/articulos/articulos-index/articulos-index.component';
+import { ArticulosEditComponent } from './component/articulos/articulos-edit/articulos-edit.component';
+import { ArticulosCreateComponent } from './component/articulos/articulos-create/articulos-create.component';
+import { ComprasComponent } from './component/compras/compras.component';
+import { ComprasIndexComponent } from './component/compras/compras-index/compras-index.component';
+import { ComprasEditComponent } from './component/compras/compras-edit/compras-edit.component';
+import { ComprasCreateComponent } from './component/compras/compras-create/compras-create.component';
+import { CategoriasIndexComponent } from './component/categorias/categorias-index/categorias-index.component';
+import { CategoriasEditComponent } from './component/categorias/categorias-edit/categorias-edit.component';
+import { CategoriasCreateComponent } from './component/categorias/categorias-create/categorias-create.component';
+import {CategoriasService} from './component/categorias/categorias.service';
+import {ProductoService} from './component/producto/producto.service';
+import {ArticulosService} from './component/articulos/articulos.service';
+import {ComprasService} from './component/compras/compras.service';
 
 @NgModule({
     imports: [
@@ -53,13 +74,33 @@ import {JsonpModule} from '@angular/http';
         PrivilegioComponent,
         PrivilegioIndexComponent,
         PrivilegioEditComponent,
-        PrivilegioCreateComponent
+        PrivilegioCreateComponent,
+        CategoriasComponent,
+        ProductoComponent,
+        ProductoIndexComponent,
+        ProductoEditComponent,
+        ProductoCreateComponent,
+        ArticulosComponent,
+        ArticulosIndexComponent,
+        ArticulosEditComponent,
+        ArticulosCreateComponent,
+        ComprasComponent,
+        ComprasIndexComponent,
+        ComprasEditComponent,
+        ComprasCreateComponent,
+        CategoriasIndexComponent,
+        CategoriasEditComponent,
+        CategoriasCreateComponent
 
     ],
     providers: [
         TipousuarioService,
         UsuarioService,
-        PrivilegioService
+        PrivilegioService,
+        CategoriasService,
+        ProductoService,
+        ArticulosService,
+        ComprasService
     ]
 })
 export class PagesModule { }

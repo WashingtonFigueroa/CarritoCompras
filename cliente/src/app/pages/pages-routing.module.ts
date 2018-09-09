@@ -13,6 +13,22 @@ import {PrivilegioComponent} from './component/privilegio/privilegio.component';
 import {PrivilegioIndexComponent} from './component/privilegio/privilegio-index/privilegio-index.component';
 import {PrivilegioCreateComponent} from './component/privilegio/privilegio-create/privilegio-create.component';
 import {PrivilegioEditComponent} from './component/privilegio/privilegio-edit/privilegio-edit.component';
+import {CategoriasComponent} from './component/categorias/categorias.component';
+import {CategoriasIndexComponent} from './component/categorias/categorias-index/categorias-index.component';
+import {CategoriasCreateComponent} from './component/categorias/categorias-create/categorias-create.component';
+import {CategoriasEditComponent} from './component/categorias/categorias-edit/categorias-edit.component';
+import {ProductoComponent} from './component/producto/producto.component';
+import {ProductoIndexComponent} from './component/producto/producto-index/producto-index.component';
+import {ProductoCreateComponent} from './component/producto/producto-create/producto-create.component';
+import {ProductoEditComponent} from './component/producto/producto-edit/producto-edit.component';
+import {ArticulosComponent} from './component/articulos/articulos.component';
+import {ArticulosIndexComponent} from './component/articulos/articulos-index/articulos-index.component';
+import {ArticulosCreateComponent} from './component/articulos/articulos-create/articulos-create.component';
+import {ArticulosEditComponent} from './component/articulos/articulos-edit/articulos-edit.component';
+import {ComprasComponent} from './component/compras/compras.component';
+import {ComprasIndexComponent} from './component/compras/compras-index/compras-index.component';
+import {ComprasCreateComponent} from './component/compras/compras-create/compras-create.component';
+import {ComprasEditComponent} from './component/compras/compras-edit/compras-edit.component';
 
 const routes: Routes = [
     {
@@ -22,54 +38,29 @@ const routes: Routes = [
             {  path: 'tipousuarios',
                 // canActivate: [AuthGuard],
                 component: TipousuarioComponent,
-                children: [{
-                    path: '',
-                    redirectTo: 'listar',
-                    pathMatch: 'full'
-                }, {
+                children: [{ path: '', redirectTo: 'listar', pathMatch: 'full'}, {
                     path: 'listar',
                     component: TipousuarioIndexComponent,
-                    data: {
-                        title: 'LISTA DE CARGOS',
-                        urls: [{
-                            title: 'INICIO',
-                            url: '/acceso/dashboard'
-                        }, {
-                            title: 'NUEVO REGISTRO',
-                            url: '/tipousuarios/crear'
-                        }, {
-                            title: 'CARGO USUARIO'
-                        }]
+                    data: {title: 'LISTA DE CARGOS', urls: [{
+                        title: 'INICIO', url: '/acceso/dashboard'}, {
+                        title: 'NUEVO REGISTRO', url: '/tipousuarios/crear' }, {
+                        title: 'CARGO USUARIO'}]
                     }
                 }, {
                     path: 'crear',
                     component: TipousuarioCreateComponent,
-                    data: {
-                        title: 'CREAR CARGO',
-                        urls: [{
-                            title: 'INICIO',
-                            url: '/acceso/dashboard'
-                        }, {
-                            title: 'LISTADO',
-                            url: '/tipousuarios/listar'
-                        }, {
-                            title: 'NUEVO REGISTRO'
-                        }]
+                    data: {title: 'CREAR CARGO', urls: [{
+                        title: 'INICIO', url: '/acceso/dashboard' }, {
+                        title: 'LISTADO', url: '/tipousuarios/listar' }, {
+                        title: 'NUEVO REGISTRO'}]
                     }
                 }, {
                     path: 'editar/:id',
                     component: TipousuarioEditComponent,
-                    data: {
-                        title: 'EDITAR CARGO',
-                        urls: [{
-                            title: 'INICIO',
-                            url: '/acceso/dashboard'
-                        }, {
-                            title: 'LISTADO',
-                            url: '/tipousuarios/listar'
-                        }, {
-                            title: 'MODIFICACIÓN'
-                        }]
+                    data: {title: 'EDITAR CARGO', urls: [{
+                        title: 'INICIO', url: '/acceso/dashboard'}, {
+                        title: 'LISTADO', url: '/tipousuarios/listar' }, {
+                        title: 'MODIFICACIÓN'}]
                     }
                 }]
             },
@@ -132,11 +123,9 @@ const routes: Routes = [
             {
                 path: 'privilegios',
                 component: PrivilegioComponent,
-               // canActivate: [AuthGuard],
+                // canActivate: [AuthGuard],
                 children: [{
-                    path: '',
-                    redirectTo: 'listar',
-                    pathMatch: 'full'
+                    path: '', redirectTo: 'listar', pathMatch: 'full'
                 }, {
                     path: 'listar',
                     component: PrivilegioIndexComponent,
@@ -176,24 +165,180 @@ const routes: Routes = [
                             title: 'MODIFICACIÓN'
                         }]
                     }
-                },
-            { path: 'starter', loadChildren: './starter/starter.module#StarterModule' },
-            { path: 'accordion', loadChildren: './component/accordion/accordion.module#AccordionModule' },
-            { path: 'alert', loadChildren: './component/alert/alert.module#NgAlertModule' },
-            { path: 'carousel', loadChildren: './component/carousel/carousel.module#ButtonsModule' },
-            { path: 'datepicker', loadChildren: './component/datepicker/datepicker.module#DatepickerModule' },
-            { path: 'dropdown', loadChildren: './component/dropdown-collapse/dropdown-collapse.module#DropdownModule' },
-            { path: 'modal', loadChildren: './component/modal/modal.module#ModalModule' },
-            { path: 'pagination', loadChildren: './component/pagination/pagination.module#paginationModule' },
-            { path: 'poptool', loadChildren: './component/popover-tooltip/popover-tooltip.module#PopoverTooltipModule' },
-            { path: 'progressbar', loadChildren: './component/progressbar/progressbar.module#progressbarModule' },
-            { path: 'rating', loadChildren: './component/rating/rating.module#RatingModule' },
-            { path: 'tabs', loadChildren: './component/tabs/tabs.module#TabsModule' },
-            { path: 'timepicker', loadChildren: './component/timepicker/timepicker.module#TimepickerModule' },
-            { path: 'typehead', loadChildren: './component/typehead/typehead.module#TypeheadModule' }
-        ]
-    }
-    ];
+                }]
+            },
+            // rutas  categorias
+            {
+                path: 'categorias',
+                // canActivate: [AuthGuard],
+                component: CategoriasComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: CategoriasIndexComponent,
+                    data: {
+                        title: 'LISTA DE CATEGORIAS', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: '/categorias/crear'
+                        }, {
+                            title: 'CATEGORIA USUARIO'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: CategoriasCreateComponent,
+                    data: {
+                        title: 'CREAR CATEGORIA', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/categorias/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: CategoriasEditComponent,
+                    data: {
+                        title: 'EDITAR CATEGORIA', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/categorias/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            },
+            // rutas  productos
+            {
+                path: 'productos',
+                // canActivate: [AuthGuard],
+                component: ProductoComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: ProductoIndexComponent,
+                    data: {
+                        title: 'LISTA DE PRODUCTOS', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: '/productos/crear'
+                        }, {
+                            title: 'PRODUCTO USUARIO'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: ProductoCreateComponent,
+                    data: {
+                        title: 'CREAR PRODUCTO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/productos/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: ProductoEditComponent,
+                    data: {
+                        title: 'EDITAR PRODUCTO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/productos/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            },
+            // rutas  articulos
+            {
+                path: 'articulos',
+                // canActivate: [AuthGuard],
+                component: ArticulosComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: ArticulosIndexComponent,
+                    data: {
+                        title: 'LISTA DE ARTICULOS', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: '/articulos/crear'
+                        }, {
+                            title: 'ARTICULO USUARIO'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: ArticulosCreateComponent,
+                    data: {
+                        title: 'CREAR ARTICULO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/articulos/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: ArticulosEditComponent,
+                    data: {
+                        title: 'EDITAR ARTICULO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/articulos/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            },
+            // rutas  compras
+            {
+                path: 'compras',
+                // canActivate: [AuthGuard],
+                component: ComprasComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: ComprasIndexComponent,
+                    data: {
+                        title: 'LISTA DE COMPRAS', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: '/compras/crear'
+                        }, {
+                            title: 'COMPRA USUARIO'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: ComprasCreateComponent,
+                    data: {
+                        title: 'CREAR COMPRA', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/compras/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: ComprasEditComponent,
+                    data: {
+                        title: 'EDITAR COMPRA', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/compras/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            }];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
