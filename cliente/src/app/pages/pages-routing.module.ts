@@ -35,32 +35,45 @@ const routes: Routes = [
         path: '', component: PageComponent,
         children: [
             // rutas  tipo usuariuo
-            {  path: 'tipousuarios',
+            {
+                path: 'tipousuarios',
                 // canActivate: [AuthGuard],
                 component: TipousuarioComponent,
-                children: [{ path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
                     path: 'listar',
                     component: TipousuarioIndexComponent,
-                    data: {title: 'LISTA DE CARGOS', urls: [{
-                        title: 'INICIO', url: '/acceso/dashboard'}, {
-                        title: 'NUEVO REGISTRO', url: '/tipousuarios/crear' }, {
-                        title: 'CARGO USUARIO'}]
+                    data: {
+                        title: 'LISTA DE CARGOS', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: '/tipousuarios/crear'
+                        }, {
+                            title: 'CARGO USUARIO'
+                        }]
                     }
                 }, {
                     path: 'crear',
                     component: TipousuarioCreateComponent,
-                    data: {title: 'CREAR CARGO', urls: [{
-                        title: 'INICIO', url: '/acceso/dashboard' }, {
-                        title: 'LISTADO', url: '/tipousuarios/listar' }, {
-                        title: 'NUEVO REGISTRO'}]
+                    data: {
+                        title: 'CREAR CARGO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/tipousuarios/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
                     }
                 }, {
                     path: 'editar/:id',
                     component: TipousuarioEditComponent,
-                    data: {title: 'EDITAR CARGO', urls: [{
-                        title: 'INICIO', url: '/acceso/dashboard'}, {
-                        title: 'LISTADO', url: '/tipousuarios/listar' }, {
-                        title: 'MODIFICACIÓN'}]
+                    data: {
+                        title: 'EDITAR CARGO', urls: [{
+                            title: 'INICIO', url: '/acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: '/tipousuarios/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
                     }
                 }]
             },
@@ -338,7 +351,8 @@ const routes: Routes = [
                         }]
                     }
                 }]
-            }];
+            }]
+    }];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
