@@ -51,12 +51,6 @@ Table OF Contents
 	01 -> GENERAL
 ===========================================================*/
 
-/*@import "bootstrap.min.css";*/
-/*@import "slick.css";
-@import "slick-theme.css";
-@import "nouislider.min.css";
-@import "font-awesome.min.css";*/
-
 /*----------------------------*\
 	Typography
 \*----------------------------*/
@@ -64,7 +58,8 @@ Table OF Contents
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #333;
+  color: white;
+  background-color: whitesmoke;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -4,8 +4,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
     {
-        path: '',
+        path: 'admin',
         loadChildren: './pages/pages.module#PagesModule'
+    }, {
+        path: '',
+        loadChildren: './inicio/inicio.module#InicioModule'
+    },
+    {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: 'full'
     },
     { path: '**', redirectTo: '' }
 ];

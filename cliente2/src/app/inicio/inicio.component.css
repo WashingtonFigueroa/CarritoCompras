@@ -1,0 +1,10 @@
+body {
+  background-color: whitesmoke;
+}
+.container{
+  background-color: whitesmoke;
+  min-height: 450px;
+}
+.container > .row {
+  background-color: whitesmoke;
+}
