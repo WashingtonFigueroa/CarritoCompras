@@ -47,6 +47,10 @@ import {CategoriasService} from './component/categorias/categorias.service';
 import {ProductoService} from './component/producto/producto.service';
 import {ArticulosService} from './component/articulos/articulos.service';
 import {ComprasService} from './component/compras/compras.service';
+import { DescripcionProductoComponent } from './component/descripcion-producto/descripcion-producto.component';
+import { DescripcionProductoIndexComponent } from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
+import { DescripcionProductoCreateComponent } from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
+import { DescripcionProductoEditComponent } from './component/descripcion-producto/descripcion-producto-edit/descripcion-producto-edit.component';
 
 @NgModule({
     imports: [
@@ -90,7 +94,11 @@ import {ComprasService} from './component/compras/compras.service';
         ComprasCreateComponent,
         CategoriasIndexComponent,
         CategoriasEditComponent,
-        CategoriasCreateComponent
+        CategoriasCreateComponent,
+        DescripcionProductoComponent,
+        DescripcionProductoIndexComponent,
+        DescripcionProductoCreateComponent,
+        DescripcionProductoEditComponent
     ],
     providers: [
         TipousuarioService,

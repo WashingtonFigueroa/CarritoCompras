@@ -90,6 +90,10 @@ export class ProductoIndexComponent implements OnInit {
         this.router.navigate([this.environment.admin + '/productos/editar/' + id]);
     }
 
+    getDescripcionProductos(producto_id) {
+      this.router.navigate([this.environment.admin + '/descripcion-productos/' + producto_id + '/listar']);
+    }
+
     private getDismissReason(reason: any): string {
         if (reason === ModalDismissReasons.ESC) {
             return 'by pressing ESC';

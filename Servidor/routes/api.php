@@ -41,3 +41,7 @@ Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['cre
 Route::resource('imagenes', 'ImagenController', ['except' => ['create', 'edit']]);
 Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
 Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);
+
+/*custom controllers*/
+Route::get('listar_descripcion_productos/{producto_id}', 'ProductoController@listar_descripcion_productos');
+Route::post('buscar_descripcion_productos', 'DescripcionProductoController@buscar_descripcion_productos');

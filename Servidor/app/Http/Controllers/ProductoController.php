@@ -48,4 +48,8 @@ class ProductoController extends Controller
         $producto->delete();
         return response()->json($producto, 200);
     }
+    public function listar_descripcion_productos($producto_id) {
+        $descripcion_productos = Producto::find($producto_id)->descripcionProductos()->paginate(10);
+        return response()->json($descripcion_productos, 200);
+    }
 }

@@ -29,6 +29,9 @@ import {ComprasComponent} from './component/compras/compras.component';
 import {ComprasIndexComponent} from './component/compras/compras-index/compras-index.component';
 import {ComprasCreateComponent} from './component/compras/compras-create/compras-create.component';
 import {ComprasEditComponent} from './component/compras/compras-edit/compras-edit.component';
+import {DescripcionProductoComponent} from './component/descripcion-producto/descripcion-producto.component';
+import {DescripcionProductoIndexComponent} from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
+import {DescripcionProductoCreateComponent} from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
 
 const routes: Routes = [
     {
@@ -46,6 +49,55 @@ const routes: Routes = [
                         title: 'Bienvenidos'
                     }
                 }]
+            },
+            {
+              path: 'descripcion-productos/:producto_id',
+              component: DescripcionProductoComponent,
+              children: [
+                { path: '', redirectTo: 'listar', pathMatch: 'full'},
+                {
+                  path: 'listar',
+                  component: DescripcionProductoIndexComponent,
+                  data: {
+                    title: 'LISTA DE DETALLE DE PRODUCTOS',
+                    urls: [{
+                      title: 'INICIO', url: 'acceso/dashboard'
+                    }, {
+                      title: 'NUEVO REGISTRO', url: '/crear'
+                    }, {
+                      title: 'DETALLE DE PRODUCTOS'
+                    }]
+                  }
+                },
+                {
+                  path: 'crear',
+                  component: DescripcionProductoCreateComponent,
+                  data: {
+                    title: 'CREA DETALLE DE PRODUCTO',
+                    urls: [{
+                      title: 'INICIO', url: 'acceso/dashboard'
+                    }, {
+                      title: 'LISTADO DE PRODUCTOS', url: 'descripcion-productos/listar'
+                    }, {
+                      title: 'CREAR PRODUCTO'
+                    }]
+                  }
+                },
+                {
+                  path: 'editar/:id',
+                  component: DescripcionProductoCreateComponent,
+                  data: {
+                    title: 'EDITAR DETALLE DE PRODUCTO',
+                    urls: [{
+                      title: 'INICIO', url: 'acceso/dashboard'
+                    }, {
+                      title: 'LISTADO DE PRODUCTOS', url: 'descripcion-productos/listar'
+                    }, {
+                      title: 'EDITAR PRODUCTO'
+                    }]
+                  }
+                },
+              ]
             },
             // rutas  tipo usuariuo
             {

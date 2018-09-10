@@ -33,13 +33,13 @@
                 #
               </th>
               <th>
-                Categoria
+                Nombre
               </th>
               <th>
-                Material
+                Descripcion
               </th>
               <th>
-                Color
+                Precio
               </th>
               <th>
                 Acciones
@@ -47,23 +47,20 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let producto of productos; let i = index">
+            <tr *ngFor="let descripcion_producto of descripcion_productos; let i = index">
               <td>
-                {{ producto.producto_id }}
+                {{ i + 1 }}
               </td>
               <td>
-                {{ producto.categoria.nombre }}
+                {{ descripcion_producto.nombre }}
               </td>
               <td>
-                {{ producto.material }}
+                {{ descripcion_producto.descripcion }}
               </td>
               <td>
-                <span class="color" [ngStyle]="{'background-color': producto.color }"></span>
+                {{ descripcion_producto.precio }}
               </td>
               <td align="center">
-                <button type="button" (click)="getDescripcionProductos(producto.producto_id)" class="btn btn-success">
-                  <i class="fa fa-product-hunt"></i>
-                </button>
                 &nbsp;&nbsp;
                 <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>

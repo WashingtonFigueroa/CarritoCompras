@@ -35,4 +35,13 @@ class DescripcionProductoController extends Controller
         $descripcion_producto->delete();
         return response()->json($descripcion_producto, 200);
     }
+
+    public function buscar_descripcion_productos() {
+        $search = request()->input('search');
+        $descripcion_productos = DescripcionProducto::where('nombre', 'like', '%'. $search .'%')
+                                                    ->orWhere('descripcion', 'like', '%' . $search . '%')
+                                                    ->orWhere('precio', 'like', 'like', '%'. $search. '%')
+                                                    ->paginate(10);
+        return response()->json($descripcion_productos);
+    }
 }

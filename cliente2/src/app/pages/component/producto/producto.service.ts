@@ -33,4 +33,7 @@ export class ProductoService {
     lista_productos() {
         return this.http.get(this.base + 'lista_productos');
     }
+    listar_descripcion_productos(producto_id) {
+        return this.http.get(`${this.base}listar_descripcion_productos/${producto_id}`);
+    }
 }
