@@ -18,11 +18,23 @@ use Illuminate\Http\Request;
 });*/
 
 Route::post('login', 'AuthController@login');
-Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', 'destroy']]);
+
 Route::resource('tipo_usuarios', 'TipoUsuarioController', ['except' => ['create', 'edit']]);
+Route::post('buscar_tipousuarios','TipoUsuarioController@buscar_tipousuarios');
+Route::get('lista_tipousuarios','TipoUsuarioController@lista_tipousuarios');
+
+Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', 'destroy']]);
+
 Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', 'edit']]);
+
 Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit']]);
+Route::post('buscar_categorias','CategoriaController@buscar_categorias');
+Route::get('lista_categorias','CategoriaController@lista_categorias');
+
 Route::resource('productos', 'ProductoController', ['except' => ['create', 'edit']]);
+Route::post('buscar_productos','ProductoController@buscar_productos');
+Route::get('lista_productos','ProductoController@lista_productos');
+
 Route::resource('descripcion_productos', 'DescripcionProductoController', ['except' => ['create', 'edit']]);
 Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);

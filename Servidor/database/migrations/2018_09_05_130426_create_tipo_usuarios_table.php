@@ -17,7 +17,7 @@ class CreateTipoUsuariosTable extends Migration
             $table->increments('tipo_usuario_id');
             $table->string('nombre');
             $table->string('descripcion');
-            $table->boolean('estado')->default(true);
+            $table->string('estado');
             $table->softDeletes();
             $table->timestamps();
         });

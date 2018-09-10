@@ -20,7 +20,7 @@ export class UsuarioCreateComponent implements OnInit {
                 protected router: Router,
     //            protected toartr: ToastrService
     ) {
-        this.tipoService.listaCargos().subscribe(res => this.tipos = res);
+        this.tipoService.lista_tipousuarios().subscribe(res => this.tipos = res);
         this.createForm();
     }
 
@@ -33,7 +33,8 @@ export class UsuarioCreateComponent implements OnInit {
             'nombres' : new FormControl('', [Validators.required]),
             'cuenta' : new FormControl('', [Validators.required]),
             'password' : new FormControl('', [Validators.required]),
-            'password_confirmation' : new FormControl('', [Validators.required])
+            'password_confirmation' : new FormControl('', [Validators.required]),
+            'puntos' : new FormControl(0)
         });
     }
 
