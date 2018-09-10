@@ -23,9 +23,9 @@ class CreateProductosTable extends Migration
             $table->integer('stock')->unsigned();
             $table->string('material');
             $table->string('color');
-            $table->float('largo');
-            $table->float('ancho');
-            $table->float('alto');
+            $table->string('largo');
+            $table->string('ancho');
+            $table->string('alto');
             $table->integer('puntos')->unsigned();
             $table->softDeletes();
             $table->timestamps();

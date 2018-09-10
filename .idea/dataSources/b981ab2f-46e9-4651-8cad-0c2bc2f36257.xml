@@ -1473,19 +1473,19 @@
     </column>
     <column id="341" parent="258" name="largo">
       <Position>6</Position>
-      <DataType>double(8,2 digit)|0s</DataType>
+      <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="342" parent="258" name="ancho">
       <Position>7</Position>
-      <DataType>double(8,2 digit)|0s</DataType>
+      <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="343" parent="258" name="alto">
       <Position>8</Position>
-      <DataType>double(8,2 digit)|0s</DataType>
+      <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

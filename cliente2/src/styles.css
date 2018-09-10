@@ -18,3 +18,8 @@
   width: 100%;
   color: #e63e5c;
 }
+.color {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}

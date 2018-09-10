@@ -58,9 +58,13 @@
                 {{ producto.material }}
               </td>
               <td>
-                {{ producto.color }}
+                <span class="color" [ngStyle]="{'background-color': producto.color }"></span>
               </td>
               <td align="center">
+                <button type="button" class="btn btn-success">
+                  <i class="fa fa-product-hunt"></i>
+                </button>
+                &nbsp;&nbsp;
                 <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
                 </button>
