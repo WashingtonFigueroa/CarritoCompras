@@ -11,6 +11,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker\Factory::create();
+
+        for($i = 0; $i < 5; $i++) {
+            App\Categoria::create([
+                'nombre' => $faker->word,
+                'descripcion' => $faker->sentence
+            ]);
+        }
         // $this->call(UsersTableSeeder::class);
     }
 }

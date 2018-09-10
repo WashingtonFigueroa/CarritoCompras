@@ -6,12 +6,14 @@ import {InicioComponent} from './inicio.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import { ProductosComponent } from './productos/productos.component';
+import {InicioService} from './inicio.service';
 
 @NgModule({
   imports: [
     CommonModule,
     InicioRoutingModule
   ],
-  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent]
+  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent],
+  providers: [InicioService]
 })
 export class InicioModule { }
