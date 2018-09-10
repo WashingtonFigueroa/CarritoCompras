@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../../../environments/environment.prod";
-import {TipousuarioService} from "../../tipousuario/tipousuario.service";
-import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {Router} from "@angular/router";
-import {CategoriasService} from "../categorias.service";
+import {environment} from '../../../../../environments/environment.prod';
+import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from '@angular/router';
+import {CategoriasService} from '../categorias.service';
 
 @Component({
   selector: 'app-categorias-index',
@@ -88,7 +87,7 @@ export class CategoriasIndexComponent implements OnInit {
     }
 
     edit(id) {
-        this.router.navigate(['/categorias/editar/' + id]);
+        this.router.navigate([this.environment.admin + '/categorias/editar/' + id]);
     }
 
     private getDismissReason(reason: any): string {

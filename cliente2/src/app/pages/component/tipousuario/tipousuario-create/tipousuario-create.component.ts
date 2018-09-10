@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {TipousuarioService} from '../tipousuario.service';
 import {Router} from '@angular/router';
+import {environment} from '../../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-tipousuario-create',
@@ -32,7 +33,7 @@ export class TipousuarioCreateComponent implements OnInit {
     store() {
         this.tipousuarioService.store(this.tipousuarioGroup.value)
             .subscribe(res => {
-                this.router.navigate(['tipousuarios/listar']);
+                this.router.navigate([environment.admin + '/tipousuarios/listar']);
                 // this.toastr.success('Cargo Guardado','Ok')
             }, ( error => {
                 // this.toastr.error('Cargo Registrado','Error Cargos');

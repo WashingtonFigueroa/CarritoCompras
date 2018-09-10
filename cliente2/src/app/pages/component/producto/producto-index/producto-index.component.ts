@@ -87,7 +87,7 @@ export class ProductoIndexComponent implements OnInit {
     }
 
     edit(id) {
-        this.router.navigate(['productos/editar/' + id]);
+        this.router.navigate([this.environment.admin + '/productos/editar/' + id]);
     }
 
     private getDismissReason(reason: any): string {

@@ -8,7 +8,7 @@
   <div class="col-md-7 align-self-center">
     <ol class="breadcrumb">
       <ng-template ngFor let-url [ngForOf]="pageInfo?.urls" let-last="last">
-        <li class="breadcrumb-item" *ngIf="!last" [routerLink]="url.url">
+        <li class="breadcrumb-item" *ngIf="!last" [routerLink]="[url.url]">
           <a href='javascript:void(0)'>{{url.title}}</a>
         </li>
         <li class="breadcrumb-item active" *ngIf="last">{{url.title}}</li>

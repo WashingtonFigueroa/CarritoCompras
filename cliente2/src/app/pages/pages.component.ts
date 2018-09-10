@@ -11,9 +11,9 @@ export class PageComponent implements OnInit {
     constructor(public router: Router) { }
 
     ngOnInit() {
-        if (this.router.url === '/') {
+/*        if (this.router.url === '/') {
             this.router.navigate(['/starter']);
-        }
+        }*/
     }
 
 }

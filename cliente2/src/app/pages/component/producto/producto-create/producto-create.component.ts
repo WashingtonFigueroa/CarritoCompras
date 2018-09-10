@@ -3,6 +3,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {ProductoService} from '../producto.service';
 import {CategoriasService} from '../../categorias/categorias.service';
+import {environment} from '../../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-producto-create',
@@ -46,7 +47,7 @@ export class ProductoCreateComponent implements OnInit {
               if (res.error) {
                   console.log(res.error);
               } else {
-                  this.router.navigate(['/productos']);
+                  this.router.navigate([environment.admin + '/productos']);
                   // this.toartr.success('Usuario Guardado', 'Ok');
               }
           }, error => {

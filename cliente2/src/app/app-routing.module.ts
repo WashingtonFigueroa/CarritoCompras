@@ -7,7 +7,7 @@ const routes: Routes = [
         path: 'admin',
         loadChildren: './pages/pages.module#PagesModule'
     }, {
-        path: '',
+        path: 'inicio',
         loadChildren: './inicio/inicio.module#InicioModule'
     },
     {
@@ -15,7 +15,7 @@ const routes: Routes = [
         redirectTo: 'inicio',
         pathMatch: 'full'
     },
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'inicio' }
 ];
 
 @NgModule({

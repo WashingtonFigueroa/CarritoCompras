@@ -91,7 +91,6 @@ import {ComprasService} from './component/compras/compras.service';
         CategoriasIndexComponent,
         CategoriasEditComponent,
         CategoriasCreateComponent
-
     ],
     providers: [
         TipousuarioService,

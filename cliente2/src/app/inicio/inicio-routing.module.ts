@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {InicioComponent} from './inicio.component';
+import {ProductosComponent} from './productos/productos.component';
 
 const routes: Routes = [
   {
     path : '',
-    component: InicioComponent
+    component: InicioComponent,
+    children: [
+      {
+        path: '',
+        component: ProductosComponent
+      }
+    ]
   }, {
-    path: '**', component: InicioComponent
+    path: '**', redirectTo: ''
   }
 ];
 

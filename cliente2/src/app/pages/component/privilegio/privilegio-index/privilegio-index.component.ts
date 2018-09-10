@@ -32,14 +32,14 @@ export class PrivilegioIndexComponent implements OnInit {
                 protected privilegioService: PrivilegioService,
                // protected toastr: ToastrService,
                 protected router: Router) {
-        this.tipoUsuarioService.listaCargos().subscribe(res => this.tipo_usuarios = res);
+        this.tipoUsuarioService.lista_tipousuarios().subscribe(res => this.tipo_usuarios = res);
     }
 
     ngOnInit() {
     }
 
     loadPrivilegios(idtipo) {
-        this.tipoUsuarioService.listaPrivilegios(idtipo)
+/*        this.tipoUsuarioService.listaPrivilegios(idtipo)
             .subscribe((privilegios: any) => {
                 const lista = privilegios;
                 lista.map(privilegio => {
@@ -60,7 +60,7 @@ export class PrivilegioIndexComponent implements OnInit {
                         case 'facturas': this.privilegio.facturas = privilegio.estado; break;
                     }
                 });
-            });
+            });*/
     }
     update() {
 

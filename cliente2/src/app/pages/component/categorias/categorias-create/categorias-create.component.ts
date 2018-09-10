@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {CategoriasService} from '../categorias.service';
+import { environment } from '../../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-categorias-create',
@@ -31,7 +32,7 @@ export class CategoriasCreateComponent implements OnInit {
     store() {
         this.categotiaService.store(this.categoriaGroup.value)
             .subscribe(res => {
-                this.router.navigate(['categorias/listar']);
+                this.router.navigate([ environment.admin + '/categorias/listar']);
                 // this.toastr.success('Cargo Guardado','Ok')
             }, ( error => {
                 // this.toastr.error('Cargo Registrado','Error Cargos');

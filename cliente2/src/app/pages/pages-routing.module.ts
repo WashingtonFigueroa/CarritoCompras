@@ -57,9 +57,9 @@ const routes: Routes = [
                     component: TipousuarioIndexComponent,
                     data: {
                         title: 'LISTA DE CARGOS', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'NUEVO REGISTRO', url: '/tipousuarios/crear'
+                            title: 'NUEVO REGISTRO', url: 'tipousuarios/crear'
                         }, {
                             title: 'CARGO USUARIO'
                         }]
@@ -69,9 +69,9 @@ const routes: Routes = [
                     component: TipousuarioCreateComponent,
                     data: {
                         title: 'CREAR CARGO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/tipousuarios/listar'
+                            title: 'LISTADO', url: 'tipousuarios/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -81,9 +81,9 @@ const routes: Routes = [
                     component: TipousuarioEditComponent,
                     data: {
                         title: 'EDITAR CARGO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/tipousuarios/listar'
+                            title: 'LISTADO', url: 'tipousuarios/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -106,10 +106,10 @@ const routes: Routes = [
                         title: 'LISTA USUARIOS',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'NUEVO REGISTRO',
-                            url: '/usuarios/crear'
+                            url: 'usuarios/crear'
                         }, {
                             title: 'USUARIOS'
                         }]
@@ -121,10 +121,10 @@ const routes: Routes = [
                         title: 'CREAR USUARIO',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'LISTADO',
-                            url: '/usuarios/listar'
+                            url: 'usuarios/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -136,10 +136,10 @@ const routes: Routes = [
                         title: 'EDITAR USUARIOS',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'LISTADO',
-                            url: '/usuarios/listar'
+                            url: 'usuarios/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -159,7 +159,7 @@ const routes: Routes = [
                         title: 'ADMINISTRAR PRIVILEGIO',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'ASIGNACIÓN PRIVILEGIO'
                         }]
@@ -171,7 +171,7 @@ const routes: Routes = [
                         title: 'ADMINISTRAR PRIVILEGIO',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'ASIGNACIÓN PRIVILEGIO'
                         }]
@@ -183,10 +183,10 @@ const routes: Routes = [
                         title: 'EDITAR PRIVILEGIO',
                         urls: [{
                             title: 'INICIO',
-                            url: '/acceso/dashboard'
+                            url: 'acceso/dashboard'
                         }, {
                             title: 'LISTADO',
-                            url: '/privilegios/listar'
+                            url: 'privilegios/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -203,9 +203,9 @@ const routes: Routes = [
                     component: CategoriasIndexComponent,
                     data: {
                         title: 'LISTA DE CATEGORIAS', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'NUEVO REGISTRO', url: '/categorias/crear'
+                            title: 'NUEVO REGISTRO', url: 'categorias/crear'
                         }, {
                             title: 'CATEGORIA USUARIO'
                         }]
@@ -215,9 +215,9 @@ const routes: Routes = [
                     component: CategoriasCreateComponent,
                     data: {
                         title: 'CREAR CATEGORIA', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/categorias/listar'
+                            title: 'LISTADO', url: 'categorias/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -227,9 +227,9 @@ const routes: Routes = [
                     component: CategoriasEditComponent,
                     data: {
                         title: 'EDITAR CATEGORIA', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/categorias/listar'
+                            title: 'LISTADO', url: 'categorias/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -246,9 +246,9 @@ const routes: Routes = [
                     component: ProductoIndexComponent,
                     data: {
                         title: 'LISTA DE PRODUCTOS', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'NUEVO REGISTRO', url: '/productos/crear'
+                            title: 'NUEVO REGISTRO', url: 'productos/crear'
                         }, {
                             title: 'PRODUCTO USUARIO'
                         }]
@@ -258,9 +258,9 @@ const routes: Routes = [
                     component: ProductoCreateComponent,
                     data: {
                         title: 'CREAR PRODUCTO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/productos/listar'
+                            title: 'LISTADO', url: 'productos/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -270,9 +270,9 @@ const routes: Routes = [
                     component: ProductoEditComponent,
                     data: {
                         title: 'EDITAR PRODUCTO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/productos/listar'
+                            title: 'LISTADO', url: 'productos/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -289,9 +289,9 @@ const routes: Routes = [
                     component: ArticulosIndexComponent,
                     data: {
                         title: 'LISTA DE ARTICULOS', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'NUEVO REGISTRO', url: '/articulos/crear'
+                            title: 'NUEVO REGISTRO', url: 'articulos/crear'
                         }, {
                             title: 'ARTICULO USUARIO'
                         }]
@@ -301,9 +301,9 @@ const routes: Routes = [
                     component: ArticulosCreateComponent,
                     data: {
                         title: 'CREAR ARTICULO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/articulos/listar'
+                            title: 'LISTADO', url: 'articulos/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -313,9 +313,9 @@ const routes: Routes = [
                     component: ArticulosEditComponent,
                     data: {
                         title: 'EDITAR ARTICULO', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/articulos/listar'
+                            title: 'LISTADO', url: 'articulos/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
@@ -332,9 +332,9 @@ const routes: Routes = [
                     component: ComprasIndexComponent,
                     data: {
                         title: 'LISTA DE COMPRAS', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'NUEVO REGISTRO', url: '/compras/crear'
+                            title: 'NUEVO REGISTRO', url: 'compras/crear'
                         }, {
                             title: 'COMPRA USUARIO'
                         }]
@@ -344,9 +344,9 @@ const routes: Routes = [
                     component: ComprasCreateComponent,
                     data: {
                         title: 'CREAR COMPRA', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/compras/listar'
+                            title: 'LISTADO', url: 'compras/listar'
                         }, {
                             title: 'NUEVO REGISTRO'
                         }]
@@ -356,9 +356,9 @@ const routes: Routes = [
                     component: ComprasEditComponent,
                     data: {
                         title: 'EDITAR COMPRA', urls: [{
-                            title: 'INICIO', url: '/acceso/dashboard'
+                            title: 'INICIO', url: 'acceso/dashboard'
                         }, {
-                            title: 'LISTADO', url: '/compras/listar'
+                            title: 'LISTADO', url: 'compras/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
