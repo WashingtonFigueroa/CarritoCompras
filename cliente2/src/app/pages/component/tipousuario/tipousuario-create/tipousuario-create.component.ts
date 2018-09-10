@@ -32,7 +32,7 @@ export class TipousuarioCreateComponent implements OnInit {
     store() {
         this.tipousuarioService.store(this.tipousuarioGroup.value)
             .subscribe(res => {
-                this.router.navigate(['acceso/component/tipousuarios']);
+                this.router.navigate(['tipousuarios/listar']);
                 // this.toastr.success('Cargo Guardado','Ok')
             }, ( error => {
                 // this.toastr.error('Cargo Registrado','Error Cargos');

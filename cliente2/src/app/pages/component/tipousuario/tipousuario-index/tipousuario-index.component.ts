@@ -11,13 +11,10 @@ import {Router} from '@angular/router';
 })
 export class TipousuarioIndexComponent implements OnInit {
     tipousuarios: any = [];
-    tipousuariosBK: any = [];
-
     index: number = null;
     tipo_usuario_id: number = null;
     closeResult: string;
     search = '';
-
     pages: any = [];
     prev_page: any = null;
     next_page: any = null;
@@ -30,14 +27,24 @@ export class TipousuarioIndexComponent implements OnInit {
     ngOnInit() {
         this.tipousuarioService.index().subscribe((res: any) => {
             this.tipousuarios = res.data;
-            this.tipousuariosBK = res.data;
             this.getPages(res.last_page);
             this.prev_page = res.prev_page_url;
             this.next_page = res.next_page_url;
         });
     }
 
+    buscar(search) {
+        this.tipousuarioService.buscar_tipousuarios({search: search})
+            .subscribe((res: any) => {
+                this.tipousuarios = res.data;
+                this.getPages(res.last_page);
+                this.prev_page = res.prev_page_url;
+                this.next_page = res.next_page_url;
+            });
+    }
+
     getPages(last_page) {
+        this.pages = [];
         for (let i = 1; i <= last_page; i++ ) {
             this.pages.push(
                 {
@@ -70,12 +77,6 @@ export class TipousuarioIndexComponent implements OnInit {
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
-    }
-
-    buscar(search) {
-        this.tipousuarios = this.tipousuariosBK.filter((tipo: any) => {
-            return tipo.nombre.toLowerCase().indexOf(search) > -1;
-        });
     }
 
     destroy(index, id) {
@@ -113,5 +114,5 @@ export class TipousuarioIndexComponent implements OnInit {
             console.log('cancel');
             this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
         });
-    }
+        }
 }

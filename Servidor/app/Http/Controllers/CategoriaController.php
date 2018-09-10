@@ -12,6 +12,19 @@ class CategoriaController extends Controller
         return response()->json(Categoria::orderBy('nombre')->paginate(10), 200);
     }
 
+    public function lista_categorias()
+    {
+        return response()->json(Categoria::orderBy('nombre')->get(), 200);
+    }
+
+    public function buscar_categorias() {
+        $search = request()->input('search');
+        $categoria = Categoria::where('nombre', 'like', '%'. $search . '%')
+            ->orWhere('descripcion', 'like', '%'. $search . '%')
+            ->paginate(10);
+        return response()->json($categoria, 200);
+    }
+
     public function store(Request $request)
     {
         return response()->json(Categoria::create($request->all()), 201);

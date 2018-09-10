@@ -18,6 +18,7 @@ class Producto extends Model
         'largo',
         'ancho',
         'alto',
+        'puntos',
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];
@@ -26,6 +27,9 @@ class Producto extends Model
     }
     public function promociones() {
         return $this->hasMany(Promocion::class, 'producto_id');
+    }
+    public function categoria() {
+        return $this->belongsTo(Categoria::class, 'categoria_id');
     }
     public static function boot()
     {

@@ -9,9 +9,22 @@ class ProductoController extends Controller
 {
     public function index()
     {
-        return response()->json(Producto::orderBy('material')->paginate(10), 200);
+        return response()->json(Producto::with('categoria')
+                                    ->orderBy('categoria_id')->paginate(10), 200);
+    }
+    public function lista_productos()
+    {
+        return response()->json(Producto::orderBy('categoria_id')->get(), 200);
     }
 
+    public function buscar_productos() {
+        $search = request()->input('search');
+        $tipousuarios = Producto::with('categoria')
+            ->where('material', 'like', '%'. $search . '%')
+            ->orWhere('color', 'like', '%'. $search . '%')
+            ->paginate(10);
+        return response()->json($tipousuarios, 200);
+    }
     public function store(Request $request)
     {
         return response()->json(Producto::create($request->all()), 201);

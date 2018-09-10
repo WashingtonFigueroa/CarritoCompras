@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {environment} from "../../../../environments/environment.prod";
-import {HttpClient} from "@angular/common/http";
+import {environment} from '../../../../environments/environment.prod';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +28,10 @@ export class UsuarioService {
     destroy(id) {
         return this.http.delete(this.base + 'usuarios/' + id );
     }
-    listaUsuarios() {
-        return this.http.get(this.base + 'lista_usuarios');
+    buscar_tipousuarios(search) {
+        return this.http.post(`${environment.base}buscar_tipousuarios`, search);
+    }
+    lista_tipousuarios() {
+        return this.http.get(this.base + 'lista_tipousuarios');
     }
 }

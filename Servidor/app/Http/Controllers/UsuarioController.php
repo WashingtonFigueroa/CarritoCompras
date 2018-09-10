@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
     public function index() {
-        return response()->json(Usuario::orderBy('nombres')->paginate(10), 200);
+        return response()->json(Usuario::with('tipoUsuario')
+                        ->orderBy('nombres')->paginate(10), 200);
     }
     public function store() {
         $usuario = new Usuario();
