@@ -22,7 +22,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-4">
-              <input type="search" *ngIf="productos !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar producto.." class="form-control">
+              <input type="search" *ngIf="promociones !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar promocion.." class="form-control">
             </div>
           </div>
           <hr>
@@ -33,22 +33,19 @@
                 #
               </th>
               <th>
-                Categoria
+                Producto
               </th>
               <th>
-                Material
-              </th>
-              <th>
-                Color Primario
-              </th>
-              <th>
-                Color Secundario
-              </th>
-              <th>
-                Talla
+                Detalle
               </th>
               <th>
                 Puntos
+              </th>
+              <th>
+                Stock
+              </th>
+              <th>
+                Estado
               </th>
               <th>
                 Acciones
@@ -56,38 +53,31 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let producto of productos; let i = index">
+            <tr *ngFor="let promocion of promociones; let i = index">
               <td>
-                {{ producto.producto_id }}
+                {{ promocion.promocion_id }}
               </td>
               <td>
-                {{ producto.categoria.nombre }}
+                {{ promocion.producto.material }}
               </td>
               <td>
-                {{ producto.material }}
+                {{ promocion.detalle }}
               </td>
               <td>
-                <span class="color1" [ngStyle]="{'background-color': producto.color1 }"></span>
+                {{ promocion.puntos }}
               </td>
               <td>
-                <span class="color2" [ngStyle]="{'background-color': producto.color2 }"></span>
+                {{ promocion.stock }}
               </td>
               <td>
-                {{ producto.talla }}
-              </td>
-              <td>
-                {{ producto.puntos }}
+                {{ promocion.estado }}
               </td>
               <td align="center">
-                <button type="button" (click)="getDescripcionProductos(producto.producto_id)" class="btn btn-success">
-                  <i class="fa fa-product-hunt"></i>
-                </button>
-                &nbsp;&nbsp;
-                <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
+                <button (click)="edit(promocion.promocion_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
                 </button>
                 &nbsp;&nbsp;
-                <button type="button" class="btn btn-danger" (click)="confirm(i, producto.producto_id,confirmModal)">
+                <button type="button" class="btn btn-danger" (click)="confirm(i, promocion.promocion_id,confirmModal)">
                   <i class="fa fa-eraser" aria-hidden="true"></i>
                 </button>
               </td>
@@ -95,7 +85,7 @@
             </tbody>
           </table>
           <!-- end table-->
-          <div class="container-fluid" *ngIf="productos !== null">
+          <div class="container-fluid" *ngIf="promociones !== null">
             <div class="row">
               <div class="col-md-12">
                 <nav>

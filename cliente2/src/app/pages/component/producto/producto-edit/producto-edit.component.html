@@ -1,3 +1,71 @@
-<p>
-  producto-edit works!
-</p>
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="row">
+        <div class="col-md-8">
+          <form (submit)="update()" role="form" [formGroup]="productoGroup" *ngIf="producto !== null">
+            <div class="card">
+              <h5 class="card-header" style="color: #f7f7f7; background: #2e6da4">
+                Información Producto
+              </h5>
+              <div class="card-body">
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="categoria_id"> * Seleccione categoria </span>
+                  </div>
+                  <select class="form-control" formControlName="categoria_id">
+                    <option [value]="categoria.categoria_id"
+                            [selected]="categoria.categoria_id === categoria.categoria_id"
+                            *ngFor="let categoria of categorias">
+                      {{ categoria.nombre }}
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="tipo">Stock: </span>
+                  </div>
+                  <input type="number" class="form-control" id="stock" formControlName="stock" name="stock"/>
+                </div>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="cue">Material:</span>
+                  </div>
+                  <input type="text" class="form-control" id="material" formControlName="material" name="material"/>
+                </div>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="co1">Color Primario:</span>
+                  </div>
+                  <input type="text" class="form-control" id="color1" formControlName="color1" name="color1"/>
+                </div>
+                <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="co2">Color Secundario:</span>
+                </div>
+                <input type="text" class="form-control" id="color2" formControlName="color2" name="color2"/>
+              </div>
+              <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ta">Talla:</span>
+                </div>
+                <input type="text" class="form-control" id="talla" formControlName="talla" name="talla"/>
+              </div>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="punt">Puntos:</span>
+                  </div>
+                  <input type="text" class="form-control" id="puntos" formControlName="puntos" name="puntos"/>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button [disabled]="productoGroup.status === 'INVALID'" type="submit" class="btn btn-success">
+                  Actualizar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

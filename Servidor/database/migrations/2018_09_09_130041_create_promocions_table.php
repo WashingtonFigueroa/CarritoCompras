@@ -22,6 +22,7 @@ class CreatePromocionsTable extends Migration
                 ->onDelete('cascade');
             $table->text('detalle');
             $table->integer('puntos')->unsigned();
+            $table->integer('stock')->unsigned();
             $table->boolean('estado');
             $table->softDeletes();
             $table->timestamps();

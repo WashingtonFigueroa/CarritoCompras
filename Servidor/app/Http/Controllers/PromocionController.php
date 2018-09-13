@@ -9,7 +9,21 @@ class PromocionController extends Controller
 {
     public function index()
     {
-        return response()->json(Promocion::orderBy('detalle')->paginate(10), 200);
+        return response()->json(Promocion::with('producto')
+                                        ->orderBy('detalle')->paginate(10), 200);
+    }
+
+    public function lista_promociones()
+    {
+        return response()->json(Promocion::orderBy('detalle')->get(), 200);
+    }
+
+    public function buscar_promociones() {
+        $search = request()->input('search');
+        $promocion = Promocion::with('producto')
+            ->where('detalle', 'like', '%'. $search . '%')
+            ->paginate(10);
+        return response()->json($promocion, 200);
     }
 
     public function store(Request $request)

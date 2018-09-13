@@ -51,6 +51,11 @@ import { DescripcionProductoComponent } from './component/descripcion-producto/d
 import { DescripcionProductoIndexComponent } from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
 import { DescripcionProductoCreateComponent } from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
 import { DescripcionProductoEditComponent } from './component/descripcion-producto/descripcion-producto-edit/descripcion-producto-edit.component';
+import { PromocionComponent } from './component/promocion/promocion.component';
+import { PromocionIndexComponent } from './component/promocion/promocion-index/promocion-index.component';
+import { PromocionEditComponent } from './component/promocion/promocion-edit/promocion-edit.component';
+import { PromocionCreateComponent } from './component/promocion/promocion-create/promocion-create.component';
+import {PromocionService} from "./component/promocion/promocion.service";
 
 @NgModule({
     imports: [
@@ -98,7 +103,11 @@ import { DescripcionProductoEditComponent } from './component/descripcion-produc
         DescripcionProductoComponent,
         DescripcionProductoIndexComponent,
         DescripcionProductoCreateComponent,
-        DescripcionProductoEditComponent
+        DescripcionProductoEditComponent,
+        PromocionComponent,
+        PromocionIndexComponent,
+        PromocionEditComponent,
+        PromocionCreateComponent
     ],
     providers: [
         TipousuarioService,
@@ -107,7 +116,8 @@ import { DescripcionProductoEditComponent } from './component/descripcion-produc
         CategoriasService,
         ProductoService,
         ArticulosService,
-        ComprasService
+        ComprasService,
+        PromocionService
     ]
 })
 export class PagesModule { }

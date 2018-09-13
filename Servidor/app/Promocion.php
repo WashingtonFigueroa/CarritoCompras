@@ -14,6 +14,7 @@ class Promocion extends Model
         'producto_id',
         'detalle',
         'puntos',
+        'stock',
         'estado',
     ];
     protected $dates = ['deleted_at'];
