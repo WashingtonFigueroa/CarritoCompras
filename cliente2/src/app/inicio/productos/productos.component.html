@@ -1,6 +1,6 @@
 <!-- section title -->
 <div class="row content-frado bg-white">
-  <div class="offset-md-1 col-md-10">
+  <div class="col-xs-12 offset-md-1 col-md-10">
     <div class="section-title">
       <h3 class="title">Nuevos Productos</h3>
       <div class="section-nav">
@@ -10,6 +10,19 @@
           <li><a data-toggle="tab" href="#tab1">Corbatas</a></li>
           <li><a data-toggle="tab" href="#tab1">Accesorios</a></li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="offset-md-6 col-md-6">
+      <div class="form-group">
+        <label for="categoria">Categoria</label>
+        <select name="" id="categoria" class="form-control">
+          <option [value]="categoria.categoria_id" *ngFor="let categoria of categorias">
+            {{ categoria.nombre }}
+          </option>
+        </select>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {InicioService} from '../inicio.service';
 
 @Component({
@@ -8,7 +8,9 @@ import {InicioService} from '../inicio.service';
 })
 export class HeaderComponent implements OnInit {
 
+  displayCart = false;
   categorias: any = null;
+
   constructor(private inicioService: InicioService) {
   }
 
@@ -18,7 +20,11 @@ export class HeaderComponent implements OnInit {
         console.log(res);
         this.categorias = res;
       });
-
   }
+
+  dropDownCart() {
+    this.displayCart = !this.displayCart;
+  }
+
 
 }
