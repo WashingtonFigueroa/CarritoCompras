@@ -20,13 +20,12 @@ class CreateProductosTable extends Migration
                     ->references('categoria_id')
                     ->on('categorias')
                     ->onDelete('cascade');
-            $table->integer('stock')->unsigned();
-            $table->string('material');
-            $table->string('color');
-            $table->string('largo');
-            $table->string('ancho');
-            $table->string('alto');
-            $table->integer('puntos')->unsigned();
+            $table->integer('stock')->nullable();
+            $table->string('material')->nullable();
+            $table->string('color1')->nullable();
+            $table->string('color2')->nullable();
+            $table->string('talla')->nullable();
+            $table->integer('puntos')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

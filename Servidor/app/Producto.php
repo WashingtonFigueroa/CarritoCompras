@@ -14,10 +14,9 @@ class Producto extends Model
         'categoria_id',
         'stock',
         'material',
-        'color',
-        'largo',
-        'ancho',
-        'alto',
+        'color1',
+        'color2',
+        'talla',
         'puntos',
     ];
     protected $hidden = [];

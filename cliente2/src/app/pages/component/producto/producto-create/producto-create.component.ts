@@ -31,13 +31,12 @@ export class ProductoCreateComponent implements OnInit {
     createForm() {
         this.productoGroup = this.fb.group({
             'categoria_id' : new FormControl(0, [Validators.required]),
-            'stock' : new FormControl('', [Validators.required]),
-            'material' : new FormControl('', [Validators.required]),
-            'color' : new FormControl('', [Validators.required]),
-            'largo' : new FormControl('', [Validators.required]),
-            'ancho' : new FormControl('', [Validators.required]),
-            'alto' : new FormControl('', [Validators.required]),
-            'puntos' : new FormControl('', [Validators.required])
+            'stock' : new FormControl(1),
+            'material' : new FormControl(''),
+            'color1' : new FormControl(''),
+            'color2' : new FormControl(''),
+            'talla' : new FormControl(''),
+            'puntos' : new FormControl('')
         });
     }
 

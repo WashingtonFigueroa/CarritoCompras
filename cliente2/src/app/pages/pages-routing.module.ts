@@ -32,6 +32,10 @@ import {ComprasEditComponent} from './component/compras/compras-edit/compras-edi
 import {DescripcionProductoComponent} from './component/descripcion-producto/descripcion-producto.component';
 import {DescripcionProductoIndexComponent} from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
 import {DescripcionProductoCreateComponent} from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
+import {PromocionComponent} from "./component/promocion/promocion.component";
+import {PromocionIndexComponent} from "./component/promocion/promocion-index/promocion-index.component";
+import {PromocionCreateComponent} from "./component/promocion/promocion-create/promocion-create.component";
+import {PromocionEditComponent} from "./component/promocion/promocion-edit/promocion-edit.component";
 
 const routes: Routes = [
     {
@@ -325,6 +329,49 @@ const routes: Routes = [
                             title: 'INICIO', url: 'acceso/dashboard'
                         }, {
                             title: 'LISTADO', url: 'productos/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            },
+            // rutas  promociones
+            {
+                path: 'promociones',
+                // canActivate: [AuthGuard],
+                component: PromocionComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: PromocionIndexComponent,
+                    data: {
+                        title: 'LISTA PROMOCIONES', urls: [{
+                            title: 'INICIO', url: 'acceso/dashboard'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: 'promociones/crear'
+                        }, {
+                            title: 'PROMOCIÓN'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: PromocionCreateComponent,
+                    data: {
+                        title: 'CREAR PROMOCION', urls: [{
+                            title: 'INICIO', url: 'acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: 'promociones/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: PromocionEditComponent,
+                    data: {
+                        title: 'EDITAR PROMOCION', urls: [{
+                            title: 'INICIO', url: 'acceso/dashboard'
+                        }, {
+                            title: 'LISTADO', url: 'promociones/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]
