@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CategoriasService} from '../../pages/component/categorias/categorias.service';
+import {ProductoService} from '../../pages/component/producto/producto.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-productos',
@@ -8,10 +10,19 @@ import {CategoriasService} from '../../pages/component/categorias/categorias.ser
 })
 export class ProductosComponent implements OnInit {
 
-  categorias: any = null;
-  constructor(private categoriaService: CategoriasService) {
-    this.categoriaService.lista_categorias()
-        .subscribe(res => this.categorias = res);
+  productos: any = null;
+  categoria: any = null;
+  constructor(private categoriaService: CategoriasService,
+              private route: ActivatedRoute) {
+    this.route.params.subscribe(params => {
+      this.categoriaService.show(params.categoria_id)
+          .subscribe(res => this.categoria = res);
+      this.categoriaService.productos_categoria(params.categoria_id)
+        .subscribe(res => {
+          this.productos = res;
+          console.log(this.productos);
+        });
+    });
   }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 <nav class="product-filter">
 
-  <h1>Camisas</h1>
+  <h1>{{ categoria.nombre }}</h1>
 
   <div class="sort">
 
@@ -24,160 +24,23 @@
 
 </nav>
 
-<!-- section title -->
-<div class="row content-frado bg-white">
-  <!--<div class="col-xs-12 offset-md-1 col-md-10">
-    <div class="section-title">
-      <h3 class="title">Nuevos Productos</h3>
-      <div class="section-nav">
-        <ul class="section-tab-nav tab-nav">
-          <li class="active"><a data-toggle="tab" href="#tab1">Camisas</a></li>
-          <li><a data-toggle="tab" href="#tab1">Manillas</a></li>
-          <li><a data-toggle="tab" href="#tab1">Corbatas</a></li>
-          <li><a data-toggle="tab" href="#tab1">Accesorios</a></li>
-        </ul>
-      </div>
+<section class="products">
+  <div class="product-card" *ngFor="let producto of productos">
+    <div class="product-image">
+      <img [src]="producto.imagen" alt="">
     </div>
-  </div>-->
-
-  <!-- Products tab & slick -->
-  <div class="offset-md-1 col-md-10">
-    <div class="row">
-      <div class="products-tabs">
-        <!-- tab -->
-        <div id="tab1" class="tab-pane active">
-          <div class="products-slick product-frado-list" data-nav="#slick-nav-1">
-            <!-- product -->
-            <div class="product product-frado">
-              <div class="product-img">
-                <img src="../../../assets/inicio/img/product04.png" alt="">
-                <div class="product-label">
-                  <span class="sale">-30%</span>
-                  <span class="new">NUEVO</span>
-                </div>
-              </div>
-              <div class="product-body">
-                <p class="product-category">Categoria</p>
-                <h3 class="product-name"><a href="#">Producto</a></h3>
-                <h4 class="product-price">$15.00 <del class="product-old-price">$17.00</del></h4>
-                <div class="product-rating-frado">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="product-btns">
-                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                </div>
-              </div>
-              <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir a carrito</button>
-              </div>
-            </div>
-            <!-- /product -->
-            <!-- product -->
-            <div class="product product-frado">
-              <div class="product-img">
-                <img src="../../../assets/inicio/img/product04.png" alt="">
-                <div class="product-label">
-                  <span class="sale">-30%</span>
-                  <span class="new">NUEVO</span>
-                </div>
-              </div>
-              <div class="product-body">
-                <p class="product-category">Categoria</p>
-                <h3 class="product-name"><a href="#">Producto</a></h3>
-                <h4 class="product-price">$15.00 <del class="product-old-price">$17.00</del></h4>
-                <div class="product-rating-frado">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="product-btns">
-                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                </div>
-              </div>
-              <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir a carrito</button>
-              </div>
-            </div>
-            <!-- /product -->
-            <!-- product -->
-            <div class="product product-frado">
-              <div class="product-img">
-                <img src="../../../assets/inicio/img/product04.png" alt="">
-                <div class="product-label">
-                  <span class="sale">-30%</span>
-                  <span class="new">NUEVO</span>
-                </div>
-              </div>
-              <div class="product-body">
-                <p class="product-category">Categoria</p>
-                <h3 class="product-name"><a href="#">Producto</a></h3>
-                <h4 class="product-price">$15.00 <del class="product-old-price">$17.00</del></h4>
-                <div class="product-rating-frado">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="product-btns">
-                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                </div>
-              </div>
-              <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir a carrito</button>
-              </div>
-            </div>
-            <!-- /product -->
-            <!-- product -->
-            <div class="product product-frado">
-              <div class="product-img">
-                <img src="../../../assets/inicio/img/product04.png" alt="">
-                <div class="product-label">
-                  <span class="sale">-30%</span>
-                  <span class="new">NUEVO</span>
-                </div>
-              </div>
-              <div class="product-body">
-                <p class="product-category">Categoria</p>
-                <h3 class="product-name"><a href="#">Producto</a></h3>
-                <h4 class="product-price">$15.00 <del class="product-old-price">$17.00</del></h4>
-                <div class="product-rating-frado">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <div class="product-btns">
-                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                </div>
-              </div>
-              <div class="add-to-cart">
-                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir a carrito</button>
-              </div>
-            </div>
-            <!-- /product -->
-          </div>
-          <div id="slick-nav-1" class="products-slick-nav"></div>
-        </div>
-        <!-- /tab -->
+    <div class="product-info">
+      <h5>{{ producto.nombre }}</h5>
+      <h6>{{ producto.descripcion }}</h6>
+      <div class="text-center">
+        <div class="color" [ngStyle]="{'background-color' : producto.color1}"></div>
+        <div class="color" [ngStyle]="{'background-color' : producto.color2}"></div>
+      </div>
+      <div class="btn-container">
+        <button
+          [routerLink]="['/inicio/productos/' + producto.producto_id]"
+          class="btn btn-rounded btn-danger">Ver {{ producto.nombre }}</button>
       </div>
     </div>
   </div>
-  <!-- Products tab & slick -->
-</div>
-<!-- /section title -->
+</section>

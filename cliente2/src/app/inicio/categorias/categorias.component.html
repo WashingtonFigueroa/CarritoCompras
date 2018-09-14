@@ -29,112 +29,18 @@
 </ui-carousel>
 
 <section class="categories">
-  <div class="category-card">
+  <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
+      <img [src]="categoria.imagen" alt="">
     </div>
     <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
-    </div>
-  </div>
-  <div class="category-card">
-    <div class="category-image">
-      <img src="https://rukminim1.flixcart.com/image/832/832/shirt/s/h/y/46-bfrybluesht02-being-fab-original-imaekjr8ymhnxznp.jpeg" alt="">
-    </div>
-    <div class="category-info">
-      <h5>Camisa Inglesa</h5>
-      <h6>$15</h6>
+      <h5>{{ categoria.nombre }}</h5>
+      <h6>{{ categoria.descripcion }}</h6>
+      <div class="btn-container">
+        <button
+          [routerLink]="['/inicio/productos/' + categoria.categoria_id]"
+          class="btn btn-rounded btn-danger">Ver {{ categoria.nombre }}</button>
+      </div>
     </div>
   </div>
 </section>

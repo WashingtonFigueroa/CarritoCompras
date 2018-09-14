@@ -10,7 +10,7 @@ const routes: Routes = [
     component: InicioComponent,
     children: [
       {
-        path: 'productos',
+        path: 'productos/:categoria_id',
         component: ProductosComponent
       }, {
         path: 'categorias',
