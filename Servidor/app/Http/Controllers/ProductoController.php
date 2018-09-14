@@ -34,14 +34,14 @@ class ProductoController extends Controller
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
-                $producto->stock = $request->input('stock');
+                $producto->stock = (int)$request->input('stock');
                 $producto->material = $request->input('material');
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
                 $producto->talla = $request->input('talla');
-                $producto->precio = $request->input('precio');
+                $producto->precio = (float)$request->input('precio');
                 $producto->imagen = $path_documento;
-                $producto->puntos = $request->input('puntos');
+                $producto->puntos = (int)$request->input('puntos');
                 $producto->save();
             }
             else{
@@ -49,14 +49,14 @@ class ProductoController extends Controller
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
-                $producto->stock = $request->input('stock');
+                $producto->stock = (int)$request->input('stock');
                 $producto->material = $request->input('material');
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
                 $producto->talla = $request->input('talla');
-                $producto->precio = $request->input('precio');
+                $producto->precio = (float)$request->input('precio');
                 $producto->imagen = "productos/log.png";
-                $producto->puntos = $request->input('puntos');
+                $producto->puntos = (int)$request->input('puntos');
                 $producto->save();
             }
             return response()->json([

@@ -1397,12 +1397,12 @@
     </column>
     <column id="328" parent="258" name="descripcion">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(191)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="329" parent="258" name="stock">
       <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>int(10) unsigned|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="330" parent="258" name="material">
@@ -1438,7 +1438,7 @@
     </column>
     <column id="336" parent="258" name="puntos">
       <Position>12</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>int(10) unsigned|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="337" parent="258" name="deleted_at">
