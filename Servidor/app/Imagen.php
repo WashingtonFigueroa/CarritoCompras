@@ -16,7 +16,7 @@ class Imagen extends Model
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];
-    public function descripcionProducto() {
-        return $this->belongsTo(DescripcionProducto::class, 'descripcion_producto_id');
+    public function producto() {
+        return $this->belongsTo(Producto::class, 'producto_id');
     }
 }

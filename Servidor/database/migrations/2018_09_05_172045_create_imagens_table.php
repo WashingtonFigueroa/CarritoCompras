@@ -15,10 +15,10 @@ class CreateImagensTable extends Migration
     {
         Schema::create('imagenes', function (Blueprint $table) {
             $table->increments('imagen_id');
-            $table->integer('descripcion_producto_id')->unsigned();
-            $table->foreign('descripcion_producto_id')
-                    ->references('descripcion_producto_id')
-                    ->on('descripcion_productos')
+            $table->integer('producto_id')->unsigned();
+            $table->foreign('producto_id')
+                    ->references('producto_id')
+                    ->on('productos')
                     ->onDelete('cascade');
             $table->string('imagen');
             $table->softDeletes();
