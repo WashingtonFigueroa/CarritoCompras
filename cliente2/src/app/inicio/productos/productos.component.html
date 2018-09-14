@@ -14,18 +14,6 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="offset-md-6 col-md-6">
-      <div class="form-group">
-        <label for="categoria">Categoria</label>
-        <select name="" id="categoria" class="form-control">
-          <option [value]="categoria.categoria_id" *ngFor="let categoria of categorias">
-            {{ categoria.nombre }}
-          </option>
-        </select>
-      </div>
-    </div>
-  </div>
   <!-- Products tab & slick -->
   <div class="offset-md-1 col-md-10">
     <div class="row">
@@ -52,6 +40,11 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
+                </div>
+                <div>
+                  <button>-</button>
+                  <input type="text" class="form-control-sm">
+                  <button>+</button>
                 </div>
                 <div class="product-btns">
                   <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
