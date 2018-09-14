@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5e799e-2905-44f4-a4b1-0b5b4cfad57c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CarritoCompras.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarritoCompras.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8214b422-8913-433b-beff-843bb3372d03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f00b471-36d5-4e59-8747-10906fda782e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Categoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/package-lock.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,14 +100,52 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1952385114">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="16" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+            <state relative-caret-position="198">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Servidor/app/Imagen.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Servidor/app/Categoria.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -135,6 +168,8 @@
         <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" />
         <option value="$PROJECT_DIR$/cliente2/src/styles.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
+        <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Categoria.php" />
       </list>
     </option>
   </component>
@@ -1783,8 +1818,6 @@
       <path value="$PROJECT_DIR$/cliente2/node_modules/uglifyjs-webpack-plugin/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/cliente2/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-es/package.json" />
       <path value="$PROJECT_DIR$/cliente2/node_modules/uglifyjs-webpack-plugin/package.json" />
-      <path value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/examples/package.json" />
-      <path value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/package.json" />
       <path value="$PROJECT_DIR$/cliente2/node_modules/ultron/package.json" />
       <path value="$PROJECT_DIR$/cliente2/node_modules/underscore/package.json" />
       <path value="$PROJECT_DIR$/cliente2/node_modules/union-value/node_modules/extend-shallow/package.json" />
@@ -1977,16 +2010,107 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1935" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="producto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="producto" type="462c0819:PsiDirectoryNode" />
+              <item name="producto-create" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="Servidor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="Servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="Servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="Servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -1995,8 +2119,11 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/styles.css&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;productostable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;productocontroller&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\HP User\Documents\trabajos\washington\CarritoCompras\cliente2\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\HP User\Documents\trabajos\washington\CarritoCompras\cliente2\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
@@ -2026,22 +2153,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1825000" />
+    <option name="totallyTimeSpent" value="3609000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36611196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.6902314" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32904884" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -2049,34 +2169,46 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" weight="0.3294271" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32904884" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29812607" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3294271" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.5790139" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Database Console" order="5" weight="0.32904884" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3294271" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel-item/ui-carousel-item.component.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel-item/ui-carousel-item.component.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel-item/ui-carousel-item.component.js.map" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel/ui-carousel.component.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel/ui-carousel.component.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/ui-carousel/ui-carousel.component.js.map" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/ui-lazy-load.directive.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/ui-lazy-load.directive.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/ui-lazy-load.directive.js.map" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/swiper.directive.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/swiper.directive.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/directives/swiper.directive.js.map" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/arrow/arrow.component.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/arrow/arrow.component.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/arrow/arrow.component.js.map" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/dots/dots.component.js" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/dots/dots.component.d.ts" />
-        <option value="$PROJECT_DIR$/cliente2/node_modules/ui-carousel/src/dots/dots.component.js.map" />
         <option value="$PROJECT_DIR$/cliente2/node_modules/karma/config.tpl.js" />
       </list>
     </option>
@@ -2161,19 +2293,13 @@
               <point x="0.0" y="81.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.335612535612536" x="545.5238507248014" y="568.5408500720966" />
+          <settings layout="Hierarchic Group" zoom="1.335612535612536" x="546.0" y="569.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -2191,20 +2317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f00b471-36d5-4e59-8747-10906fda782e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f00b471-36d5-4e59-8747-10906fda782e/console.sql" />
     <entry file="file://$PROJECT_DIR$/cliente2/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2216,6 +2329,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto-create/producto-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <caret line="71" column="88" selection-start-line="71" selection-start-column="88" selection-end-line="71" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto-create/producto-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Imagen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
