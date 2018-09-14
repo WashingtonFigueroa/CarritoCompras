@@ -17,6 +17,7 @@ class CreateCategoriasTable extends Migration
             $table->increments('categoria_id');
             $table->string('nombre');
             $table->text('descripcion')->nullable();
+            $table->string('imagen')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

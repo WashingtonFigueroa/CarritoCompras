@@ -13,6 +13,7 @@ class Categoria extends Model
     protected $fillable = [
         'nombre',
         'descripcion',
+        'imagen',
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];
