@@ -1,0 +1,19 @@
+.product-filter {
+  display: flex;
+  background-color: white;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+.product-filter h1 {
+  flex-grow: 1;
+}
+.sort {
+  display: flex;
+}
+
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  box-sizing: border-box;
+}

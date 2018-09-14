@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5e799e-2905-44f4-a4b1-0b5b4cfad57c" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Servidor/app/Categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Categoria.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cliente2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/package-lock.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" afterDir="false" />
+>>>>>>> 78c1e4e6ec1efb63684b5537e318cfbb4deabde6
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +63,8 @@
         <counts>
           <entry key="SCHEMA:manillasdb" value="1" />
           <entry key="categorias" value="1" />
-          <entry key="css" value="1" />
-          <entry key="html" value="2" />
+          <entry key="css" value="3" />
+          <entry key="html" value="5" />
           <entry key="php" value="3" />
           <entry key="productos" value="1" />
           <entry key="sql" value="5" />
@@ -67,9 +72,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="3" />
           <entry key="Database Element" value="2" />
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="5" />
           <entry key="PHP" value="3" />
           <entry key="Scratch" value="5" />
           <entry key="UML" value="1" />
@@ -78,8 +83,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="39" />
-          <entry key="css" value="38" />
-          <entry key="html" value="69" />
+          <entry key="css" value="165" />
+          <entry key="html" value="142" />
           <entry key="php" value="55" />
           <entry key="sql" value="32" />
           <entry key="txt" value="10" />
@@ -87,8 +92,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="38" />
-          <entry key="HTML" value="69" />
+          <entry key="CSS" value="165" />
+          <entry key="HTML" value="142" />
           <entry key="PHP" value="55" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Scratch" value="71" />
@@ -142,10 +147,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Servidor/app/Categoria.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+=======
+        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+>>>>>>> 78c1e4e6ec1efb63684b5537e318cfbb4deabde6
             </state>
           </provider>
         </entry>
@@ -155,6 +167,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>store</find>
+      <find>input</find>
+      <find>camisas</find>
+      <find>color</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,8 +183,13 @@
         <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" />
         <option value="$PROJECT_DIR$/cliente2/src/styles.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_09_05_150451_create_categorias_table.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Categoria.php" />
+=======
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.css" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" />
+>>>>>>> 78c1e4e6ec1efb63684b5537e318cfbb4deabde6
       </list>
     </option>
   </component>
@@ -2116,7 +2136,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/styles.css&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;productostable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;productocontroller&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;productoscss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.css&#10;productoshtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;styles&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/styles.css&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;productostable&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/migrations/2018_09_05_150930_create_productos_table.php&#10;productocontroller&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -2148,12 +2168,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536949629849</updated>
-      <workItem from="1536949637395" duration="1825000" />
+      <workItem from="1536949637395" duration="2750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3609000" />
+=======
+    <option name="totallyTimeSpent" value="2750000" />
+>>>>>>> 78c1e4e6ec1efb63684b5537e318cfbb4deabde6
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -2379,6 +2403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.service.ts">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="274">
           <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
         </state>
@@ -2400,6 +2425,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+=======
+        <state relative-caret-position="132">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+>>>>>>> 78c1e4e6ec1efb63684b5537e318cfbb4deabde6
         </state>
       </provider>
     </entry>
