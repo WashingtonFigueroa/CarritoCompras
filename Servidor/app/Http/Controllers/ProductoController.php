@@ -27,7 +27,51 @@ class ProductoController extends Controller
     }
     public function store(Request $request)
     {
-        return response()->json(Producto::create($request->all()), 201);
+        try{
+            if ($request->hasFile('imagen')){
+                $path_documento = $request->file('imagen')->store('productos');
+                $producto = new Producto();
+                $producto->categoria_id = $request->input('categoria_id');
+                $producto->nombre = $request->input('nombre');
+                $producto->descripcion = $request->input('descripcion');
+                $producto->stock = $request->input('stock');
+                $producto->material = $request->input('material');
+                $producto->color1 = $request->input('color1');
+                $producto->color2 = $request->input('color2');
+                $producto->talla = $request->input('talla');
+                $producto->precio = $request->input('precio');
+                $producto->imagen = $path_documento;
+                $producto->puntos = $request->input('puntos');
+                $producto->save();
+            }
+            else{
+                $producto = new Producto();
+                $producto->categoria_id = $request->input('categoria_id');
+                $producto->nombre = $request->input('nombre');
+                $producto->descripcion = $request->input('descripcion');
+                $producto->stock = $request->input('stock');
+                $producto->material = $request->input('material');
+                $producto->color1 = $request->input('color1');
+                $producto->color2 = $request->input('color2');
+                $producto->talla = $request->input('talla');
+                $producto->precio = $request->input('precio');
+                $producto->imagen = "productos/log.png";
+                $producto->puntos = $request->input('puntos');
+                $producto->save();
+            }
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto guardado exitosamente',
+                'producto' => $producto
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto no guardado exitosamente',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function show($id)

@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/Servidor/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/Servidor/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/Servidor/vendor/beyondcode/laravel-dump-server" />
@@ -80,6 +81,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Servidor/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/Servidor/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/Servidor/vendor/webmozart/assert" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/Servidor/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/Servidor/app" isTestSource="false" packagePrefix="App\" />
+>>>>>>> cfbd0ab626688bb3ca9abad17bc1a6aad3fed8ab
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
