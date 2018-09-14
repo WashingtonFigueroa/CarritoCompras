@@ -1,0 +1,87 @@
+<div style="text-align:center; margin:10px;font-size: 25px; ">
+  Ofertas
+</div>
+<ui-carousel [infinite]="true" [fade]="false" [speed]="220" height="500px" width="100%" >
+  <ui-carousel-item>
+    <div class="product-item">
+      <img src="../../../assets/inicio/img/carousel/producto1.png" alt="">
+    </div>
+    <div class="button">Comprar</div>
+  </ui-carousel-item>
+  <ui-carousel-item>
+    <div class="product-item">
+      <img src="../../../assets/inicio/img/carousel/producto2.png" alt="">
+    </div>
+    <div class="button">Comprar</div>
+  </ui-carousel-item>
+  <ui-carousel-item>
+    <div style="background:#e74c3c" class="text" >3</div>
+    <div class="button">Comprar</div>
+  </ui-carousel-item>
+  <ui-carousel-item>
+    <div style="background:#f1c40f" class="text">4</div>
+    <div class="button">Comprar</div>
+  </ui-carousel-item>
+  <ui-carousel-item>
+    <div style="background:#16a085" class="text">5</div>
+    <div class="button">Comprar</div>
+  </ui-carousel-item>
+</ui-carousel>
+<!-- section title -->
+<div class="row content-frado bg-white">
+  <div class="col-xs-12 offset-md-1 col-md-10">
+    <div class="section-title">
+      <h3 class="title">Categorias</h3>
+      <div class="section-nav">
+        <ul class="section-tab-nav tab-nav">
+          <li class="active"><a data-toggle="tab" href="#tab1">Camisas</a></li>
+          <li><a data-toggle="tab" href="#tab1">Manillas</a></li>
+          <li><a data-toggle="tab" href="#tab1">Corbatas</a></li>
+          <li><a data-toggle="tab" href="#tab1">Accesorios</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products tab & slick -->
+  <div class="offset-md-1 col-md-10">
+    <div class="row">
+      <div class="products-tabs">
+        <!-- tab -->
+        <div id="tab1" class="tab-pane active">
+          <div class="products-slick product-frado-list" data-nav="#slick-nav-1">
+            <!-- product -->
+            <div class="product product-frado" *ngFor="let categoria of categorias">
+              <div class="product-img">
+                <img src="../../../assets/inicio/img/product04.png" alt="">
+              </div>
+              <div class="product-body">
+                <h3 class="product-name"><a href="#">{{ categoria.nombre }}</a></h3>
+                <div class="product-rating-frado">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-btns">
+                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                </div>
+              </div>
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Comprar </button>
+              </div>
+            </div>
+            <!-- /product -->
+          </div>
+          <div id="slick-nav-1" class="products-slick-nav"></div>
+        </div>
+        <!-- /tab -->
+      </div>
+    </div>
+  </div>
+  <!-- Products tab & slick -->
+</div>
+<!-- /section title -->

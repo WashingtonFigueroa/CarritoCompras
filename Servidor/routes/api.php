@@ -50,3 +50,5 @@ Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => 
 /*custom controllers*/
 Route::get('listar_descripcion_productos/{producto_id}', 'ProductoController@listar_descripcion_productos');
 Route::post('buscar_descripcion_productos', 'DescripcionProductoController@buscar_descripcion_productos');
+
+Route::get('productos_categoria/{categoria_id}', 'CategoriaController@productos');

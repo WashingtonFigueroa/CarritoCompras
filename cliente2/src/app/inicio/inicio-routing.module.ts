@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {InicioComponent} from './inicio.component';
 import {ProductosComponent} from './productos/productos.component';
+import {CategoriasComponent} from './categorias/categorias.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,14 @@ const routes: Routes = [
     component: InicioComponent,
     children: [
       {
-        path: '',
+        path: 'productos',
         component: ProductosComponent
+      }, {
+        path: 'categorias',
+        component: CategoriasComponent
+      }, {
+        path: '',
+        redirectTo: 'categorias'
       }
     ]
   }, {

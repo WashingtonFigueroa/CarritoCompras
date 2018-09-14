@@ -92,3 +92,16 @@ a.cart-menu {
 .black {
   color: black;
 }
+.product-item{
+  width: 100%;
+  height: 100%;
+}
+.product-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*customized styles which have been created before*/
+.add-to-cart-btn, .add-to-cart-btn:hover{
+  cursor: pointer;
+}

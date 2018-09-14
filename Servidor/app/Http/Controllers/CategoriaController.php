@@ -48,4 +48,13 @@ class CategoriaController extends Controller
         $categoria->delete();
         return response()->json($categoria, 200);
     }
+
+    public function productos($categoria_id) {
+        $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->with('categoria')
+                                ->orderBy('nombre')
+                                ->get();
+        return response()->json($productos, 200);
+    }
 }
