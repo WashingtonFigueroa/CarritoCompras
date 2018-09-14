@@ -23,6 +23,7 @@ class CreatePromocionsTable extends Migration
             $table->text('detalle');
             $table->integer('puntos')->unsigned();
             $table->integer('stock')->unsigned();
+            $table->string('imagen')->nullable();
             $table->boolean('estado');
             $table->softDeletes();
             $table->timestamps();

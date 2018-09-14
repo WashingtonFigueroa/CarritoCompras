@@ -15,10 +15,10 @@ class CreateDetalleComprasTable extends Migration
     {
         Schema::create('detalle_compras', function (Blueprint $table) {
             $table->increments('detalle_compra_id');
-            $table->integer('descripcion_producto_id')->unsigned();
-            $table->foreign('descripcion_producto_id')
-                    ->references('descripcion_producto_id')
-                    ->on('descripcion_productos')
+            $table->integer('producto_id')->unsigned();
+            $table->foreign('producto_id')
+                    ->references('producto_id')
+                    ->on('productos')
                     ->onDelete('cascade');
             $table->integer('compra_id')->unsigned();
             $table->foreign('compra_id')
