@@ -45,3 +45,21 @@ ui-carousel{
   cursor: pointer;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
+/*categories*/
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+}
+.category-image img {
+  max-width: 100%;
+}
+.category-info {
+  margin-top: auto;
+}
