@@ -39,6 +39,9 @@
                 Descripción
               </th>
               <th>
+                Imagen
+              </th>
+              <th>
                 Acciones
               </th>
             </tr>
@@ -53,6 +56,9 @@
               </td>
               <td>
                 {{ categoria.descripcion }}
+              </td>
+              <td>
+                <img src="app/{{ categoria.imagen }}" alt="">
               </td>
               <td align="center">
                 <button (click)="edit(categoria.categoria_id)" type="button" class="btn btn-info">

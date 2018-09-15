@@ -27,7 +27,35 @@ class CategoriaController extends Controller
 
     public function store(Request $request)
     {
-        return response()->json(Categoria::create($request->all()), 201);
+        try{
+            if ($request->hasFile('imagen')){
+                $path_documento = $request->file('imagen')->store('categorias');
+                $categoria = new Categoria();
+                $categoria->nombre = $request->input('nombre');
+                $categoria->descripcion = $request->input('descripcion');
+                $categoria->imagen = $path_documento;
+                $categoria->save();
+            }
+            else{
+                $categoria = new Categoria();
+                $categoria->nombre = $request->input('nombre');
+                $categoria->descripcion = $request->input('descripcion');
+                $categoria->imagen = "productos/log.png";
+                $categoria->save();
+            }
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto guardado exitosamente',
+                'producto' => $categoria
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Producto no guardado exitosamente',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function show($id)

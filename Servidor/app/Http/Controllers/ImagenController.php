@@ -9,14 +9,24 @@ class ImagenController extends Controller
 {
     public function index()
     {
-        return response()->json(Imagen::with('descripcionProducto')->paginate(10), 200);
+        return response()->json(Imagen::with('producto')->paginate(10), 200);
     }
-
+    public function lista_articulos()
+    {
+        return response()->json(Imagen::orderBy('imagen_id')->get(), 200);
+    }
+    public function buscar_articulos() {
+        $search = request()->input('search');
+        $articulo = Imagen::with('producto')
+            ->where('nombre', 'like', '%'. $search . '%')
+            ->paginate(10);
+        return response()->json($articulo, 200);
+    }
     public function store(Request $request)
     {
         if ($request->hasFile('imagen')) {
             $imagen = new Imagen();
-            $imagen->descripcion_producto_id = $request->input('descripcion_producto_id');
+            $imagen->descripcion_producto_id = $request->input('producto_id');
             $imagen->imagen = $request->file('imagen')->store('imagenes');
             $imagen->save();
         }

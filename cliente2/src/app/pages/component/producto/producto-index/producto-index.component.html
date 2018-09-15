@@ -36,16 +36,16 @@
                 Categoria
               </th>
               <th>
-                Material
+                Nombre
               </th>
               <th>
-                Color Primario
+                Stock
               </th>
               <th>
-                Color Secundario
+                Precio
               </th>
               <th>
-                Talla
+                Imagen
               </th>
               <th>
                 Puntos
@@ -64,16 +64,16 @@
                 {{ producto.categoria.nombre }}
               </td>
               <td>
-                {{ producto.material }}
+                {{ producto.nombre }}
               </td>
               <td>
-                <span class="color1" [ngStyle]="{'background-color': producto.color1 }"></span>
+                {{ producto.stock }}
               </td>
               <td>
-                <span class="color2" [ngStyle]="{'background-color': producto.color2 }"></span>
+                {{ producto.precio }}
               </td>
               <td>
-                {{ producto.talla }}
+                <img src="{{ producto.imagen }}" alt="">
               </td>
               <td>
                 {{ producto.puntos }}

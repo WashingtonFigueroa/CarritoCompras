@@ -22,14 +22,10 @@ class CreateProductosTable extends Migration
                     ->onDelete('cascade');
             $table->string('nombre');
             $table->string('descripcion')->nullable();
-            $table->integer('stock')->unsigned()->nullable();
             $table->string('material')->nullable();
             $table->string('color1')->nullable();
             $table->string('color2')->nullable();
-            $table->string('talla')->nullable();
-            $table->float('precio',8,2);
             $table->string('imagen')->nullable();
-            $table->integer('puntos')->unsigned()->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
