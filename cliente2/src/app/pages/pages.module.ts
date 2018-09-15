@@ -48,14 +48,16 @@ import {ProductoService} from './component/producto/producto.service';
 import {ArticulosService} from './component/articulos/articulos.service';
 import {ComprasService} from './component/compras/compras.service';
 import { DescripcionProductoComponent } from './component/descripcion-producto/descripcion-producto.component';
-import { DescripcionProductoIndexComponent } from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
-import { DescripcionProductoCreateComponent } from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
-import { DescripcionProductoEditComponent } from './component/descripcion-producto/descripcion-producto-edit/descripcion-producto-edit.component';
 import { PromocionComponent } from './component/promocion/promocion.component';
 import { PromocionIndexComponent } from './component/promocion/promocion-index/promocion-index.component';
 import { PromocionEditComponent } from './component/promocion/promocion-edit/promocion-edit.component';
 import { PromocionCreateComponent } from './component/promocion/promocion-create/promocion-create.component';
-import {PromocionService} from "./component/promocion/promocion.service";
+import {PromocionService} from './component/promocion/promocion.service';
+import { InventarioComponent } from './component/inventario/inventario.component';
+import { InventarioIndexComponent } from './component/inventario/inventario-index/inventario-index.component';
+import { InventarioEditComponent } from './component/inventario/inventario-edit/inventario-edit.component';
+import { InventarioCreateComponent } from './component/inventario/inventario-create/inventario-create.component';
+import {InventarioService} from './component/inventario/inventario.service';
 
 @NgModule({
     imports: [
@@ -101,13 +103,14 @@ import {PromocionService} from "./component/promocion/promocion.service";
         CategoriasEditComponent,
         CategoriasCreateComponent,
         DescripcionProductoComponent,
-        DescripcionProductoIndexComponent,
-        DescripcionProductoCreateComponent,
-        DescripcionProductoEditComponent,
         PromocionComponent,
         PromocionIndexComponent,
         PromocionEditComponent,
-        PromocionCreateComponent
+        PromocionCreateComponent,
+        InventarioComponent,
+        InventarioIndexComponent,
+        InventarioEditComponent,
+        InventarioCreateComponent
     ],
     providers: [
         TipousuarioService,
@@ -117,7 +120,8 @@ import {PromocionService} from "./component/promocion/promocion.service";
         ProductoService,
         ArticulosService,
         ComprasService,
-        PromocionService
+        PromocionService,
+        InventarioService
     ]
 })
 export class PagesModule { }

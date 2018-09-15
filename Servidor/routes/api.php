@@ -40,13 +40,16 @@ Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']])
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
 
 Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit']]);
-Route::post('articulos','ImagenController@buscar_articulos');
-Route::get('articulos','ImagenController@lista_articulos');
+Route::post('buscar_articulos','ImagenController@buscar_articulos');
+Route::get('lista_articulos','ImagenController@lista_articulos');
 
 Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
 Route::post('buscar_promociones','PromocionController@buscar_promociones');
 Route::get('lista_promociones','PromocionController@lista_promociones');
 
+Route::resource('inventarios', 'InventarioController', ['except' => ['create', 'edit']]);
+Route::post('buscar_inventario','InventarioController@buscar_inventario');
+Route::get('lista_inventario','InventarioController@lista_inventario');
 
 Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);
 

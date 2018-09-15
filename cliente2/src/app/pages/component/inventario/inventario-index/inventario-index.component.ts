@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {environment} from '../../../../../environments/environment.prod';
+import {InventarioService} from '../inventario.service';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {Router} from '@angular/router';
-import {PromocionService} from '../promocion.service';
 
 @Component({
-  selector: 'app-promocion-index',
-  templateUrl: './promocion-index.component.html',
-  styleUrls: ['./promocion-index.component.css']
+  selector: 'app-inventario-index',
+  templateUrl: './inventario-index.component.html',
+  styleUrls: ['./inventario-index.component.css']
 })
-export class PromocionIndexComponent implements OnInit {
-    promociones: any = [];
+export class InventarioIndexComponent implements OnInit {
+    inventarios: any = [];
     index: number = null;
-    promocion_id: number = null;
+    inventario_id: number = null;
     closeResult: string;
     search = '';
     pages: any = [];
@@ -20,13 +20,13 @@ export class PromocionIndexComponent implements OnInit {
     next_page: any = null;
     environment = environment;
 
-    constructor(protected promocionService: PromocionService,
+    constructor(protected inventarioService: InventarioService,
                 protected modalService: NgbModal,
                 protected router: Router) {}
 
     ngOnInit() {
-        this.promocionService.index().subscribe((res: any) => {
-            this.promociones = res.data;
+        this.inventarioService.index().subscribe((res: any) => {
+            this.inventarios = res.data;
             this.getPages(res.last_page);
             this.prev_page = res.prev_page_url;
             this.next_page = res.next_page_url;
@@ -34,9 +34,9 @@ export class PromocionIndexComponent implements OnInit {
     }
 
     buscar(search) {
-        this.promocionService.buscar_promociones({search: search})
+        this.inventarioService.buscar_inventarios({search: search})
             .subscribe((res: any) => {
-                this.promociones = res.data;
+                this.inventarios = res.data;
                 this.getPages(res.last_page);
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
@@ -48,50 +48,50 @@ export class PromocionIndexComponent implements OnInit {
         for (let i = 1; i <= last_page; i++ ) {
             this.pages.push(
                 {
-                    url: this.environment.base + 'promociones?page=' + i ,
+                    url: this.environment.base + 'inventarios?page=' + i ,
                     item: i
                 }
             );
         }
     }
     loadPagination(url) {
-        this.promocionService.indexPerPage(url)
+        this.inventarioService.indexPerPage(url)
             .subscribe((res: any) => {
-                this.promociones = res.data;
+                this.inventarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
     }
     prevPage() {
-        this.promocionService.indexPerPage(this.prev_page)
+        this.inventarioService.indexPerPage(this.prev_page)
             .subscribe( (res: any) => {
-                this.promociones = res.data;
+                this.inventarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
     }
     nextPage() {
-        this.promocionService.indexPerPage(this.next_page)
+        this.inventarioService.indexPerPage(this.next_page)
             .subscribe( (res: any) => {
-                this.promociones = res.data;
+                this.inventarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
     }
 
     destroy(index, id) {
-        this.promocionService.destroy(id)
+        this.inventarioService.destroy(id)
             .subscribe(res => {
-                this.promociones.splice(index, 1);
+                this.inventarios.splice(index, 1);
             });
     }
 
     edit(id) {
-        this.router.navigate([this.environment.admin + '/promociones/editar/' + id]);
+        this.router.navigate([this.environment.admin + '/inventarios/editar/' + id]);
     }
 
-    // getDescripcionProductos(promocion_id) {
-    //     this.router.navigate([this.environment.admin + '/descripcion-promociones/' + promocion_id + '/listar']);
+    // getDescripcionProductos(inventario_id) {
+    //     this.router.navigate([this.environment.admin + '/descripcion-inventarios/' + inventario_id + '/listar']);
     // }
 
     private getDismissReason(reason: any): string {
@@ -106,7 +106,7 @@ export class PromocionIndexComponent implements OnInit {
 
     confirm(index, id, confirmModal) {
         this.index = index;
-        this.promocion_id = id;
+        this.inventario_id = id;
         this.modalService.open(confirmModal).result.then((result) => {
             if (result === 'si') {
                 this.destroy(index, id);

@@ -26,7 +26,7 @@ class ImagenController extends Controller
     {
         try{
             if ($request->hasFile('imagen')){
-                $path_documento = $request->file('imagen')->store('productos');
+                $path_documento = $request->file('imagen')->store('imagenes');
                 $img = new Imagen();
                 $img->producto_id = $request->input('producto_id');
                 $img->imagen = $path_documento;

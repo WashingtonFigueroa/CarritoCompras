@@ -40,16 +40,16 @@ export class ArticulosCreateComponent implements OnInit {
         const file = this.imagen.nativeElement;
         if (file.files[0]) {
             form.append('imagen', file.files[0]);
-            form.append('producto_id', this.articuloGroup.value.categoria_id);
+            form.append('producto_id', this.articuloGroup.value.producto_id);
         }else{
             console.log('ingrese imagen');
         }
         this.articuloService.store(form).subscribe((res: any)=> {
-            console.log('Imagen guardado');
+            console.log(res);
             // this.toastr.success(res.message, res.title, {
             //     timeOut: 1000
             // });
-            this.router.navigate([environment.admin + '/articulos']);
+           // this.router.navigate([environment.admin + '/articulos']);
         }, (error: any)=> {
             // this.toastr.error(error.message, error.title)
         }, () => {
