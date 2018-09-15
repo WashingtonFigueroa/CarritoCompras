@@ -39,16 +39,13 @@
                 Nombre
               </th>
               <th>
-                Stock
+                Descripcion
               </th>
               <th>
-                Precio
+                Material
               </th>
               <th>
                 Imagen
-              </th>
-              <th>
-                Puntos
               </th>
               <th>
                 Acciones
@@ -67,22 +64,15 @@
                 {{ producto.nombre }}
               </td>
               <td>
-                {{ producto.stock }}
+                {{ producto.descripcion }}
               </td>
               <td>
-                {{ producto.precio }}
+                {{ producto.material }}
               </td>
               <td>
                 <img src="{{ producto.imagen }}" alt="">
               </td>
-              <td>
-                {{ producto.puntos }}
-              </td>
               <td align="center">
-                <button type="button" (click)="getDescripcionProductos(producto.producto_id)" class="btn btn-success">
-                  <i class="fa fa-product-hunt"></i>
-                </button>
-                &nbsp;&nbsp;
                 <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
                 </button>

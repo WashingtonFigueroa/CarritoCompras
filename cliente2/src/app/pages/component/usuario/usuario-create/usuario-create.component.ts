@@ -47,7 +47,7 @@ export class UsuarioCreateComponent implements OnInit {
                     if (res.error) {
                         console.log(res.error);
                     } else {
-                        this.router.navigate(['/usuarios']);
+                        this.router.navigate(['/admin/usuarios/listar']);
                        // this.toartr.success('Usuario Guardado', 'Ok');
                     }
                 }, error => {
