@@ -24,6 +24,7 @@ class CreateInventariosTable extends Migration
             $table->integer('stock')->unsigned()->nullable();
             $table->float('precio',8,2);
             $table->integer('puntos')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

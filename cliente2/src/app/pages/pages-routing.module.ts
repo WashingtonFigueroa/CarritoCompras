@@ -29,13 +29,14 @@ import {ComprasComponent} from './component/compras/compras.component';
 import {ComprasIndexComponent} from './component/compras/compras-index/compras-index.component';
 import {ComprasCreateComponent} from './component/compras/compras-create/compras-create.component';
 import {ComprasEditComponent} from './component/compras/compras-edit/compras-edit.component';
-import {DescripcionProductoComponent} from './component/descripcion-producto/descripcion-producto.component';
-import {DescripcionProductoIndexComponent} from './component/descripcion-producto/descripcion-producto-index/descripcion-producto-index.component';
-import {DescripcionProductoCreateComponent} from './component/descripcion-producto/descripcion-producto-create/descripcion-producto-create.component';
-import {PromocionComponent} from "./component/promocion/promocion.component";
-import {PromocionIndexComponent} from "./component/promocion/promocion-index/promocion-index.component";
-import {PromocionCreateComponent} from "./component/promocion/promocion-create/promocion-create.component";
-import {PromocionEditComponent} from "./component/promocion/promocion-edit/promocion-edit.component";
+import {PromocionComponent} from './component/promocion/promocion.component';
+import {PromocionIndexComponent} from './component/promocion/promocion-index/promocion-index.component';
+import {PromocionCreateComponent} from './component/promocion/promocion-create/promocion-create.component';
+import {PromocionEditComponent} from './component/promocion/promocion-edit/promocion-edit.component';
+import {InventarioComponent} from './component/inventario/inventario.component';
+import {InventarioIndexComponent} from './component/inventario/inventario-index/inventario-index.component';
+import {InventarioCreateComponent} from './component/inventario/inventario-create/inventario-create.component';
+import {InventarioEditComponent} from './component/inventario/inventario-edit/inventario-edit.component';
 
 const routes: Routes = [
     {
@@ -55,47 +56,47 @@ const routes: Routes = [
                 }]
             },
             {
-              path: 'descripcion-productos/:producto_id',
-              component: DescripcionProductoComponent,
+              path: 'inventarios',
+              component: InventarioComponent,
               children: [
                 { path: '', redirectTo: 'listar', pathMatch: 'full'},
                 {
                   path: 'listar',
-                  component: DescripcionProductoIndexComponent,
+                  component: InventarioIndexComponent,
                   data: {
-                    title: 'LISTA DE DETALLE DE PRODUCTOS',
+                    title: 'INVENTARIO PRODUCTOS',
                     urls: [{
                       title: 'INICIO', url: 'acceso/dashboard'
                     }, {
-                      title: 'NUEVO REGISTRO', url: '/crear'
+                      title: 'NUEVO REGISTRO', url: 'inventarios/crear'
                     }, {
-                      title: 'DETALLE DE PRODUCTOS'
+                      title: 'PRODUCTOS'
                     }]
                   }
                 },
                 {
                   path: 'crear',
-                  component: DescripcionProductoCreateComponent,
+                  component: InventarioCreateComponent,
                   data: {
                     title: 'CREA DETALLE DE PRODUCTO',
                     urls: [{
                       title: 'INICIO', url: 'acceso/dashboard'
                     }, {
-                      title: 'LISTADO DE PRODUCTOS', url: 'descripcion-productos/listar'
+                      title: 'INVENTARIO ', url: 'inventarios/listar'
                     }, {
-                      title: 'CREAR PRODUCTO'
+                      title: 'DETALLE PRODUCTO'
                     }]
                   }
                 },
                 {
                   path: 'editar/:id',
-                  component: DescripcionProductoCreateComponent,
+                  component: InventarioEditComponent,
                   data: {
                     title: 'EDITAR DETALLE DE PRODUCTO',
                     urls: [{
                       title: 'INICIO', url: 'acceso/dashboard'
                     }, {
-                      title: 'LISTADO DE PRODUCTOS', url: 'descripcion-productos/listar'
+                      title: 'INVENTARIO PRODUCTOS', url: 'inventarios/listar'
                     }, {
                       title: 'EDITAR PRODUCTO'
                     }]

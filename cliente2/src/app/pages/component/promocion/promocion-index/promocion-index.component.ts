@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../../../environments/environment.prod";
-import {ProductoService} from "../../producto/producto.service";
-import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {Router} from "@angular/router";
-import {PromocionService} from "../promocion.service";
+import {environment} from '../../../../../environments/environment.prod';
+import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from '@angular/router';
+import {PromocionService} from '../promocion.service';
 
 @Component({
   selector: 'app-promocion-index',

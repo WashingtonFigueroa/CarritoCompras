@@ -22,7 +22,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-4">
-              <input type="search" *ngIf="productos !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar producto.." class="form-control">
+              <input type="search" *ngIf="inventarios !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar producto.." class="form-control">
             </div>
           </div>
           <hr>
@@ -33,19 +33,19 @@
                 #
               </th>
               <th>
-                Categoria
+                Producto
               </th>
               <th>
-                Nombre
+                Talla
               </th>
               <th>
-                Descripcion
+                Cantidad
               </th>
               <th>
-                Material
+                Precio
               </th>
               <th>
-                Imagen
+                Puntos
               </th>
               <th>
                 Acciones
@@ -53,31 +53,32 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let producto of productos; let i = index">
+            <tr *ngFor="let inventario of inventarios; let i = index">
               <td>
-                {{ producto.producto_id }}
+                {{ inventario.inventario_id }}
               </td>
               <td>
-                {{ producto.categoria.nombre }}
+                {{ inventario.producto.nombre }}
+
               </td>
               <td>
-                {{ producto.nombre }}
+                {{ inventario.talla }}
               </td>
               <td>
-                {{ producto.descripcion }}
+                {{ inventario.stock }}
               </td>
               <td>
-                {{ producto.material }}
+                {{ inventario.precio }}
               </td>
               <td>
-                <img src="{{ producto.imagen }}" alt="">
+                {{ inventario.puntos }}
               </td>
               <td align="center">
-                <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
+                <button (click)="edit(inventario.inventario_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
                 </button>
                 &nbsp;&nbsp;
-                <button type="button" class="btn btn-danger" (click)="confirm(i, producto.producto_id,confirmModal)">
+                <button type="button" class="btn btn-danger" (click)="confirm(i, inventario.inventario_id,confirmModal)">
                   <i class="fa fa-eraser" aria-hidden="true"></i>
                 </button>
               </td>
@@ -85,7 +86,7 @@
             </tbody>
           </table>
           <!-- end table-->
-          <div class="container-fluid" *ngIf="productos !== null">
+          <div class="container-fluid" *ngIf="inventarios !== null">
             <div class="row">
               <div class="col-md-12">
                 <nav>
