@@ -14,7 +14,7 @@
                   * Seleccione producto
                 </label>
                 <select name="producto_id" id="producto" class="form-control" formControlName="producto_id">
-                  <option [value]="producto.producto_id" *ngFor="let producto of productos"> {{ producto.material }}</option>
+                  <option [value]="producto.producto_id" *ngFor="let producto of productos"> {{ producto.nombre }}</option>
                 </select>
               </div>
               <div class="form-group">
