@@ -15,10 +15,10 @@ class CreatePromocionsTable extends Migration
     {
         Schema::create('promociones', function (Blueprint $table) {
             $table->increments('promocion_id');
-            $table->integer('producto_id')->unsigned();
-            $table->foreign('producto_id')
-                ->references('producto_id')
-                ->on('productos')
+            $table->integer('inventario_id')->unsigned();
+            $table->foreign('inventario_id')
+                ->references('inventario_id')
+                ->on('inventarios')
                 ->onDelete('cascade');
             $table->text('detalle');
             $table->integer('puntos')->unsigned();

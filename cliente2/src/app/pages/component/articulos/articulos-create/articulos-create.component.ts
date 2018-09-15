@@ -1,9 +1,9 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ProductoService} from "../../producto/producto.service";
-import {CategoriasService} from "../../categorias/categorias.service";
 import {Router} from "@angular/router";
 import {environment} from "../../../../../environments/environment.prod";
+import {ArticulosService} from "../articulos.service";
 
 @Component({
   selector: 'app-articulos-create',
@@ -12,16 +12,16 @@ import {environment} from "../../../../../environments/environment.prod";
 })
 export class ArticulosCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
-    categorias: any = null;
+    productos: any = null;
     articuloGroup: FormGroup;
 
-    constructor(protected articuloService: ProductoService,
-                protected categoriaService: CategoriasService,
+    constructor(protected articuloService: ArticulosService,
+                protected productoService: ProductoService,
                 protected fb: FormBuilder,
                 protected router: Router,
                 //            protected toartr: ToastrService
     ) {
-        this.categoriaService.lista_categorias().subscribe(res => this.categorias = res);
+        this.productoService.lista_productos().subscribe(res => this.productos = res);
         this.createForm();
     }
 
@@ -30,11 +30,8 @@ export class ArticulosCreateComponent implements OnInit {
 
     createForm() {
         this.articuloGroup = this.fb.group({
-            'categoria_id' : new FormControl(0, [Validators.required]),
-            'nombre' : new FormControl(''),
-            'descripcion' : new FormControl(''),
-            'imagen' : new FormControl(''),
-            'puntos' : new FormControl('')
+            'producto_id' : new FormControl(0, [Validators.required]),
+            'imagen' : new FormControl('')
         });
     }
 
@@ -43,20 +40,16 @@ export class ArticulosCreateComponent implements OnInit {
         const file = this.imagen.nativeElement;
         if (file.files[0]) {
             form.append('imagen', file.files[0]);
-            form.append('categoria_id', this.articuloGroup.value.categoria_id);
-            form.append('nombre', this.articuloGroup.value.nombre);
-            form.append('descripcion', this.articuloGroup.value.descripcion);
+            form.append('producto_id', this.articuloGroup.value.categoria_id);
         }else{
-            form.append('categoria_id', this.articuloGroup.value.categoria_id);
-            form.append('nombre', this.articuloGroup.value.nombre);
-            form.append('descripcion', this.articuloGroup.value.descripcion);
+            console.log('ingrese imagen');
         }
         this.articuloService.store(form).subscribe((res: any)=> {
-            console.log('Movimiento guardado');
+            console.log('Imagen guardado');
             // this.toastr.success(res.message, res.title, {
             //     timeOut: 1000
             // });
-            this.router.navigate([environment.admin + '/productos']);
+            this.router.navigate([environment.admin + '/articulos']);
         }, (error: any)=> {
             // this.toastr.error(error.message, error.title)
         }, () => {

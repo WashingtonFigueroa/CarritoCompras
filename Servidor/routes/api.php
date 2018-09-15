@@ -40,8 +40,8 @@ Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']])
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
 
 Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit']]);
-Route::post('articulos','ImagenController@articulos');
-Route::get('articulos','ImagenController@articulos');
+Route::post('articulos','ImagenController@buscar_articulos');
+Route::get('articulos','ImagenController@lista_articulos');
 
 Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
 Route::post('buscar_promociones','PromocionController@buscar_promociones');

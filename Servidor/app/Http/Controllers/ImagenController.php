@@ -18,19 +18,33 @@ class ImagenController extends Controller
     public function buscar_articulos() {
         $search = request()->input('search');
         $articulo = Imagen::with('producto')
-            ->where('nombre', 'like', '%'. $search . '%')
+            ->where('producto_id', 'like', '%'. $search . '%')
             ->paginate(10);
         return response()->json($articulo, 200);
     }
     public function store(Request $request)
     {
-        if ($request->hasFile('imagen')) {
-            $imagen = new Imagen();
-            $imagen->descripcion_producto_id = $request->input('producto_id');
-            $imagen->imagen = $request->file('imagen')->store('imagenes');
-            $imagen->save();
+        try{
+            if ($request->hasFile('imagen')){
+                $path_documento = $request->file('imagen')->store('productos');
+                $img = new Imagen();
+                $img->producto_id = $request->input('producto_id');
+                $img->imagen = $path_documento;
+                $img->save();
+            }
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Imagen guardado exitosamente',
+                'producto' => $img
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Imagen no guardado exitosamente',
+                'error' => 'ups!'
+            ], 500);
         }
-        return response()->json($imagen, 201);
     }
 
     public function show($id)
