@@ -14,14 +14,10 @@ class Producto extends Model
         'categoria_id',
         'nombre',
         'descripcion',
-        'stock',
         'material',
         'color1',
         'color2',
-        'precio',
         'imagen',
-        'talla',
-        'puntos',
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];

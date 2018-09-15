@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Imagen extends Model
 {
     use SoftDeletes;
-    protected $table = 'tipo_usuarios';
-    protected $primaryKey = 'tipo_usuario_id';
+    protected $table = 'imagenes';
+    protected $primaryKey = 'imagen_id';
     protected $fillable = [
-        'descripcion_producto_id',
+        'producto_id',
         'imagen',
     ];
     protected $hidden = [];

@@ -38,7 +38,10 @@ Route::get('lista_productos','ProductoController@lista_productos');
 Route::resource('descripcion_productos', 'DescripcionProductoController', ['except' => ['create', 'edit']]);
 Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
-Route::resource('imagenes', 'ImagenController', ['except' => ['create', 'edit']]);
+
+Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit']]);
+Route::post('articulos','ImagenController@articulos');
+Route::get('articulos','ImagenController@articulos');
 
 Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
 Route::post('buscar_promociones','PromocionController@buscar_promociones');

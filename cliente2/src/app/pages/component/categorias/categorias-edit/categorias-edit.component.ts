@@ -35,7 +35,8 @@ export class CategoriasEditComponent implements OnInit {
     createForm(categoria) {
         this.categoriaGroup = this.fb.group({
             'nombre' : new FormControl(categoria.nombre,[Validators.required]),
-            'descripcion' : new FormControl(categoria.descripcion)
+            'descripcion' : new FormControl(categoria.descripcion),
+            'imagen' : new FormControl(categoria.imagen)
         });
     }
 
