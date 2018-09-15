@@ -12,7 +12,7 @@
   transition: .5s ease;
   cursor: pointer;
 }
-.product-size:hover {
+.product-size:hover, .product-size-active{
   background-color: black;
   color: white;
 }
