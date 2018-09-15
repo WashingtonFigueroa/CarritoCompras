@@ -11,7 +11,7 @@ class Promocion extends Model
     protected $table = 'promociones';
     protected $primaryKey = 'promocion_id';
     protected $fillable = [
-        'producto_id',
+        'inventario_id',
         'detalle',
         'puntos',
         'stock',
@@ -19,8 +19,8 @@ class Promocion extends Model
         'estado',
     ];
     protected $dates = ['deleted_at'];
-    public function producto() {
-        return $this->belongsTo(Producto::class, 'producto_id');
+    public function inventario() {
+        return $this->belongsTo(inventario::class, 'inventario_id');
     }
     public function retiroPromociones() {
         return $this->hasMany(RetiroPromocion::class, 'promocion_id');

@@ -37,14 +37,10 @@ export class ProductoCreateComponent implements OnInit {
             'categoria_id' : new FormControl(0, [Validators.required]),
             'nombre' : new FormControl(''),
             'descripcion' : new FormControl(''),
-            'stock' : new FormControl(1),
             'material' : new FormControl(''),
             'color1' : new FormControl(''),
             'color2' : new FormControl(''),
-            'talla' : new FormControl(''),
-            'precio' : new FormControl('', [Validators.required]),
-            'imagen' : new FormControl(''),
-            'puntos' : new FormControl('')
+            'imagen' : new FormControl('')
         });
     }
 
@@ -58,24 +54,16 @@ export class ProductoCreateComponent implements OnInit {
                 form.append('categoria_id', this.productoGroup.value.categoria_id);
                 form.append('nombre', this.productoGroup.value.nombre);
                 form.append('descripcion', this.productoGroup.value.descripcion);
-                form.append('stock', this.productoGroup.value.stock);
                 form.append('material', this.productoGroup.value.material);
                 form.append('color1',color1.value);
                 form.append('color2',color2.value);
-                form.append('talla', this.productoGroup.value.talla);
-                form.append('precio', this.productoGroup.value.precio);
-                form.append('puntos', this.productoGroup.value.puntos);
             }else{
                 form.append('categoria_id', this.productoGroup.value.categoria_id);
                 form.append('nombre', this.productoGroup.value.nombre);
                 form.append('descripcion', this.productoGroup.value.descripcion);
-                form.append('stock', this.productoGroup.value.stock);
                 form.append('material', this.productoGroup.value.material);
                 form.append('color1',color1.value);
                 form.append('color2',color2.value);
-                form.append('talla', this.productoGroup.value.talla);
-                form.append('precio', this.productoGroup.value.precio);
-                form.append('puntos', this.productoGroup.value.puntos);
             }
             this.productoService.store(form).subscribe((res: any)=> {
                     console.log('Movimiento guardado');
