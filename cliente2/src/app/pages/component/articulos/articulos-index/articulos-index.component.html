@@ -49,10 +49,10 @@
                 {{ articulo.imagen_id }}
               </td>
               <td>
-                {{ articulo.producto_id }}
+                {{ articulo.producto.nombre }}
               </td>
               <td>
-                <img src=" {{ articulo.imagen }}" alt="">
+                <img [src]="environment.base+environment.imagen.articulo+articulo.imagen_id" alt="" height="80">
               </td>
               <td align="center">
                 <button (click)="edit(articulo.imagen_id)" type="button" class="btn btn-info">
