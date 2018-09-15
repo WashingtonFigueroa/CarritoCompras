@@ -9,14 +9,17 @@ import { ProductosComponent } from './productos/productos.component';
 import {InicioService} from './inicio.service';
 import { CategoriasComponent } from './categorias/categorias.component';
 import {UICarouselModule} from 'ui-carousel';
+import {NgxImageZoomModule} from 'ngx-image-zoom';
+import { ProductoComponent } from './producto/producto.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    NgxImageZoomModule.forRoot(),
     UICarouselModule,
     InicioRoutingModule
   ],
-  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent, CategoriasComponent],
+  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent, CategoriasComponent, ProductoComponent],
   providers: [InicioService]
 })
 export class InicioModule { }

@@ -1,6 +1,6 @@
 <nav class="product-filter">
 
-  <h1>{{ categoria.nombre }}</h1>
+  <h1 *ngIf="categoria !== null">{{ categoria.nombre }}</h1>
 
   <div class="sort">
 
@@ -24,7 +24,7 @@
 
 </nav>
 
-<section class="products">
+<section class="products" *ngIf="productos !== null">
   <div class="product-card" *ngFor="let producto of productos">
     <div class="product-image">
       <img [src]="producto.imagen" alt="">
@@ -38,7 +38,7 @@
       </div>
       <div class="btn-container">
         <button
-          [routerLink]="['/inicio/productos/' + producto.producto_id]"
+          [routerLink]="['/inicio/producto/' + producto.producto_id]"
           class="btn btn-rounded btn-danger">Ver {{ producto.nombre }}</button>
       </div>
     </div>

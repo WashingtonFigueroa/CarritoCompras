@@ -76,7 +76,7 @@ class ProductoController extends Controller
 
     public function show($id)
     {
-        return response()->json(Producto::find($id), 200);
+        return response()->json(Producto::with('imagenes')->find($id), 200);
     }
 
     public function update(Request $request, $id)

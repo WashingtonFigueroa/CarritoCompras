@@ -1,0 +1,44 @@
+<div *ngIf="producto !== null" class="row bg-white">
+  <div class="col-md-3">
+    <div class="gallery-column">
+      <img [src]="imagen.imagen" alt="" *ngFor="let imagen of producto.imagenes">
+    </div>
+  </div>
+  <div class="col-md-5">
+    <ngx-image-zoom
+      style="cursor: zoom-in; width: 100%"
+      [enableScrollZoom]="settings.enableScrollZoom"
+      [magnification]="settings.zoom"
+      [thumbImage]='producto.imagen'
+      [fullImage]='producto.imagen'
+    ></ngx-image-zoom>
+  </div>
+  <div class="col-md-4">
+    <h1>{{ producto.nombre }}</h1>
+    <h2><strong>${{ producto.precio }}</strong></h2>
+    <h3>Tallas</h3>
+    <div class="product-size">{{ producto.talla }}</div>
+    <div class="product-size">M</div>
+    <div class="product-size">L</div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <label for="">Cantidad</label>
+          <select name="" id="">
+            <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <button class="btn btn-lg btn-rounded btn-danger">Añadir a Carrito</button>
+      </div>
+    </div>
+    <br>
+    <h3><strong>Descripción</strong></h3>
+    <p>
+      {{ producto.descripcion }}
+    </p>
+  </div>
+</div>

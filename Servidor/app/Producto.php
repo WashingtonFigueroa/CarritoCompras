@@ -34,6 +34,9 @@ class Producto extends Model
     public function categoria() {
         return $this->belongsTo(Categoria::class, 'categoria_id');
     }
+    public function imagenes() {
+        return $this->hasMany(Imagen::class, 'producto_id');
+    }
     public static function boot()
     {
         parent::boot();
