@@ -39,4 +39,15 @@
 .gallery-column img:hover {
   border: 1px solid black;
 }
-
+.product-links {
+  text-align: right;
+}
+.product-links a {
+  margin-right: 2.2em;
+  color: #ff1300;
+  transition: .5s ease;
+}
+.product-links a:hover {
+  margin-right: 2.2em;
+  color: #000000;
+}

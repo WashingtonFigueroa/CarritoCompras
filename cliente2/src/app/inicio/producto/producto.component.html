@@ -14,6 +14,9 @@
     ></ngx-image-zoom>
   </div>
   <div class="col-md-4">
+    <div class="product-links">
+      <a [routerLink]="['/inicio/productos/' + producto.categoria_id ]">&larr;	Atrás</a>
+    </div>
     <h1>{{ producto.nombre }}</h1>
     <h2><strong>${{ producto.precio }}</strong></h2>
     <h3>Tallas</h3>
