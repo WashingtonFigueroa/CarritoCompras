@@ -20,8 +20,8 @@ class ProductoController extends Controller
     public function buscar_productos() {
         $search = request()->input('search');
         $tipousuarios = Producto::with('categoria')
-            ->where('material', 'like', '%'. $search . '%')
-            ->orWhere('color', 'like', '%'. $search . '%')
+            ->where('nombre', 'like', '%'. $search . '%')
+            ->orWhere('descripcion', 'like', '%'. $search . '%')
             ->paginate(10);
         return response()->json($tipousuarios, 200);
     }
@@ -34,14 +34,10 @@ class ProductoController extends Controller
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
-                $producto->stock = (int)$request->input('stock');
                 $producto->material = $request->input('material');
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
-                $producto->talla = $request->input('talla');
-                $producto->precio = (float)$request->input('precio');
                 $producto->imagen = $path_documento;
-                $producto->puntos = (int)$request->input('puntos');
                 $producto->save();
             }
             else{
@@ -49,14 +45,10 @@ class ProductoController extends Controller
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
-                $producto->stock = (int)$request->input('stock');
                 $producto->material = $request->input('material');
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
-                $producto->talla = $request->input('talla');
-                $producto->precio = (float)$request->input('precio');
                 $producto->imagen = "productos/log.png";
-                $producto->puntos = (int)$request->input('puntos');
                 $producto->save();
             }
             return response()->json([
@@ -67,7 +59,7 @@ class ProductoController extends Controller
 
         }catch (\Exception $e) {
             return response()->json([
-                'title' => 'Exito',
+                'title' => 'Error',
                 'message' => 'Producto no guardado exitosamente',
                 'error' => 'ups!'
             ], 500);

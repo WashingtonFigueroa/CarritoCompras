@@ -12,6 +12,10 @@ import {environment} from '../../../../../environments/environment.prod';
 })
 export class ProductoCreateComponent implements OnInit {
 @ViewChild('imagen') imagen;
+@ViewChild('color1') color1;
+@ViewChild('color2') color2;
+
+
     categorias: any = null;
     productoGroup: FormGroup;
 
@@ -47,6 +51,8 @@ export class ProductoCreateComponent implements OnInit {
     store() {
         const form =  new FormData();
         const file = this.imagen.nativeElement;
+        const color1 = this.color1.nativeElement;
+        const color2 = this.color2.nativeElement;
             if (file.files[0]) {
                 form.append('imagen', file.files[0]);
                 form.append('categoria_id', this.productoGroup.value.categoria_id);
@@ -54,8 +60,8 @@ export class ProductoCreateComponent implements OnInit {
                 form.append('descripcion', this.productoGroup.value.descripcion);
                 form.append('stock', this.productoGroup.value.stock);
                 form.append('material', this.productoGroup.value.material);
-                form.append('color1', this.productoGroup.value.color1);
-                form.append('color2', this.productoGroup.value.color2);
+                form.append('color1',color1.value);
+                form.append('color2',color2.value);
                 form.append('talla', this.productoGroup.value.talla);
                 form.append('precio', this.productoGroup.value.precio);
                 form.append('puntos', this.productoGroup.value.puntos);
@@ -65,8 +71,8 @@ export class ProductoCreateComponent implements OnInit {
                 form.append('descripcion', this.productoGroup.value.descripcion);
                 form.append('stock', this.productoGroup.value.stock);
                 form.append('material', this.productoGroup.value.material);
-                form.append('color1', this.productoGroup.value.color1);
-                form.append('color2', this.productoGroup.value.color2);
+                form.append('color1',color1.value);
+                form.append('color2',color2.value);
                 form.append('talla', this.productoGroup.value.talla);
                 form.append('precio', this.productoGroup.value.precio);
                 form.append('puntos', this.productoGroup.value.puntos);
