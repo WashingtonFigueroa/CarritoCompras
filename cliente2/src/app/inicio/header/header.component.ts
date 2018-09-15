@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {InicioService} from '../inicio.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,8 @@ export class HeaderComponent implements OnInit {
   categorias: any = null;
   productos = [];
   subtotal = 0;
-  constructor(private inicioService: InicioService) {
+  constructor(private inicioService: InicioService,
+              public router: Router) {
     const cantidad = Math.random() * 10 + 1;
     for ( let i = 0; i < cantidad; i++) {
      this.productos.push({

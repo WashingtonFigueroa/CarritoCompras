@@ -116,17 +116,22 @@
   </div>
 </div>
 <div class="row bg-light">
-  <div class="offset-md-3 col-sm-12 col-md-6">
+  <div class="col-sm-12 col-md-12">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header nav-active">Inicio</span></a></li>
+        <ul class="navbar-nav mx-auto">
+          <!--<li class="nav-item"><a class="nav-link" routerLink="/inicio"><span class="nav-header nav-active">Inicio</span></a></li>-->
           <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Las mejores ofertas</span></a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">Categorias</span></a></li>
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Camisas</span></a></li>
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Manillas</span></a></li>
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Accesorios</span></a></li>
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Diseño</span></a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias">
+            <span [class]="router.url === '/inicio/categorias' ? 'nav-header nav-active' : 'nav-header'">Categorias</span></a>
+          </li>
+          <li class="nav-item" *ngFor="let categoria of categorias">
+            <a class="nav-link"
+               [routerLink]="['/inicio/productos/'+categoria.categoria_id]">
+              <span [class]="router.url === '/inicio/productos/' + categoria.categoria_id ? 'nav-header nav-active' : 'nav-header'">{{ categoria.nombre }}</span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Diseña tu manilla</span></a></li>
         </ul>
       </div>
     </nav>
