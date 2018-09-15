@@ -7,79 +7,49 @@ use Illuminate\Http\Request;
 
 class InventarioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return response()->json(inventario::with('producto')
+            ->orderBy('inventario_id')->paginate(10), 200);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function lista_inventario()
     {
-        //
+        return response()->json(inventario::orderBy('inventario_id')->get(), 200);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    public function buscar_inventario() {
+        $search = request()->input('search');
+        $inventario = inventario::with('producto')
+            ->join('productos', 'productos.producto_id', 'inventarios.producto_id')
+            ->whereNull('productos.deleted_at')
+            ->orWhere('productos.nombre', 'like', '%'. $search . '%')
+            ->where('inventario.talla', 'like', '%'. $search . '%')
+            ->paginate(10);
+        return response()->json($inventario, 200);
+    }
+
     public function store(Request $request)
     {
-        //
+        return response()->json(inventario::create($request->all()), 201);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\inventario  $inventario
-     * @return \Illuminate\Http\Response
-     */
-    public function show(inventario $inventario)
+    public function show($id)
     {
-        //
+        return response()->json(inventario::find($id), 200);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\inventario  $inventario
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(inventario $inventario)
+    public function update(Request $request, $id)
     {
-        //
+        $inventario = inventario::find($id);
+        $inventario->update($request->all());
+        return response()->json($inventario, 200);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\inventario  $inventario
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, inventario $inventario)
+    public function destroy($id)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\inventario  $inventario
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(inventario $inventario)
-    {
-        //
+        $inventario = inventario::find($id);
+        $inventario->delete();
+        return response()->json($inventario, 200);
     }
 }

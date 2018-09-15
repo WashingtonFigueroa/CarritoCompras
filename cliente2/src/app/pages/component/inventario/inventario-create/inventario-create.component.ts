@@ -3,19 +3,19 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {ProductoService} from '../../producto/producto.service';
 import {Router} from '@angular/router';
 import {environment} from '../../../../../environments/environment.prod';
-import {PromocionService} from '../promocion.service';
+import {InventarioService} from '../inventario.service';
 
 @Component({
-  selector: 'app-promocion-create',
-  templateUrl: './promocion-create.component.html',
-  styleUrls: ['./promocion-create.component.css']
+  selector: 'app-inventario-create',
+  templateUrl: './inventario-create.component.html',
+  styleUrls: ['./inventario-create.component.css']
 })
-export class PromocionCreateComponent implements OnInit {
+export class InventarioCreateComponent implements OnInit {
 
     productos: any = null;
-    promocionGroup: FormGroup;
+    inventarioGroup: FormGroup;
 
-    constructor(protected promocionService: PromocionService,
+    constructor(protected inventarioService: InventarioService,
                 protected productoService: ProductoService,
                 protected fb: FormBuilder,
                 protected router: Router,
@@ -29,23 +29,22 @@ export class PromocionCreateComponent implements OnInit {
     }
 
     createForm() {
-        this.promocionGroup = this.fb.group({
+        this.inventarioGroup = this.fb.group({
             'producto_id' : new FormControl(0, [Validators.required]),
-            'detalle' : new FormControl('', [Validators.required]),
-            'puntos' : new FormControl(1, [Validators.required]),
-            'stock' : new FormControl(1, [Validators.required]),
-            'estado' : new FormControl(1)
-
+            'talla' : new FormControl('', [Validators.required]),
+            'stock' : new FormControl('', [Validators.required]),
+            'precio' : new FormControl('', [Validators.required]),
+            'puntos' : new FormControl('')
         });
     }
 
     store() {
-        this.promocionService.store(this.promocionGroup.value)
+        this.inventarioService.store(this.inventarioGroup.value)
             .subscribe((res: any) => {
                 if (res.error) {
                     console.log(res.error);
                 } else {
-                    this.router.navigate([environment.admin + '/promociones']);
+                    this.router.navigate([environment.admin + '/inventarios']);
                     // this.toartr.success('Usuario Guardado', 'Ok');
                 }
             }, error => {
