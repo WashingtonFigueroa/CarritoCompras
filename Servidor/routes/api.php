@@ -55,3 +55,8 @@ Route::get('listar_descripcion_productos/{producto_id}', 'ProductoController@lis
 Route::post('buscar_descripcion_productos', 'DescripcionProductoController@buscar_descripcion_productos');
 
 Route::get('productos_categoria/{categoria_id}', 'CategoriaController@productos');
+
+/*show images*/
+Route::get('ver_imagen_categoria/{id}', 'CategoriaController@ver_imagen');
+Route::get('ver_imagen_producto/{id}', 'ProductoController@ver_imagen');
+Route::get('ver_imagen_articulo/{id}', 'ImagenController@ver_imagen');

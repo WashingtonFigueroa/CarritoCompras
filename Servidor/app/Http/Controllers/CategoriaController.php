@@ -85,4 +85,9 @@ class CategoriaController extends Controller
                                 ->get();
         return response()->json($productos, 200);
     }
+    public function ver_imagen($id) {
+        $categoria = Categoria::find($id);
+        return response()->file(storage_path('app/' . $categoria->imagen));
+    }
+
 }

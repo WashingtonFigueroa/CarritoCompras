@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {environment} from '../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-producto',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductoComponent implements OnInit {
 
+  environment = environment;
   constructor() { }
 
   ngOnInit() {

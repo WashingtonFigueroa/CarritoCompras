@@ -51,4 +51,8 @@ class ImagenController extends Controller
         $imagen->delete();
         return response()->json($imagen, 200);
     }
+    public function ver_imagen($id) {
+        $imagen = Imagen::find($id);
+        return response()->file(storage_path('app/' . $imagen->imagen));
+    }
 }

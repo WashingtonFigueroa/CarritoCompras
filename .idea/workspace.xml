@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7b814d-98c8-4ebb-a132-7002b8df5d25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CarritoCompras.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/CategoriaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/CategoriaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ImagenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ImagenController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,13 +67,6 @@
         <item name="manillasdb: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="imagenes: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="manillasDB@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="manillasdb: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="productos: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -63,63 +74,67 @@
     <session id="-1093471438">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="SCHEMA:manillasdb" value="2" />
-          <entry key="categorias" value="8" />
-          <entry key="css" value="47" />
-          <entry key="html" value="95" />
-          <entry key="imagenes" value="3" />
+          <entry key="SCHEMA:manillasdb" value="3" />
+          <entry key="categorias" value="12" />
+          <entry key="css" value="67" />
+          <entry key="html" value="146" />
+          <entry key="imagenes" value="7" />
           <entry key="json" value="1" />
-          <entry key="php" value="15" />
-          <entry key="productos" value="8" />
-          <entry key="sql" value="6" />
-          <entry key="ts" value="57" />
+          <entry key="php" value="35" />
+          <entry key="productos" value="10" />
+          <entry key="sql" value="21" />
+          <entry key="ts" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="47" />
-          <entry key="Database Element" value="19" />
-          <entry key="HTML" value="95" />
+          <entry key="CSS" value="67" />
+          <entry key="Database Element" value="29" />
+          <entry key="HTML" value="146" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="15" />
-          <entry key="Scratch" value="6" />
-          <entry key="TypeScript" value="57" />
-          <entry key="UML" value="2" />
+          <entry key="PHP" value="35" />
+          <entry key="Scratch" value="21" />
+          <entry key="TypeScript" value="109" />
+          <entry key="UML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="2" />
-          <entry key="TsLintLanguageService" value="2" />
+          <entry key="Angular2LanguageService" value="4" />
+          <entry key="TsLintLanguageService" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="258" />
-          <entry key="css" value="1099" />
-          <entry key="html" value="2520" />
-          <entry key="php" value="123" />
-          <entry key="ts" value="1055" />
-          <entry key="txt" value="10" />
+          <entry key="cell" value="263" />
+          <entry key="css" value="1422" />
+          <entry key="html" value="3073" />
+          <entry key="php" value="445" />
+          <entry key="sql" value="44" />
+          <entry key="ts" value="1581" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1099" />
-          <entry key="HTML" value="2519" />
+          <entry key="CSS" value="1422" />
+          <entry key="HTML" value="3072" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="123" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Scratch" value="258" />
-          <entry key="TypeScript" value="1055" />
+          <entry key="PHP" value="445" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Scratch" value="307" />
+          <entry key="TypeScript" value="1581" />
         </counts>
       </usages-collector>
     </session>
@@ -127,10 +142,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
+        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+            <state relative-caret-position="429">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -158,21 +173,32 @@
       <list>
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.service.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/categorias/categorias.service.ts" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio-routing.module.ts" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" />
-        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Producto.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Imagen.php" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/14c29ba3-a85e-4340-8b1c-150f3b4e49bb/console.sql" />
+        <option value="$PROJECT_DIR$/Servidor/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/CategoriaController.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php" />
+        <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/ImagenController.php" />
+        <option value="$PROJECT_DIR$/Servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/cliente2/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.css" />
       </list>
     </option>
   </component>
@@ -276,6 +302,7 @@
     <option name="width" value="1935" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -321,6 +348,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="inicio" type="462c0819:PsiDirectoryNode" />
+              <item name="image-zoom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="inicio" type="462c0819:PsiDirectoryNode" />
               <item name="producto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -332,7 +368,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.ts&#10;productots&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;producto.component.css&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;producto.component&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;productohtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;produ&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;productocss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;imagentable&#9;null&#9;null&#10;imagen.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Imagen.php&#10;producto.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ProductoController.php&#10;producto&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Producto.php&#10;productoContro&#9;null&#9;null&#10;producthtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;product&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;productos&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;\&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.css&#10;productocontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ProductoController.php&#10;iniciomo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;productocomponentts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;inici&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;productoshtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;iniciorou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio-routing.module.ts&#10;inicimodule&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;categori&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.html&#10;productoscss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.css&#10;categoriashtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.html&#10;productosts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;PRODUCTOS&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;categoriacontro&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;productoscompo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;categoriase&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias.service.ts&#10;categoriaservi&#9;null&#9;null&#10;categoria&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.html&#10;productosht&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;iniciorout&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio-routing.module.ts&#10;categories&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.spec.ts" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;productocomponentts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;producto&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;]&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s&#10;productots&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/producto/producto.component.ts&#10;productos.&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;productos&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;productohtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;productoh&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;productoshtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;categoriascomponentts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.ts&#10;categorias&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.html&#10;api&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;environ&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/environments/environment.prod.ts&#10;categoriacontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;image&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ImagenController.php&#10;categoria&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;product&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ProductoController.php&#10;categori&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;imagencontr&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ImagenController.php&#10;api.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;productocontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ProductoController.php&#10;imagen&#9;null&#9;null&#10;databaseeder&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/database/seeds/DatabaseSeeder.php&#10;databasesee&#9;null&#9;null&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.ts&#10;producto.component.css&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;producto.component&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;produ&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;productocss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;imagentable&#9;null&#9;null&#10;imagen.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Imagen.php&#10;producto.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/ProductoController.php&#10;productoContro&#9;null&#9;null&#10;producthtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;\&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.css&#10;iniciomo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;inici&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;iniciorou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio-routing.module.ts&#10;inicimodule&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio.module.ts&#10;productoscss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.css&#10;categoriashtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/categorias/categorias.component.html&#10;productosts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;PRODUCTOS&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;productoscompo&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;categoriase&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias.service.ts&#10;categoriaservi&#9;null&#9;null&#10;productosht&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.html&#10;iniciorout&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/inicio-routing.module.ts&#10;categories&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.spec.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -365,18 +401,30 @@
       <option name="presentableId" value="Default" />
       <updated>1536954152501</updated>
       <workItem from="1536954153879" duration="5424000" />
-      <workItem from="1536966900321" duration="13115000" />
+      <workItem from="1536966900321" duration="13532000" />
+      <workItem from="1536981867401" duration="395000" />
+      <workItem from="1536985391646" duration="607000" />
+      <workItem from="1537015313141" duration="5582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18539000" />
+    <option name="totallyTimeSpent" value="25540000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -385,13 +433,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32904884" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32904884" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.5848329" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.5706941" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.5706941" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -430,13 +478,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/34699d8e-393a-494e-a791-df74ab7c1f04/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -452,23 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/CategoriaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -479,30 +504,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/categorias">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/categorias" />
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/inicio-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,16 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="907" selection-start-column="907" selection-end-column="907" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,27 +533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Servidor/app/Producto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -582,55 +561,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/productos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/imagenes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#ngx-image-zoom#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#624#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/productos" />
+    <entry file="das://34699d8e-393a-494e-a791-df74ab7c1f04/schema/manillasdb/table/imagenes" />
     <entry file="uml://DATABASE/34699d8e-393a-494e-a791-df74ab7c1f04.SCHEMA:manillasdb">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -709,12 +641,13 @@
               <point x="56.25" y="92.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.4034346103038309" x="701.0704960835509" y="466.522193211488" />
+          <settings layout="Hierarchic Group" zoom="1.4034346103038309" x="701.0" y="467.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -736,16 +669,299 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+        <state relative-caret-position="202">
+          <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/14c29ba3-a85e-4340-8b1c-150f3b4e49bb.SCHEMA:manillasdb">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>14c29ba3-a85e-4340-8b1c-150f3b4e49bb.SCHEMA:manillasdb</OriginalElement>
+          <nodes>
+            <node x="265.08680555555554" y="600.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.inventarios</node>
+            <node x="905.7534722222223" y="622.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.imagenes</node>
+            <node x="0.0" y="556.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.compras</node>
+            <node x="428.2534722222223" y="278.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.privilegios</node>
+            <node x="673.2534722222223" y="234.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.productos</node>
+            <node x="0.0" y="1151.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.password_resets</node>
+            <node x="668.7534722222223" y="578.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.promociones</node>
+            <node x="553.8784722222223" y="922.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.retiro_promociones</node>
+            <node x="673.2534722222223" y="0.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.categorias</node>
+            <node x="305.7534722222223" y="0.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.tipo_usuarios</node>
+            <node x="100.70138888888891" y="900.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.detalle_compras</node>
+            <node x="183.25347222222229" y="256.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.usuarios</node>
+            <node x="1157.7534722222222" y="0.0">14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.migrations</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.detalle_compras" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.compras">
+              <point x="-60.25" y="-103.0" />
+              <point x="160.9513888888889" y="875.0" />
+              <point x="100.5" y="875.0" />
+              <point x="0.0" y="147.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.promociones" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.productos">
+              <point x="0.0" y="-125.0" />
+              <point x="0.0" y="136.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.detalle_compras" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.inventarios">
+              <point x="60.25" y="-103.0" />
+              <point x="281.4513888888889" y="875.0" />
+              <point x="371.08680555555554" y="875.0" />
+              <point x="0.0" y="103.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.usuarios" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.tipo_usuarios">
+              <point x="0.0" y="-114.0" />
+              <point x="295.7534722222223" y="209.0" />
+              <point x="362.0034722222223" y="209.0" />
+              <point x="-56.25" y="92.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.compras" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.usuarios">
+              <point x="0.0" y="-147.0" />
+              <point x="100.5" y="536.0" />
+              <point x="239.50347222222229" y="536.0" />
+              <point x="-56.25" y="114.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.retiro_promociones" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.promociones">
+              <point x="63.0" y="-81.0" />
+              <point x="742.8784722222223" y="875.0" />
+              <point x="777.2534722222223" y="875.0" />
+              <point x="0.0" y="125.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.privilegios" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.tipo_usuarios">
+              <point x="0.0" y="-92.0" />
+              <point x="540.7534722222223" y="209.0" />
+              <point x="474.5034722222223" y="209.0" />
+              <point x="56.25" y="92.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.retiro_promociones" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.usuarios">
+              <point x="-63.0" y="-81.0" />
+              <point x="616.8784722222223" y="875.0" />
+              <point x="487.58680555555554" y="875.0" />
+              <point x="487.58680555555554" y="526.0" />
+              <point x="352.0034722222223" y="526.0" />
+              <point x="56.25" y="114.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.productos" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.categorias">
+              <point x="0.0" y="-136.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.imagenes" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.productos">
+              <point x="0.0" y="-81.0" />
+              <point x="1009.2534722222223" y="536.0" />
+              <point x="846.5868055555555" y="536.0" />
+              <point x="69.33333333333331" y="136.0" />
+            </edge>
+            <edge source="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.inventarios" target="14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.productos">
+              <point x="0.0" y="-103.0" />
+              <point x="371.08680555555554" y="536.0" />
+              <point x="707.9201388888889" y="536.0" />
+              <point x="-69.33333333333331" y="136.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.3791469194312796" x="1225.625" y="396.175" />
+          <SelectedNodes>
+            <node>14c29ba3-a85e-4340-8b1c-150f3b4e49bb.TABLE:manillasdb.inventarios</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ProductoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/ImagenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/app/Http/Controllers/CategoriaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://14c29ba3-a85e-4340-8b1c-150f3b4e49bb/schema/manillasdb/table/productos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://14c29ba3-a85e-4340-8b1c-150f3b4e49bb/schema/manillasdb/table/categorias">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://14c29ba3-a85e-4340-8b1c-150f3b4e49bb/schema/manillasdb/table/imagenes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/14c29ba3-a85e-4340-8b1c-150f3b4e49bb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="4" column="104" selection-start-line="4" selection-start-column="104" selection-end-line="4" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#ngx-image-zoom#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/image-zoom/image-zoom.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>

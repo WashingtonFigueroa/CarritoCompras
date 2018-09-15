@@ -30,14 +30,19 @@
 .gallery-column img {
   padding: .5em;
   width: 50%;
-  border: 1px solid white;
   box-sizing: border-box;
   margin: 1em 0;
   cursor: pointer;
   transition: .2s ease;
 }
-.gallery-column img:hover {
+.gallery-column img:hover{
+  border: 1px solid gray;
+}
+img.gallery-column-active {
   border: 1px solid black;
+}
+img.gallery-column-inactive {
+  border: 1px solid white;
 }
 .product-links {
   text-align: right;

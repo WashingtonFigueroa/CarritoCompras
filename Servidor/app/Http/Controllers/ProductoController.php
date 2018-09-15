@@ -88,4 +88,9 @@ class ProductoController extends Controller
         $descripcion_productos = Producto::find($producto_id)->descripcionProductos()->paginate(10);
         return response()->json($descripcion_productos, 200);
     }
+    public function ver_imagen($id) {
+        $producto = Producto::find($id);
+        return response()->file(storage_path('app/' . $producto->imagen));
+    }
+
 }

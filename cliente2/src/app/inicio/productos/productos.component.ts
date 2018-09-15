@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CategoriasService} from '../../pages/component/categorias/categorias.service';
-import {ProductoService} from '../../pages/component/producto/producto.service';
 import {ActivatedRoute} from '@angular/router';
+import {environment} from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-productos',
@@ -10,6 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ProductosComponent implements OnInit {
 
+  environment = environment;
   productos: any = null;
   categoria: any = null;
   constructor(private categoriaService: CategoriasService,

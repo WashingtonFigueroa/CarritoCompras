@@ -31,7 +31,7 @@
 <section class="categories">
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
-      <img [src]="categoria.imagen" alt="">
+      <img [src]="environment.base + environment.imagen.categoria + categoria.categoria_id">
     </div>
     <div class="category-info">
       <h5>{{ categoria.nombre }}</h5>

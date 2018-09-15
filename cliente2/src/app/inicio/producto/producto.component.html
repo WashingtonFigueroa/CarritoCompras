@@ -1,17 +1,15 @@
 <div *ngIf="producto !== null" class="row bg-white">
   <div class="col-md-3">
     <div class="gallery-column">
-      <img [src]="imagen.imagen" alt="" *ngFor="let imagen of producto.imagenes">
+      <img
+          [class]="settings.image_id === imagen.imagen_id ? 'gallery-column-active' : 'gallery-column-inactive' "
+          (click)="selectImage(imagen.imagen_id)"
+          [src]="environment.base + environment.imagen.articulo + imagen.imagen_id"
+          *ngFor="let imagen of producto.imagenes">
     </div>
   </div>
   <div class="col-md-5">
-    <ngx-image-zoom
-      style="cursor: zoom-in; width: 100%"
-      [enableScrollZoom]="settings.enableScrollZoom"
-      [magnification]="settings.zoom"
-      [thumbImage]='producto.imagen'
-      [fullImage]='producto.imagen'
-    ></ngx-image-zoom>
+      <app-image-zoom [settings]="settings"></app-image-zoom>
   </div>
   <div class="col-md-4">
     <div class="product-links">

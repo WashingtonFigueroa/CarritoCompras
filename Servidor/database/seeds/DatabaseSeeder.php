@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        for($i = 0; $i < 5; $i++) {
+        for($i = 0; $i < 10; $i++) {
             App\Categoria::create([
                 'nombre' => $faker->word,
                 'descripcion' => $faker->sentence
