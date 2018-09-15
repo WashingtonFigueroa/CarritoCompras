@@ -70,7 +70,8 @@
                 {{ producto.material }}
               </td>
               <td>
-                <img src="{{ producto.imagen }}" alt="">
+                <img [src]="environment.base+environment.imagen.producto+producto.producto_id" alt="" height="80">
+
               </td>
               <td align="center">
                 <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
