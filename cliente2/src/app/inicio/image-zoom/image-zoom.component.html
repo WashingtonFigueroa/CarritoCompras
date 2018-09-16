@@ -1,7 +1,5 @@
-<ngx-image-zoom
-  style="cursor: zoom-in"
-  [enableScrollZoom]="settings.enableScrollZoom"
-  [magnification]="settings.zoom"
-  [thumbImage]='settings.image'
-  [fullImage]='settings.image'
-></ngx-image-zoom>
+<figure class="zoom"
+        (mousemove)="zoom($event)"
+        [ngStyle]="{'background-image': 'url('+ settings.image + ')'}">
+  <img [src]="settings.image" />
+</figure>

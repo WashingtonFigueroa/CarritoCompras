@@ -68,7 +68,9 @@ class ProductoController extends Controller
 
     public function show($id)
     {
-        return response()->json(Producto::with(['imagenes', 'inventarios'])->find($id), 200);
+        return response()->json(Producto::with(['imagenes', 'inventarios' => function ($query){
+            $query->orderBy('talla', 'desc');
+        }])->find($id), 200);
     }
 
     public function update(Request $request, $id)
