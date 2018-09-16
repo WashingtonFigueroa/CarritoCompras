@@ -11,8 +11,6 @@ import {environment} from '../../../environments/environment.prod';
 export class ProductoComponent implements OnInit {
   environment = environment;
   settings: any = {
-    zoom: 3,
-    enableScrollZoom: true,
     image: '',
     image_id: 0
   };
