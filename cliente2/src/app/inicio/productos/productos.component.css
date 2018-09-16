@@ -22,12 +22,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /*
 .products .product-card:first-child,
 .products .product-card:nth-child(2) {
   flex: 2 50%;
 }
 */
+=======
+/*.products .product-card:first-child,*/
+/*.products .product-card:nth-child(2) {*/
+  /*flex: 2 50%;*/
+/*}*/
+>>>>>>> bbdf12e1e31b782fef0d2de4f03e50b3a091fed5
 .product-card {
   padding: 2%;
   flex-grow: 1;

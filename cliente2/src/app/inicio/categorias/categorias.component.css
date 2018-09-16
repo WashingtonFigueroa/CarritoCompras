@@ -3,12 +3,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /*
 .categories .category-card:first-child,
 .categories .category-card:nth-child(2) {
   flex: 2 50%;
 }
 */
+=======
+/*.categories .category-card:first-child,*/
+/*.categories .category-card:nth-child(2) {*/
+  /*flex: 2 50%;*/
+/*}*/
+>>>>>>> bbdf12e1e31b782fef0d2de4f03e50b3a091fed5
 .category-card {
   padding: 2%;
   flex-grow: 1;
