@@ -4,6 +4,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
     {
+        path: 'login',
+        loadChildren: './login/login.module#LoginModule'
+    },
+    {
+        path: 'signup',
+        loadChildren: './signup/signup.module#SignupModule'
+    },
+    {
         path: 'admin',
         loadChildren: './pages/pages.module#PagesModule'
     }, {
