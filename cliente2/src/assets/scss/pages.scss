@@ -4448,7 +4448,6 @@ Login register and recover password Page
 
 .login-box {
   width: 400px;
-  margin: 0 auto;
   margin-right: auto;
   margin-left: 150px;
   .footer {
@@ -4476,7 +4475,11 @@ Login register and recover password Page
   }
 }
 
-
+@media (max-width: 920px) {
+  .login-box {
+    margin-left: auto;
+  }
+}
 
 
 
