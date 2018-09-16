@@ -8,7 +8,6 @@ import {FooterComponent} from './footer/footer.component';
 import { ProductosComponent } from './productos/productos.component';
 import {InicioService} from './inicio.service';
 import { CategoriasComponent } from './categorias/categorias.component';
-import {UICarouselModule} from 'ui-carousel';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 import { ProductoComponent } from './producto/producto.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
@@ -17,7 +16,6 @@ import { ImageZoomComponent } from './image-zoom/image-zoom.component';
   imports: [
     CommonModule,
     NgxImageZoomModule.forRoot(),
-    UICarouselModule,
     InicioRoutingModule
   ],
   declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent, CategoriasComponent, ProductoComponent, ImageZoomComponent],

@@ -33,12 +33,16 @@ class Producto extends Model
     public function imagenes() {
         return $this->hasMany(Imagen::class, 'producto_id');
     }
+    public function inventarios() {
+        return $this->hasMany(inventario::class, 'producto_id');
+    }
     public static function boot()
     {
         parent::boot();
         self::deleting(function ($parent) {
             $parent->descripcionProductos()->delete();
             $parent->productos()->delete();
+            $parent->inventarios()->delete();
         });
     }
 }

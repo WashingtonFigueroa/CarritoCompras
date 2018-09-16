@@ -16,18 +16,17 @@
       <a [routerLink]="['/inicio/productos/' + producto.categoria_id ]">&larr;	Atrás</a>
     </div>
     <h1>{{ producto.nombre }}</h1>
-    <h2><strong>${{ producto.precio }}</strong></h2>
+    <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong></h2>
     <h3>Tallas</h3>
-    <div class="product-size product-size-active">{{ producto.talla }}</div>
-    <div class="product-size">M</div>
-    <div class="product-size">L</div>
+    <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
+         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla }}</div>
     <br>
     <br>
     <div class="row">
       <div class="col-md-2">
         <div class="form-group">
           <label for="">Cantidad</label>
-          <select name="" id="">
+          <select name="" id="" *ngIf="stock.length > 0">
             <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
           </select>
         </div>

@@ -68,7 +68,7 @@ class ProductoController extends Controller
 
     public function show($id)
     {
-        return response()->json(Producto::with('imagenes')->find($id), 200);
+        return response()->json(Producto::with(['imagenes', 'inventarios'])->find($id), 200);
     }
 
     public function update(Request $request, $id)
@@ -92,5 +92,4 @@ class ProductoController extends Controller
         $producto = Producto::find($id);
         return response()->file(storage_path('app/' . $producto->imagen));
     }
-
 }
