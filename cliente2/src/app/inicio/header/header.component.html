@@ -35,11 +35,11 @@
         <!-- SEARCH BAR -->
         <div class="col-md-6">
           <div class="header-search">
-            <form *ngIf="categorias !== null">
-              <select class="input-select">
+            <form (submit)="buscar_productos()" *ngIf="categorias !== null">
+              <select [(ngModel)]="busqueda.categoria_id" name="categoria_id" class="input-select">
                 <option [value]="categoria.categoria_id" *ngFor="let categoria of categorias">{{ categoria.nombre }}</option>
               </select>
-              <input class="input" placeholder="Buscar aqui...">
+              <input class="input" [(ngModel)]="busqueda.nombre" name="nombre" placeholder="Buscar aqui...">
               <button class="search-btn">Buscar</button>
             </form>
           </div>

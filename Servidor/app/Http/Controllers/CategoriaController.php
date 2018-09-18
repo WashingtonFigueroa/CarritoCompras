@@ -85,6 +85,51 @@ class CategoriaController extends Controller
                                 ->get();
         return response()->json($productos, 200);
     }
+
+    public function filtrar_productos($categoria_id, $ordenar_por) {
+        $productos = [];
+        switch($ordenar_por) {
+            case 'nombre_asc':
+                $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->with('categoria')
+                                ->orderBy('nombre', 'asc')
+                                ->get();
+                break;
+            case 'nombre_desc':
+                $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->with('categoria')
+                                ->orderBy('nombre', 'desc')
+                                ->get();
+                break;
+            case 'fecha_asc':
+                $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->with('categoria')
+                                ->orderBy('updated_at', 'asc')
+                                ->get();
+                break;
+            case 'fecha_desc':
+                $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->with('categoria')
+                                ->orderBy('updated_at', 'desc')
+                                ->get();
+                break;
+        }
+        return response()->json($productos, 200);
+    }
+
+    public function buscar_productos($categoria_id, $nombre) {
+        $productos = Categoria::find($categoria_id)
+                                ->productos()
+                                ->where('nombre', 'like', '%'. $nombre .'%')
+                                ->get();
+        return response()->json($productos, 200);
+    }
+
+
     public function ver_imagen($id) {
         $categoria = Categoria::find($id);
         return response()->file(storage_path('app/' . $categoria->imagen));

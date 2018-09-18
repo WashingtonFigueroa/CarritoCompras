@@ -11,10 +11,12 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 import { ProductoComponent } from './producto/producto.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     NgxImageZoomModule.forRoot(),
     InicioRoutingModule
   ],

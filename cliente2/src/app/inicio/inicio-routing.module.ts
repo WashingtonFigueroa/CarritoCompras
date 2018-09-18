@@ -12,7 +12,10 @@ const routes: Routes = [
     children: [
       {
         path: 'productos/:categoria_id',
-        component: ProductosComponent
+        component: ProductosComponent,
+        data: {
+          value: [{'clave': 'valor'}]
+        }
       },
       {
         path: 'producto/:producto_id',

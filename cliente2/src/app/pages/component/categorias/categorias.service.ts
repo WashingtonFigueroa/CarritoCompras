@@ -34,6 +34,12 @@ export class CategoriasService {
         return this.http.get(this.base + 'lista_categorias');
     }
     productos_categoria(categoria_id) {
-        return this.http.get(this.base + `productos_categoria/${categoria_id}`);
+        return this.http.get(this.base + 'productos_categoria/' + categoria_id );
+    }
+    filtrar_productos_categoria(categoria_id, ordenar_por) {
+      return this.http.get(this.base + 'filtrar_productos_categoria/' + categoria_id + '/' + ordenar_por);
+    }
+    buscar_productos_categoria(categoria_id, nombre) {
+      return this.http.get(this.base + 'buscar_productos_categoria/' + categoria_id + '/' + nombre);
     }
 }

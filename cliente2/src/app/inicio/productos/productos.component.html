@@ -3,20 +3,22 @@
   <h1 *ngIf="categoria !== null">{{ categoria.nombre }}</h1>
 
   <div class="sort">
-
-    <div class="collection-sort">
+<!--    <div class="collection-sort">
       <label>Filtrar por:</label>
       <select>
         <option value="/">Todas las camisas</option>
+        <option value="/">Nuevo</option>
+        <option value="/">Todas las camisas</option>
+        <option value="/">Todas las camisas</option>
       </select>
-    </div>
-
+    </div>-->
     <div class="collection-sort">
-      <label>Ordenar por:</label>
-      <select>
-        <option value="/">Color</option>
-        <option value="/">Talla</option>
-        <option value="/">Precio</option>
+      <label></label>
+      <select [(ngModel)]="ordenar_por" (change)="filtrar()">
+        <option value="nombre_asc">Ordenar por: Nombre: A - Z</option>
+        <option value="nombre_desc">Ordenar por: Nombre: Z - A</option>
+        <option value="fecha_desc">Ordenar por: Fecha: Nuevo a Antiguo</option>
+        <option value="fecha_asc">Ordenar por: Fecha: Antiguo a Nuevo</option>
       </select>
     </div>
 

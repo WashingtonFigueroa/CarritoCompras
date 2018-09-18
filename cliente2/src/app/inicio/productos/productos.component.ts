@@ -13,8 +13,10 @@ export class ProductosComponent implements OnInit {
   environment = environment;
   productos: any = null;
   categoria: any = null;
+  ordenar_por: any = null;
   constructor(private categoriaService: CategoriasService,
               private route: ActivatedRoute) {
+    this.route.data.subscribe(data => console.log(data.value));
     this.route.params.subscribe(params => {
       this.categoriaService.show(params.categoria_id)
           .subscribe(res => this.categoria = res);
@@ -27,6 +29,15 @@ export class ProductosComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  filtrar() {
+    this.categoriaService
+        .filtrar_productos_categoria(this.categoria.categoria_id, this.ordenar_por)
+        .subscribe((productos: any) => {
+          this.productos = productos;
+          console.log(this.productos);
+        });
   }
 
 }

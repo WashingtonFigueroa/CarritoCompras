@@ -29,6 +29,8 @@ Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', '
 
 Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit']]);
 Route::post('buscar_categorias','CategoriaController@buscar_categorias');
+Route::get('filtrar_productos_categoria/{categoria_id}/{ordenar_por}','CategoriaController@filtrar_productos');
+Route::get('buscar_productos_categoria/{categoria_id}/{nombre}','CategoriaController@buscar_productos');
 Route::get('lista_categorias','CategoriaController@lista_categorias');
 
 Route::resource('productos', 'ProductoController', ['except' => ['create', 'edit']]);
