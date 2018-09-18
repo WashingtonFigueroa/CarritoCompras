@@ -4,6 +4,7 @@ import {InicioComponent} from './inicio.component';
 import {ProductosComponent} from './productos/productos.component';
 import {CategoriasComponent} from './categorias/categorias.component';
 import {ProductoComponent} from './producto/producto.component';
+import {DesignComponent} from './design/design.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
         path: 'categorias',
         component: CategoriasComponent
       }, {
+        path: 'design',
+        component: DesignComponent
+      },
+      {
         path: '',
         redirectTo: 'categorias'
       }

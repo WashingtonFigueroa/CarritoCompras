@@ -28,6 +28,8 @@
               "src/assets/scss/colors/default-dark.scss"
             ],
             "scripts": [
+              "node_modules/svg.js/dist/svg.min.js",
+              "node_modules/svg.draggable.js/dist/svg.draggable.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
