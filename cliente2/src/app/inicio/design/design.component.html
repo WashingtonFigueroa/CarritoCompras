@@ -1,8 +1,78 @@
-
-<button class="btn btn-sm btn-primary" (click)="moverIzq()"><i class="fa fa-chevron-circle-left"></i></button>
-<button class="btn btn-sm btn-primary" (click)="moverArr()"><i class="fa fa-chevron-circle-up"></i></button>
-<button class="btn btn-sm btn-primary" (click)="moverDer()"><i class="fa fa-chevron-circle-right"></i></button>
-<button class="btn btn-sm btn-primary" (click)="moverAba()"><i class="fa fa-chevron-circle-down"></i></button>
-<div
-    (mouseup)="redraw($event)"
-    id="canvas"></div>
+<div class="workspace">
+  <div class="panel">
+    <div class="panel-section">
+      <div class="panel-section-title">Bolitas</div>
+      <div class="panel-section-grid">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+      </div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-section-title">Dijes</div>
+      <div class="panel-section-grid">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
+        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+      </div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-section-title">Separadores</div>
+      <div class="panel-section-grid">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="canvas">
+    <div class="canvas-title">Diseño de Pulseras</div>
+    <div (mousedown)="redraw($event)" id="canvas"></div>
+  </div>
+  <div class="controls">
+    <div class="controls-title">
+      Controles
+    </div>
+    <div class="controls-content">
+      <div class="cruceta">
+        <button (click)="moverArr()"><i class="fa fa-angle-up"></i></button>
+        <button (click)="moverDer()"><i class="fa fa-angle-right"></i></button>
+        <button (click)="moverAba()"><i class="fa fa-angle-down"></i></button>
+        <button (click)="moverIzq()"><i class="fa fa-angle-left"></i></button>
+      </div>
+      <div class="giros">
+        <button (click)="girarIzq()">
+          <i class="fa fa-undo"></i>
+        </button>
+        <button (click)="girarDer()">
+          <i class="fa fa-repeat"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

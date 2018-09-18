@@ -125,7 +125,13 @@
               <span [class]="router.url === '/inicio/productos/' + categoria.categoria_id ? 'nav-header nav-active' : 'nav-header'">{{ categoria.nombre }}</span>
             </a>
           </li>
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">Diseña tu manilla</span></a></li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['design']">
+              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'">
+                Diseña tu Pulsera
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

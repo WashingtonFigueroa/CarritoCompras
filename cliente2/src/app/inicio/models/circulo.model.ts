@@ -34,13 +34,19 @@ export class Circulo {
     this.angulo = angulo;
     while (i < angulo) {
       const rect = this.polarToRect(i, this.radio);
-      const imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
+      let imagen = null;
+      if (i % 45 === 0) {
+        imagen = this.draw.image('http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png', this.imagenSize.width, this.imagenSize.height);
+      } else {
+        imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
+      }
       imagen.move(this.centro.x + rect.x, this.centro.y - rect.y);
       imagen.draggable();
       this.imagenes.push(imagen);
       this.total++;
       i += 15;
     }
+    console.log('total: ' + this.total);
   }
 
   moverIzq() {
@@ -90,6 +96,50 @@ export class Circulo {
       i += 15;
       j++;
     }
+  }
+  girar2(angulo: number ) {
+    const rad = new Rad(angulo).radianes;
+    for ( let i = 0; i < this.total; i++) {
+      const vx = this.imagenes[i].node.x.animVal.value;
+      const vy = this.imagenes[i].node.y.animVal.value;
+      const nx = vx * Math.cos(rad) - vy * Math.sin(rad);
+      const ny = vx * Math.sin(rad) + vy * Math.cos(rad);
+      const imagen = this.imagenes[i];
+      imagen.move(nx, ny);
+      imagen.draggable();
+    }
+  }
+  girarIzq() {
+    /*current x and y*/
+    const cx = this.imagenes[0].node.x.animVal.value;
+    const cy = this.imagenes[0].node.y.animVal.value;
+    for ( let i = 0; i < this.total - 1; i++) {
+      /*next x and y*/
+      const nx = this.imagenes[i + 1].node.x.animVal.value;
+      const ny = this.imagenes[i + 1].node.y.animVal.value;
+      const imagen = this.imagenes[i];
+      imagen.move(nx, ny);
+      imagen.draggable();
+    }
+    const lastImage = this.imagenes[this.total - 1];
+    lastImage.move(cx, cy);
+    lastImage.draggable();
+  }
+  girarDer() {
+    /*current x and y*/
+    const cx = this.imagenes[this.total - 1].node.x.animVal.value;
+    const cy = this.imagenes[this.total - 1].node.y.animVal.value;
+    for ( let i = this.total - 1; i > 0; i--) {
+      /*next x and y*/
+      const nx = this.imagenes[i - 1].node.x.animVal.value;
+      const ny = this.imagenes[i - 1].node.y.animVal.value;
+      const imagen = this.imagenes[i];
+      imagen.move(nx, ny);
+      imagen.draggable();
+    }
+    const firstImage = this.imagenes[0];
+    firstImage.move(cx, cy);
+    firstImage.draggable();
   }
   print() {
     console.log(this.imagenes);

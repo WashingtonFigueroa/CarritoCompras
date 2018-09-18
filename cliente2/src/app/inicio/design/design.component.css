@@ -1,6 +1,151 @@
-#canvas {
-  width: 800px;
+.workspace {
+  display: flex;
+  flex-direction: row;
+  background-color: #1b1e21;
+  width: 100%;
   height: 800px;
+}
+.workspace .panel {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+}
+.panel-section {
+  display: flex;
+  flex-direction: column;
+}
+.panel-section .panel-section-title {
+  background-color: #00c292;
+  color: white;
+  padding: .5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.panel-section .panel-section-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.panel-section .panel-section-grid img{
+  display: block;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+.workspace .controls {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+}
+.controls .controls-title {
+  width: 100%;
+  padding: .5em 0;
+  box-sizing: border-box;
+  background-color: #e66262;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.controls .controls-content{
+  display: flex;
+/*  background-color: #00c292;*/
+  flex-direction: column;
+/*  justify-content: center;*/
+  align-items: center;
+  height: 100%;
+}
+.canvas {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}
+.canvas .canvas-title{
+  background-color: #e6b96b;
+  padding: .5em 0;
+  color: white;
+  text-transform: uppercase;
+}
+#canvas {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   background-color: #00aff0;
+}
+.cruceta {
+  display: block;
+  position: relative;
+  margin-top: 3em;
+  width: 100px;
+  height: 100px;
+/*  background-color: #e66262;*/
+}
+.giros {
+  display: block;
+  position: relative;
+  margin-top: 3em;
+  width: 100px;
+  height: 33.33px;
+}
+.giros button {
+  border: none;
+  background-color: #1b4b72;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.giros button:first-child {
+  position: absolute;
+  width: 33.33px;
+  height: 33.33px;
+  left: 0;
+}
+.giros button:last-child {
+  position: absolute;
+  width: 33.33px;
+  height: 33.33px;
+  right: 0;
+}
+.cruceta button {
+  display: block;
+  width: 33.33px;
+  height: 33.33px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e66262;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+/*top*/
+.cruceta button:first-child {
+  position: absolute;
+  top: 0;
+  left: 33.33px;
+}
+/*right*/
+.cruceta button:nth-child(2) {
+  position: absolute;
+  top: 33.33px;
+  right: 0px;
+}
+/*bottom*/
+.cruceta button:nth-child(3) {
+  position: absolute;
+  top: 66.66px;
+  right: 33.33px;
+}
+/*left*/
+.cruceta button:last-child {
+  position: absolute;
+  top: 33.33px;
+  left: 0px;
 }

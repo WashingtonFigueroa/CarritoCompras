@@ -15,8 +15,8 @@ export class DesignComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.imagen = 'http://www.pngall.com/wp-content/uploads/2016/06/Beach-Ball-PNG-Image.png';
-    this.circulo = new Circulo(new Punto( 400, 400 ), 200, this.imagen);
+    this.imagen = 'http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png';
+    this.circulo = new Circulo(new Punto( 380, 250 ), 120, this.imagen);
     this.circulo.dibujar(360);
   }
 
@@ -43,10 +43,10 @@ export class DesignComponent implements OnInit {
   moverAba() {
     this.circulo.moverAba();
   }
-
-
-
-
-
-
+  girarIzq() {
+    this.circulo.girarIzq();
+  }
+  girarDer() {
+    this.circulo.girarDer();
+  }
 }
