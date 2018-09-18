@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {CategoriasService} from "../categorias.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {CategoriasService} from '../categorias.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-categorias-edit',
@@ -34,7 +34,7 @@ export class CategoriasEditComponent implements OnInit {
 
     createForm(categoria) {
         this.categoriaGroup = this.fb.group({
-            'nombre' : new FormControl(categoria.nombre,[Validators.required]),
+            'nombre' : new FormControl(categoria.nombre, [Validators.required]),
             'descripcion' : new FormControl(categoria.descripcion),
             'imagen' : new FormControl(categoria.imagen)
         });
