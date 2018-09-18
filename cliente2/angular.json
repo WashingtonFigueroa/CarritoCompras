@@ -25,7 +25,8 @@
               "src/styles.css",
               "src/assets/inicio/css/style.css",
               "src/assets/scss/style.scss",
-              "src/assets/scss/colors/default-dark.scss"
+              "src/assets/scss/colors/default-dark.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
