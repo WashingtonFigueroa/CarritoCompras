@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {CategoriasService} from '../categorias.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-categorias-edit',
@@ -16,8 +17,8 @@ export class CategoriasEditComponent implements OnInit {
     constructor(protected categoriaService: CategoriasService,
                 protected fb: FormBuilder,
                 protected route: ActivatedRoute,
-                protected router: Router
-                // protected toastr: ToastrService
+                protected router: Router,
+                protected toastr: ToastrService
     ) {
         this.route.params.subscribe(param => {
             this.categoria_id = param.id;

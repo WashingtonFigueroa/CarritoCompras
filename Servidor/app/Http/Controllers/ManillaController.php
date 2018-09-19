@@ -25,9 +25,9 @@ class ManillaController extends Controller
     public function store(Request $request)
     {
         try{
+            $manilla = new Manilla();
             if ($request->hasFile('imagen')){
                 $path_documento = $request->file('imagen')->store('manillas');
-                $manilla = new Manilla();
                 $manilla->tipo = $request->input('tipo');
                 $manilla->imagen = $path_documento;
                 $manilla->save();

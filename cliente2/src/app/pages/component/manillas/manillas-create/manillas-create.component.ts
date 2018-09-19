@@ -35,7 +35,7 @@ export class ManillasCreateComponent implements OnInit {
         const file = this.imagen.nativeElement;
         if (file.files[0]) {
             form.append('imagen', file.files[0]);
-            form.append('tipo', this.manillaGroup.value.nombre);
+            form.append('tipo', this.manillaGroup.value.tipo);
         } else {
             console.log('ingrese imagen');
         }

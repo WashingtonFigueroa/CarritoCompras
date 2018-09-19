@@ -22,7 +22,7 @@ export class CategoriasService {
         return this.http.post(this.base + 'categorias', request);
     }
     update(request, id) {
-        return this.http.put(this.base + 'categorias/' + id, request);
+        return this.http.post(this.base + 'modificar_categoria/' + id, request);
     }
     destroy(id) {
         return this.http.delete(this.base + 'categorias/' + id );

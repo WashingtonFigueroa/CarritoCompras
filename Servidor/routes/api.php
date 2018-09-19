@@ -27,8 +27,9 @@ Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', '
 
 Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', 'edit']]);
 
-Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit']]);
+Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit', 'update']]);
 Route::post('buscar_categorias','CategoriaController@buscar_categorias');
+Route::post('modificar_categoria/{id}','CategoriaController@update');
 Route::get('filtrar_productos_categoria/{categoria_id}/{ordenar_por}','CategoriaController@filtrar_productos');
 Route::get('buscar_productos_categoria/{categoria_id}/{nombre}','CategoriaController@buscar_productos');
 Route::get('lista_categorias','CategoriaController@lista_categorias');
