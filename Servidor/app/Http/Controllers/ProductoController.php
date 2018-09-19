@@ -28,9 +28,9 @@ class ProductoController extends Controller
     public function store(Request $request)
     {
         try{
+            $producto = new Producto();
             if ($request->hasFile('imagen')){
                 $path_documento = $request->file('imagen')->store('productos');
-                $producto = new Producto();
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
@@ -38,10 +38,8 @@ class ProductoController extends Controller
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
                 $producto->imagen = $path_documento;
-                $producto->save();
             }
             else{
-                $producto = new Producto();
                 $producto->categoria_id = $request->input('categoria_id');
                 $producto->nombre = $request->input('nombre');
                 $producto->descripcion = $request->input('descripcion');
@@ -49,8 +47,8 @@ class ProductoController extends Controller
                 $producto->color1 = $request->input('color1');
                 $producto->color2 = $request->input('color2');
                 $producto->imagen = "productos/log.png";
-                $producto->save();
             }
+            $producto->save();
             return response()->json([
                 'title' => 'Exito',
                 'message' => 'Producto guardado exitosamente',
@@ -75,9 +73,41 @@ class ProductoController extends Controller
 
     public function update(Request $request, $id)
     {
-        $producto = Producto::find($id);
-        $producto->update($request->all());
-        return response()->json($producto, 200);
+        try{
+            $producto = Producto::find($id);
+            if ($request->hasFile('imagen')){
+                $path_documento = $request->file('imagen')->store('productos');
+                $producto->categoria_id = $request->input('categoria_id');
+                $producto->nombre = $request->input('nombre');
+                $producto->descripcion = $request->input('descripcion');
+                $producto->material = $request->input('material');
+                $producto->color1 = $request->input('color1');
+                $producto->color2 = $request->input('color2');
+                $producto->imagen = $path_documento;
+            }
+            else{
+                $producto->categoria_id = $request->input('categoria_id');
+                $producto->nombre = $request->input('nombre');
+                $producto->descripcion = $request->input('descripcion');
+                $producto->material = $request->input('material');
+                $producto->color1 = $request->input('color1');
+                $producto->color2 = $request->input('color2');
+                $producto->imagen = "productos/log.png";
+            }
+            $producto->save();
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto actualizado exitosamente',
+                'producto' => $producto
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Producto no guardado',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function destroy($id)

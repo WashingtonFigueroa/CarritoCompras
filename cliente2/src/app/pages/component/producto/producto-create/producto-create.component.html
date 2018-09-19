@@ -1,10 +1,11 @@
-<div class="card" style="width: 60%">
-  <div class="card-body">
+<div class="row" >
+  <div class="col-md-12">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8" style="background-color: #ffffff">
+        <br>
         <form (submit)="store()" role="form" *ngIf="categorias !== null"  [formGroup]="productoGroup">
-          <div class="card-header">
-            <h3>Ingrese la información requerida</h3>
+          <div class="card-header" style="background-color: #2e6da4">
+            <h3 style="color: #ffffff">Ingrese la información</h3>
           </div>
           <br>
           <div class="row">
@@ -36,14 +37,14 @@
                 </label>
                 <input type="text" class="form-control" id="material" formControlName="material" name="material"/>
               </div>
+            </div>
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="color1">
                   Ingrese color primario
                 </label>
                 <input type="color" #color1 class="form-control" id="color1" formControlName="color1" name="color1"/>
               </div>
-            </div>
-            <div class="col-md-6">
               <div class="form-group">
                 <label for="color2">
                   Ingrese color secundario
@@ -58,20 +59,23 @@
 
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <button [disabled]="productoGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
-                <span class="fa fa-save"></span>
-                Guardar
-              </button>
-            </div>
-            <div class="col-md-3">
-              <button type="reset" class="btn btn-success" style="width: 150px">
-                <span class="fa fa-file"></span>
-                Nuevo
-              </button>
+          <div class="card-footer" style="background-color: #2a3035">
+            <div class="row">
+              <div class="col-md-3">
+                <button [disabled]="productoGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
+                  <span class="fa fa-save"></span>
+                  Guardar
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button type="reset" class="btn btn-success" style="width: 150px">
+                  <span class="fa fa-file"></span>
+                  Nuevo
+                </button>
+              </div>
             </div>
           </div>
+          <br>
         </form>
       </div>
     </div>

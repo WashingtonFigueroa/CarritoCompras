@@ -1,13 +1,13 @@
-<div class="card" style="width: 60%">
-  <div class="card-body">
+<div class="row" >
+  <div class="col-md-12">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8" style="background-color: #ffffff">
+        <br>
         <form (submit)="store()" role="form" [formGroup]="categoriaGroup">
-          <div class="card-header">
-            <h3>Ingrese la información requerida</h3>
+          <div class="card-header" style="background-color: #2e6da4">
+            <h3 style="color: #ffffff">Ingrese la información</h3>
           </div>
           <br>
-          <ul class="list-group list-group-flush">
             <div class="form-group">
               <label for="nombre">
                 * Ingrese categoria
@@ -24,21 +24,23 @@
               <label for="imagen">Seleccione imagen </label>
               <input type="file" class="form-control" #imagen id="imagen" name="imagen" />
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <button [disabled]="categoriaGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
-                  <span class="fa fa-save"></span>
-                  Guardar
-                </button>
-              </div>
-              <div class="col-md-6">
-                <button type="reset" class="btn btn-success" style="width: 150px">
-                  <span class="fa fa-file"></span>
-                  Nuevo
-                </button>
-              </div>
+            <div class="card-footer" style="background-color: #2a3035">
+             <div class="row">
+               <div class="col-md-3">
+                 <button [disabled]="categoriaGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
+                   <span class="fa fa-save"></span>
+                   Guardar
+                 </button>
+               </div>
+               <div class="col-md-3">
+                 <button type="reset" class="btn btn-success" style="width: 150px">
+                   <span class="fa fa-file"></span>
+                   Nuevo
+                 </button>
+               </div>
+             </div>
             </div>
-          </ul>
+            <br>
         </form>
       </div>
     </div>
