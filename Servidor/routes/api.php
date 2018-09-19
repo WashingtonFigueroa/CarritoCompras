@@ -53,6 +53,7 @@ Route::get('lista_promociones','PromocionController@lista_promociones');
 Route::resource('manillas', 'ManillaController', ['except' => ['create', 'edit']]);
 Route::post('buscar_manillas','ManillaController@buscar_manillas');
 Route::get('lista_manillas','ManillaController@lista_manillas');
+Route::get('tipo_manillas/{tipo}', 'ManillaController@tipo_manillas');
 //Rutas Inventario
 Route::resource('inventarios', 'InventarioController', ['except' => ['create', 'edit']]);
 Route::post('buscar_inventario','InventarioController@buscar_inventario');

@@ -34,6 +34,8 @@
   display: block;
   width: 48px;
   height: 48px;
+  padding: 6px;
+  box-sizing: border-box;
   cursor: pointer;
 }
 .workspace .controls {
@@ -148,4 +150,7 @@
   position: absolute;
   top: 33.33px;
   left: 0px;
+}
+.btn-right {
+  float: right;
 }

@@ -1,52 +1,33 @@
 <div class="workspace">
   <div class="panel">
     <div class="panel-section">
-      <div class="panel-section-title">Bolitas</div>
+      <div class="panel-section-title">
+        Pulseras
+        <button class="btn btn-xs btn-success btn-right" (click)="cambiarPulseras()">
+          <i class="fa fa-plus" *ngIf="circulo.renderizado"></i>
+          <i class="fa fa-minus" *ngIf="!circulo.renderizado"></i>
+        </button>
+      </div>
       <div class="panel-section-grid">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
-        <img src="http://pngimage.net/wp-content/uploads/2018/05/bolita-png-6.png">
+        <img [src]="env.base + env.imagen.manilla + pulsera.manilla_id"
+             *ngFor="let pulsera of pulseras"
+             (click)="cambiarItems(pulsera.manilla_id)">
       </div>
     </div>
     <div class="panel-section">
       <div class="panel-section-title">Dijes</div>
       <div class="panel-section-grid">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
-        <img src="http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png">
-        <img src="https://durzzo.com/8402-large_default/dije-camello.jpg">
+        <img [src]="env.base + env.imagen.manilla + dije.manilla_id"
+             (click)="cambiarItem(dije.manilla_id)"
+             *ngFor="let dije of dijes">
       </div>
     </div>
     <div class="panel-section">
       <div class="panel-section-title">Separadores</div>
       <div class="panel-section-grid">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
-        <img src="https://www.joyeriaonline.com/747-thickbox_default/separador-pandora-corazon-heart-spacer-790204.jpg">
+        <img [src]="env.base + env.imagen.manilla + separador.manilla_id"
+             (click)="cambiarItem(separador.manilla_id)"
+             *ngFor="let separador of separadores">
       </div>
     </div>
   </div>

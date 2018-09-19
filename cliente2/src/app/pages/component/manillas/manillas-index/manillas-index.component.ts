@@ -100,7 +100,7 @@ export class ManillasIndexComponent implements OnInit {
         }
     }
 
-    confirm(index, id, confirmModal) {
+  confirm(index, id, confirmModal) {
         this.index = index;
         this.manilla_id = id;
         this.modalService.open(confirmModal).result.then((result) => {
