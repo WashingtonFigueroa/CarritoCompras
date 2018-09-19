@@ -5,6 +5,7 @@ export const environment = {
   imagen: {
     categoria: 'ver_imagen_categoria/',
     producto: 'ver_imagen_producto/',
-    articulo: 'ver_imagen_articulo/'
+    articulo: 'ver_imagen_articulo/',
+    manilla: 'ver_imagen_manilla/',
   }
 };

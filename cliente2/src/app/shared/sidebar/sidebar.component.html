@@ -7,24 +7,11 @@
     <!-- User profile -->
     <div class="user-profile">
       <!-- User profile image -->
-      <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" width="200"/>
+      <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" width="300"/>
         <!-- this is blinking heartbit-->
         <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
       </div>
-      <!-- User profile text-->
-      <div class="profile-text">
-        <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <i class="fa fa-angle-down"></i></a>
-        <div class="dropdown-menu animated flipInY">
-          <!-- text-->
-          <a [routerLink]="['privilegios']" [routerLinkActive]="['router-link-active']" class="dropdown-item"><i class="ti-settings"></i>&nbsp;&nbsp;&nbsp;Privilegios</a>
-          <!-- text-->
-          <div class="dropdown-divider"></div>
-          <!-- text-->
-          <a [routerLink]="['/inicio']" class="dropdown-item"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;Salir</a>
-          <!-- text-->
-        </div>
-      </div>
-    </div> 
+    </div>
     <!-- End User profile text-->
     <!-- Sidebar navigation-->
     <nav class="sidebar-nav">
@@ -34,6 +21,7 @@
           <a [routerLink]="['principal']"  [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Principal</span></a>
           <a [routerLink]="['tipousuarios']" [routerLinkActive]="['router-link-active']"><i class="icon-user-follow"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Tipo usuario</span></a>
           <a [routerLink]="['usuarios']" [routerLinkActive]="['router-link-active']"><i class="icon-user"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Usuario</span></a>
+          <a [routerLink]="['privilegios']" [routerLinkActive]="['router-link-active']"><i class="icon-user"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Privilegios</span></a>
           <a [routerLink]="['categorias']" [routerLinkActive]="['router-link-active']"><i class="icon-list"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Categorias</span></a>
           <a [routerLink]="['productos']" [routerLinkActive]="['router-link-active']"><i class="icon-plus"></i><span class="hide-menu">Producto</span></a>
           <a [routerLink]="['inventarios']" [routerLinkActive]="['router-link-active']"><i class="icon-chart"></i><span class="hide-menu">Inventario</span></a>
@@ -41,6 +29,7 @@
           <a [routerLink]="['promociones']" [routerLinkActive]="['router-link-active']"><i class="icon-star"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Promociones</span></a>
           <a [routerLink]="['compras']" [routerLinkActive]="['router-link-active']"><i class="icon-tag"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Compras</span></a>
           <a [routerLink]="['compras']" [routerLinkActive]="['router-link-active']"><i class="icon-target"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Retiros</span></a>
+          <a [routerLink]="['manillas']" [routerLinkActive]="['router-link-active']"><i class="icon-target"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Manillas</span></a>
           </li>
       </ul>
     </nav>
