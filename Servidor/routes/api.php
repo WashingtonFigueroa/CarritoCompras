@@ -26,15 +26,16 @@ Route::get('lista_tipousuarios','TipoUsuarioController@lista_tipousuarios');
 Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', 'destroy']]);
 
 Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', 'edit']]);
-
+//rutas categoria
 Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit', 'update']]);
 Route::post('buscar_categorias','CategoriaController@buscar_categorias');
 Route::post('modificar_categoria/{id}','CategoriaController@update');
 Route::get('filtrar_productos_categoria/{categoria_id}/{ordenar_por}','CategoriaController@filtrar_productos');
 Route::get('buscar_productos_categoria/{categoria_id}/{nombre}','CategoriaController@buscar_productos');
 Route::get('lista_categorias','CategoriaController@lista_categorias');
-
-Route::resource('productos', 'ProductoController', ['except' => ['create', 'edit']]);
+//rutas productos
+Route::resource('productos', 'ProductoController', ['except' => ['create', 'edit','update']]);
+Route::post('modificar_productos/{id}','ProductoController@update');
 Route::post('buscar_productos','ProductoController@buscar_productos');
 Route::get('lista_productos','ProductoController@lista_productos');
 

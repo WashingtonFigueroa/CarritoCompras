@@ -22,7 +22,7 @@ export class ProductoService {
         return this.http.post(this.base + 'productos', request);
     }
     update(request, id) {
-        return this.http.put(this.base + 'productos/' + id, request);
+        return this.http.post(this.base + 'modificar_productos/' + id, request);
     }
     destroy(id) {
         return this.http.delete(this.base + 'productos/' + id );

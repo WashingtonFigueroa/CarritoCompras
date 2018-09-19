@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {CategoriasService} from '../categorias.service';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -10,6 +10,7 @@ import {ToastrService} from 'ngx-toastr';
   styleUrls: ['./categorias-edit.component.css']
 })
 export class CategoriasEditComponent implements OnInit {
+@ViewChild('imagen') imagen;
     categoria_id: number = null;
     categoria: any = null;
     categoriaGroup: FormGroup;
@@ -37,15 +38,26 @@ export class CategoriasEditComponent implements OnInit {
         this.categoriaGroup = this.fb.group({
             'nombre' : new FormControl(categoria.nombre, [Validators.required]),
             'descripcion' : new FormControl(categoria.descripcion),
-            'imagen' : new FormControl(categoria.imagen)
+            'imagen' : new FormControl('')
         });
     }
 
     update() {
-        this.categoriaService.update(this.categoriaGroup.value, this.categoria_id)
-            .subscribe(res => {
-               // this.toastr.success('Cliente actualizado', 'Exito');
-                this.router.navigate(['/admin/categorias/listar']);
-            });
+        const form = new FormData();
+        const  file = this.imagen.nativeElement;
+        if (file.files[0]) {
+            form.append('imagen', file.files[0]);
+            form.append('nombre', this.categoriaGroup.value.nombre);
+            form.append('descripcion', this.categoriaGroup.value.descripcion);
+            this.categoriaService.update(form, this.categoria_id)
+                .subscribe(res => {
+                    this.toastr.success('Categoria actualizada', 'Exito');
+                    this.router.navigate(['/admin/categorias/listar']);
+                    location.reload();
+                });
+        }else {
+            this.toastr.info('Seleccione la Imagen');
+        }
+
     }
 }

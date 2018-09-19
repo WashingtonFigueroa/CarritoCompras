@@ -1,10 +1,11 @@
-<div class="card" style="width: 60%">
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-12">
+<div class="row" >
+  <div class="col-md-12">
+    <div class="row" *ngIf="productos !== null">
+      <div class="col-md-8" style="background-color: #ffffff">
+        <br>
         <form (submit)="store()" role="form" *ngIf="productos !== null"  [formGroup]="inventarioGroup">
-          <div class="card-header">
-            <h3>Ingrese la información requerida</h3>
+          <div class="card-header" style="background-color: #2e6da4">
+            <h3 style="color: #ffffff">Ingrese la información</h3>
           </div>
           <br>
           <div class="row">
@@ -29,6 +30,9 @@
                 </label>
                 <input type="number" class="form-control" id="stock" formControlName="stock" name="stock"/>
               </div>
+
+            </div>
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="precio">
                   * Ingrese Precio Venta
@@ -42,22 +46,25 @@
                 <input type="number" class="form-control" id="puntos" formControlName="puntos" name="puntos"/>
               </div>
             </div>
+          </div>
+          <div class="card-footer" style="background-color: #2a3035">
+            <div class="row">
+              <div class="col-md-3">
+                <button [disabled]="inventarioGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
+                  <span class="fa fa-save"></span>
+                  Guardar
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button type="reset" class="btn btn-success" style="width: 150px">
+                  <span class="fa fa-file"></span>
+                  Nuevo
+                </button>
+              </div>
+            </div>
+          </div>
+          <br>
 
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <button [disabled]="inventarioGroup.status === 'INVALID'" type="submit" class="btn btn-primary" style="width: 150px">
-                <span class="fa fa-save"></span>
-                Guardar
-              </button>
-            </div>
-            <div class="col-md-3">
-              <button type="reset" class="btn btn-success" style="width: 150px">
-                <span class="fa fa-file"></span>
-                Nuevo
-              </button>
-            </div>
-          </div>
         </form>
       </div>
     </div>

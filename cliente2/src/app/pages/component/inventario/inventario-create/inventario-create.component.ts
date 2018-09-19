@@ -4,6 +4,7 @@ import {ProductoService} from '../../producto/producto.service';
 import {Router} from '@angular/router';
 import {environment} from '../../../../../environments/environment.prod';
 import {InventarioService} from '../inventario.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-inventario-create',
@@ -19,7 +20,7 @@ export class InventarioCreateComponent implements OnInit {
                 protected productoService: ProductoService,
                 protected fb: FormBuilder,
                 protected router: Router,
-                //            protected toartr: ToastrService
+                protected toartr: ToastrService
     ) {
         this.productoService.lista_productos().subscribe(res => this.productos = res);
         this.createForm();
@@ -33,7 +34,7 @@ export class InventarioCreateComponent implements OnInit {
             'producto_id' : new FormControl(0, [Validators.required]),
             'talla' : new FormControl('', [Validators.required]),
             'stock' : new FormControl('', [Validators.required]),
-            'precio' : new FormControl('', [Validators.required]),
+            'precio' : new FormControl(''),
             'puntos' : new FormControl('')
         });
     }
@@ -45,10 +46,10 @@ export class InventarioCreateComponent implements OnInit {
                     console.log(res.error);
                 } else {
                     this.router.navigate([environment.admin + '/inventarios']);
-                    // this.toartr.success('Usuario Guardado', 'Ok');
+                    this.toartr.success('Usuario Guardado', 'Ok');
                 }
             }, error => {
-                // this.toartr.error('Usuaurio Registrado', 'Error Usuario');
+                    this.toartr.error('Usuaurio Registrado', 'Error Usuario');
             });
     }
 

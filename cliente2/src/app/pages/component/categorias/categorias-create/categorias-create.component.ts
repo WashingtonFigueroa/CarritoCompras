@@ -37,18 +37,18 @@ export class CategoriasCreateComponent implements OnInit {
             form.append('imagen', file.files[0]);
             form.append('nombre', this.categoriaGroup.value.nombre);
             form.append('descripcion', this.categoriaGroup.value.descripcion);
-        } else {
-            form.append('nombre', this.categoriaGroup.value.nombre);
-            form.append('descripcion', this.categoriaGroup.value.descripcion);
-        }
-        this.categotiaService.store(form).subscribe((res: any) => {
-            console.log('Categoria Guardado');
-            this.toastr.success(res.message, res.title, {
-                timeOut: 1000
+            this.categotiaService.store(form).subscribe((res: any) => {
+                console.log('Categoria Guardado');
+                this.toastr.success(res.message, res.title, {
+                    timeOut: 1000
+                });
+                this.router.navigate([environment.admin + '/categorias']);
+            }, (error: any) => {
+                this.toastr.error(error.message, error.title);
             });
-            this.router.navigate([environment.admin + '/categorias']);
-        }, (error: any) => {
-            this.toastr.error(error.message, error.title);
-        });
+        } else {
+            this.toastr.info('Seleccione la Imagen');
+        }
+
     }
 }
