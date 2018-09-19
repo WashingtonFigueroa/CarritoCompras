@@ -58,6 +58,11 @@ import { InventarioIndexComponent } from './component/inventario/inventario-inde
 import { InventarioEditComponent } from './component/inventario/inventario-edit/inventario-edit.component';
 import { InventarioCreateComponent } from './component/inventario/inventario-create/inventario-create.component';
 import {InventarioService} from './component/inventario/inventario.service';
+import { ManillasComponent } from './component/manillas/manillas.component';
+import { ManillasIndexComponent } from './component/manillas/manillas-index/manillas-index.component';
+import { ManillasEditComponent } from './component/manillas/manillas-edit/manillas-edit.component';
+import { ManillasCreateComponent } from './component/manillas/manillas-create/manillas-create.component';
+import {ManillasService} from './component/manillas/manillas.service';
 
 @NgModule({
     imports: [
@@ -110,7 +115,11 @@ import {InventarioService} from './component/inventario/inventario.service';
         InventarioComponent,
         InventarioIndexComponent,
         InventarioEditComponent,
-        InventarioCreateComponent
+        InventarioCreateComponent,
+        ManillasComponent,
+        ManillasIndexComponent,
+        ManillasEditComponent,
+        ManillasCreateComponent
     ],
     providers: [
         TipousuarioService,
@@ -121,7 +130,8 @@ import {InventarioService} from './component/inventario/inventario.service';
         ArticulosService,
         ComprasService,
         PromocionService,
-        InventarioService
+        InventarioService,
+        ManillasService
     ]
 })
 export class PagesModule { }

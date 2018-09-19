@@ -65,9 +65,33 @@ class CategoriaController extends Controller
 
     public function update(Request $request, $id)
     {
-        $categoria = Categoria::find($id);
-        $categoria->update($request->all());
-        return response()->json($categoria, 200);
+        try{
+            $categoria = Categoria::find($id);
+            if ($request->hasFile('imagen')){
+                $path_documento = $request->file('imagen')->store('categorias');
+                $categoria->nombre = $request->input('nombre');
+                $categoria->descripcion = $request->input('descripcion');
+                $categoria->imagen = $path_documento;
+            }
+            else{
+                $categoria->nombre = $request->input('nombre');
+                $categoria->descripcion = $request->input('descripcion');
+                $categoria->imagen = "productos/log.png";
+            }
+            $categoria->save();
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto actualizado exitosamente',
+                'producto' => $categoria
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Producto no actualizado',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function destroy($id)

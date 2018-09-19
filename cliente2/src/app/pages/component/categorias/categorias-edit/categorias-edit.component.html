@@ -1,8 +1,8 @@
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
+      <div class="row" *ngIf="categoria !== null">
         <div class="col-md-8">
-          <form (submit)="update()" role="form" [formGroup]="categoriaGroup" *ngIf="categoria !== null">
+          <form (submit)="update()" role="form" [formGroup]="categoriaGroup" >
             <div class="card">
               <h5 class="card-header" style="color: #f7f7f7; background: #2e6da4">
                 Ingrese Categoria
@@ -28,7 +28,7 @@
                     <span class="input-group-text" id="img">Imagen: </span>
                   </div>
                   <input type="file" #imagen class="form-control"
-                         id="imagen" name="imagen" formControlName="imagen"
+                         id="imagen" name="imagen"
                          placeholder="Descripcion de categoria"/>
                 </div>
               </div>

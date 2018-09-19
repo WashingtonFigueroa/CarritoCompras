@@ -1,11 +1,13 @@
 <div class="row black">
-  <div class="col-md-12">
-    <iframe class="youtube" src="https://www.youtube.com/embed/09mZbrIsWRQ?autoplay=1&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+  <div class="col-md-12" style="background-color: #aa0000">
+    <video autoplay loop muted class="wrapper__video" width="100%">
+      <source src="//vimeo-hp-videos.global.ssl.fastly.net/3/3.mp4">
+    </video>
   </div>
 </div>
 <div class="row bg-white">
   <div class="col-md-12 text-center">
-    <h3>Nuestras Ofertas</h3>
+    <h3 style="color: #aa0000">Nuestras Ofertas</h3>
   </div>
 </div>
 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -30,7 +32,11 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<div class="row bg-white">
+  <div class="col-md-12 text-center">
+    <h3 style="color: #aa0000">Nuestros Productos</h3>
+  </div>
+</div>
 <section class="categories">
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">

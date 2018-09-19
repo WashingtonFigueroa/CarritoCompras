@@ -27,8 +27,9 @@ Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', '
 
 Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', 'edit']]);
 
-Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit']]);
+Route::resource('categorias', 'CategoriaController', ['except' => ['create', 'edit', 'update']]);
 Route::post('buscar_categorias','CategoriaController@buscar_categorias');
+Route::post('modificar_categoria/{id}','CategoriaController@update');
 Route::get('filtrar_productos_categoria/{categoria_id}/{ordenar_por}','CategoriaController@filtrar_productos');
 Route::get('buscar_productos_categoria/{categoria_id}/{nombre}','CategoriaController@buscar_productos');
 Route::get('lista_categorias','CategoriaController@lista_categorias');
@@ -48,7 +49,11 @@ Route::get('lista_articulos','ImagenController@lista_articulos');
 Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
 Route::post('buscar_promociones','PromocionController@buscar_promociones');
 Route::get('lista_promociones','PromocionController@lista_promociones');
-
+// Rutas Manillas
+Route::resource('manillas', 'ManillaController', ['except' => ['create', 'edit']]);
+Route::post('buscar_manillas','ManillaController@buscar_manillas');
+Route::get('lista_manillas','ManillaController@lista_manillas');
+//Rutas Inventario
 Route::resource('inventarios', 'InventarioController', ['except' => ['create', 'edit']]);
 Route::post('buscar_inventario','InventarioController@buscar_inventario');
 Route::get('lista_inventario','InventarioController@lista_inventario');
@@ -65,3 +70,4 @@ Route::get('productos_categoria/{categoria_id}', 'CategoriaController@productos'
 Route::get('ver_imagen_categoria/{id}', 'CategoriaController@ver_imagen');
 Route::get('ver_imagen_producto/{id}', 'ProductoController@ver_imagen');
 Route::get('ver_imagen_articulo/{id}', 'ImagenController@ver_imagen');
+Route::get('ver_imagen_manilla/{id}', 'ManillaController@ver_imagen');

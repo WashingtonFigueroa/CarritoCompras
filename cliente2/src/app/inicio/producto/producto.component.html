@@ -5,7 +5,7 @@
           [class]="settings.image_id === imagen.imagen_id ? 'gallery-column-active' : 'gallery-column-inactive' "
           (click)="selectImage(imagen.imagen_id)"
           [src]="environment.base + environment.imagen.articulo + imagen.imagen_id"
-          *ngFor="let imagen of producto.imagenes">
+          *ngFor="let imagen of producto.imagenes" height="250px">
     </div>
   </div>
   <div class="col-md-5">
