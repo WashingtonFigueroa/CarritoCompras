@@ -29,7 +29,8 @@
 }
 .gallery-column img {
   padding: .5em;
-  width: 50%;
+  width: 200px;
+  height: 230px;
   box-sizing: border-box;
   margin: 1em 0;
   cursor: pointer;

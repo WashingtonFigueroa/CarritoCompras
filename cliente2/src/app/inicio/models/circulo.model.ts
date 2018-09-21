@@ -7,12 +7,14 @@ export class Circulo {
   centro: Punto;
   radio: number;
   imagen: string;
-  imagenSize: any = { width: 48, height: 48};
+  imagenSize: any = { width: 36, height: 36};
   imagenes: any = [];
   total: number;
   angulo: number;
   draw: any;
 
+  selectedItems: any = [];
+  renderizado = false;
 
   constructor(centro: Punto, radio: number, imagen: string) {
     this.centro = centro;
@@ -35,11 +37,18 @@ export class Circulo {
     while (i < angulo) {
       const rect = this.polarToRect(i, this.radio);
       let imagen = null;
-      if (i % 45 === 0) {
+/*      if (i % 45 === 0) {
         imagen = this.draw.image('http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png', this.imagenSize.width, this.imagenSize.height);
       } else {
         imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
-      }
+      }*/
+      imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
+      console.log(imagen);
+      imagen.on('click', () => {
+        imagen.selectize({points: []});
+        this.selectedItems.push(imagen);
+        console.log(imagen);
+      });
       imagen.move(this.centro.x + rect.x, this.centro.y - rect.y);
       imagen.draggable();
       this.imagenes.push(imagen);
@@ -140,6 +149,21 @@ export class Circulo {
     const firstImage = this.imagenes[0];
     firstImage.move(cx, cy);
     firstImage.draggable();
+  }
+  cambiarItems(imagen) {
+    this.renderizado = true;
+    for (let i = 0; i < this.total ; i++) {
+      this.imagenes[i].node.href.baseVal = imagen;
+    }
+  }
+  cambiarItem(imagen) {
+    this.selectedItems.forEach(item => {
+      item.node.href.baseVal = imagen;
+    });
+    this.imagenes.forEach( (img)  => {
+      img.selectize(false);
+    });
+    this.selectedItems = [];
   }
   print() {
     console.log(this.imagenes);

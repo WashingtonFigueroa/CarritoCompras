@@ -3,15 +3,6 @@
   <h1 *ngIf="categoria !== null">{{ categoria.nombre }}</h1>
 
   <div class="sort">
-<!--    <div class="collection-sort">
-      <label>Filtrar por:</label>
-      <select>
-        <option value="/">Todas las camisas</option>
-        <option value="/">Nuevo</option>
-        <option value="/">Todas las camisas</option>
-        <option value="/">Todas las camisas</option>
-      </select>
-    </div>-->
     <div class="collection-sort">
       <label></label>
       <select [(ngModel)]="ordenar_por" (change)="filtrar()">

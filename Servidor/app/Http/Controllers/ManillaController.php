@@ -69,4 +69,10 @@ class ManillaController extends Controller
         $imagen = Manilla::find($id);
         return response()->file(storage_path('app/' . $imagen->imagen));
     }
+
+    public function tipo_manillas($tipo) {
+        $manillas = Manilla::where('tipo', $tipo)->get();
+        return response()->json($manillas, 200);
+    }
+
 }

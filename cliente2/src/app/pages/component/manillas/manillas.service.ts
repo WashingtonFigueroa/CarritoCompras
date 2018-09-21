@@ -33,4 +33,7 @@ export class ManillasService {
     lista_manillas() {
         return this.http.get(this.base + 'lista_manillas');
     }
+    tipo_manillas(tipo) {
+        return this.http.get(this.base + 'tipo_manillas/' + tipo);
+    }
 }
