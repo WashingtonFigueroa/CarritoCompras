@@ -39,6 +39,7 @@ export class LoginComponent implements OnInit {
     login() {
       this.loginService.login(this.loginGroup.value)
           .subscribe((res: any) => {
+            this.toastr.success(res.mensaje, 'Iniciando sesión');
             this.router.navigate(['/admin']);
           }, (error: any) => {
             this.errors = {

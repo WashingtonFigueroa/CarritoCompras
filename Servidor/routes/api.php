@@ -18,6 +18,7 @@ use Illuminate\Http\Request;
 });*/
 
 Route::post('login', 'AuthController@login');
+Route::post('signup', 'AuthController@signup');
 
 Route::resource('tipo_usuarios', 'TipoUsuarioController', ['except' => ['create', 'edit']]);
 Route::post('buscar_tipousuarios','TipoUsuarioController@buscar_tipousuarios');

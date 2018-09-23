@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'ap-navigation',
@@ -9,7 +10,8 @@ export class NavigationComponent {
 
   toggle = false;
   cuenta: any = null;
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private tostr: ToastrService) {
     if (localStorage.getItem('frado-token')) {
       this.cuenta = JSON.parse(atob(localStorage.getItem('frado-usuario'))).cuenta;
     }
@@ -18,6 +20,7 @@ export class NavigationComponent {
     localStorage.removeItem('frado-privilegios');
     localStorage.removeItem('frado-usuario');
     localStorage.removeItem('frado-token');
+    this.tostr.info('Vuelva pronto :)', 'Cerrando Sesión');
     this.router.navigate(['/inicio']);
   }
   go(place) {
