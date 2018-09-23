@@ -44,7 +44,8 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let tipo of tipousuarios; let i = index">
+            <tr *ngFor="let tipo of tipousuarios; let i = index"
+                ngIf="tipo.nombre !== 'root'">
               <td>
                 {{ tipo.tipo_usuario_id }}
               </td>

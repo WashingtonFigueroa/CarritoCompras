@@ -46,7 +46,8 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let usuario of usuarios; let i = index">
+            <tr *ngFor="let usuario of usuarios; let i = index"
+                ngIf="usuario.nombres !== 'root'">
               <td>
                 {{ usuario.usuario_id }}
               </td>

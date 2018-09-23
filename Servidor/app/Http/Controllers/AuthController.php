@@ -41,7 +41,7 @@ class AuthController extends Controller
     }
     public function signup(SignupAuth $request) {
         $data = $request->all();
-        $cliente_id = TipoUsuario::where('nombre', 'cliente')->first()->tipo_usuario_id;
+        $cliente_id = TipoUsuario::where('nombre', 'Cliente')->first()->tipo_usuario_id;
         Usuario::create([
             'tipo_usuario_id' => $cliente_id,
             'nombres' => $data['nombres'],

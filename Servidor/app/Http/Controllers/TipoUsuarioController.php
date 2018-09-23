@@ -14,7 +14,10 @@ class TipoUsuarioController extends Controller
 
     public function lista_tipousuarios()
     {
-        return response()->json(TipoUsuario::orderBy('nombre')->get(), 200);
+        $tipo_usuarios = TipoUsuario::orderBy('nombre')
+                                    ->where('nombre', '!=', 'root')
+                                    ->get();
+        return response()->json($tipo_usuarios, 200);
     }
 
     public function buscar_tipousuarios() {
