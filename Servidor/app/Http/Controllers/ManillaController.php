@@ -54,9 +54,28 @@ class ManillaController extends Controller
 
     public function update(Request $request, $id)
     {
-        $imagen = Manilla::find($id);
-        $imagen->update($request->all());
-        return response()->json($imagen, 200);
+        try{
+
+            if ($request->hasFile('imagen')){
+                $manilla = Manilla::find($id);
+                $path_documento = $request->file('imagen')->store('manillas');
+                $manilla->tipo = $request->input('tipo');
+                $manilla->imagen = $path_documento;
+                $manilla->save();
+            }
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Material actualizado exitosamente',
+                'producto' => $manilla
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Material no actualizado',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function destroy($id)

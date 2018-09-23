@@ -22,7 +22,7 @@ export class ManillasService {
         return this.http.post(this.base + 'manillas', request);
     }
     update(request, id) {
-        return this.http.put(this.base + 'manillas/' + id, request);
+        return this.http.post(this.base + 'modificar_manillas/' + id, request);
     }
     destroy(id) {
         return this.http.delete(this.base + 'manillas/' + id );

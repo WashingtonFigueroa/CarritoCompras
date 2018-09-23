@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {environment} from "../../../../environments/environment.prod";
-import {HttpClient} from "../../../../../node_modules/@angular/common/http";
+import {environment} from '../../../../environments/environment.prod';
+import {HttpClient} from '../../../../../node_modules/@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class ArticulosService {
         return this.http.post(this.base + 'articulos', request);
     }
     update(request, id) {
-        return this.http.put(this.base + 'articulos/' + id, request);
+        return this.http.post(this.base + 'modificar_articulos/' + id, request);
     }
     destroy(id) {
         return this.http.delete(this.base + 'articulos/' + id );

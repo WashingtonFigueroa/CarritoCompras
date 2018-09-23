@@ -1,3 +1,38 @@
-<p>
-  articulos-edit works!
-</p>
+<div class="row" >
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-8" style="background-color: #ffffff">
+        <br>
+        <form (submit)="update()" role="form" [formGroup]="articuloGroup" *ngIf="articulo !== null">
+          <div class="card-header" style="background-color: #2e6da4">
+            <h3 style="color: #ffffff">Ingrese la información</h3>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="producto">
+                  * Seleccione Producto
+                </label>
+                <select name="producto_id" id="producto" class="form-control" formControlName="producto_id">
+                  <option [value]="producto.producto_id" *ngFor="let producto of productos"> {{ producto.nombre }}</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="imagen">Seleccione imagen </label>
+                <input type="file" class="form-control" #imagen id="imagen" name="imagen" />
+              </div>
+            </div>
+
+          </div>
+          <div class="card-footer" style="background-color: #2a3035">
+            <button [disabled]="articuloGroup.status === 'INVALID'" type="submit" class="btn btn-success">
+              Actualizar
+            </button>
+          </div>
+          <br>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,5 +7,6 @@ export const environment = {
     producto: 'ver_imagen_producto/',
     articulo: 'ver_imagen_articulo/',
     manilla: 'ver_imagen_manilla/',
+    promocion: 'ver_imagen_promocion/',
   }
 };

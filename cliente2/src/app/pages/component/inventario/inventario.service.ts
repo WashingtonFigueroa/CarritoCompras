@@ -31,7 +31,7 @@ export class InventarioService {
         return this.http.post(`${environment.base}buscar_inventarios`, search);
     }
     lista_inventarios() {
-        return this.http.get(this.base + 'lista_inventarios');
+        return this.http.get(this.base + 'lista_inventario');
     }
     // listar_descripcion_productos(producto_id) {
     //     return this.http.get(`${this.base}listar_descripcion_productos/${producto_id}`);
