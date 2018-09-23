@@ -32,9 +32,9 @@ class LoginAuth extends FormRequest
     public function messages()
     {
         return [
-            'cuenta.required', 'La cuenta es obligatoria',
-            'password.required', 'El password es obligatorio',
-            'password.min', 'El password debe tener al menos 6 caracteres'
+            'cuenta.required' => 'La cuenta es obligatoria',
+            'password.required' => 'El password es obligatorio',
+            'password.min' => 'El password debe tener al menos 6 caracteres'
         ];
     }
 }

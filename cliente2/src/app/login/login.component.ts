@@ -1,33 +1,66 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
-import * as $ from 'jquery';
+import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {LoginService} from './login.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit, AfterViewInit {
+export class LoginComponent implements OnInit {
 
-    constructor(public router: Router) {}
-
-    ngOnInit() {}
-
-    ngAfterViewInit() {
-        $(function() {
-            $(".preloader").fadeOut();
-        });
-        $(function() {
-            (<any>$('[data-toggle="tooltip"]')).tooltip()
-        });
-        $('#to-recover').on("click", function() {
-            $("#loginform").slideUp();
-            $("#recoverform").fadeIn();
-        });
+    errors = {
+      cuenta: '',
+      password: ''
+    };
+    loginGroup: FormGroup;
+    constructor(private fb: FormBuilder,
+                protected router: Router,
+                private loginService: LoginService,
+                private toastr: ToastrService) {
+      this.createForm();
     }
 
-    onLoggedin() {
-        localStorage.setItem('isLoggedin', 'true');
+    ngOnInit() {
+      if (this.loginService.isLoggedIn()) {
+        this.router.navigate(['/admin']);
+      }
     }
+
+    createForm() {
+      this.loginGroup = this.fb.group({
+        'cuenta' : new FormControl('', Validators.required),
+        'password' : new FormControl('', Validators.required)
+      });
+    }
+
+    login() {
+      this.loginService.login(this.loginGroup.value)
+          .subscribe((res: any) => {
+            this.router.navigate(['/admin']);
+          }, (error: any) => {
+            this.errors = {
+              cuenta: '',
+              password: ''
+            };
+            if (error.status === 401) {
+              this.toastr.error('Revise sus credenciales', 'Credenciales Invalidas');
+            }
+            console.log(error);
+            if (error.error.errors.cuenta) {
+              error.error.errors.cuenta.forEach((err) => {
+                this.errors.cuenta = this.errors.cuenta + ' ' + err;
+              });
+            }
+            if (error.error.errors.password) {
+              error.error.errors.password.forEach((err) => {
+                this.errors.password = this.errors.password + ' ' + err;
+              });
+            }
+          });
+    }
+
 
 }

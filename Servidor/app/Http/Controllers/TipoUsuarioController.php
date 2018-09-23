@@ -27,7 +27,8 @@ class TipoUsuarioController extends Controller
 
     public function store(Request $request)
     {
-        return response()->json(TipoUsuario::create($request->all()), 201);
+        $tipo_usuario = TipoUsuario::create($request->all());
+        return response()->json($tipo_usuario, 201);
     }
 
     public function show($id)

@@ -21,13 +21,12 @@
                     <input type="text" class="form-control" id="descripcion" name="descripcion" formControlName="descripcion" autofocus/>
                   </div>
                   <div class="form-group">
-                    <label for="estado">
+                    <label>
                       * Seleccione estado
                     </label>
-                    <select class="form-control" id="estado" formControlName="estado" name="estado" required>
-                      <option>Activo</option>
-                      <option>Pasivo</option>
-                    </select>
+                    <br>
+                    <input type="radio" value='activo' formControlName="estado"> Activo
+                    <input type="radio" value='inactivo' formControlName="estado"> Inactivo
                   </div>
                   <div class="row">
                     <div class="col-md-6">

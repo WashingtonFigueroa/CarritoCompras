@@ -51,7 +51,7 @@
               <td>
                 {{ tipo.nombre }}
               </td>
-              <td>
+              <td [class]="tipo.estado === 'activo' ? 'active-status' : 'inactive-status'">
                 {{ tipo.estado }}
               </td>
               <td align="center">

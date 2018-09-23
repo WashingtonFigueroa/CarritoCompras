@@ -8,9 +8,10 @@ class TipoUsuario extends Model
     protected $table = 'tipo_usuarios';
     protected $primaryKey = 'tipo_usuario_id';
     protected $fillable = [
-        'nombre','descripcion','estado',
+        'nombre',
+        'descripcion',
+        'estado'
     ];
-    protected $hidden = [];
     protected $dates = ['deleted_at'];
     public function usuarios() {
         return $this->hasMany(Usuario::class, 'tipo_usuario_id');

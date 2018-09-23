@@ -6939,11 +6939,11 @@ File: scss
 
 /* Radio Buttons
    ========================================================================== */
-[type="radio"]:not(:checked),
+/*[type="radio"]:not(:checked),
 [type="radio"]:checked {
   position: absolute;
   left: -9999px;
-  opacity: 0; }
+  opacity: 1; }
 
 [type="radio"]:not(:checked) + label,
 [type="radio"]:checked + label {
@@ -6957,7 +6957,7 @@ File: scss
   -webkit-transition: .28s ease;
   -o-transition: .28s ease;
   transition: .28s ease;
-  /* webkit (konqueror) browsers */
+  !* webkit (konqueror) browsers *!
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6975,10 +6975,10 @@ File: scss
   z-index: 0;
   -webkit-transition: .28s ease;
   -o-transition: .28s ease;
-  transition: .28s ease; }
+  transition: .28s ease; }*/
 
 /* Unchecked styles */
-[type="radio"]:not(:checked) + label:before,
+/*[type="radio"]:not(:checked) + label:before,
 [type="radio"]:not(:checked) + label:after,
 [type="radio"]:checked + label:before,
 [type="radio"]:checked + label:after,
@@ -6994,10 +6994,10 @@ File: scss
   z-index: -1;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
-  transform: scale(0); }
+  transform: scale(0); }*/
 
 /* Checked styles */
-[type="radio"]:checked + label:before {
+/*[type="radio"]:checked + label:before {
   border: 2px solid transparent;
   -webkit-animation: ripple 0.2s linear forwards;
   animation: ripple 0.2s linear forwards; }
@@ -7015,33 +7015,33 @@ File: scss
 [type="radio"]:checked + label:after {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
-  transform: scale(1.02); }
+  transform: scale(1.02); }*/
 
 /* Radio With gap */
-[type="radio"].with-gap:checked + label:after {
+/*[type="radio"].with-gap:checked + label:after {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
-  transform: scale(0.5); }
+  transform: scale(0.5); }*/
 
 /* Focused styles */
-[type="radio"].tabbed:focus + label:before {
+/*[type="radio"].tabbed:focus + label:before {
   -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-animation: ripple 0.2s linear forwards;
-  animation: ripple 0.2s linear forwards; }
+  animation: ripple 0.2s linear forwards; }*/
 
 /* Disabled Radio With gap */
-[type="radio"].with-gap:disabled:checked + label:before {
+/*[type="radio"].with-gap:disabled:checked + label:before {
   border: 2px solid rgba(0, 0, 0, 0.26);
   -webkit-animation: ripple 0.2s linear forwards;
   animation: ripple 0.2s linear forwards; }
 
 [type="radio"].with-gap:disabled:checked + label:after {
   border: none;
-  background-color: rgba(0, 0, 0, 0.26); }
+  background-color: rgba(0, 0, 0, 0.26); }*/
 
 /* Disabled style */
-[type="radio"]:disabled:not(:checked) + label:before,
+/*[type="radio"]:disabled:not(:checked) + label:before,
 [type="radio"]:disabled:checked + label:before {
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.26);
@@ -7056,7 +7056,7 @@ File: scss
 
 [type="radio"]:disabled:checked + label:after {
   background-color: rgba(0, 0, 0, 0.26);
-  border-color: #BDBDBD; }
+  border-color: #BDBDBD; }*/
 
 /* Checkboxes
    ========================================================================== */

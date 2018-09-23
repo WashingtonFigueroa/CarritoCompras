@@ -26,13 +26,14 @@ export class TipousuarioCreateComponent implements OnInit {
         this.tipousuarioGroup = this.fb.group({
             'nombre' : new FormControl('', [ Validators.required]),
             'descripcion' : new FormControl(''),
-            'estado' : new FormControl('', [ Validators.required])
+            'estado' : new FormControl('activo', [ Validators.required])
         });
     }
 
     store() {
         this.tipousuarioService.store(this.tipousuarioGroup.value)
             .subscribe(res => {
+                console.log(res);
                 this.router.navigate([environment.admin + '/tipousuarios/listar']);
                 // this.toastr.success('Cargo Guardado','Ok')
             }, ( error => {

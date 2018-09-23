@@ -1,5 +1,5 @@
 <header class="topbar">
-    <nav class="navbar top-navbar navbar-expand-md navbar-light">
+    <nav class="navbar">
         <!-- ============================================================== -->
         <!-- Logo -->
         <!-- ============================================================== -->
@@ -8,7 +8,24 @@
               <h3 style="color: #f7f7f7">&nbsp;&nbsp;STORE</h3>
             </a>
         </div>
-        <a [routerLink]="['/inicio']" class="dropdown-item" style="text-align: right"><i class="fa fa-power-off" ></i>&nbsp;&nbsp;&nbsp;Salir &nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <div>
+          <div
+            class="logout noselect"
+            (click)="toggle = !toggle">
+            {{cuenta}}
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="desplegable-menu" *ngIf="toggle">
+            <div (click)="go('tipousuarios')">Tipo de usuario <i class="icon-user-follow"></i></div>
+            <div (click)="go('usuarios')">Usuario <i class="icon-user"></i></div>
+            <div (click)="go('privilegios')">Privilegios <i class="icon-settings"></i></div>
+            <div (click)="logout()">
+              Cerrar Sesión
+              <i class="fa fa-power-off"></i>
+            </div>
+          </div>
+        </div>
+
         <!-- ============================================================== -->
         <!-- End Logo -->
         <!-- ============================================================== -->

@@ -127,3 +127,59 @@ a.cart-menu {
   width: 100%;
   height: 100%;
 }
+
+/*tables*/
+.active-status {
+  color: #00c292;
+}
+.inactive-status {
+  color: #ff1300;
+}
+.logout {
+  outline: 0;
+  right: 1em;
+  display: block;
+  float: right;
+  color: gray;
+  cursor: pointer;
+  border: none;
+    margin-top: -.5em;
+  background-color: black;
+}
+.logout:hover {
+  color: #aa0000;
+}
+.desplegable-menu {
+  position: absolute;
+  margin-top: 2em;
+  background-color: black;
+  color: lightgray;
+  box-sizing: border-box;
+  width: 180px;
+  right: 0;
+}
+.desplegable-menu > div {
+  display: block;
+  padding: .5em 1em;
+  text-align: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: gray;
+  transition: .25s ease;
+}
+.desplegable-menu > div:hover {
+  color: #aa0000;
+}
+.desplegable-menu > div:last-child {
+  border-top: 1px solid #1b1e21;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
