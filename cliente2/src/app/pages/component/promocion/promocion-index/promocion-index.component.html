@@ -45,6 +45,9 @@
                 Stock
               </th>
               <th>
+                Publicidad
+              </th>
+              <th>
                 Estado
               </th>
               <th>
@@ -58,7 +61,7 @@
                 {{ promocion.promocion_id }}
               </td>
               <td>
-                {{ promocion.producto.material }}
+                {{ promocion.inventario.producto_id }}
               </td>
               <td>
                 {{ promocion.detalle }}
@@ -68,6 +71,9 @@
               </td>
               <td>
                 {{ promocion.stock }}
+              </td>
+              <td>
+                <img [src]="environment.base+environment.imagen.promocion+promocion.promocion_id" alt="" height="80">
               </td>
               <td>
                 {{ promocion.estado }}

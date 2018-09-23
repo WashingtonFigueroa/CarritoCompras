@@ -54,9 +54,27 @@ class ImagenController extends Controller
 
     public function update(Request $request, $id)
     {
-        $imagen = Imagen::find($id);
-        $imagen->update($request->all());
-        return response()->json($imagen, 200);
+        try{
+            if ($request->hasFile('imagen')){
+                $imagen = Imagen::find($id);
+                $path_documento = $request->file('imagen')->store('imagenes');
+                $imagen->producto_id = $request->input('producto_id');
+                $imagen->imagen = $path_documento;
+                $imagen->save();
+            }
+            return response()->json([
+                'title' => 'Exito',
+                'message' => 'Producto actualizado exitosamente',
+                'producto' => $imagen
+            ], 201);
+
+        }catch (\Exception $e) {
+            return response()->json([
+                'title' => 'Error',
+                'message' => 'Producto no guardado',
+                'error' => 'ups!'
+            ], 500);
+        }
     }
 
     public function destroy($id)

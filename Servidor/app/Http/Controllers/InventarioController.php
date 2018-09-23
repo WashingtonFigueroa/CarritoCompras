@@ -15,7 +15,8 @@ class InventarioController extends Controller
 
     public function lista_inventario()
     {
-        return response()->json(inventario::orderBy('inventario_id')->get(), 200);
+        return response()->json(inventario::with('producto')
+                                        ->orderBy('inventario_id')->get(), 200);
     }
 
     public function buscar_inventario() {

@@ -42,16 +42,19 @@ Route::get('lista_productos','ProductoController@lista_productos');
 Route::resource('descripcion_productos', 'DescripcionProductoController', ['except' => ['create', 'edit']]);
 Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
-
-Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit']]);
+//rutas imagen articulo
+Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit', 'update']]);
+Route::post('modificar_articulos/{id}','ImagenController@update');
 Route::post('buscar_articulos','ImagenController@buscar_articulos');
 Route::get('lista_articulos','ImagenController@lista_articulos');
-
-Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit']]);
+//promociones
+Route::resource('promociones', 'PromocionController', ['except' => ['create', 'edit','update']]);
+Route::post('modificar_promociones/{id}','PromocionController@update');
 Route::post('buscar_promociones','PromocionController@buscar_promociones');
 Route::get('lista_promociones','PromocionController@lista_promociones');
 // Rutas Manillas
-Route::resource('manillas', 'ManillaController', ['except' => ['create', 'edit']]);
+Route::resource('manillas', 'ManillaController', ['except' => ['create', 'edit','update']]);
+Route::post('modificar_manillas/{id}','ManillaController@update');
 Route::post('buscar_manillas','ManillaController@buscar_manillas');
 Route::get('lista_manillas','ManillaController@lista_manillas');
 Route::get('tipo_manillas/{tipo}', 'ManillaController@tipo_manillas');
@@ -73,3 +76,4 @@ Route::get('ver_imagen_categoria/{id}', 'CategoriaController@ver_imagen');
 Route::get('ver_imagen_producto/{id}', 'ProductoController@ver_imagen');
 Route::get('ver_imagen_articulo/{id}', 'ImagenController@ver_imagen');
 Route::get('ver_imagen_manilla/{id}', 'ManillaController@ver_imagen');
+Route::get('ver_imagen_promocion/{id}', 'PromocionController@ver_imagen');
