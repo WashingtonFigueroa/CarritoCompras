@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./tipousuario-index.component.css']
 })
 export class TipousuarioIndexComponent implements OnInit {
-    tipousuarios: any = [];
+    tipo_usuarios: any = [];
     index: number = null;
     tipo_usuario_id: number = null;
     closeResult: string;
@@ -26,7 +26,7 @@ export class TipousuarioIndexComponent implements OnInit {
 
     ngOnInit() {
         this.tipousuarioService.index().subscribe((res: any) => {
-            this.tipousuarios = res.data;
+            this.tipo_usuarios = res.data;
             this.getPages(res.last_page);
             this.prev_page = res.prev_page_url;
             this.next_page = res.next_page_url;
@@ -36,7 +36,7 @@ export class TipousuarioIndexComponent implements OnInit {
     buscar(search) {
         this.tipousuarioService.buscar_tipousuarios({search: search})
             .subscribe((res: any) => {
-                this.tipousuarios = res.data;
+                this.tipo_usuarios = res.data;
                 this.getPages(res.last_page);
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
@@ -57,7 +57,7 @@ export class TipousuarioIndexComponent implements OnInit {
     loadPagination(url) {
         this.tipousuarioService.indexPerPage(url)
             .subscribe((res: any) => {
-                this.tipousuarios = res.data;
+                this.tipo_usuarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
@@ -65,7 +65,7 @@ export class TipousuarioIndexComponent implements OnInit {
     prevPage() {
         this.tipousuarioService.indexPerPage(this.prev_page)
             .subscribe( (res: any) => {
-                this.tipousuarios = res.data;
+                this.tipo_usuarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
@@ -73,7 +73,7 @@ export class TipousuarioIndexComponent implements OnInit {
     nextPage() {
         this.tipousuarioService.indexPerPage(this.next_page)
             .subscribe( (res: any) => {
-                this.tipousuarios = res.data;
+                this.tipo_usuarios = res.data;
                 this.prev_page = res.prev_page_url;
                 this.next_page = res.next_page_url;
             });
@@ -82,12 +82,12 @@ export class TipousuarioIndexComponent implements OnInit {
     destroy(index, id) {
         this.tipousuarioService.destroy(id)
             .subscribe(res => {
-                this.tipousuarios.splice(index, 1);
+                this.tipo_usuarios.splice(index, 1);
             });
     }
 
     edit(id) {
-        this.router.navigate([this.environment.admin + '/tipousuarios/editar/' + id]);
+        this.router.navigate([this.environment.admin + '/tipo_usuarios/editar/' + id]);
     }
 
     private getDismissReason(reason: any): string {

@@ -13,6 +13,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import {FormsModule} from '@angular/forms';
 import { DesignComponent } from './design/design.component';
+import { CamisaComponent } from './camisa/camisa.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { DesignComponent } from './design/design.component';
     NgxImageZoomModule.forRoot(),
     InicioRoutingModule
   ],
-  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent, CategoriasComponent, ProductoComponent, ImageZoomComponent, DesignComponent],
+  declarations: [HeaderComponent, FooterComponent, InicioComponent, ProductosComponent, CategoriasComponent, ProductoComponent, ImageZoomComponent, DesignComponent, CamisaComponent],
   providers: [InicioService]
 })
 export class InicioModule { }

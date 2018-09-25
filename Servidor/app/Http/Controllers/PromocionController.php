@@ -9,7 +9,7 @@ class PromocionController extends Controller
 {
     public function index()
     {
-        return response()->json(Promocion::with('inventario')
+        return response()->json(Promocion::with('inventario.producto')
                                         ->orderBy('promocion_id')->paginate(10), 200);
     }
 

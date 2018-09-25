@@ -1,16 +1,29 @@
-<div class="card" style="width: 60%">
-  <div class="card-body">
+<div class="row" >
+  <div class="col-md-12">
     <div class="row">
-      <div class="col-md-12">
-              <h4 class="card-title">Seleccione tipo usuario</h4>
+      <div class="col-md-8" style="background-color: #ffffff">
+        <br>
+        <div class="card-header" style="background-color: #2e6da4">
+          <h3 style="color: #ffffff">Asignación de permisos</h3>
+        </div>
+        <br>
               <form (submit)="update()">
-                <section class="form-group">
-                  <select (change)="loadPrivilegios(idtipo)" class="form-control" name="idtipo" [(ngModel)]="idtipo">
-                    <option [value]="tipo_usuario.idtipo" *ngFor="let tipo_usuario of tipo_usuarios">
-                      {{ tipo_usuario.nombre }}
-                    </option>
-                  </select>
-                </section>
+                <div class="row">
+                  <div class="col-md-3">
+                    <label>Seleccione tipo usuario</label>
+
+                  </div>
+                  <div class="col-md-6">
+                    <section class="form-group">
+                      <select (change)="loadPrivilegios(idtipo)" class="form-control" name="idtipo" [(ngModel)]="idtipo">
+                        <option [value]="tipo_usuario.idtipo" *ngFor="let tipo_usuario of tipo_usuarios">
+                          {{ tipo_usuario.nombre }}
+                        </option>
+                      </select>
+                    </section>
+                  </div>
+                </div>
+
                 <section class="form-group">
                   <label>Gestine permisos</label> <br>
                   <input type="checkbox" name="tipousuarios" [value]="privilegio.tipousuarios" [(ngModel)]="privilegio.tipousuarios">
@@ -20,27 +33,23 @@
                   <input type="checkbox" name="privilegios" [value]="privilegio.privilegios" [(ngModel)]="privilegio.privilegios">
                   Privilegios <br>
                   <input type="checkbox" name="materiales" [value]="privilegio.materiales" [(ngModel)]="privilegio.materiales">
-                  Inventario <br>
+                  Categorias <br>
                   <input type="checkbox" name="inventarios" [value]="privilegio.inventarios" [(ngModel)]="privilegio.inventarios">
-                  Kardex <br>
+                  Producto <br>
                   <input type="checkbox" name="movimientos" [value]="privilegio.movimientos" [(ngModel)]="privilegio.movimientos">
-                  Administracion <br>
+                  Inventario <br>
                   <input type="checkbox" name="estadisticas" [value]="privilegio.estadisticas" [(ngModel)]="privilegio.estadisticas">
-                  Estadisticas <br>
+                  Articulo <br>
                   <input type="checkbox" name="parametros" [value]="privilegio.parametros" [(ngModel)]="privilegio.parametros">
-                  Parametros <br>
+                  Promoción <br>
                   <input type="checkbox" name="clientes" [value]="privilegio.clientes" [(ngModel)]="privilegio.clientes">
-                  Cliente <br>
+                  Compras <br>
                   <input type="checkbox" name="medidores" [value]="privilegio.medidores" [(ngModel)]="privilegio.medidores">
-                  Medidores <br>
+                  Retiros <br>
                   <input type="checkbox" name="servicios" [value]="privilegio.servicios" [(ngModel)]="privilegio.servicios">
-                  Servicios <br>
+                  Manillas <br>
                   <input type="checkbox" name="multas" [value]="privilegio.multas" [(ngModel)]="privilegio.multas">
-                  Multas <br>
-                  <input type="checkbox" name="lecturas" [value]="privilegio.lecturas" [(ngModel)]="privilegio.lecturas">
-                  Lecturas <br>
-                  <input type="checkbox" name="facturas" [value]="privilegio.facturas" [(ngModel)]="privilegio.facturas">
-                  Pago Planilla <br>
+                  Camisas <br>
                 </section>
                 <button class="btn btn-primary">Asignar privilegio</button>
               </form>

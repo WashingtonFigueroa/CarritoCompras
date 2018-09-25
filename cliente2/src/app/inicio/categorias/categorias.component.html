@@ -16,7 +16,7 @@
     <li data-target="#carousel" data-slide-to="1"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
-    <div class="carousel-item" [ngClass]="{'active' : 1 == 1}" *ngFor="let promocion of promociones">
+    <div class="carousel-item" [ngClass]="{'active' : 0 == i}" *ngFor="let promocion of promociones; let i=index">
       <img [src]="environment.base+environment.imagen.promocion+promocion.promocion_id" alt="" height="80">
     </div>
 

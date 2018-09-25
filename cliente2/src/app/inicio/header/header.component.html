@@ -12,6 +12,7 @@
         <li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>
         <li><a [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a></li>
       </ul>
+      <br>
     </div>
   </div>
   <!-- /TOP HEADER -->
@@ -129,6 +130,13 @@
             <a class="nav-link" [routerLink]="['design']">
               <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" style="color: #aa0000">
                 DISEÑA TU MANILLA
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['camisas']">
+              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" style="color: #aa0000">
+                PERSONALIZA TU CAMISA
               </span>
             </a>
           </li>
