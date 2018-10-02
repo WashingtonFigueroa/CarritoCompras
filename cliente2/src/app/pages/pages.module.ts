@@ -63,6 +63,11 @@ import { ManillasIndexComponent } from './component/manillas/manillas-index/mani
 import { ManillasEditComponent } from './component/manillas/manillas-edit/manillas-edit.component';
 import { ManillasCreateComponent } from './component/manillas/manillas-create/manillas-create.component';
 import {ManillasService} from './component/manillas/manillas.service';
+import { CamisaComponent } from './component/camisa/camisa.component';
+import { CamisaIndexComponent } from './component/camisa/camisa-index/camisa-index.component';
+import { CamisaEditComponent } from './component/camisa/camisa-edit/camisa-edit.component';
+import { CamisaCreateComponent } from './component/camisa/camisa-create/camisa-create.component';
+import {CamisaService} from './component/camisa/camisa.service';
 
 @NgModule({
     imports: [
@@ -119,7 +124,11 @@ import {ManillasService} from './component/manillas/manillas.service';
         ManillasComponent,
         ManillasIndexComponent,
         ManillasEditComponent,
-        ManillasCreateComponent
+        ManillasCreateComponent,
+        CamisaComponent,
+        CamisaIndexComponent,
+        CamisaEditComponent,
+        CamisaCreateComponent
     ],
     providers: [
         TipousuarioService,
@@ -131,7 +140,8 @@ import {ManillasService} from './component/manillas/manillas.service';
         ComprasService,
         PromocionService,
         InventarioService,
-        ManillasService
+        ManillasService,
+        CamisaService
     ]
 })
 export class PagesModule { }

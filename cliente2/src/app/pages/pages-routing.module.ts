@@ -41,6 +41,10 @@ import {ManillasComponent} from './component/manillas/manillas.component';
 import {ManillasIndexComponent} from './component/manillas/manillas-index/manillas-index.component';
 import {ManillasCreateComponent} from './component/manillas/manillas-create/manillas-create.component';
 import {ManillasEditComponent} from './component/manillas/manillas-edit/manillas-edit.component';
+import {CamisaComponent} from "./component/camisa/camisa.component";
+import {CamisaIndexComponent} from "./component/camisa/camisa-index/camisa-index.component";
+import {CamisaCreateComponent} from "./component/camisa/camisa-create/camisa-create.component";
+import {CamisaEditComponent} from "./component/camisa/camisa-edit/camisa-edit.component";
 
 const routes: Routes = [
     {
@@ -506,6 +510,49 @@ const routes: Routes = [
                             title: 'INICIO', url: '/admin/principal/listar'
                         }, {
                             title: 'LISTADO', url: 'manillas/listar'
+                        }, {
+                            title: 'MODIFICACIÓN'
+                        }]
+                    }
+                }]
+            },
+            // rutas  camisas
+            {
+                path: 'camisas',
+                // canActivate: [AuthGuard],
+                component: CamisaComponent,
+                children: [{path: '', redirectTo: 'listar', pathMatch: 'full'}, {
+                    path: 'listar',
+                    component: CamisaIndexComponent,
+                    data: {
+                        title: 'LISTA DE TELAS', urls: [{
+                            title: 'INICIO', url: '/admin/principal/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO', url: 'camisas/crear'
+                        }, {
+                            title: 'LISTA TELAS'
+                        }]
+                    }
+                }, {
+                    path: 'crear',
+                    component: CamisaCreateComponent,
+                    data: {
+                        title: 'CREAR TELA', urls: [{
+                            title: 'INICIO', url: '/admin/principal/listar'
+                        }, {
+                            title: 'LISTADO', url: 'camisas/listar'
+                        }, {
+                            title: 'NUEVO REGISTRO'
+                        }]
+                    }
+                }, {
+                    path: 'editar/:id',
+                    component: CamisaEditComponent,
+                    data: {
+                        title: 'EDITAR TELA', urls: [{
+                            title: 'INICIO', url: '/admin/principal/listar'
+                        }, {
+                            title: 'LISTADO', url: 'camisas/listar'
                         }, {
                             title: 'MODIFICACIÓN'
                         }]

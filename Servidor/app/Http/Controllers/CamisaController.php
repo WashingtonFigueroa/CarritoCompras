@@ -2,46 +2,46 @@
 
 namespace App\Http\Controllers;
 
-use App\Manilla;
+use App\Camisa;
 use Illuminate\Http\Request;
 
-class ManillaController extends Controller
+class CamisaController extends Controller
 {
     public function index()
     {
-        return response()->json(Manilla::orderBy('manilla_id')->paginate(10), 200);
+        return response()->json(Camisa::orderBy('camisa_id')->paginate(10), 200);
     }
     public function lista_manillas()
     {
-        return response()->json(Manilla::orderBy('manilla_id')->get(), 200);
+        return response()->json(Camisa::orderBy('camisa_id')->get(), 200);
     }
     public function buscar_manillas() {
         $search = request()->input('search');
-        $manilla = Manilla::orderBy('manilla_id')
-            ->where('tipo', 'like', '%'. $search . '%')
+        $camisa = Camisa::orderBy('camisa_id')
+            ->where('detalle', 'like', '%'. $search . '%')
             ->paginate(10);
-        return response()->json($manilla, 200);
+        return response()->json($camisa, 200);
     }
     public function store(Request $request)
     {
         try{
-            $manilla = new Manilla();
+            $camisa = new Camisa();
             if ($request->hasFile('imagen')){
-                $path_documento = $request->file('imagen')->store('manillas');
-                $manilla->tipo = $request->input('tipo');
-                $manilla->imagen = $path_documento;
-                $manilla->save();
+                $path_documento = $request->file('imagen')->store('camisas');
+                $camisa->detalle = $request->input('detalle');
+                $camisa->imagen = $path_documento;
+                $camisa->save();
             }
             return response()->json([
                 'title' => 'Exito',
-                'message' => 'Manilla guardado exitosamente',
-                'producto' => $manilla
+                'message' => 'Camisa guardado exitosamente',
+                'producto' => $camisa
             ], 201);
 
         }catch (\Exception $e) {
             return response()->json([
                 'title' => 'Error',
-                'message' => 'Manilla no guardada',
+                'message' => 'Camisa no guardada',
                 'error' => 'ups!'
             ], 500);
         }
@@ -49,7 +49,7 @@ class ManillaController extends Controller
 
     public function show($id)
     {
-        return response()->json(Manilla::find($id), 200);
+        return response()->json(Camisa::find($id), 200);
     }
 
     public function update(Request $request, $id)
@@ -57,22 +57,22 @@ class ManillaController extends Controller
         try{
 
             if ($request->hasFile('imagen')){
-                $manilla = Manilla::find($id);
-                $path_documento = $request->file('imagen')->store('manillas');
-                $manilla->tipo = $request->input('tipo');
-                $manilla->imagen = $path_documento;
-                $manilla->save();
+                $camisa = Camisa::find($id);
+                $path_documento = $request->file('imagen')->store('camisas');
+                $camisa->detalle = $request->input('detalle');
+                $camisa->imagen = $path_documento;
+                $camisa->save();
             }
             return response()->json([
                 'title' => 'Exito',
-                'message' => 'Manilla actualizado exitosamente',
-                'producto' => $manilla
+                'message' => 'Camisa actualizado exitosamente',
+                'producto' => $camisa
             ], 201);
 
         }catch (\Exception $e) {
             return response()->json([
                 'title' => 'Error',
-                'message' => 'Manilla no actualizado',
+                'message' => 'Camisa no actualizado',
                 'error' => 'ups!'
             ], 500);
         }
@@ -80,18 +80,17 @@ class ManillaController extends Controller
 
     public function destroy($id)
     {
-        $imagen = Manilla::find($id);
+        $imagen = Camisa::find($id);
         $imagen->delete();
         return response()->json($imagen, 200);
     }
     public function ver_imagen($id) {
-        $imagen = Manilla::find($id);
+        $imagen = Camisa::find($id);
         return response()->file(storage_path('app/' . $imagen->imagen));
     }
 
     public function tipo_manillas($tipo) {
-        $manillas = Manilla::where('tipo', $tipo)->get();
+        $manillas = Camisa::where('tipo', $tipo)->get();
         return response()->json($manillas, 200);
     }
-
 }

@@ -59,6 +59,12 @@ Route::post('modificar_manillas/{id}','ManillaController@update');
 Route::post('buscar_manillas','ManillaController@buscar_manillas');
 Route::get('lista_manillas','ManillaController@lista_manillas');
 Route::get('tipo_manillas/{tipo}', 'ManillaController@tipo_manillas');
+// Rutas Camisas
+Route::resource('camisas', 'CamisaController', ['except' => ['create', 'edit','update']]);
+Route::post('modificar_camisas/{id}','CamisaController@update');
+Route::post('buscar_camisas','CamisaController@buscar_camisas');
+Route::get('lista_camisas','CamisaController@lista_camisas');
+Route::get('tipo_camisas/{detalle}', 'CamisaController@tipo_camisas');
 //Rutas Inventario
 Route::resource('inventarios', 'InventarioController', ['except' => ['create', 'edit']]);
 Route::post('buscar_inventario','InventarioController@buscar_inventario');
@@ -77,4 +83,5 @@ Route::get('ver_imagen_categoria/{id}', 'CategoriaController@ver_imagen');
 Route::get('ver_imagen_producto/{id}', 'ProductoController@ver_imagen');
 Route::get('ver_imagen_articulo/{id}', 'ImagenController@ver_imagen');
 Route::get('ver_imagen_manilla/{id}', 'ManillaController@ver_imagen');
+Route::get('ver_imagen_camisa/{id}', 'CamisaController@ver_imagen');
 Route::get('ver_imagen_promocion/{id}', 'PromocionController@ver_imagen');
