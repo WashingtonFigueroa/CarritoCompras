@@ -47,7 +47,6 @@ import {CategoriasService} from './component/categorias/categorias.service';
 import {ProductoService} from './component/producto/producto.service';
 import {ArticulosService} from './component/articulos/articulos.service';
 import {ComprasService} from './component/compras/compras.service';
-import { DescripcionProductoComponent } from './component/descripcion-producto/descripcion-producto.component';
 import { PromocionComponent } from './component/promocion/promocion.component';
 import { PromocionIndexComponent } from './component/promocion/promocion-index/promocion-index.component';
 import { PromocionEditComponent } from './component/promocion/promocion-edit/promocion-edit.component';
@@ -112,7 +111,6 @@ import {CamisaService} from './component/camisa/camisa.service';
         CategoriasIndexComponent,
         CategoriasEditComponent,
         CategoriasCreateComponent,
-        DescripcionProductoComponent,
         PromocionComponent,
         PromocionIndexComponent,
         PromocionEditComponent,

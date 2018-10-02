@@ -41,10 +41,10 @@ import {ManillasComponent} from './component/manillas/manillas.component';
 import {ManillasIndexComponent} from './component/manillas/manillas-index/manillas-index.component';
 import {ManillasCreateComponent} from './component/manillas/manillas-create/manillas-create.component';
 import {ManillasEditComponent} from './component/manillas/manillas-edit/manillas-edit.component';
-import {CamisaComponent} from "./component/camisa/camisa.component";
-import {CamisaIndexComponent} from "./component/camisa/camisa-index/camisa-index.component";
-import {CamisaCreateComponent} from "./component/camisa/camisa-create/camisa-create.component";
-import {CamisaEditComponent} from "./component/camisa/camisa-edit/camisa-edit.component";
+import {CamisaComponent} from './component/camisa/camisa.component';
+import {CamisaIndexComponent} from './component/camisa/camisa-index/camisa-index.component';
+import {CamisaCreateComponent} from './component/camisa/camisa-create/camisa-create.component';
+import {CamisaEditComponent} from './component/camisa/camisa-edit/camisa-edit.component';
 
 const routes: Routes = [
     {
