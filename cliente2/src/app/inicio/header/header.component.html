@@ -62,30 +62,30 @@
 
             <!-- Cart -->
             <div>
-              <a href="#" class="cart-menu" (click)="dropDownCart()">
+              <a class="cart-menu" (click)="dropDownCart()">
                 <i class="fa fa-shopping-cart"></i>
                 <span>Tú Carrito</span>
-                <div class="qty">{{ productos.length }}</div>
+                <div class="qty">{{ cartItems.cantidad_total }}</div>
               </a>
               <div [class]="displayCart ? 'show': 'hide'">
                 <div class="cart-list">
-                  <div class="product-widget" *ngFor="let producto of productos">
+                  <div class="product-widget" *ngFor="let producto of cartItems.items">
                     <div class="product-img">
-                      <img [src]="producto.imagen" alt="">
+                      <img src="{{producto_img_url}}{{producto.producto_id}}">
                     </div>
                     <div class="product-body">
-                      <h3 class="product-name"><a href="#">{{ producto.nombre }}</a></h3>
+                      <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
                       <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio }}</h4>
                     </div>
                     <button class="delete"><i class="fa fa-close"></i></button>
                   </div>
                 </div>
                 <div class="cart-summary">
-                  <small>{{ productos.length }} Productos(s) seleccionados</small>
-                  <h5>TOTAL: $ {{ subtotal }}</h5>
+                  <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
+                  <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
                 </div>
                 <div class="cart-buttons">
-                  <a href="#">Ver Carrito</a> &nbsp;&nbsp;
+                  <a routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
                   <a href="#">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>

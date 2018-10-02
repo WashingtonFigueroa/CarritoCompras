@@ -1,0 +1,39 @@
+<div class="row bg-white">
+  <div class="offset-2 col-md-8">
+    <table class="table table-bordered table-hover">
+      <thead>
+      <tr>
+        <th>N.</th>
+        <th>Producto</th>
+        <th>Nombre</th>
+        <th>Talla</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Subtotal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let producto of cartItems.items; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>
+          <img src="{{producto_img_url}}{{producto.producto_id}}" height="80">
+        </td>
+        <td>{{ producto.producto.nombre }}</td>
+        <td>{{ producto.talla }}</td>
+        <td>{{ producto.cantidad }}</td>
+        <td>{{ producto.precio }}</td>
+        <td>{{ producto.cantidad * producto.precio }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="text-right">Total</td>
+        <td><strong>${{ cartItems.subtotal }}</strong></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

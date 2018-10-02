@@ -37,11 +37,6 @@ export class Circulo {
     while (i < angulo) {
       const rect = this.polarToRect(i, this.radio);
       let imagen = null;
-/*      if (i % 45 === 0) {
-        imagen = this.draw.image('http://urnas.biz/wp-content/uploads/2015/11/Dije-Ivi.png', this.imagenSize.width, this.imagenSize.height);
-      } else {
-        imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
-      }*/
       imagen = this.draw.image(this.imagen, this.imagenSize.width, this.imagenSize.height);
       console.log(imagen);
       imagen.on('click', () => {
@@ -113,6 +108,18 @@ export class Circulo {
       const vy = this.imagenes[i].node.y.animVal.value;
       const nx = vx * Math.cos(rad) - vy * Math.sin(rad);
       const ny = vx * Math.sin(rad) + vy * Math.cos(rad);
+      const imagen = this.imagenes[i];
+      imagen.move(nx, ny);
+      imagen.draggable();
+    }
+  }
+  girar(angulo: number ) {
+    const rad = new Rad(angulo).radianes;
+    for ( let i = 0; i < this.total; i++) {
+      const x = this.imagenes[i].node.x.animVal.value;
+      const y = this.imagenes[i].node.y.animVal.value;
+      const nx = x * Math.cos(rad) - y * Math.sin(rad);
+      const ny = x * Math.sin(rad) + y * Math.cos(rad);
       const imagen = this.imagenes[i];
       imagen.move(nx, ny);
       imagen.draggable();

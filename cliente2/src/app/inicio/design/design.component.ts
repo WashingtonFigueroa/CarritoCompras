@@ -72,6 +72,9 @@ export class DesignComponent implements OnInit {
   moverAba() {
     this.circulo.moverAba();
   }
+  girar() {
+    this.circulo.girar(1);
+  }
   girarIzq() {
     this.circulo.girarIzq();
   }

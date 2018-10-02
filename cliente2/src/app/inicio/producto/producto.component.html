@@ -25,14 +25,16 @@
     <div class="row">
       <div class="col-md-2">
         <div class="form-group">
-          <label for="">Cantidad</label>
-          <select name="" id="" *ngIf="stock.length > 0">
+          <label for="cantidad">Cantidad</label>
+          <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
             <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
           </select>
         </div>
       </div>
-      <div class="col-md-10">
-        <button class="btn btn-lg btn-rounded btn-danger">Añadir a Carrito</button>
+      <div class="col-md-10" *ngIf="selectedInventario !== null && cantidad !== null">
+        <button
+          (click)="addCart()"
+          class="btn btn-lg btn-rounded btn-danger">Añadir a Carrito</button>
       </div>
     </div>
     <br>

@@ -6,6 +6,7 @@ import {CategoriasComponent} from './categorias/categorias.component';
 import {ProductoComponent} from './producto/producto.component';
 import {DesignComponent} from './design/design.component';
 import {CamisaComponent} from "./camisa/camisa.component";
+import {CarritoComponent} from './carrito/carrito.component';
 
 const routes: Routes = [
   {
@@ -29,10 +30,15 @@ const routes: Routes = [
       }, {
         path: 'design',
         component: DesignComponent
-      }, {
-            path: 'camisas',
-            component: CamisaComponent
-        },
+      },
+      {
+        path: 'camisas',
+        component: CamisaComponent
+      },
+      {
+        path: 'carrito',
+        component: CarritoComponent
+      },
       {
         path: '',
         redirectTo: 'categorias'
