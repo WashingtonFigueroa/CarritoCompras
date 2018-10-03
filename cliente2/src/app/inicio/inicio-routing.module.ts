@@ -5,7 +5,8 @@ import {ProductosComponent} from './productos/productos.component';
 import {CategoriasComponent} from './categorias/categorias.component';
 import {ProductoComponent} from './producto/producto.component';
 import {DesignComponent} from './design/design.component';
-import {CamisaComponent} from "./camisa/camisa.component";
+import {CamisaComponent} from './camisa/camisa.component';
+import {CuentaComponent} from './cuenta/cuenta.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,9 @@ const routes: Routes = [
       }
     ]
   }, {
+        path: 'cuenta',
+        component: CuentaComponent
+    }, {
     path: '**', redirectTo: ''
   }
 ];
