@@ -62,45 +62,41 @@
 <!--</div>-->
 
 
-<!-- The grid: four columns -->
-<div class="row">
-  <div class="column">
-    <img src="assets/images/plantilla/p1.jpg" alt="Nature" onclick="openImg(this);">
+<div class="contenedor-camisas">
+  <div class="panel-camisas">
+    <img #camisa1 src="assets/images/plantilla/p1.png" alt="Nature" (click)="openImg('camisa1')">
+    <img #camisa2 src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" alt="Nature" (click)="openImg('camisa2')">
+    <img #camisa3 src="assets/images/plantilla/p1.png" alt="Nature" (click)="openImg('camisa3')">
+    <img #camisa4 src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" alt="Nature" (click)="openImg('camisa4')">
   </div>
-  <div class="column">
-    <img src="img_snow.jpg" alt="Snow" onclick="openImg(this);">
+  <div class="camisa-background" #camisaBg>
+      <img #expandedImg style="width:100%">
+      <div id="imgtext"></div>
   </div>
-  <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" onclick="openImg(this);">
-  </div>
-  <div class="column">
-    <img src="img_lights.jpg" alt="Lights" onclick="openImg(this);">
+  <div class="contenedor-telas">
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" (click)="setBackground($event)">
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" (click)="setBackground($event)">
+    <img src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg" (click)="setBackground($event)">
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" (click)="setBackground($event)">
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" (click)="setBackground($event)">
+    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" (click)="setBackground($event)">
+
   </div>
 </div>
+
+<!-- The grid: four columns -->
+<!--<div class="row">
+  <div class="column">
+  </div>
+  <div class="column">
+    <img height="120" #camisa2 src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" alt="Snow" (click)="openImg('camisa2')">
+  </div>
+  <div class="column">
+    <img height="120" #camisa3 src="assets/images/plantilla/p1.jpg" alt="Mountains" (click)="openImg('camisa3')">
+  </div>
+  <div class="column">
+    <img height="120" #camisa4 src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg" alt="Lights" (click)="openImg('camisa4')">
+  </div>
+</div>-->
 
 <!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
-
-<script !src="">
-    function myFunction(imgs) {
-        // Get the expanded image
-        var expandImg = document.getElementById("expandedImg");
-        // Get the image text
-        var imgText = document.getElementById("imgtext");
-        // Use the same src in the expanded image as the image being clicked on from the grid
-        expandImg.src = imgs.src;
-        // Use the value of the alt attribute of the clickable image as text inside the expanded image
-        imgText.innerHTML = imgs.alt;
-        // Show the container element (hidden with CSS)
-        expandImg.parentElement.style.display = "block";
-    }
-</script>
