@@ -50,6 +50,11 @@ const routes: Routes = [
     {
         path: '', component: PageComponent,
         children: [
+            {
+              path: '',
+              redirectTo: 'principal',
+              pathMatch: 'full'
+            },
             // ruta principal
             {
                 path: 'principal',
