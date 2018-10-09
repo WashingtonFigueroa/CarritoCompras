@@ -183,3 +183,18 @@ a.cart-menu {
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+.loading {
+  width: 100%;
+  min-height: 550px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading i {
+  font-size: 4em;
+}
+.loading h1 {
+  font-size: 3em;
+}

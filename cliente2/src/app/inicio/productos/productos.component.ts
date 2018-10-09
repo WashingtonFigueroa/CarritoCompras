@@ -13,7 +13,7 @@ export class ProductosComponent implements OnInit {
   environment = environment;
   productos: any = null;
   categoria: any = null;
-  ordenar_por: any = null;
+  ordenar_por: any = 'nombre_asc';
   constructor(private categoriaService: CategoriasService,
               private route: ActivatedRoute) {
     this.route.data.subscribe(data => console.log(data.value));

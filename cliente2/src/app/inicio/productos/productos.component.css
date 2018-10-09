@@ -6,6 +6,10 @@
 }
 .product-filter h1 {
   flex-grow: 1;
+  color: #dd0000;
+  font-weight: lighter;
+  font-size: 2em;
+  border-bottom: 1px solid #dd0000;
 }
 .sort {
   display: flex;

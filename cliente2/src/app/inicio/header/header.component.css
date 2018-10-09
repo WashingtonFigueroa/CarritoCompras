@@ -6,12 +6,12 @@
 }
 .nav-active {
   box-sizing: border-box;
-  color: #e63e5c;
+  color: #dd0000;
   text-decoration: underline;
 }
 .nav-header:hover {
   box-sizing: border-box;
-  color: #e63e5c;
+  color: #dd0000;
   font-weight: bolder;
   text-decoration: underline;
   transition: 0.5s ease;

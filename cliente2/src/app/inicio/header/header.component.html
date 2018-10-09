@@ -116,7 +116,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <!--<li class="nav-item"><a class="nav-link" routerLink="/inicio"><span class="nav-header nav-active">Inicio</span></a></li>-->
-          <li class="nav-item"><a class="nav-link" href=""><span class="nav-header">LAS MEJORES OFERTAS</span></a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">LAS MEJORES OFERTAS</span></a></li>
           <!--<li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias">-->
             <!--<span [class]="router.url === '/inicio/categorias' ? 'nav-header nav-active' : 'nav-header'">CATEGORIAS</span></a>-->
           <!--</li>-->
@@ -128,14 +128,14 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['design']">
-              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" style="color: #aa0000">
+              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" style="color: #dd0000">
                 DISEÑA TU MANILLA
               </span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['camisas']">
-              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" style="color: #aa0000">
+              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" style="color: #dd0000">
                 PERSONALIZA TU CAMISA
               </span>
             </a>

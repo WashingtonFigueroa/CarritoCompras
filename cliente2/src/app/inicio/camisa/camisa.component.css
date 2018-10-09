@@ -1,6 +1,6 @@
 .contenedor-camisas {
   width: 100%;
-  height: 750px;
+  height: 650px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,34 +10,52 @@
 .panel-camisas {
   width: 20%;
   height: 100%;
-  background-color: plum;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.panel-camisas img {
-  width: 60%;
+.panel-camisas > img {
+  width: 120px;
+  height: 133px;
   margin-top: 24px;
+  box-sizing: border-box;
+  padding: .5em;
+  border: 1px solid lightgray;
+}
+.panel-camisas > img:hover {
+  border: 1px solid darkslategray;
+}
+.img-active {
+  display: block;
+  border: 1px solid darkslategray;
 }
 .camisa-background {
   width: 60%;
   height: 100%;
-  background-color: palegreen;
+  background-color: white;
   position: relative;
 }
-.camisa-background img {
+.camisa-background > img {
+  border: none;
   width: 100%;
   height: 100%;
 }
 .contenedor-telas {
   width: 20%;
   height: 100%;
-  background-color: palegoldenrod;
+  background-color: white;
   position: relative;
   text-align: center;
   box-sizing: border-box;
+}
+.contenedor-telas h3 {
+  text-align: left;
+  color: #dd0000;
+  border-bottom: 1px solid #dd0000;
+  padding: .5em .35em;
 }
 .contenedor-telas img {
   width: 33%;
@@ -48,7 +66,8 @@
   transition: .3s ease;
 }
 .contenedor-telas img:hover{
-  padding: 0;
-  border: .5em solid gray;
+  background-color: #dd0000;
+  padding: .25em;
+  border: .25em solid white;
 }
 

@@ -22,7 +22,7 @@ export class CamisaComponent implements OnInit {
   openImg(camisa) {
     switch (camisa) {
       case 'camisa1' :
-        this.expandedImg.nativeElement.src = this.camisa1.nativeElement.src; break;
+        this.expandedImg.nativeElement.src = this.camisa1.nativeElement.src;break;
       case 'camisa2' :
         this.expandedImg.nativeElement.src = this.camisa2.nativeElement.src; break;
       case 'camisa3' :
