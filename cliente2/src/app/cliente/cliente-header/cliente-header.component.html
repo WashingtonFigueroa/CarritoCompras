@@ -1,0 +1,39 @@
+<header class="topbar">
+  <nav class="navbar">
+    <div class="navbar-header" style="background-color: #040202;">
+        <div class="navbar-title">
+          <img src="../../../assets/inicio/img/logo.png" alt="FRADO STORE">
+        </div>
+    </div>
+    <div class="navbar-links">
+      <a routerLink=""> <i class="fa fa-gift"></i> Compras</a>
+      <a routerLink=""> <i class="fa fa-heart"></i> Lista de Deseos</a>
+      <a routerLink=""> <i class="fa fa-star"></i> Mis Puntos</a>
+    </div>
+    <div>
+      <div
+        class="logout noselect"
+        (click)="toggle = !toggle">
+        {{ cuenta }} <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="desplegable-menu" *ngIf="toggle">
+        <div (click)="go('tipousuarios')">Perfil <i class="icon-user"></i></div>
+        <div (click)="go('privilegios')">Credenciales <i class="icon-settings"></i></div>
+        <div (click)="logout()">
+          Cerrar Sesión
+          <i class="fa fa-power-off"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Logo -->
+    <!-- ============================================================== -->
+    <div class="navbar-collapse">
+      <ul class="navbar-nav mr-auto mt-md-0">
+        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="icon-arrow-left-circle ti-menu"></i></a> </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>

@@ -40,7 +40,12 @@ export class LoginComponent implements OnInit {
       this.loginService.login(this.loginGroup.value)
           .subscribe((res: any) => {
             this.toastr.success(res.mensaje, 'Iniciando sesión');
-            this.router.navigate(['/admin']);
+            console.log(res);
+            if (res.usuario.tipo_usuario.toLowerCase() === 'cliente') {
+              this.router.navigate(['/cliente']);
+            } else {
+              this.router.navigate(['/admin']);
+            }
           }, (error: any) => {
             this.errors = {
               cuenta: '',

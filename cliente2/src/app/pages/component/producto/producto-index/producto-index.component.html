@@ -71,10 +71,9 @@
               </td>
               <td>
                 <img [src]="environment.base+environment.imagen.producto+producto.producto_id" alt="" height="80">
-
               </td>
-              <td align="center">
-                <button (click)="edit(producto.producto_id)" type="button" class="btn btn-info">
+              <td class="acciones">
+                <button (click)=" edit(producto.producto_id)" type="button" class="btn btn-info">
                   <i class="fa fa-pencil-square" aria-hidden="true"></i>
                 </button>
                 &nbsp;&nbsp;

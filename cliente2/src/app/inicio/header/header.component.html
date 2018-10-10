@@ -67,7 +67,7 @@
                 <span>Tú Carrito</span>
                 <div class="qty">{{ cartItems.cantidad_total }}</div>
               </a>
-              <div [class]="displayCart ? 'show': 'hide'">
+              <div [class]="displayCart ? 'carrito show': 'carrito hide'">
                 <div class="cart-list">
                   <div class="product-widget" *ngFor="let producto of cartItems.items">
                     <div class="product-img">
