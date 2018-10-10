@@ -17,6 +17,8 @@ export class CamisaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      this.camisaBg.nativeElement.style.backgroundImage = "url('assets/images/plantilla/t1.jpg')";
+      this.expandedImg.nativeElement.src = this.camisa1.nativeElement.src;
   }
 
   openImg(camisa) {
