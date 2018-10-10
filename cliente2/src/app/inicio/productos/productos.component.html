@@ -23,7 +23,7 @@
 
 </nav>
   <section class="loading" *ngIf="categoria !== null && productos.length === 0">
-    <h1>No existen productos en esta categoría</h1>
+    <h1><i class="fa fa-exclamation-triangle"></i> No existen productos en esta categoría</h1>
   </section>
 
 <section class="products" *ngIf="productos !== null">

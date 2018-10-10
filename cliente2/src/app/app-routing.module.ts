@@ -17,6 +17,9 @@ const routes: Routes = [
     }, {
         path: 'inicio',
         loadChildren: './inicio/inicio.module#InicioModule'
+    }, {
+        path: 'cliente',
+        loadChildren: './cliente/cliente.module#ClienteModule'
     },
     {
         path: '',

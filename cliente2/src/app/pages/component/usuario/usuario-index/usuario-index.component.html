@@ -46,29 +46,28 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let usuario of usuarios; let i = index"
-                ngIf="usuario.nombres !== 'root'">
-              <td>
-                {{ usuario.usuario_id }}
-              </td>
-              <td>
-                {{ usuario.tipo_usuario.nombre }}
-              </td>
-              <td>
-                {{ usuario.nombres }}
-              </td>
-              <td>
-                {{ usuario.cuenta}}
-              </td>
-              <td align="center">
-                <button (click)="edit(usuario.usuario_id)" type="button" class="btn btn-info">
-                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                </button>
-                &nbsp;&nbsp;
-                <button type="button" class="btn btn-danger" (click)="confirm(i, usuario.usuario_id,confirmModal)">
-                  <i class="fa fa-eraser" aria-hidden="true"></i>
-                </button>
-              </td>
+            <tr *ngFor="let usuario of usuarios; let i = index">
+                <td>
+                  {{ i + 1 }}
+                </td>
+                <td>
+                  {{ usuario.tipo_usuario.nombre }}
+                </td>
+                <td>
+                  {{ usuario.nombres }}
+                </td>
+                <td>
+                  {{ usuario.cuenta}}
+                </td>
+                <td align="center">
+                  <button (click)="edit(usuario.usuario_id)" type="button" class="btn btn-info">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                  </button>
+                  &nbsp;&nbsp;
+                  <button type="button" class="btn btn-danger" (click)="confirm(i, usuario.usuario_id,confirmModal)">
+                    <i class="fa fa-eraser" aria-hidden="true"></i>
+                  </button>
+                </td>
             </tr>
             </tbody>
           </table>

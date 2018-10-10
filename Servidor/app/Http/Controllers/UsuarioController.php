@@ -10,7 +10,9 @@ class UsuarioController extends Controller
 {
     public function index() {
         return response()->json(Usuario::with('tipoUsuario')
-                        ->orderBy('nombres')->paginate(10), 200);
+                                ->where('cuenta', '<>', 'root')
+                                ->orderBy('nombres')
+                                ->paginate(10), 200);
     }
     public function store() {
         $usuario = new Usuario();
