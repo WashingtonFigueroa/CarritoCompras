@@ -17,5 +17,4 @@ export class CompraComponent implements OnInit {
           this.cartItems = cartItems;
         });
   }
-
 }

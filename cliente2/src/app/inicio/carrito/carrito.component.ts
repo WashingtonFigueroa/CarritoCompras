@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {InicioService} from '../inicio.service';
 import {environment} from '../../../environments/environment.prod';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-carrito',
@@ -11,7 +12,8 @@ export class CarritoComponent implements OnInit {
 
   cartItems = null;
   producto_img_url = environment.base + environment.imagen.producto;
-  constructor(private inicioService: InicioService) { }
+  constructor(private inicioService: InicioService,
+              private router: Router) { }
 
   ngOnInit() {
     this.inicioService.currentCartItems
@@ -20,6 +22,9 @@ export class CarritoComponent implements OnInit {
       });
   }
 
+  comprar() {
+    this.router.navigate(['/cliente/facturacion']);
+  }
   destroy(producto, index) {
     const cartItems = this.cartItems;
     cartItems.items.splice(index, 1);
