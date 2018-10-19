@@ -3,10 +3,10 @@
     <div class="panel-section">
       <div class="panel-section-title">
         Pulseras
-        <button class="btn btn-xs btn-success btn-right" (click)="cambiarPulseras()">
-          <i class="fa fa-plus" *ngIf="circulo.renderizado"></i>
-          <i class="fa fa-minus" *ngIf="!circulo.renderizado"></i>
-        </button>
+        <!--<button class="btn btn-xs btn-success btn-right" (click)="cambiarPulseras()">-->
+          <!--<i class="fa fa-plus" *ngIf="circulo.renderizado"></i>-->
+          <!--<i class="fa fa-minus" *ngIf="!circulo.renderizado"></i>-->
+        <!--</button>-->
       </div>
       <div class="panel-section-grid">
         <img [src]="env.base + env.imagen.manilla + pulsera.manilla_id"
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="canvas">
-    <div class="canvas-title">Diseño de Pulseras</div>
+    <div class="canvas-title">Diseña tu Pulsera</div>
     <div (mousedown)="redraw($event)" id="canvas"></div>
   </div>
   <div class="controls">
@@ -40,6 +40,8 @@
       Controles
     </div>
     <div class="controls-content">
+      <br>
+      <button class="btn btn-rounded" style="background-color: #5057ff; color: #ffffff" (click)="girar()">Visualizar en 3D</button>
       <div class="cruceta">
         <button (click)="moverArr()"><i class="fa fa-angle-up"></i></button>
         <button (click)="moverDer()"><i class="fa fa-angle-right"></i></button>
@@ -54,7 +56,9 @@
           <i class="fa fa-repeat"></i>
         </button>
       </div>
-      <button (click)="girar()">girar</button>
+      <br>
+      <br>
+      <button class="btn btn-rounded" style="background-color: #cc100a; color: #ffffff">Añadir a Carrito</button>
     </div>
   </div>
 </div>

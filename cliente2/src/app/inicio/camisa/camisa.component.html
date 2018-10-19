@@ -1,5 +1,5 @@
-<br>
 <div class="contenedor-camisas">
+  <br><br>
   <div class="panel-camisas">
     <br>
     <h3>TIPO CAMISA</h3>
@@ -8,23 +8,44 @@
     <img #camisa3 src="assets/images/plantilla/p3.png" alt="Nature" (click)="openImg('camisa3')">
     <img #camisa4 src="assets/images/plantilla/p4.png" alt="Nature" (click)="openImg('camisa4')">
   </div>
+
   <div class="camisa-background" #camisaBg>
-    <img #expandedImg style="width:100% ; padding-bottom: revert">
+    <div class="container-fluid" style="background-color: #ffffff">
+      <div class="row">
+        <div class="col-md-12"><br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Dieña tu Camisa</h2>
+            </div>
+            <div class="col-md-6" style="text-align: right;">
+              <button class="btn btn-rounded" style="background-color: #cc100a; color: #ffffff">Añadir a Carrito</button>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+    <img #expandedImg style="width:100% ;height: 80%; padding-bottom: revert">
     <div id="imgtext"></div>
+
   </div>
   <div class="contenedor-telas">
     <h3>TELAS</h3>
+    <div *ngFor="let camisa of camisas; let i = index">
+      <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id" alt="" height="80">
+    </div>
     <img src="assets/images/plantilla/t1.jpg" (click)="setBackground($event)">
     <img src="assets/images/plantilla/t2.jpg" (click)="setBackground($event)">
-    <img src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg" (click)="setBackground($event)">
     <img src="assets/images/plantilla/t3.jpg" (click)="setBackground($event)">
     <img src="assets/images/plantilla/t2.jpg" (click)="setBackground($event)">
     <img src="assets/images/plantilla/t2.jpg" (click)="setBackground($event)">
-  </div>
-  <br><br>
-  <br><br>
-  <br><br>
-  <hr>
-</div>
 
+
+  </div>
+</div>
+<div style="background-color: #ffffff">
+  <br><br>
+</div>
 

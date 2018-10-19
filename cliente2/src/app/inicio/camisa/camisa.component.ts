@@ -1,4 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
+import {CamisaService} from "../../pages/component/camisa/camisa.service";
+import {environment} from "../../../environments/environment.prod";
 
 @Component({
   selector: 'app-camisa',
@@ -14,11 +16,16 @@ export class CamisaComponent implements OnInit {
   @ViewChild('camisaBg') camisaBg;
   @ViewChild('expandedImg') expandedImg;
 
-  constructor() { }
+  camisas: any = [];
+    environment = environment;
+  constructor(protected camisaService: CamisaService) { }
 
   ngOnInit() {
       this.camisaBg.nativeElement.style.backgroundImage = "url('assets/images/plantilla/t1.jpg')";
       this.expandedImg.nativeElement.src = this.camisa1.nativeElement.src;
+      this.camisaService.index().subscribe((res: any) => {
+          this.camisas = res.data;
+      });
   }
 
   openImg(camisa) {
