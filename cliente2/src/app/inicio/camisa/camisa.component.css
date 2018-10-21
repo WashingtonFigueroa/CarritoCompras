@@ -7,6 +7,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.contenedor-camisas h3 {
+  text-align: left;
+  color: #dd0000;
+  border-bottom: 1px solid #dd0000;
+  padding: .5em .35em;
+}
 .panel-camisas {
   width: 20%;
   height: 100%;
@@ -33,18 +39,18 @@
   border: 1px solid darkslategray;
 }
 .camisa-background {
-  width: 60%;
+  width: 50%;
   height: 100%;
   background-color: white;
   position: relative;
 }
 .camisa-background > img {
   border: none;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 80%;
 }
 .contenedor-telas {
-  width: 20%;
+  width: 30%;
   height: 100%;
   background-color: white;
   position: relative;
