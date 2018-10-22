@@ -20,13 +20,19 @@ class CreateComprasTable extends Migration
                     ->references('usuario_id')
                     ->on('usuarios')
                     ->onDelete('cascade');
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->string('celular');
+            $table->string('direccion');
+            $table->string('provincia');
+            $table->string('canton');
+            $table->string('calle_principal');
+            $table->string('interseccion');
+            $table->string('numero_domicilio');
+            $table->string('referencia');
             $table->date('fecha');
             $table->float('total', 8, 2);
-            $table->string('direccion');
-            $table->string('departamento');
-            $table->string('ciudad');
-            $table->string('telefono');
-            $table->boolean('estado')->default(true);
+            $table->enum('estado', ['pagado', 'pendiente'])->default('pendiente');
             $table->softDeletes();
             $table->timestamps();
         });

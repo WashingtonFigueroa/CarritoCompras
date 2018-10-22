@@ -1,0 +1,112 @@
+.profile-container {
+  background-color: white;
+  padding-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 90vh;
+}
+.profile, .profile-img {
+  height: 100%;
+}
+.profile {
+  width: 55%;
+/*  background-color: yellow;*/
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px gray;
+  border-radius: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+}
+.profile-img{
+  width: 30%;
+/*  background-color: plum;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px gray;
+  border-radius: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.profile-img > img {
+  width: 60%;
+}
+.profile-img h3 {
+  margin-top: 1em;
+  font-weight: 400;
+}
+a.btn-profile {
+  display: block;
+  border: none;
+  background-color: #dd0000;
+  color: white;
+  padding: .5em;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 6px #aa0000;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 1ms ease-out;
+  margin-top: 1em;
+}
+a.btn-profile:hover {
+  color: white;
+  box-shadow: 0 4px #aa0000;
+}
+a.btn-profile:active {
+  color: white;
+  box-shadow: 0 2px #aa0000;
+}
+
+/*puntos*/
+.point-container {
+/*  background-color: plum;*/
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.point-container .point {
+  display: block;
+  width: 125px;
+  height: 125px;
+  background-color: #232a2e;
+  border-radius: 50%;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.8em;
+  cursor: pointer;
+  box-shadow: 0 4px #131517;
+  transition: all .1s ease-out;
+}
+.point-container .point:hover {
+  box-shadow: 0 2px #131517;
+}
+.point-container span {
+  margin-top: .5em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+}
+.profile h3 {
+  padding-left: .5em;
+}

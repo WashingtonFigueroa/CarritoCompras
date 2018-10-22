@@ -40,7 +40,8 @@
               "node_modules/pace-js/pace.min.js",
               "src/assets/inicio/js/slick.min.js",
               "src/assets/inicio/js/nouislider.min.js",
-              "src/assets/inicio/js/jquery.zoom.min.js"
+              "src/assets/inicio/js/jquery.zoom.min.js",
+              "node_modules/jspdf/dist/jspdf.min.js"
             ]
           },
           "configurations": {

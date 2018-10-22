@@ -67,15 +67,17 @@ import { CamisaIndexComponent } from './component/camisa/camisa-index/camisa-ind
 import { CamisaEditComponent } from './component/camisa/camisa-edit/camisa-edit.component';
 import { CamisaCreateComponent } from './component/camisa/camisa-create/camisa-create.component';
 import {CamisaService} from './component/camisa/camisa.service';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
     imports: [
-        CommonModule,
-        PagesRoutingModule,
-        NgbModalModule,
-        FormsModule,
-        ReactiveFormsModule,
-        JsonpModule,
+      CommonModule,
+      PagesRoutingModule,
+      NgbModalModule,
+      FormsModule,
+      ReactiveFormsModule,
+      JsonpModule,
+      SharedModule
     ],
     declarations: [
         PageComponent,

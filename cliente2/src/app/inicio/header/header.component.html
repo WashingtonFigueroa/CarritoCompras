@@ -33,8 +33,9 @@
         </div>
         <!-- /LOGO -->
 
+        <div class="col-md-6"></div>
         <!-- SEARCH BAR -->
-        <div class="col-md-6">
+<!--        <div class="col-md-6">
           <div class="header-search">
             <form (submit)="buscar_productos()" *ngIf="categorias !== null">
               <select [(ngModel)]="busqueda.categoria_id" name="categoria_id" class="input-select">
@@ -44,7 +45,7 @@
               <button class="search-btn">Buscar</button>
             </form>
           </div>
-        </div>
+        </div>-->
         <!-- /SEARCH BAR -->
 
         <!-- ACCOUNT -->
@@ -86,7 +87,7 @@
                 </div>
                 <div class="cart-buttons">
                   <a routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
-                  <a href="#">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+                  <a routerLink="/cliente/facturacion">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>
             </div>

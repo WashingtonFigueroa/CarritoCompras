@@ -16,6 +16,7 @@
             <i class="fa fa-caret-down"></i>
           </div>
           <div class="desplegable-menu" *ngIf="toggle">
+            <div routerLink="/admin/perfil">Perfil <i class="icon-user-follow"></i></div>
             <div (click)="go('tipousuarios')">Tipo de usuario <i class="icon-user-follow"></i></div>
             <div (click)="go('usuarios')">Usuario <i class="icon-user"></i></div>
             <div (click)="go('privilegios')">Privilegios <i class="icon-settings"></i></div>

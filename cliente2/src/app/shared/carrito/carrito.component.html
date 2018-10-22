@@ -1,8 +1,9 @@
 <section class="loading" *ngIf="cartItems.subtotal == 0">
   <h1><i class="fa fa-exclamation-triangle"></i> No existen productos añadidos al carrito</h1>
 </section>
-<div class="row bg-white" *ngIf="cartItems.subtotal > 0">
+<div class="row carrito-container" *ngIf="cartItems.subtotal > 0">
   <div class="offset-2 col-md-8">
+    <h3>Carrito de Compras</h3>
     <table class="table table-bordered table-hover">
       <thead>
       <tr>
@@ -13,6 +14,7 @@
         <th>Cantidad</th>
         <th>Precio</th>
         <th>Subtotal</th>
+        <th>Quitar</th>
       </tr>
       </thead>
       <tbody>
@@ -41,10 +43,15 @@
     </table>
   </div>
 </div>
-<div class="row bg-white" *ngIf="cartItems.subtotal > 0">
+<div class="row carrito-container" *ngIf="cartItems.subtotal > 0">
   <div class="offset-2 col-md-8 text-center">
     <button
       routerLink="/cliente/facturacion"
       class="btn btn-lg btn-red btn-rounded">Comprar</button>
   </div>
+</div>
+<div class="bg-white text-center">
+  <button
+    routerLink="/inicio/categorias"
+    class="btn btn-info"><i class="fa fa-cart-plus"></i> Seguir añadiendo a carrito...</button>
 </div>

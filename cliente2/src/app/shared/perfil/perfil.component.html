@@ -1,0 +1,35 @@
+<div class="row profile-container">
+  <div class="profile">
+    <h3>Mi Perfil</h3>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <tbody>
+        <tr>
+          <td><strong>Tipo de Usuario</strong></td>
+          <td>{{ usuario.tipo_usuario }}</td>
+        </tr>
+        <tr>
+          <td><strong>Cuenta</strong></td>
+          <td>{{ usuario.cuenta }}</td>
+        </tr>
+        <tr>
+          <td><strong>Nombres</strong></td>
+          <td>{{ usuario.nombres }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="point-container">
+      <div class="point">
+        {{ usuario.puntos }}
+      </div>
+      <span>Puntos</span>
+    </div>
+  </div>
+  <div class="profile-img" *ngIf="usuario !== null">
+    <img src="../../../assets/images/profile/profile.png" alt="Perfil de Usuario">
+    <h3>{{usuario.nombres}}</h3>
+    <a class="btn-profile">Editar Usuario</a>
+    <a class="btn-profile">Cambiar Contraseña</a>
+  </div>
+</div>

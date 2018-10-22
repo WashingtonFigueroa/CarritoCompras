@@ -34,7 +34,10 @@
   <div class="contenedor-telas">
     <h3>TELAS</h3>
     <div *ngFor="let camisa of camisas; let i = index">
-      <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id" alt="" height="80">
+      <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id"
+           [alt]="camisa.detalle"
+           (click)="setBackground($event)"
+           height="80">
     </div>
     <img src="assets/images/plantilla/t1.jpg" (click)="setBackground($event)">
     <img src="assets/images/plantilla/t2.jpg" (click)="setBackground($event)">

@@ -12,12 +12,18 @@ class Compra extends Model
     protected $primaryKey = 'compra_id';
     protected $fillable = [
         'usuario_id',
+        'nombres',
+        'apellidos',
+        'celular',
+        'direccion',
+        'provincia',
+        'canton',
+        'calle_principal',
+        'interseccion',
+        'numero_domicilio',
+        'referencia',
         'fecha',
         'total',
-        'direccion',
-        'departamento',
-        'ciudad',
-        'telefono',
         'estado',
     ];
     protected $hidden = [];

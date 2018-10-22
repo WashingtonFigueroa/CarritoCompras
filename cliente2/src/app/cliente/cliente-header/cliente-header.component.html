@@ -6,9 +6,10 @@
         </div>
     </div>
     <div class="navbar-links">
+      <a routerLink="/cliente/carrito"> <i class="fa fa-cart-plus"></i> Carrito</a>
       <a routerLink="/cliente/compras"> <i class="fa fa-gift"></i> Compras</a>
       <a routerLink=""> <i class="fa fa-heart"></i> Lista de Deseos</a>
-      <a routerLink=""> <i class="fa fa-star"></i> Mis Puntos</a>
+<!--      <a routerLink=""> <i class="fa fa-star"></i> Mis Puntos</a>-->
     </div>
     <div>
       <div
@@ -17,8 +18,7 @@
         {{ cuenta }} <i class="fa fa-caret-down"></i>
       </div>
       <div class="desplegable-menu" *ngIf="toggle">
-        <div (click)="go('tipousuarios')">Perfil <i class="icon-user"></i></div>
-        <div (click)="go('privilegios')">Credenciales <i class="icon-settings"></i></div>
+        <div (click)="goPerfil()">Perfil <i class="icon-user"></i></div>
         <div (click)="logout()">
           Cerrar Sesión
           <i class="fa fa-power-off"></i>

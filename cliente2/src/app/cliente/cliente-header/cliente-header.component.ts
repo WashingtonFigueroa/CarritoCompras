@@ -34,4 +34,9 @@ export class ClienteHeaderComponent implements OnInit {
     this.router.navigate([location]);
   }
 
+  goPerfil() {
+    this.toggle = false;
+    this.router.navigate(['/cliente/perfil']);
+  }
+
 }

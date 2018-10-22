@@ -85,3 +85,7 @@ Route::get('ver_imagen_articulo/{id}', 'ImagenController@ver_imagen');
 Route::get('ver_imagen_manilla/{id}', 'ManillaController@ver_imagen');
 Route::get('ver_imagen_camisa/{id}', 'CamisaController@ver_imagen');
 Route::get('ver_imagen_promocion/{id}', 'PromocionController@ver_imagen');
+
+/*mis compras*/
+Route::resource('compras', 'CompraController');
+Route::get('mis-compras/{usuario_id}', 'CompraController@misCompras');

@@ -6,11 +6,13 @@ import {ClienteComponent} from './cliente.component';
 import { ClienteHeaderComponent } from './cliente-header/cliente-header.component';
 import { ClienteComprasComponent } from './cliente-compras/cliente-compras.component';
 import { ClienteFacturacionComponent } from './cliente-facturacion/cliente-facturacion.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    ClienteRoutingModule
+    ClienteRoutingModule,
+    SharedModule,
   ],
   declarations: [ClienteComponent, ClienteHeaderComponent, ClienteComprasComponent, ClienteFacturacionComponent]
 })
