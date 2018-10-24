@@ -5,6 +5,7 @@ import * as jspdf from 'jspdf';
 import {LoginService} from '../../login/login.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ClienteService} from '../cliente.service';
+import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-cliente-facturacion',
@@ -88,6 +89,36 @@ export class ClienteFacturacionComponent implements OnInit {
     doc.text(this.facturacionGroup.value.canton, 150, 70);
     doc.text(this.facturacionGroup.value.direccion, 150, 75);
     doc.text(this.facturacionGroup.value.celular, 150, 80);
+
+    let fromX = 20;
+    let toX = 200;
+    let y = 90;
+    const width = (toX - fromX) / 6;
+    doc.line(fromX, y, toX, y);
+    y += 6;
+    doc.setFontStyle('bold');
+    doc.text('N.', fromX + 0.2 * width, y);
+    doc.text('Producto', fromX + 1.2 * width - width / 2, y);
+    doc.text('Talla', fromX + 2.2 * width + width / 3, y);
+    doc.text('Cantidad', fromX + 3.2 * width, y);
+    doc.text('Precio', fromX + 4.2 * width, y);
+    doc.text('Total', fromX + 5.2 * width, y);
+    y += 4;
+    doc.line(fromX, y, toX, y);
+    doc.setFontStyle('normal');
+    let count = 0;
+    this.cartItems.items.forEach((item: any) => {
+      count++;
+      y += 6;
+      doc.text(count + ' ', fromX + 0.2 * width, y);
+      doc.text(item.producto.nombre, fromX + 1.2 * width - width / 2, y);
+      doc.text(item.talla, fromX + 2.2 * width + width / 3, y);
+      doc.text(item.cantidad + ' ', fromX + 3.2 * width, y);
+      doc.text(item.precio + ' ', fromX + 4.2 * width, y);
+      doc.text((item.cantidad * item.precio) + ' ', fromX + 5.2 * width, y);
+      y += 4;
+      doc.line(fromX, y, toX, y);
+    });
     doc.save('factura.pdf');
   }
 
