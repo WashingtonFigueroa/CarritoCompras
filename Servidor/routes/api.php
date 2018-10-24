@@ -41,7 +41,6 @@ Route::post('buscar_productos','ProductoController@buscar_productos');
 Route::get('lista_productos','ProductoController@lista_productos');
 
 Route::resource('descripcion_productos', 'DescripcionProductoController', ['except' => ['create', 'edit']]);
-Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::resource('detalle_compras', 'DetalleCompraController', ['except' => ['create', 'edit']]);
 //rutas imagen articulo
 Route::resource('articulos', 'ImagenController', ['except' => ['create', 'edit', 'update']]);
@@ -87,5 +86,5 @@ Route::get('ver_imagen_camisa/{id}', 'CamisaController@ver_imagen');
 Route::get('ver_imagen_promocion/{id}', 'PromocionController@ver_imagen');
 
 /*mis compras*/
-Route::resource('compras', 'CompraController');
+Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::get('mis-compras/{usuario_id}', 'CompraController@misCompras');

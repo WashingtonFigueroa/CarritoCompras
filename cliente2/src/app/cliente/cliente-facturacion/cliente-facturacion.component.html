@@ -1,6 +1,7 @@
 <div class="row cliente-container">
   <div class="col-sm-12 col-md-5">
     <form (submit)="procesar()"
+          [formGroup]="facturacionGroup"
           action="javascript:void()"
           role="form">
       <legend>
@@ -40,7 +41,7 @@
         </div>
         <div class="col-md-6 form-group">
           <label>Cantón</label>
-          <input type="text" class="form-control" placeholder="Cantón">
+          <input type="text" formControlName="canton" class="form-control" placeholder="Cantón">
         </div>
         <div class="col-md-6 form-group">
           <label for="calle_principal">Calle Principal</label>
@@ -89,7 +90,7 @@
               <td>{{ producto.cantidad }}</td>
               <td>{{ producto.precio }}</td>
               <td>{{ producto.cantidad * producto.precio }}</td>
-              <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>
+<!--              <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>-->
             </tr>
             <tr>
               <td></td>
