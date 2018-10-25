@@ -45,6 +45,7 @@ import {CamisaComponent} from './component/camisa/camisa.component';
 import {CamisaIndexComponent} from './component/camisa/camisa-index/camisa-index.component';
 import {CamisaCreateComponent} from './component/camisa/camisa-create/camisa-create.component';
 import {CamisaEditComponent} from './component/camisa/camisa-edit/camisa-edit.component';
+import {PerfilComponent} from '../shared/perfil/perfil.component';
 
 const routes: Routes = [
     {
@@ -54,6 +55,10 @@ const routes: Routes = [
               path: '',
               redirectTo: 'principal',
               pathMatch: 'full'
+            },
+            {
+              path: 'perfil',
+              component: PerfilComponent
             },
             // ruta principal
             {

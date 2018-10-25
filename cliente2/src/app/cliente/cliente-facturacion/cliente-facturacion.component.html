@@ -1,137 +1,109 @@
-<br><br>
-<div class="row bg-white">
-  <div class="col-sm-12 col-md-8">
-    <div class="row">
-      <div class="offset-2 col-md-8">
-        <form (click)="procesar()" role="form">
-          <legend>
-            DETALLES DE FACTURACIÓN
-          </legend>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Nombres</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Apellidos</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Numero de Celular</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Dirección</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="alert alert-danger">
-                <strong>DETALLE DE DOMICILIO</strong>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-field">
-                <label>Provincia</label>
-                <input type="text" class="form-control" placeholder="Provincia...">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-field">
-                <label>Cantón</label>
-                <input type="text" class="form-control" placeholder="Cantón">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Calle Principal</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Intersección</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Numeración de Domicilio</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-field">
-                <label for="">Referencia</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-          </div>
-
-
-          <br>
-          <button type="submit" class="btn btn-red btn-rounded">REGISTRAR</button>
-        </form>
+<div class="row cliente-container">
+  <div class="col-sm-12 col-md-5">
+    <form (submit)="procesar()"
+          [formGroup]="facturacionGroup"
+          action="javascript:void()"
+          role="form">
+      <legend>
+        DETALLES DE FACTURACIÓN
+      </legend>
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <label for="nombres">Nombres</label>
+          <input type="text" formControlName="nombres" name="nombres" id="nombres" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" formControlName="apellidos" name="apellidos" id="apellidos" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="celular">Numero de Celular</label>
+          <input type="text" formControlName="celular" name="celular" id="celular" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" formControlName="direccion" name="direccion" id="direccion" class="form-control">
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-danger">
+            <strong>DETALLE DE DOMICILIO</strong>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="provincia">Provincia</label>
+            <input type="text" formControlName="provincia" name="provincia" id="provincia" class="form-control" placeholder="Provincia...">
+          </div>
+        </div>
+        <div class="col-md-6 form-group">
+          <label>Cantón</label>
+          <input type="text" formControlName="canton" class="form-control" placeholder="Cantón">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="calle_principal">Calle Principal</label>
+          <input type="text" formControlName="calle_principal" name="calle_principal" id="calle_principal" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="interseccion">Intersección</label>
+          <input type="text" formControlName="interseccion" name="interseccion" id="interseccion" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="numero_domicilio">Numeración de Domicilio</label>
+          <input type="text" formControlName="numero_domicilio" name="numero_domicilio" id="numero_domicilio" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="referencia">Referencia</label>
+          <input type="text" formControlName="referencia" name="referencia" id="referencia" class="form-control">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-red btn-rounded">REGISTRAR</button>
+    </form>
   </div>
-  <div class="col-sm-12 col-md-4" *ngIf="cartItems !== null">
+  <div class="col-sm-12 col-md-7" *ngIf="cartItems !== null">
     <div class="row bg-white" *ngIf="cartItems.subtotal > 0">
       <div class="col-12">
-        <table class="table table-bordered table-hover">
-          <thead>
-          <tr>
-            <th>N.</th>
-            <th>Producto</th>
-            <th>Nombre</th>
-            <th>Talla</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Subtotal</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr *ngFor="let producto of cartItems.items; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>
-              <img src="{{producto_img_url}}{{producto.producto_id}}" height="80">
-            </td>
-            <td>{{ producto.producto.nombre }}</td>
-            <td>{{ producto.talla }}</td>
-            <td>{{ producto.cantidad }}</td>
-            <td>{{ producto.precio }}</td>
-            <td>{{ producto.cantidad * producto.precio }}</td>
-            <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="text-right">Total</td>
-            <td><strong>${{ cartItems.subtotal }}</strong></td>
-          </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+              <th>N.</th>
+              <th>Producto</th>
+              <th>Nombre</th>
+              <th>Talla</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let producto of cartItems.items; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>
+                <img src="{{producto_img_url}}{{producto.producto_id}}" height="80">
+              </td>
+              <td>{{ producto.producto.nombre }}</td>
+              <td>{{ producto.talla }}</td>
+              <td>{{ producto.cantidad }}</td>
+              <td>{{ producto.precio }}</td>
+              <td>{{ producto.cantidad * producto.precio }}</td>
+<!--              <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>-->
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-right">Total</td>
+              <td><strong>${{ cartItems.subtotal }}</strong></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>

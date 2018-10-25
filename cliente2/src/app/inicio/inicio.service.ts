@@ -26,6 +26,4 @@ export class InicioService {
   changeCartItems(cartItems: any) {
     this.cartItems.next(cartItems);
   }
-
-
 }

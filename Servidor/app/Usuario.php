@@ -36,4 +36,7 @@ class Usuario extends Authenticatable
     public function retiroPromociones() {
         return $this->hasMany(RetiroPromocion::class, 'usuario_id');
     }
+    public function compras() {
+        return $this->hasMany(Compra::class, 'usuario_id');
+    }
 }

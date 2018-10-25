@@ -5,7 +5,7 @@ import {ProductosComponent} from './productos/productos.component';
 import {CategoriasComponent} from './categorias/categorias.component';
 import {ProductoComponent} from './producto/producto.component';
 import {DesignComponent} from './design/design.component';
-import {CarritoComponent} from './carrito/carrito.component';
+import {CarritoComponent} from '../shared/carrito/carrito.component';
 import {CompraComponent} from './compra/compra.component';
 import {CamisaComponent} from './camisa/camisa.component';
 import {CuentaComponent} from './cuenta/cuenta.component';

@@ -40,12 +40,15 @@ export class LoginService {
                       return data;
                     });
   }
-
   isLoggedIn() {
     if (localStorage.getItem('frado-token')) {
       return true;
     } else {
       return false;
     }
+  }
+  getUsuario() {
+    const usuario = JSON.parse(atob(localStorage.getItem('frado-usuario')));
+    return usuario;
   }
 }

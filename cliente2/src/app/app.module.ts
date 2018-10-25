@@ -9,6 +9,7 @@ import {CommonModule} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ToastrModule} from 'ngx-toastr';
+import {InicioService} from './inicio/inicio.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import {ToastrModule} from 'ngx-toastr';
       NgbModule.forRoot(),
       ToastrModule.forRoot()
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, InicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -247,3 +247,13 @@ a.cart-menu {
   width: 150px;
   text-align: center;
 }
+table thead > tr {
+  background-color: #1d2124;
+  color: white;
+  user-select: none;
+}
+.cliente-container {
+  padding-top: 72px;
+  background-color: white;
+  box-sizing: border-box;
+}

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Compra;
+use App\Usuario;
 use Illuminate\Http\Request;
 
 class CompraController extends Controller
@@ -38,5 +39,10 @@ class CompraController extends Controller
         $compra = Compra::find($id);
         $compra->delete();
         return response()->json($compra, 200);
+    }
+
+    public function misCompras($usuario_id) {
+        $mis_compras = Usuario::find($usuario_id)->compras()->orderBy('created_at', 'desc')->get();
+        return response()->json($mis_compras, 200);
     }
 }
