@@ -3,14 +3,57 @@
   <component name="ChangeListManager">
     <list default="true" id="b0999118-2a38-4765-ac3a-273b097ba01a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/config/jwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/config/jwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/login-register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/background/login-register.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/megamenubg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/profile-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/socialbg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/user-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/user-info.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/background/weatherbg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/big/img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/chrome-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/firefox-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/internet-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/opera-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/photoshop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/safari-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/browser/sketch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/document/colors.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/document/sidebar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/document/template-strucutre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/gallery/chair.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/gallery/chair2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/gallery/chair3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/gallery/chair4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-light-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-light-icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-light-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-light-text1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/logo-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/d1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/d2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/d3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/d4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/d5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/users/profile.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,56 +207,55 @@
     <session id="1952385114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="1" />
+          <entry key="Angular2LanguageService" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="7" />
+          <entry key="html" value="11" />
+          <entry key="scss" value="1" />
           <entry key="ts" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="11" />
+          <entry key="SCSS" value="1" />
           <entry key="TypeScript" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="32" />
-          <entry key="html" value="434" />
+          <entry key="html" value="543" />
           <entry key="ts" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="32" />
-          <entry key="HTML" value="434" />
+          <entry key="HTML" value="543" />
           <entry key="TypeScript" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form</find>
-      <find>grow</find>
-      <find>orde</find>
-      <find>dise</find>
-      <find>cart</find>
       <find>ultimas</find>
       <find>las mejor</find>
       <find>telas</find>
@@ -239,7 +281,15 @@
       <find>comprar</find>
       <find>pl</find>
       <find>aña</find>
+      <find>.custom-select</find>
+      <find>profile.p</find>
+      <find>gallery</find>
+      <find>browser/ope</find>
+      <find>tooltip/</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\DTE\CarritoCompras\cliente2</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -247,9 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.component.ts" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.module.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio-routing.module.ts" />
@@ -298,6 +345,9 @@
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" />
       </list>
     </option>
   </component>
@@ -449,8 +499,7 @@
               <item name="cliente2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inicio" type="462c0819:PsiDirectoryNode" />
-              <item name="camisa" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
@@ -458,17 +507,7 @@
               <item name="cliente2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inicio" type="462c0819:PsiDirectoryNode" />
-              <item name="design" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inicio" type="462c0819:PsiDirectoryNode" />
-              <item name="producto" type="462c0819:PsiDirectoryNode" />
+              <item name="signup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
@@ -489,6 +528,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAGINAS/iac" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\HP User\Documents\trabajos\washington\CarritoCompras\cliente2\node_modules\tslint" />
@@ -533,16 +573,18 @@
       <workItem from="1539656379712" duration="2213000" />
       <workItem from="1539867859771" duration="3817000" />
       <workItem from="1539961552778" duration="6332000" />
+      <workItem from="1540238655855" duration="621000" />
+      <workItem from="1540426647609" duration="5012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54899000" />
+    <option name="totallyTimeSpent" value="60532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.2632375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="1" sideWeight="0.5014663" side_tool="true" weight="0.27891654" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -556,7 +598,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43611583" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.44293016" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -577,29 +619,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente.module.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/pages.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/pages.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/pages.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -781,9 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,10 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="n#!!block;n#destroy#0;n#CarritoComponent#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,9 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,9 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,9 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-126">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,10 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="60" selection-start-line="60" selection-end-line="61" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1091,12 +1084,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="1936" column="19" lean-forward="true" selection-start-line="1936" selection-start-column="19" selection-end-line="1936" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
