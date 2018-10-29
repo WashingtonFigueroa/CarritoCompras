@@ -5,7 +5,7 @@ import * as jspdf from 'jspdf';
 import {LoginService} from '../../login/login.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ClienteService} from '../cliente.service';
-import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-cliente-facturacion',
@@ -25,12 +25,16 @@ export class ClienteFacturacionComponent implements OnInit {
                private loginService: LoginService,
                private clienteService: ClienteService,
                private fb: FormBuilder,
+               private router: Router,
                private inicioService: InicioService) {
     this.usuario = this.loginService.getUsuario();
     this.inicioService
       .currentCartItems
       .subscribe((cartItems: any) => {
         this.cartItems = cartItems;
+        if (this.cartItems === null) {
+          this.router.navigate(['/cliente/carrito']);
+        }
         this.createForm(cartItems);
       });
   }
@@ -115,10 +119,16 @@ export class ClienteFacturacionComponent implements OnInit {
       doc.text(item.talla, fromX + 2.2 * width + width / 3, y);
       doc.text(item.cantidad + ' ', fromX + 3.2 * width, y);
       doc.text(item.precio + ' ', fromX + 4.2 * width, y);
-      doc.text((item.cantidad * item.precio) + ' ', fromX + 5.2 * width, y);
+      doc.text('$' + (item.cantidad * item.precio) + ' ', fromX + 5.2 * width, y);
       y += 4;
       doc.line(fromX, y, toX, y);
     });
+    y += 6;
+    doc.text('Total', fromX + 4.2 * width, y);
+    doc.setFontStyle('bold');
+    doc.text('$' + this.cartItems.subtotal, fromX + 5.2 * width, y);
+    y += 4;
+    doc.line(fromX + 4.2 * width, y, toX, y);
     doc.save('factura.pdf');
   }
 

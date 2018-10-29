@@ -3,3 +3,64 @@
   background-color: white;
   box-sizing: border-box;
 }
+.cliente-orden {
+  box-shadow: 0 0 2px gray;
+  padding: 1em;
+  border-radius: 5px;
+}
+.cliente-orden h3{
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  color: #2a3035;
+  font-size: 1.5em;
+}
+.total-title {
+  text-transform: uppercase;
+  color: #1d2124;
+  font-weight: bold;
+}
+.total-item {
+  padding-top: -1em;
+  font-weight: bold;
+  color: #dd0000;
+  font-size: 1.5em;
+}
+input[type="text"] {
+  font-weight: 200;
+  font-family: sans-serif;
+}
+button.btn-frado {
+  display: block;
+  outline: none;
+  border: none;
+  background-color: #dd0000;
+  color: white;
+  padding: .5em;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 6px #aa0000;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 1ms ease-out;
+  margin-top: 1em;
+}
+button.btn-frado:hover {
+  color: white;
+  box-shadow: 0 4px #aa0000;
+}
+button.btn-frado:active {
+  color: white;
+  box-shadow: 0 2px #aa0000;
+}
+table thead tr {
+  background-color: white;
+  color: #1d2124;
+  font-weight: bold;
+}
+table th:last-child, table td:last-child{
+  text-align: right;
+}
