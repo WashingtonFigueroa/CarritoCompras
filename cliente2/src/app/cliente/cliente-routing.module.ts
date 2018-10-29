@@ -5,6 +5,7 @@ import {ClienteComprasComponent} from './cliente-compras/cliente-compras.compone
 import {ClienteFacturacionComponent} from './cliente-facturacion/cliente-facturacion.component';
 import {PerfilComponent} from '../shared/perfil/perfil.component';
 import {CarritoComponent} from '../shared/carrito/carrito.component';
+import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
 
 const routes: Routes = [{
   path: '',
@@ -13,6 +14,10 @@ const routes: Routes = [{
     {
       path: 'perfil',
       component: PerfilComponent
+    },
+    {
+      path: 'editar-usuario/:usuario_id',
+      component: UsuarioEditarComponent
     },
     {
       path: 'carrito',

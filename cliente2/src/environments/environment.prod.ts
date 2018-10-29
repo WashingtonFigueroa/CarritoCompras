@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
   base : 'http://localhost:8000/api/',
+  base2 : 'http://www.frado.ec/public/api/',
   admin: 'admin',
   imagen: {
     categoria: 'ver_imagen_categoria/',

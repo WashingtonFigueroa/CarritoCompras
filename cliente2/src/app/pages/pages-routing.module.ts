@@ -46,6 +46,7 @@ import {CamisaIndexComponent} from './component/camisa/camisa-index/camisa-index
 import {CamisaCreateComponent} from './component/camisa/camisa-create/camisa-create.component';
 import {CamisaEditComponent} from './component/camisa/camisa-edit/camisa-edit.component';
 import {PerfilComponent} from '../shared/perfil/perfil.component';
+import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
 
 const routes: Routes = [
     {
@@ -60,7 +61,11 @@ const routes: Routes = [
               path: 'perfil',
               component: PerfilComponent
             },
-            // ruta principal
+            {
+              path: 'editar-usuario/:usuario_id',
+              component: UsuarioEditarComponent
+            },
+          // ruta principal
             {
                 path: 'principal',
                 // canActivate: [AuthGuard],

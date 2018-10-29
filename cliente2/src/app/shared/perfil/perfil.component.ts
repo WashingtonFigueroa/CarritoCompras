@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../../login/login.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-perfil',
@@ -10,7 +11,8 @@ export class PerfilComponent implements OnInit {
 
   usuario = null;
 
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: LoginService,
+              protected router: Router) {
     this.usuario = this.loginService.getUsuario();
   }
 

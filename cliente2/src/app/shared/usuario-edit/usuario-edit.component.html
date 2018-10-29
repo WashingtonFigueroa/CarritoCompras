@@ -1,0 +1,22 @@
+<div class="usuario-container">
+    <div class="usuario-content">
+      <form (submit)="update()"
+            *ngIf="usuario !== null"
+            class="frado-form"
+            [formGroup]="usuarioGroup">
+        <legend>Editar Usuario</legend>
+        <section>
+          <label for="nombres">Nombres</label>
+          <input type="text" formControlName="nombres" name="nombres" id="nombres" autofocus>
+        </section>
+        <section>
+          <label for="cuenta">Cuenta</label>
+          <input type="text" formControlName="cuenta" name="cuenta" id="cuenta">
+        </section>
+        <button class="btn-frado" type="submit">Actualizar Usuario</button>
+      </form>
+    </div>
+    <div class="usuario-img">
+      <img src="../../../assets/images/profile/profile.png" alt="Perfil de Usuario">
+    </div>
+</div>

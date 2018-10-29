@@ -1,0 +1,87 @@
+.usuario-container  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 65px;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+.usuario-content, .usuario-img {
+  height: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.usuario-container .usuario-content {
+  width: 50%;
+/*  background-color: #00c292;*/
+  box-shadow: 0 0 2px gray;
+  border-radius: 5px;
+}
+.usuario-container .usuario-img {
+  width: 35%;
+/*  background-color: #1b4b72;*/
+  justify-content: center;
+  align-items: center;
+}
+.usuario-img img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+.frado-form {
+  width: 75%;
+}
+.frado-form section {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.frado-form section label {
+  display: block;
+}
+.frado-form section input{
+  display: block;
+  width: 100%;
+  border: none;
+  padding: .5em .25em;
+  border-bottom: 1px solid #aa0000;
+}
+button.btn-frado {
+  display: block;
+  outline: none;
+  border: none;
+  background-color: #dd0000;
+  color: white;
+  padding: .5em;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 6px #aa0000;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 1ms ease-out;
+  margin-top: 1em;
+}
+button.btn-frado:hover {
+  color: white;
+  box-shadow: 0 4px #aa0000;
+}
+button.btn-frado:active {
+  color: white;
+  box-shadow: 0 2px #aa0000;
+}
+@media all and (max-width: 600px) {
+  .usuario-container .usuario-content,
+  .usuario-container .usuario-img {
+    width: 100%;
+    height: 100%;
+  }
+}

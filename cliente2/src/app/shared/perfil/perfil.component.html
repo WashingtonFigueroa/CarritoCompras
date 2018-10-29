@@ -29,7 +29,12 @@
   <div class="profile-img" *ngIf="usuario !== null">
     <img src="../../../assets/images/profile/profile.png" alt="Perfil de Usuario">
     <h3>{{usuario.nombres}}</h3>
-    <a class="btn-profile">Editar Usuario</a>
+    <a class="btn-profile"
+       *ngIf="router.url === '/cliente/perfil'"
+       [routerLink]="['/cliente/editar-usuario/' + usuario.usuario_id]">Editar Usuario</a>
+    <a class="btn-profile"
+       *ngIf="router.url === '/admin/perfil'"
+       [routerLink]="['/admin/editar-usuario/' + usuario.usuario_id]">Editar Usuario</a>
     <a class="btn-profile">Cambiar Contraseña</a>
   </div>
 </div>

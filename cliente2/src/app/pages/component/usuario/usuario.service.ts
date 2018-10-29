@@ -34,4 +34,9 @@ export class UsuarioService {
     lista_tipousuarios() {
         return this.http.get(this.base + 'lista_tipousuarios');
     }
+    setUsuario(req) {
+      localStorage.removeItem('frado-usuario');
+      const usuario = btoa(JSON.stringify(req));
+      localStorage.setItem('frado-usuario', usuario);
+    }
 }

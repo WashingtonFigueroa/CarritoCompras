@@ -24,7 +24,7 @@ Route::resource('tipo_usuarios', 'TipoUsuarioController', ['except' => ['create'
 Route::post('buscar_tipousuarios','TipoUsuarioController@buscar_tipousuarios');
 Route::get('lista_tipousuarios','TipoUsuarioController@lista_tipousuarios');
 
-Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'store', 'destroy']]);
+Route::resource('usuarios', 'UsuarioController', ['only' => ['index', 'show', 'store', 'update', 'destroy']]);
 
 Route::resource('privilegios', 'PrivilegioController', ['except' => ['create', 'edit']]);
 //rutas categoria
