@@ -68,6 +68,10 @@ Route::get('tipo_camisas/{detalle}', 'CamisaController@tipo_camisas');
 Route::resource('inventarios', 'InventarioController', ['except' => ['create', 'edit']]);
 Route::post('buscar_inventario','InventarioController@buscar_inventario');
 Route::get('lista_inventario','InventarioController@lista_inventario');
+//Rutas Emails
+Route::resource('emails', 'EmailController', ['except' => ['create', 'edit','update']]);
+Route::post('buscar_emails','EmailController@buscar_emails');
+Route::get('lista_emails','EmailController@lista_emails');
 
 Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);
 
