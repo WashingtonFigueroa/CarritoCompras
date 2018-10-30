@@ -6,6 +6,7 @@ import {LoginService} from '../../login/login.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ClienteService} from '../cliente.service';
 import {Router} from '@angular/router';
+import {UsuarioService} from '../../pages/component/usuario/usuario.service';
 
 @Component({
   selector: 'app-cliente-facturacion',
@@ -24,6 +25,7 @@ export class ClienteFacturacionComponent implements OnInit {
   constructor( @Inject('Window') private window: Window,
                private loginService: LoginService,
                private clienteService: ClienteService,
+               private usuarioService: UsuarioService,
                private fb: FormBuilder,
                private router: Router,
                private inicioService: InicioService) {
@@ -32,6 +34,7 @@ export class ClienteFacturacionComponent implements OnInit {
       .currentCartItems
       .subscribe((cartItems: any) => {
         this.cartItems = cartItems;
+        console.log(this.cartItems);
         if (this.cartItems === null) {
           this.router.navigate(['/cliente/carrito']);
         }
@@ -60,16 +63,18 @@ export class ClienteFacturacionComponent implements OnInit {
       'fecha' : [formattedDate, Validators.required],
       'total' : [cartItems.subtotal],
       'estado' : ['pendiente', Validators.required],
+      'cart_items' : [this.cartItems],
     });
   }
 
   store() {
     this.clienteService
       .facturar(this.facturacionGroup.value)
-      .subscribe((compra: any) => {
-        console.log(compra);
+      .subscribe((data: any) => {
+        console.log(data);
+        this.usuarioService.setUsuario(data.usuario);
         this.router.navigate(['/cliente/compras']);
-        this.renderPDF(compra);
+        this.renderPDF(data.compra);
       });
   }
 

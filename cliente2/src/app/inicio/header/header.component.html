@@ -10,7 +10,11 @@
       </ul>
       <ul class="header-links pull-right">
         <li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>
-        <li><a [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a></li>
+        <li><a *ngIf="usuario === null"
+              [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
+            <a *ngIf="usuario !== null"
+              [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+        </li>
       </ul>
       <br>
     </div>

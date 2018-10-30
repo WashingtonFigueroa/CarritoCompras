@@ -3,6 +3,7 @@ import {InicioService} from '../inicio.service';
 import {Router} from '@angular/router';
 import {CategoriasService} from '../../pages/component/categorias/categorias.service';
 import {environment} from '../../../environments/environment.prod';
+import {LoginService} from '../../login/login.service';
 
 @Component({
   selector: 'app-header',
@@ -20,9 +21,14 @@ export class HeaderComponent implements OnInit {
   producto_img_url = environment.base + environment.imagen.producto;
 
   cartItems = null;
+  usuario = null;
   constructor(private inicioService: InicioService,
               private categoriaService: CategoriasService,
+              private loginService: LoginService,
               public router: Router) {
+    if(this.loginService.isLoggedIn()) {
+      this.usuario = this.loginService.getUsuario();
+    }
   }
 
   ngOnInit() {

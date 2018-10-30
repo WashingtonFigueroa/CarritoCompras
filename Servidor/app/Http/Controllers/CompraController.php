@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Compra;
+use App\DetalleCompra;
 use App\Usuario;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,26 @@ class CompraController extends Controller
 
     public function store(Request $request)
     {
-        return response()->json(Compra::create($request->all()), 201);
+        $compra = Compra::create($request->all());
+        $cartItems = $request->input('cart_items');
+        $puntos = 0;
+        foreach ($cartItems['items'] as $cartItem) {
+            $puntos += $cartItem['puntos'];
+            $detalle_compra = [
+                'inventario_id' => $cartItem['inventario_id'],
+                'compra_id' => $compra->compra_id,
+                'cantidad' => $cartItem['cantidad'],
+                'subtotal' => $cartItem['cantidad'] * $cartItem['precio']
+            ];
+            DetalleCompra::create($detalle_compra);
+        }
+        $usuario = Usuario::find($compra->usuario_id);
+        $usuario->puntos = $usuario->puntos + $puntos;
+        $usuario->save();
+        return response()->json([
+            'compra' => $compra,
+            'usuario' => $usuario
+        ], 201);
     }
 
     public function show($id)
