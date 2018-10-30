@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit {
       this.loginService.signup(this.signupGroup.value)
         .subscribe((res: any) => {
           this.toastr.success(res.mensaje, 'Iniciando sesión');
-          this.router.navigate(['/admin']);
+          this.router.navigate(['/cliente']);
         }, (error: any) => {
           this.errors = {
             'cuenta': '',

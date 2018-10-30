@@ -14,8 +14,11 @@ export class ClienteComprasComponent implements OnInit {
   constructor(private compraService: ComprasService,
               private loginService: LoginService) {
     this.usuario = this.loginService.getUsuario();
-    this.compraService.misCompras(this.usuario)
-        .subscribe(res => this.compras = res);
+    this.compraService.misCompras(this.usuario.usuario_id)
+        .subscribe(res => {
+          console.log(res);
+          this.compras = res;
+        });
   }
 
   ngOnInit() {

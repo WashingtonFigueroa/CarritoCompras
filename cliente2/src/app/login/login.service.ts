@@ -13,12 +13,10 @@ export class LoginService {
   login(request) {
     return this.http.post(this.base + 'login', request)
                     .map((data: any) => {
-                      let privilegios, usuario, token;
+                      let usuario, token;
                       if (data.token) {
-                        privilegios = btoa(JSON.stringify(data.privilegios));
                         usuario = btoa(JSON.stringify(data.usuario));
                         token = btoa(JSON.stringify(data.token));
-                        localStorage.setItem('frado-privilegios', privilegios);
                         localStorage.setItem('frado-usuario', usuario);
                         localStorage.setItem('frado-token', token);
                       }
@@ -28,12 +26,10 @@ export class LoginService {
   signup(request) {
     return this.http.post(this.base + 'signup', request)
                     .map((data: any) => {
-                      let privilegios, usuario, token;
+                      let usuario, token;
                       if (data.token) {
-                        privilegios = btoa(JSON.stringify(data.privilegios));
                         usuario = btoa(JSON.stringify(data.usuario));
                         token = btoa(JSON.stringify(data.token));
-                        localStorage.setItem('frado-privilegios', privilegios);
                         localStorage.setItem('frado-usuario', usuario);
                         localStorage.setItem('frado-token', token);
                       }

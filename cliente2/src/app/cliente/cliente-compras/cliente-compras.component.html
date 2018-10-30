@@ -21,8 +21,15 @@
             <td>{{ compra.compra_id }}</td>
             <td>{{ compra.nombres }} {{ compra.apellidos }}</td>
             <td>{{ compra.fecha | date: 'dd-MM-yyyy' }}</td>
-            <td>{{ compra.total }}</td>
-            <td>{{ compra.estado }}</td>
+            <td>{{ compra.total | number: '1.2-2'}}</td>
+            <td>
+              <span class="text-danger" *ngIf="compra.estado === 'pendiente'">
+                {{ compra.estado }}
+              </span>
+              <span class="text-success" *ngIf="compra.estado === 'pagado'">
+                {{ compra.estado }}
+              </span>
+            </td>
           </tr>
           </tbody>
         </table>

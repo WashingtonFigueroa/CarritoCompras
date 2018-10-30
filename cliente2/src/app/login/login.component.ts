@@ -25,7 +25,12 @@ export class LoginComponent implements OnInit {
 
     ngOnInit() {
       if (this.loginService.isLoggedIn()) {
-        this.router.navigate(['/admin']);
+        const tipo_usuario = this.loginService.getUsuario().tipo_usuario;
+        if (tipo_usuario === 'cliente') {
+          this.router.navigate(['/cliente']);
+        } else {
+          this.router.navigate(['/admin']);
+        }
       }
     }
 

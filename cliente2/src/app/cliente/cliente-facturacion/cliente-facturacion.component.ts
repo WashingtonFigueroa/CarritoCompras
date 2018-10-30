@@ -68,6 +68,7 @@ export class ClienteFacturacionComponent implements OnInit {
       .facturar(this.facturacionGroup.value)
       .subscribe((compra: any) => {
         console.log(compra);
+        this.router.navigate(['/cliente/compras']);
         this.renderPDF(compra);
       });
   }
