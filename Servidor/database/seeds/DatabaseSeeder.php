@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => $faker->sentence
             ]);
         }
-        $cliente = \App\TipoUsuario::create([
+/*        $cliente = \App\TipoUsuario::create([
             'nombre' => 'Cliente',
             'descripcion' => 'Cliente de la tienda',
             'estado' => 'activo'
@@ -29,9 +29,9 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'root',
             'descripcion' => 'Super Administrador',
             'estado' => 'activo'
-        ]);
+        ]);*/
         \App\Usuario::create([
-            'tipo_usuario_id' => $root->tipo_usuario_id,
+            'tipo_usuario' => 'administrador',
             'nombres' => 'Administrador General',
             'cuenta' => 'root',
             'password' => Hash::make('123456'),

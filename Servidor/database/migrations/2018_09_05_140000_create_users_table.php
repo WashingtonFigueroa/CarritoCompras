@@ -15,15 +15,11 @@ class CreateUsersTable extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->increments('usuario_id');
-            $table->integer('tipo_usuario_id')->unsigned();
-            $table->foreign('tipo_usuario_id')
-                    ->references('tipo_usuario_id')
-                    ->on('tipo_usuarios')
-                    ->onDelete('cascade');
             $table->string('nombres');
             $table->string('cuenta')->unique();
             $table->string('password');
             $table->integer('puntos')->unsigned();
+            $table->enum('tipo_usuario', ['administrador', 'cliente']);
             $table->softDeletes();
             $table->timestamps();
         });

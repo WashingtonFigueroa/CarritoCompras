@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
     public function index() {
-        return response()->json(Usuario::with('tipoUsuario')
-                                ->where('cuenta', '<>', 'root')
+        return response()->json(Usuario::where('cuenta', '<>', 'root')
                                 ->orderBy('nombres')
                                 ->paginate(10), 200);
     }
@@ -29,12 +28,7 @@ class UsuarioController extends Controller
         $usuario->nombres = request()->input('nombres');
         $usuario->cuenta = request()->input('cuenta');
         $usuario->save();
-        $response = Usuario::join('tipo_usuarios', 'usuarios.tipo_usuario_id', 'tipo_usuarios.tipo_usuario_id')
-            ->where('usuarios.usuario_id', $id)
-            ->select('usuarios.*', 'tipo_usuarios.nombre as tipo_usuario')
-            ->first();
-
-        return response()->json($response, 200);
+        return response()->json($usuario, 200);
     }
     public function destroy($id) {
         $usuario = Usuario::find($id);

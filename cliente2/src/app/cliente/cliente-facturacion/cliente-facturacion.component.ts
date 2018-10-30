@@ -127,6 +127,7 @@ export class ClienteFacturacionComponent implements OnInit {
     doc.text('Total', fromX + 4.2 * width, y);
     doc.setFontStyle('bold');
     doc.text('$' + this.cartItems.subtotal, fromX + 5.2 * width, y);
+    doc.text('$' + this.cartItems.subtotal, fromX + 5.2 * width, y);
     y += 4;
     doc.line(fromX + 4.2 * width, y, toX, y);
     doc.save('factura.pdf');

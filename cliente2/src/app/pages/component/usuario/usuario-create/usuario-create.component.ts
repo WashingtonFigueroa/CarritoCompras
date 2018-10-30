@@ -3,6 +3,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {UsuarioService} from '../usuario.service';
 import {TipousuarioService} from '../../tipousuario/tipousuario.service';
 import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-usuario-create',
@@ -11,16 +12,12 @@ import {Router} from '@angular/router';
 })
 export class UsuarioCreateComponent implements OnInit {
 
-    tipos: any = null;
     usuarioGroup: FormGroup;
-
     constructor(protected usuarioService: UsuarioService,
                 protected tipoService: TipousuarioService,
                 protected fb: FormBuilder,
                 protected router: Router,
-    //            protected toartr: ToastrService
-    ) {
-        this.tipoService.lista_tipousuarios().subscribe(res => this.tipos = res);
+                protected toastr: ToastrService) {
         this.createForm();
     }
 
@@ -29,7 +26,7 @@ export class UsuarioCreateComponent implements OnInit {
 
     createForm() {
         this.usuarioGroup = this.fb.group({
-            'tipo_usuario_id' : new FormControl(0, [Validators.required]),
+            'tipo_usuario' : new FormControl('cliente', [Validators.required]),
             'nombres' : new FormControl('', [Validators.required]),
             'cuenta' : new FormControl('', [Validators.required]),
             'password' : new FormControl('', [Validators.required]),
@@ -48,13 +45,13 @@ export class UsuarioCreateComponent implements OnInit {
                         console.log(res.error);
                     } else {
                         this.router.navigate(['/admin/usuarios/listar']);
-                       // this.toartr.success('Usuario Guardado', 'Ok');
+                       this.toastr.success('Usuario Guardado', 'Ok');
                     }
                 }, error => {
-                    // this.toartr.error('Usuaurio Registrado', 'Error Usuario');
+                  this.toastr.error('Usuaurio Registrado', 'Error Usuario');
                 });
         } else {
-           // this.toartr.info('Contraseñas Incorrectas','Verificar');
+          this.toastr.info('Contraseñas Incorrectas','Verificar');
         }
 
     }

@@ -22,28 +22,19 @@ class AuthController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
-        $usuario = Usuario::join('tipo_usuarios', 'usuarios.tipo_usuario_id', 'tipo_usuarios.tipo_usuario_id')
-            ->where('cuenta', $request->input('cuenta'))
-            ->select('usuarios.*', 'tipo_usuarios.nombre as tipo_usuario')
-            ->first();
+        $usuario = Usuario::where('cuenta', $request->input('cuenta'))->first();
 
-        $privilegios = TipoUsuario::find($usuario->tipo_usuario_id)
-            ->privilegios()
-            ->orderBy('ruta')
-            ->get();
         return response()->json([
             'autenticado' => true,
             'usuario' => $usuario,
-            'privilegios' => $privilegios,
             'token' => $token,
             'mensaje' => 'Bienvenido '. $usuario->cuenta
         ], 200);
     }
     public function signup(SignupAuth $request) {
         $data = $request->all();
-        $cliente_id = TipoUsuario::where('nombre', 'Cliente')->first()->tipo_usuario_id;
         Usuario::create([
-            'tipo_usuario_id' => $cliente_id,
+            'tipo_usuario' => 'cliente',
             'nombres' => $data['nombres'],
             'cuenta' => $data['cuenta'],
             'password' => Hash::make($data['password']),
@@ -61,19 +52,10 @@ class AuthController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
-        $usuario = Usuario::join('tipo_usuarios', 'usuarios.tipo_usuario_id', 'tipo_usuarios.tipo_usuario_id')
-            ->where('cuenta', $data['cuenta'])
-            ->select('usuarios.*', 'tipo_usuarios.nombre as tipo_usuario')
-            ->first();
-
-        $privilegios = TipoUsuario::find($usuario->tipo_usuario_id)
-            ->privilegios()
-            ->orderBy('ruta')
-            ->get();
+        $usuario = Usuario::where('cuenta', $data['cuenta'])->first();
         return response()->json([
             'autenticado' => true,
             'usuario' => $usuario,
-            'privilegios' => $privilegios,
             'token' => $token,
             'mensaje' => 'Bienvenido '. $usuario->cuenta
         ], 200);

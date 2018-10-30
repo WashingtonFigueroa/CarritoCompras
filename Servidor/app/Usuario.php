@@ -18,7 +18,7 @@ class Usuario extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'tipo_usuario_id', 'nombres', 'cuenta', 'password', 'puntos',
+        'tipo_usuario', 'nombres', 'cuenta', 'password', 'puntos',
     ];
 
     /**
@@ -30,9 +30,6 @@ class Usuario extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function tipoUsuario() {
-        return $this->belongsTo(TipoUsuario::class, 'tipo_usuario_id');
-    }
     public function retiroPromociones() {
         return $this->hasMany(RetiroPromocion::class, 'usuario_id');
     }
