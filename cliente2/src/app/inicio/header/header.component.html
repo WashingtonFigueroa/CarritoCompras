@@ -90,8 +90,12 @@
                   <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
                 </div>
                 <div class="cart-buttons">
-                  <a routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
-                  <a routerLink="/cliente/facturacion">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+                  <a
+                    *ngIf="cartItems.subtotal !== 0"
+                    routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
+                  <a
+                    *ngIf="cartItems.subtotal !== 0"
+                    (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>
             </div>

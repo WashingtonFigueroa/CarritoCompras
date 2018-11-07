@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
               private categoriaService: CategoriasService,
               private loginService: LoginService,
               public router: Router) {
-    if(this.loginService.isLoggedIn()) {
+    if (this.loginService.isLoggedIn()) {
       this.usuario = this.loginService.getUsuario();
     }
   }
@@ -49,6 +49,13 @@ export class HeaderComponent implements OnInit {
     this.displayCart = !this.displayCart;
   }
 
+  comprar() {
+    if (this.loginService.isLoggedIn()) {
+      this.router.navigate(['/cliente/facturacion']);
+    } else {
+      this.router.navigate(['/login']);
+    }
+  }
   buscar_productos() {
 /*    this.categoriaService
         .buscar_productos_categoria(this.busqueda.categoria_id, this.busqueda.nombre)

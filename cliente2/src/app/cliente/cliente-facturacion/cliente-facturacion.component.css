@@ -56,6 +56,11 @@ button.btn-frado:active {
   color: white;
   box-shadow: 0 2px #aa0000;
 }
+button.btn-frado:disabled {
+  background-color: #848484;
+  box-shadow: 0 2px #5a5a5a;
+  cursor: not-allowed;
+}
 table thead tr {
   background-color: white;
   color: #1d2124;

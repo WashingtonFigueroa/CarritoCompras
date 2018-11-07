@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Compra;
 use App\DetalleCompra;
+use App\inventario;
 use App\Usuario;
 use Illuminate\Http\Request;
 
@@ -32,6 +33,9 @@ class CompraController extends Controller
                 'subtotal' => $cartItem['cantidad'] * $cartItem['precio']
             ];
             DetalleCompra::create($detalle_compra);
+            $inventario = inventario::find($cartItem['inventario_id']);
+            $inventario->stock = $inventario->stock - $cartItem['cantidad'];
+            $inventario->save();
         }
         $usuario = Usuario::find($compra->usuario_id);
         $usuario->puntos = $usuario->puntos + $puntos;

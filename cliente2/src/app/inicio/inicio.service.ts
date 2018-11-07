@@ -26,4 +26,17 @@ export class InicioService {
   changeCartItems(cartItems: any) {
     this.cartItems.next(cartItems);
   }
+
+  resetCartItems() {
+    const cartItems = {
+      'cantidad_total' : 0,
+      'subtotal' : 0,
+      'items' : []
+    };
+    this.cartItems.next(cartItems);
+  }
+
+  isEmpty() {
+    return this.cartItems.getValue().subtotal === 0;
+  }
 }

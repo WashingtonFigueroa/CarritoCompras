@@ -35,7 +35,7 @@ export class ClienteFacturacionComponent implements OnInit {
       .subscribe((cartItems: any) => {
         this.cartItems = cartItems;
         console.log(this.cartItems);
-        if (this.cartItems === null) {
+        if (this.inicioService.isEmpty()) {
           this.router.navigate(['/cliente/carrito']);
         }
         this.createForm(cartItems);
@@ -75,6 +75,7 @@ export class ClienteFacturacionComponent implements OnInit {
         this.usuarioService.setUsuario(data.usuario);
         this.router.navigate(['/cliente/compras']);
         this.renderPDF(data.compra);
+        this.inicioService.resetCartItems();
       });
   }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {environment} from '../../../environments/environment.prod';
 import {Router} from '@angular/router';
 import {InicioService} from '../../inicio/inicio.service';
+import {LoginService} from '../../login/login.service';
 
 @Component({
   selector: 'app-carrito',
@@ -13,6 +14,7 @@ export class CarritoComponent implements OnInit {
   cartItems = null;
   producto_img_url = environment.base + environment.imagen.producto;
   constructor(private inicioService: InicioService,
+              private loginService: LoginService,
               private router: Router) { }
 
   ngOnInit() {
@@ -23,7 +25,11 @@ export class CarritoComponent implements OnInit {
   }
 
   comprar() {
-    this.router.navigate(['/cliente/facturacion']);
+    if (this.loginService.isLoggedIn()) {
+      this.router.navigate(['/cliente/facturacion']);
+    } else {
+      this.router.navigate(['/login']);
+    }
   }
   destroy(producto, index) {
     const cartItems = this.cartItems;
@@ -43,5 +49,4 @@ export class CarritoComponent implements OnInit {
           console.log(items);
         });
   }
-
 }
