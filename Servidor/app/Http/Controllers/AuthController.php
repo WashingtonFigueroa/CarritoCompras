@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginAuth;
 use App\Http\Requests\SignupAuth;
-use App\TipoUsuario;
 use App\Usuario;
 use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Exceptions\JWTException;
@@ -68,7 +67,7 @@ class AuthController extends Controller
         $response = null;
         if (Hash::check($current_password, $usuario->password)) {
             if ($new_password === $confirmation_password) {
-                $usuario->password = $new_password;
+                $usuario->password = Hash::make($new_password);
                 $usuario->save();
                 $response = [
                     "success" =>  true,
