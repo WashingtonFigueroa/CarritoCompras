@@ -35,6 +35,11 @@
     <a class="btn-profile"
        *ngIf="router.url === '/admin/perfil'"
        [routerLink]="['/admin/editar-usuario/' + usuario.usuario_id]">Editar Usuario</a>
-    <a class="btn-profile">Cambiar Contraseña</a>
+    <a class="btn-profile"
+       *ngIf="router.url === '/cliente/perfil'"
+       [routerLink]="['/cliente/cambiar-password']">Cambiar Contraseña</a>
+    <a class="btn-profile"
+       *ngIf="router.url === '/admin/perfil'"
+       [routerLink]="['/admin/cambiar-password']">Cambiar Contraseña</a>
   </div>
 </div>

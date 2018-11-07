@@ -47,4 +47,10 @@ export class LoginService {
     const usuario = JSON.parse(atob(localStorage.getItem('frado-usuario')));
     return usuario;
   }
+
+  changePassword(req) {
+    const usuario_id = this.getUsuario().usuario_id;
+    return this.http.post(this.base + 'change-password/' + usuario_id, req);
+  }
+
 }

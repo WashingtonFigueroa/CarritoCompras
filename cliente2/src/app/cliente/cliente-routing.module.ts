@@ -6,6 +6,7 @@ import {ClienteFacturacionComponent} from './cliente-facturacion/cliente-factura
 import {PerfilComponent} from '../shared/perfil/perfil.component';
 import {CarritoComponent} from '../shared/carrito/carrito.component';
 import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
+import {ChangePasswordComponent} from '../shared/change-password/change-password.component';
 
 const routes: Routes = [{
   path: '',
@@ -18,6 +19,10 @@ const routes: Routes = [{
     {
       path: 'editar-usuario/:usuario_id',
       component: UsuarioEditarComponent
+    },
+    {
+      path: 'cambiar-password',
+      component: ChangePasswordComponent
     },
     {
       path: 'carrito',

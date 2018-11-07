@@ -60,4 +60,32 @@ class AuthController extends Controller
             'mensaje' => 'Bienvenido '. $usuario->cuenta
         ], 200);
     }
+    public function changePassword($usuario_id) {
+        $current_password = request()->input('current_password');
+        $new_password = request()->input('new_password');
+        $confirmation_password = request()->input('confirmation_password');
+        $usuario = Usuario::find($usuario_id);
+        $response = null;
+        if (Hash::check($current_password, $usuario->password)) {
+            if ($new_password === $confirmation_password) {
+                $usuario->password = $new_password;
+                $usuario->save();
+                $response = [
+                    "success" =>  true,
+                    "message" => "Cambio de contraseña exitoso"
+                ];
+            } else {
+                $response = [
+                    "success" =>  false,
+                    "message" => "La confirmación de la nueva contraseña no coincide"
+                ];
+            }
+        } else {
+            $response = [
+                "success" =>  false,
+                "message" => "La contraseña actual es incorrecta"
+            ];
+        }
+        return response()->json($response, 200);
+    }
 }

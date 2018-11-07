@@ -47,6 +47,7 @@ import {CamisaCreateComponent} from './component/camisa/camisa-create/camisa-cre
 import {CamisaEditComponent} from './component/camisa/camisa-edit/camisa-edit.component';
 import {PerfilComponent} from '../shared/perfil/perfil.component';
 import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
+import {ChangePasswordComponent} from '../shared/change-password/change-password.component';
 
 const routes: Routes = [
     {
@@ -64,6 +65,10 @@ const routes: Routes = [
             {
               path: 'editar-usuario/:usuario_id',
               component: UsuarioEditarComponent
+            },
+            {
+              path: 'cambiar-password',
+              component: ChangePasswordComponent
             },
           // ruta principal
             {

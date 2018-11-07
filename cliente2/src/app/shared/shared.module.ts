@@ -6,6 +6,7 @@ import {PerfilComponent} from './perfil/perfil.component';
 import {CarritoComponent} from './carrito/carrito.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UsuarioEditarComponent} from './usuario-edit/usuario-edit.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   imports: [
@@ -17,8 +18,9 @@ import {UsuarioEditarComponent} from './usuario-edit/usuario-edit.component';
   exports: [
     PerfilComponent,
     CarritoComponent,
-    UsuarioEditarComponent
+    UsuarioEditarComponent,
+    ChangePasswordComponent,
   ],
-  declarations: [PerfilComponent, CarritoComponent, UsuarioEditarComponent]
+  declarations: [PerfilComponent, CarritoComponent, UsuarioEditarComponent, ChangePasswordComponent]
 })
 export class SharedModule { }
