@@ -14,6 +14,7 @@
             <th>Fecha de Compra</th>
             <th>Total</th>
             <th>Estado</th>
+            <th>Detalles</th>
           </tr>
           </thead>
           <tbody>
@@ -30,6 +31,9 @@
                 {{ compra.estado }}
               </span>
             </td>
+            <td>
+              <a (click)="openDetalles(contenido)">detalles</a>
+            </td>
           </tr>
           </tbody>
         </table>
@@ -37,3 +41,14 @@
     </div>
   </div>
 </div>
+<ng-template #contenido let-modal let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Detalles de Compra</h4>
+    <button type="button" class="close cerrar" aria-label="Cerrar" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Estas en los detalles de compra
+  </div>
+</ng-template>

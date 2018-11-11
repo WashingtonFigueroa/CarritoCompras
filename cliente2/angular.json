@@ -21,7 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/svg.select.js/dist/svg.select.min.css",
               "src/styles.css",
               "src/assets/inicio/css/style.css",

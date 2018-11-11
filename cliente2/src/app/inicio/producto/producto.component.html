@@ -19,7 +19,7 @@
     <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong></h2>
     <h3>Tallas</h3>
     <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
-         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla }}</div>
+         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
     <br>
     <br>
     <div class="row">

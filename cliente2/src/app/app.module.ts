@@ -20,11 +20,11 @@ import {InicioService} from './inicio/inicio.service';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-      CommonModule,
-      BrowserAnimationsModule,
-      ReactiveFormsModule,
-      NgbModule.forRoot(),
-      ToastrModule.forRoot()
+    CommonModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    NgbModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [AuthGuard, InicioService],
   bootstrap: [AppComponent]

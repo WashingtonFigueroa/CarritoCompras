@@ -36,7 +36,7 @@ export class ClienteFacturacionComponent implements OnInit {
         this.cartItems = cartItems;
         console.log(this.cartItems);
         if (this.inicioService.isEmpty()) {
-          this.router.navigate(['/cliente/carrito']);
+          this.router.navigate(['/cliente/compras']);
         }
         this.createForm(cartItems);
       });
