@@ -78,6 +78,7 @@
       <path value="$PROJECT_DIR$/Servidor/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/Servidor/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/Servidor/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/Servidor/vendor/opis/closure" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

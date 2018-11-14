@@ -4,6 +4,7 @@ import {ProductoService} from '../../pages/component/producto/producto.service';
 import {environment} from '../../../environments/environment.prod';
 import {ToastrService} from 'ngx-toastr';
 import {InicioService} from '../inicio.service';
+import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-producto',
@@ -23,8 +24,10 @@ export class ProductoComponent implements OnInit {
   cantidad_total = 0;
   subtotal = 0;
   cartItems = [];
+  closeResult: string;
   constructor(private route: ActivatedRoute,
               private toast: ToastrService,
+              private modalService: NgbModal,
               private inicioService: InicioService,
               private productoService: ProductoService) {
 
@@ -93,4 +96,25 @@ export class ProductoComponent implements OnInit {
     });
     console.log(this.cartItems);
   }
+
+    openDetalles(contenido) {
+        this.modalService.open(contenido, { size: 'sm'}).result.then((result) => {
+            this.closeResult = `Cerrado por ${result}`;
+        }, (reason) => {
+            this.closeResult = `Cerrado por ${this.getDismissReason(reason)}`;
+        });
+    }
+    close() {
+        this.modalService
+    }
+
+    private getDismissReason(reason: any): string {
+        if (reason === ModalDismissReasons.ESC) {
+            return 'por presionar ESC';
+        } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+            return 'by clicking on a backdrop';
+        } else {
+            return  `por: ${reason}`;
+        }
+    }
 }

@@ -17,7 +17,8 @@
     </div>
     <h1>{{ producto.nombre }}</h1>
     <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong></h2>
-    <h3>Tallas</h3>
+
+    <h3> <a (click)="openDetalles(contenido)" style="color: #ee0000">Guía de tallas</a> </h3>
     <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
          (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
     <br>
@@ -32,9 +33,10 @@
         </div>
       </div>
       <div class="col-md-10" *ngIf="selectedInventario !== null && cantidad !== null">
+        <br>
         <button
           (click)="addCart()"
-          class="btn btn-lg btn-rounded btn-danger">Añadir a Carrito</button>
+          class="btn btn-rounded btn-danger">Añadir a Carrito</button>
       </div>
     </div>
     <br>
@@ -44,3 +46,15 @@
     </p>
   </div>
 </div>
+
+<ng-template #contenido let-modal let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">GUÍA DE TALLAS </h4>
+    <button type="button" class="close cerrar" aria-label="Cerrar" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <img src="../../../assets/inicio/img/guia.JPG" width="899" alt="">
+  </div>
+</ng-template>
