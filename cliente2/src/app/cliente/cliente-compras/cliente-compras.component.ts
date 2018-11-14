@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ComprasService} from '../../pages/component/compras/compras.service';
 import {LoginService} from '../../login/login.service';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-cliente-compras',
@@ -9,17 +10,18 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./cliente-compras.component.css']
 })
 export class ClienteComprasComponent implements OnInit {
-
+  @ViewChild('comprobante') comprobante;
   usuario: any = null;
   compras: any = null;
   closeResult: string;
+  detallesCompras: any = null;
   constructor(private compraService: ComprasService,
               private modalService: NgbModal,
+              private toastr: ToastrService,
               private loginService: LoginService) {
     this.usuario = this.loginService.getUsuario();
     this.compraService.misCompras(this.usuario.usuario_id)
         .subscribe(res => {
-          console.log(res);
           this.compras = res;
         });
   }
@@ -27,15 +29,16 @@ export class ClienteComprasComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDetalles(contenido) {
+  openDetalles(contenido, compra_id) {
+    this.compraService.detallesCompras(compra_id)
+      .subscribe(res => {
+        this.detallesCompras = res;
+      });
     this.modalService.open(contenido, { size: 'lg'}).result.then((result) => {
       this.closeResult = `Cerrado por ${result}`;
     }, (reason) => {
       this.closeResult = `Cerrado por ${this.getDismissReason(reason)}`;
     });
-  }
-  close() {
-    this.modalService
   }
 
   private getDismissReason(reason: any): string {
@@ -46,6 +49,27 @@ export class ClienteComprasComponent implements OnInit {
     } else {
       return  `por: ${reason}`;
     }
+  }
+
+  upload(compra_id) {
+    const comprobante = this.comprobante.nativeElement;
+    if ( comprobante.files[0] ) {
+      const form = new FormData();
+      form.append('comprobante', comprobante.files[0]);
+      this.compraService.uploadComprobante(compra_id, form)
+        .subscribe((res: any) => {
+          if (res.estado === 'exito') {
+            this.compraService.misCompras(this.usuario.usuario_id)
+              .subscribe(res => {
+                this.compras = res;
+              });
+            this.toastr.success('El comprobante fue subido exitosamente', 'Exito');
+          } else {
+            this.toastr.error('El comprobante no pudo ser subido', 'Error');
+          }
+        });
+    }
+
   }
 
 }

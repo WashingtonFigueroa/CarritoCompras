@@ -21,8 +21,8 @@ class Producto extends Model
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];
-    public function descripcionProductos() {
-        return $this->hasMany(DescripcionProducto::class, 'producto_id');
+    public function listaDeseos() {
+        return $this->hasMany(ListaDeseo::class, 'producto_id');
     }
     public function promociones() {
         return $this->hasMany(Promocion::class, 'producto_id');

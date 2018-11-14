@@ -15,6 +15,7 @@
             <th>Total</th>
             <th>Estado</th>
             <th>Detalles</th>
+            <th title="Subir comprobante de pago">Subir Comprobante</th>
           </tr>
           </thead>
           <tbody>
@@ -24,15 +25,22 @@
             <td>{{ compra.fecha | date: 'dd-MM-yyyy' }}</td>
             <td>{{ compra.total | number: '1.2-2'}}</td>
             <td>
-              <span class="text-danger" *ngIf="compra.estado === 'pendiente'">
                 {{ compra.estado }}
-              </span>
-              <span class="text-success" *ngIf="compra.estado === 'pagado'">
-                {{ compra.estado }}
-              </span>
             </td>
             <td>
-              <a (click)="openDetalles(contenido)">detalles</a>
+              <a (click)="openDetalles(contenido, compra.compra_id)">detalles</a>
+            </td>
+            <td class="text-center">
+              <label for="comprobante"
+                     *ngIf="compra.comprobante.length == 0"
+                     class="comprobante"><i class="fa fa-upload"></i></label>
+              <input type="file"
+                     #comprobante id="comprobante"
+                     (change)="upload(compra.compra_id)">
+              <span class="text-primary"
+                    *ngIf="compra.comprobante.length > 0">
+                    Comprobante subido
+              </span>
             </td>
           </tr>
           </tbody>
@@ -49,6 +57,31 @@
     </button>
   </div>
   <div class="modal-body">
-    Estas en los detalles de compra
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>N. </th>
+          <th>Producto</th>
+          <th>Material</th>
+          <th>Talla</th>
+          <th>Cantidad</th>
+          <th>P. Unitario</th>
+          <th>Subtotal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let detalle of detallesCompras; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ detalle.nombre }}</td>
+          <td>{{ detalle.material }}</td>
+          <td>{{ detalle.talla }}</td>
+          <td>{{ detalle.cantidad}}</td>
+          <td>{{ detalle.precio | number: '1.2-2' }}</td>
+          <td>{{ detalle.subtotal | number: '1.2-2'}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </ng-template>

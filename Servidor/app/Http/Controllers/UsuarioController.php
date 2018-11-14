@@ -27,6 +27,7 @@ class UsuarioController extends Controller
         $usuario = Usuario::find($id);
         $usuario->nombres = request()->input('nombres');
         $usuario->cuenta = request()->input('cuenta');
+        $usuario->email = request()->input('email');
         $usuario->save();
         return response()->json($usuario, 200);
     }

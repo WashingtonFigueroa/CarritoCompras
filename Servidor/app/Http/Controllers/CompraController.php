@@ -69,4 +69,29 @@ class CompraController extends Controller
         $mis_compras = Usuario::find($usuario_id)->compras()->orderBy('created_at', 'desc')->get();
         return response()->json($mis_compras, 200);
     }
+
+    public function detallesCompras($compra_id) {
+        $detalles = DetalleCompra::join('inventarios', 'inventarios.inventario_id', '=', 'detalle_compras.inventario_id')
+                                    ->join('productos', 'productos.producto_id', '=', 'inventarios.producto_id')
+                                    ->where('compra_id', $compra_id)
+                                    ->selectRaw('detalle_compras.*, inventarios.*, productos.*')
+                                    ->get();
+        return response()->json($detalles, 200);
+    }
+    public function uploadComprobante($compra_id) {
+        $response = [
+            'estado' => 'error'
+        ];
+        if (request()->hasFile('comprobante')){
+            $comprobante_url = request()->file('comprobante')->store('comprobantes');
+            $compra = Compra::find($compra_id);
+            $compra->comprobante = $comprobante_url;
+            $compra->estado = 'verificando comprobante';
+            $compra->save();
+            $response = [
+                'estado' => 'exito'
+            ];
+        }
+        return response()->json($response, 200);
+    }
 }

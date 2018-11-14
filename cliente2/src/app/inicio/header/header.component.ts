@@ -65,5 +65,9 @@ export class HeaderComponent implements OnInit {
         });*/
   }
 
+  go(categoria_id) {
+    console.log(categoria_id);
+    this.router.navigate(['/inicio/productos/' + categoria_id]);
+  }
 
 }
