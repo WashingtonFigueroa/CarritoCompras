@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Boletin;
+use App\Mail\BoletinMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class BoletinController extends Controller
 {
+    public function index() {
+        return response()->json(Boletin::orderBy('email')->get(), 200);
+    }
     public function store() {
         $boletines = Boletin::where('email', \request()->input('email'))->count();
         $response = [];
@@ -26,6 +31,20 @@ class BoletinController extends Controller
     }
 
     public function enviarBoletines() {
+        $boletines = Boletin::get();
+        $emails = [];
+        foreach ($boletines as $boletin) {
+            array_push($emails, $boletin->email);
+        }
+        $envio = [
+            'emails' => $emails,
+            'asunto' => request()->input('asunto'),
+            'mensaje' => request()->input('mensaje'),
+        ];
 
+        Mail::send(new BoletinMail($envio));
+        return response()->json([
+            'mensaje' => 'Boletin enviado correctamente'
+        ], 200);
     }
 }

@@ -48,6 +48,9 @@ import {CamisaEditComponent} from './component/camisa/camisa-edit/camisa-edit.co
 import {PerfilComponent} from '../shared/perfil/perfil.component';
 import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
 import {ChangePasswordComponent} from '../shared/change-password/change-password.component';
+import {BoletinComponent} from './component/boletin/boletin.component';
+import {BoletinCreateComponent} from './component/boletin/boletin-create/boletin-create.component';
+import {BoletinIndexComponent} from './component/boletin/boletin-index/boletin-index.component';
 
 const routes: Routes = [
     {
@@ -174,6 +177,25 @@ const routes: Routes = [
                         }]
                     }
                 }]
+            },
+            {
+              path: 'boletines',
+              component: BoletinComponent,
+              children: [
+                {
+                  path: '',
+                  redirectTo: 'emails',
+                  pathMatch: 'full'
+                },
+                {
+                  path: 'crear',
+                  component: BoletinCreateComponent
+                },
+                {
+                  path: 'emails',
+                  component: BoletinIndexComponent
+                },
+              ]
             },
             // rutas usuarios
             {

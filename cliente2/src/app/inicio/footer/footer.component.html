@@ -3,9 +3,12 @@
         <div class="newsletter">
           <br>
           <p>Regístrese para el <strong>BOLETÍN</strong></p>
-          <form>
-            <input class="input" type="email" placeholder="Ingresa tu Email">
-            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+          <form (submit)="store()" [formGroup]="boletinGroup">
+            <input class="input"
+                   formControlName="email"
+                   type="email"
+                   placeholder="Ingresa tu Email">
+            <button class="newsletter-btn" type="submit"><i class="fa fa-envelope"></i> Suscríbete</button>
           </form>
           <ul class="newsletter-follow">
             <li>

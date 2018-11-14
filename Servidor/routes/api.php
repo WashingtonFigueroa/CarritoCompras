@@ -81,6 +81,7 @@ Route::resource('lista_deseos', 'ListaDeseoController', ['only' => ['store']]);
 Route::get('lista-deseos/{usuario_id}', 'ListaDeseoController@listaDeseos');
 
 /*boletines*/
+Route::get('boletines', 'BoletinController@index');
 Route::post('boletines', 'BoletinController@store');
 Route::post('enviar_boletines', 'BoletinController@enviarBoletines');
 

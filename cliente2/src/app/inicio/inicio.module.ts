@@ -10,7 +10,7 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 import { ProductoComponent } from './producto/producto.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DesignComponent } from './design/design.component';
 import { CamisaComponent } from './camisa/camisa.component';
 import { CompraComponent } from './compra/compra.component';
@@ -21,6 +21,7 @@ import {SharedModule} from '../shared/shared.module';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxImageZoomModule.forRoot(),
     InicioRoutingModule,
     SharedModule

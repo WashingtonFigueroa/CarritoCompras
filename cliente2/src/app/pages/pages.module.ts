@@ -68,6 +68,9 @@ import { CamisaEditComponent } from './component/camisa/camisa-edit/camisa-edit.
 import { CamisaCreateComponent } from './component/camisa/camisa-create/camisa-create.component';
 import {CamisaService} from './component/camisa/camisa.service';
 import {SharedModule} from '../shared/shared.module';
+import {BoletinComponent} from './component/boletin/boletin.component';
+import {BoletinCreateComponent} from './component/boletin/boletin-create/boletin-create.component';
+import {BoletinIndexComponent} from './component/boletin/boletin-index/boletin-index.component';
 
 @NgModule({
     imports: [
@@ -128,7 +131,10 @@ import {SharedModule} from '../shared/shared.module';
         CamisaComponent,
         CamisaIndexComponent,
         CamisaEditComponent,
-        CamisaCreateComponent
+        CamisaCreateComponent,
+        BoletinComponent,
+        BoletinCreateComponent,
+        BoletinIndexComponent
     ],
     providers: [
         TipousuarioService,
