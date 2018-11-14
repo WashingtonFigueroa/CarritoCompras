@@ -50,7 +50,7 @@ export class ClienteFacturacionComponent implements OnInit {
     const formattedDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
     this.facturacionGroup = this.fb.group({
       'usuario_id' : [this.loginService.getUsuario().usuario_id, Validators.required],
-      'nombres' : ['', Validators.required],
+      'nombres' : [this.usuario.nombres, Validators.required],
       'apellidos' : ['', Validators.required],
       'celular' : ['', Validators.required],
       'direccion' : ['', Validators.required],
@@ -93,6 +93,15 @@ export class ClienteFacturacionComponent implements OnInit {
     doc.setFontStyle('bold');
     doc.text('Detalles de Facturación:', 20, 52);
     doc.text('Cobrar a:', 150, 52);
+
+    /*Detalles de facturacion: */
+    doc.setFontStyle('normal');
+    doc.text('Bancho Pichincha', 20, 60);
+    doc.text('Cta. Ahorros #220243200', 20, 65);
+    doc.text('Nombre: Francisco Maldonado', 20, 70);
+    doc.text('Cédula: 1723082002', 20, 75);
+    doc.text('Email: fradostore@gmail.com', 20, 80);
+
     /*Cobrar a: */
     doc.setFontStyle('normal');
     doc.text(this.facturacionGroup.value.nombres + ' ' + this.facturacionGroup.value.apellidos, 150, 60);

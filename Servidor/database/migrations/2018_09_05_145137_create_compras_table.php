@@ -32,7 +32,10 @@ class CreateComprasTable extends Migration
             $table->string('referencia');
             $table->date('fecha');
             $table->float('total', 8, 2);
-            $table->enum('estado', ['pagado', 'pendiente'])->default('pendiente');
+            $table->string('estado')->default('pendiente');
+            $table->string('comprobante')->nullable();
+            $table->string('numero_guia')->nullable();
+            $table->integer('estrellas')->unsigned()->default(0);
             $table->softDeletes();
             $table->timestamps();
         });

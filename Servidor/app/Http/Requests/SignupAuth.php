@@ -26,6 +26,7 @@ class SignupAuth extends FormRequest
         return [
             'nombres' => 'required',
             'cuenta' => 'required|unique:usuarios',
+            'email' => 'required',
             'password' => 'required|confirmed|min:6'
         ];
     }
@@ -35,6 +36,7 @@ class SignupAuth extends FormRequest
             'nombres.required' => 'Los nombres son obligatorios',
             'cuenta.required' => 'La cuenta es obligatoria',
             'cuenta.unique' => 'Esta cuenta ya esta registrada',
+            'email.required' => 'El correo electrónico es obligatorio',
             'password.required' => 'La contraseña es obligatoria',
             'password.confirmed' => 'Las contraseñas no coinciden',
             'password.min' => 'La contraseña debe teber al menos 6 caracteres'

@@ -22,4 +22,8 @@ class inventario extends Model
     public function producto() {
         return $this->belongsTo(Producto::class, 'producto_id');
     }
+
+    public function detalleCompras() {
+        return $this->hasMany(DetalleCompra::class, 'inventario_id');
+    }
 }

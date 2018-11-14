@@ -25,6 +25,9 @@ class Compra extends Model
         'fecha',
         'total',
         'estado',
+        'comprobante',
+        'numero_guia',
+        'estrellas'
     ];
     protected $hidden = [];
     protected $dates = ['deleted_at'];

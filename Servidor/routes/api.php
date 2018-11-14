@@ -76,6 +76,14 @@ Route::get('lista_emails','EmailController@lista_emails');
 
 Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);
 
+/*lista de deseos*/
+Route::resource('lista_deseos', 'ListaDeseoController', ['only' => ['store']]);
+Route::get('lista-deseos/{usuario_id}', 'ListaDeseoController@listaDeseos');
+
+/*boletines*/
+Route::post('boletines', 'BoletinController@store');
+Route::post('enviar_boletines', 'BoletinController@enviarBoletines');
+
 /*custom controllers*/
 Route::get('listar_descripcion_productos/{producto_id}', 'ProductoController@listar_descripcion_productos');
 Route::post('buscar_descripcion_productos', 'DescripcionProductoController@buscar_descripcion_productos');
@@ -93,3 +101,6 @@ Route::get('ver_imagen_promocion/{id}', 'PromocionController@ver_imagen');
 /*mis compras*/
 Route::resource('compras', 'CompraController', ['except' => ['create', 'edit']]);
 Route::get('mis-compras/{usuario_id}', 'CompraController@misCompras');
+
+Route::get('detalles-compras/{compra_id}', 'CompraController@detallesCompras');
+Route::post('upload-comprobante/{compra_id}', 'CompraController@uploadComprobante');

@@ -19,4 +19,7 @@ export class ComprasService {
   store(req) {
     return this.http.post(this.base + 'compras', req);
   }
+  uploadComprobante(compra_id, req) {
+    return this.http.post(this.base + 'upload-comprobante/' + compra_id, req);
+  }
 }

@@ -31,7 +31,8 @@ export class UsuarioEditarComponent implements OnInit {
   createForm(usuario) {
     this.usuarioGroup = this.fb.group({
       nombres : new FormControl(usuario.nombres, Validators.required),
-      cuenta: new FormControl(usuario.cuenta, Validators.required)
+      cuenta: new FormControl(usuario.cuenta, Validators.required),
+      email: new FormControl(usuario.email, Validators.required)
     });
   }
   ngOnInit() {

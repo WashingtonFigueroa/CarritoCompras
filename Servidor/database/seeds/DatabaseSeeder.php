@@ -20,22 +20,14 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => $faker->sentence
             ]);
         }
-/*        $cliente = \App\TipoUsuario::create([
-            'nombre' => 'Cliente',
-            'descripcion' => 'Cliente de la tienda',
-            'estado' => 'activo'
-        ]);
-        $root = \App\TipoUsuario::create([
-            'nombre' => 'root',
-            'descripcion' => 'Super Administrador',
-            'estado' => 'activo'
-        ]);*/
+
         \App\Usuario::create([
             'tipo_usuario' => 'administrador',
             'nombres' => 'Administrador General',
             'cuenta' => 'root',
             'password' => Hash::make('123456'),
-            'puntos' => 0
+            'puntos' => 0,
+            'email' => 'mamanipozofrancojesus@gmail.com'
         ]);
         // $this->call(UsersTableSeeder::class);
     }

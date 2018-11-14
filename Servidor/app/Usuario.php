@@ -18,7 +18,12 @@ class Usuario extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'tipo_usuario', 'nombres', 'cuenta', 'password', 'puntos',
+        'tipo_usuario',
+        'nombres',
+        'cuenta',
+        'password',
+        'puntos',
+        'email'
     ];
 
     /**
@@ -30,6 +35,9 @@ class Usuario extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function listaDeseos() {
+        return $this->hasMany(ListaDeseo::class, 'usuario_id');
+    }
     public function retiroPromociones() {
         return $this->hasMany(RetiroPromocion::class, 'usuario_id');
     }

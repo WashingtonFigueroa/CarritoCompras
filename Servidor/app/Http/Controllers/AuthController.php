@@ -36,6 +36,7 @@ class AuthController extends Controller
             'tipo_usuario' => 'cliente',
             'nombres' => $data['nombres'],
             'cuenta' => $data['cuenta'],
+            'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'puntos' => 0
         ]);

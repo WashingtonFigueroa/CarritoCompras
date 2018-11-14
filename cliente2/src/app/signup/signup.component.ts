@@ -14,7 +14,8 @@ export class SignupComponent implements OnInit {
 
     errors = {
       'cuenta': '',
-      'password' : ''
+      'password' : '',
+      'email' : ''
     };
     signupGroup: FormGroup;
     constructor(private usuarioService: UsuarioService,
@@ -31,6 +32,7 @@ export class SignupComponent implements OnInit {
       this.signupGroup = this.fb.group({
         'nombres': new FormControl('', Validators.required),
         'cuenta': new FormControl('', Validators.required),
+        'email': new FormControl('', Validators.required),
         'password': new FormControl('', Validators.required),
         'password_confirmation': new FormControl('', Validators.required)
       });
@@ -43,7 +45,8 @@ export class SignupComponent implements OnInit {
         }, (error: any) => {
           this.errors = {
             'cuenta': '',
-            'password' : ''
+            'password' : '',
+            'email' : ''
           };
           if (error.error.errors.password) {
             const password = error.error.errors.password;
@@ -55,6 +58,12 @@ export class SignupComponent implements OnInit {
             const cuenta = error.error.errors.cuenta;
             cuenta.forEach((err: any) => {
               this.errors.cuenta += ' ' + err;
+            });
+          }
+          if (error.error.errors.email) {
+            const email = error.error.errors.email;
+            email.forEach((err: any) => {
+              this.errors.email += ' ' + err;
             });
           }
         });
