@@ -72,9 +72,9 @@ class CompraController extends Controller
 
     public function detallesCompras($compra_id) {
         $detalles = DetalleCompra::join('inventarios', 'inventarios.inventario_id', '=', 'detalle_compras.inventario_id')
-                                    ->join('productos.producto_id', '=', 'inventarios.producto_id')
+                                    ->join('productos', 'productos.producto_id', '=', 'inventarios.producto_id')
                                     ->where('compra_id', $compra_id)
-                                    ->selectRaw('detalle_compras.*, inventarios.*')
+                                    ->selectRaw('detalle_compras.*, inventarios.*, productos.*')
                                     ->get();
         return response()->json($detalles, 200);
     }

@@ -14,6 +14,7 @@ export class ClienteComprasComponent implements OnInit {
   usuario: any = null;
   compras: any = null;
   closeResult: string;
+  detallesCompras: any = null;
   constructor(private compraService: ComprasService,
               private modalService: NgbModal,
               private toastr: ToastrService,
@@ -28,7 +29,11 @@ export class ClienteComprasComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDetalles(contenido) {
+  openDetalles(contenido, compra_id) {
+    this.compraService.detallesCompras(compra_id)
+      .subscribe(res => {
+        this.detallesCompras = res;
+      });
     this.modalService.open(contenido, { size: 'lg'}).result.then((result) => {
       this.closeResult = `Cerrado por ${result}`;
     }, (reason) => {

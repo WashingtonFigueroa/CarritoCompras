@@ -28,7 +28,7 @@
                 {{ compra.estado }}
             </td>
             <td>
-              <a (click)="openDetalles(contenido)">detalles</a>
+              <a (click)="openDetalles(contenido, compra.compra_id)">detalles</a>
             </td>
             <td class="text-center">
               <label for="comprobante"
@@ -61,15 +61,24 @@
       <table class="table table-hover">
         <thead>
         <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
+          <th>N. </th>
+          <th>Producto</th>
+          <th>Material</th>
+          <th>Talla</th>
+          <th>Cantidad</th>
+          <th>P. Unitario</th>
+          <th>Subtotal</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td></td>
+        <tr *ngFor="let detalle of detallesCompras; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ detalle.nombre }}</td>
+          <td>{{ detalle.material }}</td>
+          <td>{{ detalle.talla }}</td>
+          <td>{{ detalle.cantidad}}</td>
+          <td>{{ detalle.precio | number: '1.2-2' }}</td>
+          <td>{{ detalle.subtotal | number: '1.2-2'}}</td>
         </tr>
         </tbody>
       </table>
