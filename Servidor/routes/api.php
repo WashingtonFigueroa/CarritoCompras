@@ -84,6 +84,7 @@ Route::get('lista-deseos/{usuario_id}', 'ListaDeseoController@listaDeseos');
 Route::get('boletines', 'BoletinController@index');
 Route::post('boletines', 'BoletinController@store');
 Route::post('enviar_boletines', 'BoletinController@enviarBoletines');
+Route::delete('boletines/{boletin_id}', 'BoletinController@destroy');
 
 /*custom controllers*/
 Route::get('listar_descripcion_productos/{producto_id}', 'ProductoController@listar_descripcion_productos');

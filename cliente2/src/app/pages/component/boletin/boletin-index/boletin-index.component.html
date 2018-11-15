@@ -1,3 +1,41 @@
-<p>
-  boletin-index works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Correos Registrados al Boletín</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <form [formGroup]="boletinGroup" class="form-busqueda">
+              <input type="search" formControlName="search" class="busqueda" placeholder="Buscar...">
+            </form>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>N. </th>
+              <th>Correo Electrónico</th>
+              <th>Eliminar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let boletin of boletines; let i = index">
+              <td *ngIf="boletin.email.indexOf(boletinGroup.value.search) > 0 || boletinGroup.value.search.length === 0" >{{ i + 1 }}</td>
+              <td *ngIf="boletin.email.indexOf(boletinGroup.value.search) > 0 || boletinGroup.value.search.length === 0">{{ boletin.email }}</td>
+              <td>
+                <button class="btn btn-sm btn-danger"
+                        (click)="destroy(boletin.boletin_id, i)">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

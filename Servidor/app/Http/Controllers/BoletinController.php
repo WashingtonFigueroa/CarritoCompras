@@ -47,4 +47,12 @@ class BoletinController extends Controller
             'mensaje' => 'Boletin enviado correctamente'
         ], 200);
     }
+
+    public function destroy($boletin_id) {
+        $boletin = Boletin::find($boletin_id);
+        $boletin->delete();
+        return response()->json([
+            'mensaje' => 'El correo ' . $boletin->mensaje . ' fue eliminado exitosamente'
+        ], 200);
+    }
 }

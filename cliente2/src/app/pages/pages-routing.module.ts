@@ -189,11 +189,29 @@ const routes: Routes = [
                 },
                 {
                   path: 'crear',
-                  component: BoletinCreateComponent
+                  component: BoletinCreateComponent,
+                  data: {
+                    title: 'CREAR BOLETIN', urls: [{
+                      title: 'INICIO', url: '/admin/principal/listar'
+                    }, {
+                      title: 'CORREOS REGISTRADOS AL BOLETÍN', url: 'boletines/emails'
+                    }, {
+                      title: ''
+                    }]
+                  }
                 },
                 {
                   path: 'emails',
-                  component: BoletinIndexComponent
+                  component: BoletinIndexComponent,
+                  data: {
+                    title: 'CORREOS REGISTRADOS AL BOLETIN', urls: [{
+                      title: 'INICIO', url: '/admin/principal/listar'
+                    }, {
+                      title: 'CREAR BOLETÍN', url: 'boletines/crear'
+                    }, {
+                      title: ''
+                    }]
+                  }
                 },
               ]
             },
