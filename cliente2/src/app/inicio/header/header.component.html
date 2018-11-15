@@ -9,10 +9,12 @@
         <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
       </ul>
       <ul class="header-links pull-right">
-        <li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>
+<!--        <li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
         <li><a *ngIf="usuario === null"
               [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
-            <a *ngIf="usuario !== null"
+            <a *ngIf="usuario !== null && usuario.tipo_usuario == 'administrador'"
+              [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+            <a *ngIf="usuario !== null && usuario.tipo_usuario == 'cliente'"
               [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
         </li>
       </ul>
@@ -56,13 +58,13 @@
         <div class="col-md-3 clearfix">
           <div class="header-ctn">
             <!-- Wishlist -->
-            <div>
+<!--            <div>
               <a href="#">
                 <i class="fa fa-heart-o"></i>
                 <span>Tus Deseos</span>
                 <div class="qty">2</div>
               </a>
-            </div>
+            </div>-->
             <!-- /Wishlist -->
 
             <!-- Cart -->

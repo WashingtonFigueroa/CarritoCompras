@@ -31,7 +31,7 @@ class BoletinMail extends Mailable
     public function build()
     {
         return $this->view('emails.boletin', $this->envio)
-            ->from('auditoriasis3930@gmail.com', 'Frado Store')
+            ->from('ventas@frado.ec', 'Frado Store')
             ->to($this->envio['emails'], 'Cliente Frado Store')
             ->subject($this->envio['asunto']);
     }
