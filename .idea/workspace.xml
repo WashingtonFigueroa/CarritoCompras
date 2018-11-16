@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0999118-2a38-4765-ac3a-273b097ba01a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CarritoCompras.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CarritoCompras.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/scss/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/scss/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/p4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/assets/images/plantilla/t3.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,70 +171,76 @@
     <session id="1952385114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="4" />
+          <entry key="Angular2LanguageService" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="14" />
-          <entry key="html" value="28" />
+          <entry key="css" value="17" />
+          <entry key="html" value="40" />
           <entry key="php" value="9" />
           <entry key="rnc" value="1" />
-          <entry key="scss" value="2" />
-          <entry key="ts" value="10" />
+          <entry key="scss" value="3" />
+          <entry key="ts" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="14" />
-          <entry key="HTML" value="28" />
+          <entry key="CSS" value="17" />
+          <entry key="HTML" value="40" />
           <entry key="PHP" value="9" />
           <entry key="RNG Compact" value="1" />
-          <entry key="SCSS" value="2" />
-          <entry key="TypeScript" value="10" />
+          <entry key="SCSS" value="3" />
+          <entry key="TypeScript" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="153" />
-          <entry key="html" value="751" />
+          <entry key="css" value="166" />
+          <entry key="html" value="1002" />
           <entry key="php" value="124" />
-          <entry key="scss" value="15" />
-          <entry key="ts" value="19" />
+          <entry key="scss" value="19" />
+          <entry key="ts" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="153" />
-          <entry key="HTML" value="751" />
+          <entry key="CSS" value="166" />
+          <entry key="HTML" value="1002" />
           <entry key="PHP" value="124" />
-          <entry key="SCSS" value="15" />
-          <entry key="TypeScript" value="19" />
+          <entry key="SCSS" value="19" />
+          <entry key="TypeScript" value="39" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html">
+        <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+            <state relative-caret-position="126">
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="e#398#404#0" expanded="true" />
+                <element signature="e#404#410#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,7 +249,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>imagen</find>
       <find>cart-menu</find>
       <find>color</find>
       <find>a</find>
@@ -266,10 +278,12 @@
       <find>newsle</find>
       <find>OCIFO60</find>
       <find>ff1300</find>
+      <find>store</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\DTE\CarritoCompras\cliente2\src</dir>
       <dir>C:\xampp\htdocs\DTE\CarritoCompras\cliente2</dir>
+      <dir>C:\xampp\htdocs\DTE\CarritoCompras\cliente2\src\app\shared</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -278,13 +292,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/producto/producto-index/producto-index.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/manillas/manillas-index/manillas-index.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/categorias/categorias-index/categorias-index.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/inventario/inventario-index/inventario-index.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/articulos/articulos-index/articulos-index.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/promocion/promocion-index/promocion-index.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css" />
         <option value="$PROJECT_DIR$/cliente2/node_modules/bootstrap/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/cuenta/cuenta.component.html" />
@@ -298,7 +308,6 @@
         <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente.component.html" />
         <option value="$PROJECT_DIR$/Servidor/app/DetalleCompra.php" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-routing.module.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/compra/compra.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/productos/productos.component.html" />
@@ -310,25 +319,30 @@
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/design/design.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/inicio.service.ts" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" />
         <option value="$PROJECT_DIR$/Servidor/database/migrations/2018_10_28_170500_create_emails_table.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Email.php" />
         <option value="$PROJECT_DIR$/Servidor/routes/api.php" />
         <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/EmailController.php" />
-        <option value="$PROJECT_DIR$/cliente2/src/assets/inicio/css/style.css" />
         <option value="$USER_HOME$/Desktop/templated-industrious/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/assets/scss/variable.scss" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/assets/inicio/css/style.css" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/assets/scss/app.scss" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.css" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html" />
       </list>
     </option>
   </component>
@@ -474,7 +488,7 @@
               <item name="cliente2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inicio" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
@@ -482,8 +496,24 @@
               <item name="cliente2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inicio" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarritoCompras" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarritoCompras" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="signup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -553,17 +583,18 @@
       <workItem from="1542070719598" duration="654000" />
       <workItem from="1542158700869" duration="1827000" />
       <workItem from="1542203989615" duration="6410000" />
+      <workItem from="1542373698217" duration="8559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80824000" />
+    <option name="totallyTimeSpent" value="92700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.22087745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.22692889" />
       <window_info id="Structure" order="1" sideWeight="0.5014663" side_tool="true" weight="0.27891654" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -577,7 +608,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5775128" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29301533" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -621,35 +652,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/pages-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="471" column="12" selection-start-line="471" selection-start-column="12" selection-end-line="471" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/carrito/carrito.component.html" />
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-facturacion/cliente-facturacion.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -682,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -703,36 +698,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/assets/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="1936" column="19" lean-forward="true" selection-start-line="1936" selection-start-column="19" selection-end-line="1936" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,31 +808,10 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/templated-industrious/assets/css/main.css" />
     <entry file="file://$USER_HOME$/Desktop/templated-industrious/index.html" />
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/assets/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="2037" column="1" selection-start-line="2037" selection-start-column="1" selection-end-line="2037" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/assets/inicio/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="1931" column="59" selection-start-line="1931" selection-start-column="25" selection-end-line="1931" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -883,16 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -906,20 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/producto/producto.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,6 +870,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/camisa/camisa.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/assets/inicio/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="578" column="21" lean-forward="true" selection-start-line="578" selection-start-column="21" selection-end-line="578" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="136" column="42" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
+          <caret line="129" column="42" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+          <folding>
+            <element signature="e#4557#4563#0" expanded="true" />
+            <element signature="e#4563#4569#0" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="666" column="32" lean-forward="true" selection-start-line="666" selection-start-column="32" selection-end-line="666" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/signup/signup.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/shared/header-navigation/navigation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="e#398#404#0" expanded="true" />
+            <element signature="e#404#410#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

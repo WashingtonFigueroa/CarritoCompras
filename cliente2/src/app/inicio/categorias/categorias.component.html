@@ -5,9 +5,9 @@
     </section>
   </div>
 </div>
-<div class="row bg-white">
+<div class="row bg-white" >
   <div class="col-md-12 text-center">
-    <h3 style="color: #aa0000">Nuestras Ofertas y Promociones</h3>
+    <h2 style="color: #aa0000">Nuestras Ofertas y Promociones</h2>
   </div>
 </div>
 <div id="carousel" class="carousel slide"  data-ride="carousel">
@@ -23,10 +23,12 @@
 </div>
 <div class="row bg-white">
   <div class="col-md-12 text-center">
-    <h3 style="color: #aa0000">Nuestros Productos</h3>
+    <h2 style="color: #aa0000">Nuestros Productos</h2>
+    <hr>
   </div>
 </div>
 <section class="categories">
+
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
       <img [src]="environment.base + environment.imagen.categoria + categoria.categoria_id">

@@ -1,28 +1,5 @@
 <!-- HEADER -->
 <header>
-  <!-- TOP HEADER -->
-  <div id="top-header">
-    <div class="container">
-      <ul class="header-links pull-left">
-        <li><a href="#"><i class="fa fa-phone"></i> +593 98 445 9620</a></li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i> info@fradoo.com</a></li>
-        <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
-      </ul>
-      <ul class="header-links pull-right">
-<!--        <li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
-        <li><a *ngIf="usuario === null"
-              [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
-            <a *ngIf="usuario !== null && usuario.tipo_usuario == 'administrador'"
-              [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-            <a *ngIf="usuario !== null && usuario.tipo_usuario == 'cliente'"
-              [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-        </li>
-      </ul>
-      <br>
-    </div>
-  </div>
-  <!-- /TOP HEADER -->
-
   <!-- MAIN HEADER -->
   <div id="header">
     <!-- container -->
@@ -30,7 +7,7 @@
       <!-- row -->
       <div class="row">
         <!-- LOGO -->
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="header-logo">
             <a href="#" class="logo-frado">
               <img src="../../../assets/inicio/img/logo.png" alt="">
@@ -38,33 +15,23 @@
           </div>
         </div>
         <!-- /LOGO -->
-        <!-- SEARCH BAR -->
-        <div class="col-md-6 text-center">
-          <div class="header-search">
-            <form *ngIf="categorias !== null">
-              <select [(ngModel)]="busqueda.categoria_id"
-                      (change)="go(busqueda.categoria_id)"
-                      name="categoria_id" class="input-select">
-                <option [value]="categoria.categoria_id"
-                        class="text-center"
-                        *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-              </select>
-            </form>
-          </div>
-        </div>
-        <!-- /SEARCH BAR -->
-
         <!-- ACCOUNT -->
-        <div class="col-md-3 clearfix">
+        <div class="col-md-7 clearfix">
+          <ul class="header-links pull-left">
+            <li><a href="#"><i class="fa fa-phone"></i> +593 98 445 9620</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o"></i> info@fradoo.com</a></li>
+            <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
+          </ul>
           <div class="header-ctn">
+
             <!-- Wishlist -->
-<!--            <div>
+            <div>
               <a href="#">
                 <i class="fa fa-heart-o"></i>
                 <span>Tus Deseos</span>
                 <div class="qty">2</div>
               </a>
-            </div>-->
+            </div>
             <!-- /Wishlist -->
 
             <!-- Cart -->
@@ -112,6 +79,20 @@
             <!-- /Menu Toogle -->
           </div>
         </div>
+        <div class="col-md-3 clearfix">
+          <ul class="header-links pull-right">
+            <!--<li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
+            <li><a [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a></li>
+            <li><a *ngIf="usuario === null"
+                   [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
+              <a *ngIf="usuario !== null && usuario.tipo_usuario == 'administrador'"
+                 [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+              <a *ngIf="usuario !== null && usuario.tipo_usuario == 'cliente'"
+                 [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+            </li>
+          </ul>
+        </div>
+
         <!-- /ACCOUNT -->
       </div>
       <!-- row -->
@@ -124,30 +105,36 @@
 <div class="row bg-light">
   <div class="col-sm-12 col-md-12">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- SEARCH BAR -->
+      <div class="col-md-6 text-center">
+        <div class="header-search">
+          <form *ngIf="categorias !== null">
+            Seleccione categoría &nbsp;&nbsp;
+            <select [(ngModel)]="busqueda.categoria_id"
+                    (change)="go(busqueda.categoria_id)"
+                    name="categoria_id" class="input-select" style="width: 300px">
+              <option [value]="categoria.categoria_id"
+                      class="text-center"
+                      *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <!-- /SEARCH BAR -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-          <!--<li class="nav-item"><a class="nav-link" routerLink="/inicio"><span class="nav-header nav-active">Inicio</span></a></li>-->
-          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">LAS MEJORES OFERTAS</span></a></li>
-          <!--<li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias">-->
-            <!--<span [class]="router.url === '/inicio/categorias' ? 'nav-header nav-active' : 'nav-header'">CATEGORIAS</span></a>-->
-          <!--</li>-->
-<!--          <li class="nav-item" *ngFor="let categoria of categorias">
-            <a class="nav-link"
-               [routerLink]="['/inicio/productos/'+categoria.categoria_id]">
-              <span [class]="router.url === '/inicio/productos/' + categoria.categoria_id ? 'nav-header nav-active' : 'nav-header'">{{ categoria.nombre | uppercase }}</span>
-            </a>
-          </li>-->
+          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header"><h5>LAS MEJORES OFERTAS</h5></span></a></li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['design']">
-              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" style="color: #dd0000">
-                DISEÑA TU MANILLA
+              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
+                <h5 style="color: #dd0000">DISEÑA TU MANILLA</h5>
               </span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['camisas']">
-              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" style="color: #dd0000">
-                PERSONALIZA TU CAMISA
+              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
+                <h5 style="color: #dd0000">PERSONALIZA TU CAMISA</h5>
               </span>
             </a>
           </li>

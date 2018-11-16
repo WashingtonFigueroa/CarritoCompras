@@ -4,23 +4,12 @@
 <aside class="left-sidebar">
   <!-- Sidebar scroll-->
   <div class="scroll-sidebar">
-    <!-- User profile -->
-    <div class="user-profile" style="background-color: #ffffff">
-      <!-- User profile image -->
-      <div class="profile-img" style="background-color: #ffffff"><br>
-        <h2 style="color: #aa0000">FRADO</h2>
-        <!-- this is blinking heartbit-->
-        <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
-      </div>
-    </div>
-    <!-- End User profile text-->
-    <!-- Sidebar navigation-->
+
     <nav class="sidebar-nav">
       <ul id="sidebarnav">
-        <li class="nav-devider"></li>
         <li [class.active]="showMenu === 'start'">
           <a [routerLink]="['principal']"  [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Principal</span></a>
-          <a [routerLink]="['boletines']"  [routerLinkActive]="['router-link-active']"><i class="icon-wallet"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Boletines</span></a>
+          <a [routerLink]="['boletines']"  [routerLinkActive]="['router-link-active']"><i class="icon-target"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Boletines</span></a>
           <a [routerLink]="['categorias']" [routerLinkActive]="['router-link-active']"><i class="icon-list"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Categorias</span></a>
           <a [routerLink]="['productos']" [routerLinkActive]="['router-link-active']"><i class="icon-grid"></i><span class="hide-menu">Producto</span></a>
           <a [routerLink]="['inventarios']" [routerLinkActive]="['router-link-active']"><i class="icon-chart"></i><span class="hide-menu">Inventario</span></a>
