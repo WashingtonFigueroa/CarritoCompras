@@ -13,6 +13,9 @@ export class ComprasService {
   index() {
     return this.http.get( this.base + 'compras');
   }
+  indexPerPage(url) {
+    return this.http.get( url );
+  }
   misCompras(usuario_id) {
     return this.http.get( this.base + 'mis-compras/' + usuario_id);
   }
@@ -24,5 +27,11 @@ export class ComprasService {
   }
   detallesCompras(compra_id) {
     return this.http.get(this.base + 'detalles-compras/' + compra_id);
+  }
+  buscarCompras(search) {
+    return this.http.get( this.base + 'buscar-compras/' + search.search);
+  }
+  destroy(compra_id) {
+    return this.http.delete(this.base + 'compras/' + compra_id);
   }
 }

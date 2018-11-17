@@ -12,10 +12,28 @@ class CompraController extends Controller
 {
     public function index()
     {
-        $compras = Compra::with('detalleCompras')
+        $compras = Compra::with(['detalleCompras.inventario.producto', 'usuario'])
                             ->orderBy('fecha', 'desc')
-                            ->where('estado', true)
                             ->paginate(10);
+        return response()->json($compras, 200);
+    }
+
+    public function orderBy($estado) {
+        $compras = Compra::with(['detalleCompras.inventario.producto', 'usuario'])
+            ->orderBy('fecha', 'desc')
+            ->where('estado', $estado)
+            ->paginate(10);
+        return response()->json($compras, 200);
+    }
+
+    public function buscarCompras($search) {
+        $compras = Compra::with(['detalleCompras.inventario.producto', 'usuario'])
+            ->orderBy('fecha', 'desc')
+            ->where('nombres', 'like', '%' . $search . '%')
+            ->orWhere('apellidos', 'like', '%' . $search . '%')
+            ->orWhere('numero_guia', 'like', '%' . $search . '%')
+            ->orWhere('direccion', 'like', '%' . $search . '%')
+            ->paginate(10);
         return response()->json($compras, 200);
     }
 

@@ -106,3 +106,6 @@ Route::get('mis-compras/{usuario_id}', 'CompraController@misCompras');
 
 Route::get('detalles-compras/{compra_id}', 'CompraController@detallesCompras');
 Route::post('upload-comprobante/{compra_id}', 'CompraController@uploadComprobante');
+
+Route::get('order-by/{estado}', 'CompraController@orderBy');
+Route::get('buscar-compras/{search}', 'CompraController@buscarCompras');
