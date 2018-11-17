@@ -15,6 +15,11 @@
 .category-image img {
   width: 100%;
 }
+.category-image > img:hover {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 .category-info {
   margin-top: auto;
   padding: .5em 0;
@@ -79,11 +84,6 @@
   position: relative;
   text-align: center;
   width: 100%; }
-
-img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }

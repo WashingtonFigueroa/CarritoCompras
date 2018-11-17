@@ -16,6 +16,7 @@
             <th>Estado</th>
             <th>Detalles</th>
             <th title="Subir comprobante de pago">Subir Comprobante</th>
+            <th>N. Guía</th>
           </tr>
           </thead>
           <tbody>
@@ -28,20 +29,21 @@
                 {{ compra.estado }}
             </td>
             <td>
-              <a (click)="openDetalles(contenido, compra.compra_id)">detalles</a>
+              <a (click)="openDetalles(contenido, compra.compra_id)" class="detalles">detalles</a>
             </td>
             <td class="text-center">
               <label for="comprobante"
-                     *ngIf="compra.comprobante.length == 0"
+                     *ngIf="compra.comprobante == null"
                      class="comprobante"><i class="fa fa-upload"></i></label>
               <input type="file"
                      #comprobante id="comprobante"
                      (change)="upload(compra.compra_id)">
               <span class="text-primary"
-                    *ngIf="compra.comprobante.length > 0">
+                    *ngIf="compra.comprobante !== null">
                     Comprobante subido
               </span>
             </td>
+            <td></td>
           </tr>
           </tbody>
         </table>

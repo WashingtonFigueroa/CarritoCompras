@@ -1,6 +1,9 @@
 #comprobante {
   display: none;
 }
-.comprobante {
+.comprobante, .detalles {
   cursor: pointer;
+}
+a.detalles:hover {
+  color: #aa0000;
 }

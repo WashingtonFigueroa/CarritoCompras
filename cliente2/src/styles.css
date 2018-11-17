@@ -261,8 +261,15 @@ table thead > tr {
   opacity: 0;
 }
 .modal {
-  transform: translateX(40vw);
+/*  transform: translateX(40vw);*/
+  transform: translateX(0);
+  display: block;
+  width: 110vw;
   background-color: rgba(255,255,255,0);
+}
+.modal .modal-content {
+  display: block;
+  width: 100%;
 }
 button.cerrar {
   outline: none;
