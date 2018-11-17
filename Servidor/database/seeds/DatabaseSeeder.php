@@ -14,12 +14,12 @@ class DatabaseSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        for($i = 0; $i < 3; $i++) {
+        /*for($i = 0; $i < 3; $i++) {
             App\Categoria::create([
                 'nombre' => $faker->word,
                 'descripcion' => $faker->sentence
             ]);
-        }
+        }*/
 
         \App\Usuario::create([
             'tipo_usuario' => 'administrador',

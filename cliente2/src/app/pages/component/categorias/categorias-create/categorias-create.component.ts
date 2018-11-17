@@ -35,7 +35,7 @@ export class CategoriasCreateComponent implements OnInit {
         const file = this.imagen.nativeElement;
         if (file.files[0]) {
             form.append('imagen', file.files[0]);
-            form.append('nombre', this.categoriaGroup.value.nombre);
+            form.append('nombre', this.categoriaGroup.value.nombre.toUpperCase());
             form.append('descripcion', this.categoriaGroup.value.descripcion);
             this.categotiaService.store(form).subscribe((res: any) => {
                 console.log('Categoria Guardado');

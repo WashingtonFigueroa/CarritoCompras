@@ -2,15 +2,15 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
 }
 .category-card {
   padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
-
+  width: 25%;
   display: flex;
   flex-direction: column;
   background-color: white;
+  box-sizing: border-box;
 }
 .category-image img {
   width: 100%;

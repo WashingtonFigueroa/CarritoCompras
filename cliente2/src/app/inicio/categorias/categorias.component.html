@@ -28,18 +28,17 @@
   </div>
 </div>
 <section class="categories">
-
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
       <img [src]="environment.base + environment.imagen.categoria + categoria.categoria_id">
     </div>
     <div class="category-info">
-      <h5>{{ categoria.nombre }}</h5>
+      <h5>{{ categoria.nombre | uppercase }}</h5>
       <h6>{{ categoria.descripcion }}</h6>
       <div class="btn-container">
         <button
           [routerLink]="['/inicio/productos/' + categoria.categoria_id]"
-          class="btn btn-rounded btn-danger">Ver {{ categoria.nombre }}</button>
+          class="btn btn-rounded btn-danger">VER {{ categoria.nombre | uppercase }}</button>
       </div>
     </div>
   </div>
