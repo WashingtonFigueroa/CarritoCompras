@@ -1,29 +1,29 @@
 <!-- HEADER -->
 <header>
-  <!-- MAIN HEADER -->
-  <div id="header">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <!-- LOGO -->
-        <div class="col-md-2">
-          <div class="header-logo">
-            <a href="#" class="logo-frado">
-              <img src="../../../assets/inicio/img/logo.png" alt="">
-            </a>
-          </div>
-        </div>
-        <!-- /LOGO -->
-        <!-- ACCOUNT -->
-        <div class="col-md-7 clearfix">
-          <ul class="header-links pull-left">
-            <li><a href="#"><i class="fa fa-phone"></i> +593 98 445 9620</a></li>
-            <li><a href="#"><i class="fa fa-envelope-o"></i> info@fradoo.com</a></li>
-            <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
-          </ul>
-          <div class="header-ctn">
+  <div class="container-fluid" style="background-color: black">
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+        <a routerLink="/" class="logo-frado">
+          <img src="../../../assets/inicio/img/logo.png" width="150" alt="">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <ul class="header-links pull-left">
+          <li><a href="#"><i class="fa fa-phone"></i> +593 98 445 9620</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o"></i> info@fradoo.com</a></li>
+          <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
 
+        <ul class="header-links pull-right">
+          <!--<li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
+          <li><a *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
+            <a *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+            <a *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
+          </li>
+          <div class="header-ctn">
             <!-- Wishlist -->
             <div>
               <a href="#">
@@ -33,8 +33,8 @@
               </a>
             </div>
             <!-- /Wishlist -->
-
-            <!-- Cart -->
+          </div>
+          <div class="header-ctn" style="color: #ffffff">
             <div>
               <a class="cart-menu" (click)="dropDownCart()">
                 <i class="fa fa-shopping-cart"></i>
@@ -59,87 +59,38 @@
                   <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
                 </div>
                 <div class="cart-buttons">
-                  <a
-                    *ngIf="cartItems.subtotal !== 0"
-                    routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
-                  <a
-                    *ngIf="cartItems.subtotal !== 0"
-                    (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+                  <a *ngIf="cartItems.subtotal !== 0" routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
+                  <a *ngIf="cartItems.subtotal !== 0" (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>
             </div>
-            <!-- /Cart -->
-
-            <div class="menu-toggle">
-              <a href="" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-                <span>Menu</span>
-              </a>
-            </div>
-            <!-- /Menu Toogle -->
           </div>
-        </div>
-        <div class="col-md-3 clearfix">
-          <ul class="header-links pull-right">
-            <!--<li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
- <!--           <li><a [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a></li>-->
-            <li><a *ngIf="usuario === null"
-                   [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
-              <a *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'"
-                 [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-              <a *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'"
-                 [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-            </li>
-          </ul>
-        </div>
 
-        <!-- /ACCOUNT -->
-      </div>
-      <!-- row -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- /MAIN HEADER -->
-</header>
-<!-- /HEADER -->
-<div class="row bg-light">
-  <div class="col-sm-12 col-md-12">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- SEARCH BAR -->
-      <div class="col-md-6 text-center">
-        <div class="header-search">
-          <form *ngIf="categorias !== null">
-            Seleccione categoría &nbsp;&nbsp;
-            <select [(ngModel)]="busqueda.categoria_id"
-                    (change)="go(busqueda.categoria_id)"
-                    name="categoria_id" class="input-select" style="width: 300px">
-              <option [value]="categoria.categoria_id"
-                      class="text-center"
-                      *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-            </select>
-          </form>
-        </div>
-      </div>
-      <!-- /SEARCH BAR -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header"><h5>LAS MEJORES OFERTAS</h5></span></a></li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['design']">
-              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
-                <h5 style="color: #dd0000">DISEÑA TU MANILLA</h5>
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['camisas']">
-              <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
-                <h5 style="color: #dd0000">PERSONALIZA TU CAMISA</h5>
-              </span>
-            </a>
-          </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </div>
-</div>
+  <br>
+  <nav class="menu1">
+    <ul>
+      <li routerLinkActive="/"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">
+                <h6 style="color: #ffffff">LAS MEJORES OFERTAS</h6></span></a></li>
+      <li><a class="nav-link" [routerLink]="['design']">
+              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
+                <h6  style="color: #ffffff">DISEÑA TU MANILLA</h6>
+              </span>
+      </a></li>
+      <li><a class="nav-link" [routerLink]="['camisas']">
+        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
+          <h6  style="color: #ffffff">PERSONALIZA TU CAMISA</h6>
+        </span>
+      </a></li>
+      <li> <a class="nav-link" [routerLink]="['camisas']">
+        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
+          <h6  style="color: #ffffff">CANJEAR PUNTOS</h6>
+        </span>
+      </a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /HEADER -->

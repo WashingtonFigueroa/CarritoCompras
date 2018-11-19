@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CategoriasService} from '../../pages/component/categorias/categorias.service';
 import { environment } from '../../../environments/environment.prod';
 import {PromocionService} from '../../pages/component/promocion/promocion.service';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-categorias',
@@ -13,8 +14,14 @@ export class CategoriasComponent implements OnInit {
   environment = environment;
   categorias: any = [];
   promociones: any = [];
+    busqueda = {
+        categoria_id: 0,
+        nombre: ''
+    };
+
   constructor(private categoriaService: CategoriasService,
-              private promocionesService: PromocionService) {
+              private promocionesService: PromocionService,
+              public router: Router) {
     this.categoriaService.lista_categorias().subscribe(res => {
         this.categorias = res;
       });
@@ -26,5 +33,9 @@ export class CategoriasComponent implements OnInit {
 
   ngOnInit() {
   }
+    go(categoria_id) {
+        console.log(categoria_id);
+        this.router.navigate(['/inicio/productos/' + categoria_id]);
+    }
 
 }

@@ -14,10 +14,6 @@ export class HeaderComponent implements OnInit {
 
   displayCart = false;
   categorias: any = null;
-  busqueda = {
-    categoria_id: 0,
-    nombre: ''
-  };
   producto_img_url = environment.base + environment.imagen.producto;
 
   cartItems = null;
@@ -55,19 +51,6 @@ export class HeaderComponent implements OnInit {
     } else {
       this.router.navigate(['/login']);
     }
-  }
-  buscar_productos() {
-/*    this.categoriaService
-        .buscar_productos_categoria(this.busqueda.categoria_id, this.busqueda.nombre)
-        .subscribe((productos: any) => {
-          this.productos = productos;
-          console.log(this.productos);
-        });*/
-  }
-
-  go(categoria_id) {
-    console.log(categoria_id);
-    this.router.navigate(['/inicio/productos/' + categoria_id]);
   }
 
 }

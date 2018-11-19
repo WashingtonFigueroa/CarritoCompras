@@ -2,7 +2,7 @@
   <br><br>
   <div class="panel-camisas">
     <br>
-    <h3>TIPO CAMISA</h3>
+    <h4 style="color: #cc0000">TIPO CAMISA</h4>
     <img #camisa1 src="assets/images/plantilla/p1.png" alt="Nature" (click)="openImg('camisa1')">
     <img #camisa2 src="assets/images/plantilla/p2.png" alt="Nature" (click)="openImg('camisa2')">
     <img #camisa3 src="assets/images/plantilla/p3.png" alt="Nature" (click)="openImg('camisa3')">
@@ -32,12 +32,12 @@
 
   </div>
   <div class="contenedor-telas">
-    <h3>TELAS</h3>
+    <h4 style="color: #cc0000">TELAS</h4>
     <div *ngFor="let camisa of camisas; let i = index">
       <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id"
            [alt]="camisa.detalle"
            (click)="setBackground($event)"
-           height="80">
+           height="150">
     </div>
     <img src="assets/images/plantilla/t2.jpg" (click)="setBackground($event)">
   </div>

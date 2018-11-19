@@ -1,14 +1,10 @@
+<br>
 <section class="loading" *ngIf="categoria === null">
   <i class="fa fa-spinner fa-spin"></i>
 </section>
-
-
 <ng-template ngIf="categoria !== null">
 <nav class="product-filter">
-
   <h1 *ngIf="categoria !== null">{{ categoria.nombre | uppercase }}</h1>
-
-  <div class="sort">
     <div class="collection-sort">
       <label></label>
       <select [(ngModel)]="ordenar_por" (change)="filtrar()">
@@ -18,9 +14,6 @@
         <option value="fecha_asc">Ordenar por: Fecha: Antiguo a Nuevo</option>
       </select>
     </div>
-
-  </div>
-
 </nav>
   <section class="loading" *ngIf="categoria !== null && productos !== null && productos.length === 0">
     <h1><i class="fa fa-exclamation-triangle"></i> No existen productos en esta categoría</h1>
@@ -32,7 +25,7 @@
       <img [src]="environment.base + environment.imagen.producto + producto.producto_id" height="400px" >
     </div>
     <div class="product-info">
-      <h5>{{ producto.nombre }}</h5>
+      <!--<h5>{{ producto.nombre }}</h5>-->
       <h6>{{ producto.descripcion }}</h6>
       <div class="text-center">
         <div class="color" [ngStyle]="{'background-color' : producto.color1}"></div>

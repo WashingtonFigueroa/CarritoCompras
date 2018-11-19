@@ -1,37 +1,83 @@
-.nav-header {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #1b1e21;
-  font-size: .9em;
-  font-weight: bolder;
+#btn-menu1 {
+  display: none;
 }
-.nav-active {
-  box-sizing: border-box;
-  color: #dd0000;
-  text-decoration: underline;
+
+header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
 }
-.nav-header:hover {
-  box-sizing: border-box;
-  color: #dd0000;
-  font-weight: bolder;
-  text-decoration: underline;
-  transition: 0.5s ease;
-  text-shadow: 0 0 1px whitesmoke;
+
+.menu1 ul {
+  background: #000;
+  display: flex;
+  list-style: none;
 }
-.bg-whitesmoke {
-  background-color: #e4e7ea;
+
+.menu1 ul ul {
+  display: none;
 }
-.logo-frado {
-  display: inline-block;
-  width: 150px;
-  height: 60px;
-  margin-top: 1em;
+
+.menu1 a {
+  display: block;
+  padding: 15px 20px;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
-.logo-frado > img{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+
+.menu1 a:hover {
+  background-color: #cc0000;
 }
-.carrito {
-  box-sizing: border-box;
-  border-radius: 5px;
+
+.menu1 a i {
+  margin-left: 10px;
 }
+
+.menu1 ul li:hover ul {
+  transition: all 0.3s ease;
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    padding-top: 16px;
+    padding-right: 16px;
+    transition: all 0.4s ease;
+  }
+
+  .menu1 {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .menu1 ul {
+    flex-direction: column;
+  //display: block;
+  }
+
+  .menu1 ul li:hover ul {
+    display: none;
+    position: static;
+  }
+
+  .menu1 a i {
+    position: absolute;
+    right: 16px;
+    line-height: 32px;
+  }
+
+  #btn-menu1:checked ~ .menu1 {
+    transform: translateX(0%);
+  }
+
+}
+

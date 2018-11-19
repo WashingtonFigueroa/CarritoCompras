@@ -5,11 +5,16 @@
     </section>
   </div>
 </div>
-<div class="row bg-white" >
+<br>
+<div class="row bg-dark" >
   <div class="col-md-12 text-center">
-    <h2 style="color: #aa0000">Nuestras Ofertas y Promociones</h2>
+    <br>
+    <h2 style="color: #ffffff">Nuestras Ofertas y Promociones</h2>
+    <br>
   </div>
 </div>
+<hr style="background-color:#cc0000">
+
 <div id="carousel" class="carousel slide"  data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -21,19 +26,41 @@
     </div>
   </div>
 </div>
-<div class="row bg-white">
+<br>
+<div class="row bg-dark" >
   <div class="col-md-12 text-center">
-    <h2 style="color: #aa0000">Nuestros Productos</h2>
-    <hr>
+    <br>
+    <h2 style="color: #ffffff">Nuestros Productos</h2>
+    <br>
   </div>
 </div>
+<hr style="background-color:#cc0000">
+<!-- SEARCH BAR -->
+<div style="text-align: right">
+  <div class="header-search">
+
+    <form *ngIf="categorias !== null">
+      Seleccione categoría &nbsp;&nbsp;
+      <select [(ngModel)]="busqueda.categoria_id"
+              (change)="go(busqueda.categoria_id)"
+              name="categoria_id" class="input-select" style="width: 300px">
+        <option [value]="categoria.categoria_id"
+                class="text-center"
+                *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
+      </select>
+    </form>
+
+  </div>
+</div>
+<!-- /SEARCH BAR -->
+
 <section class="categories">
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
       <img [src]="environment.base + environment.imagen.categoria + categoria.categoria_id">
     </div>
     <div class="category-info">
-      <h5>{{ categoria.nombre | uppercase }}</h5>
+      <!--<h5>{{ categoria.nombre | uppercase }}</h5>-->
       <h6>{{ categoria.descripcion }}</h6>
       <div class="btn-container">
         <button

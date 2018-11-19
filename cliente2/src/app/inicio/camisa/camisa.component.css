@@ -72,7 +72,7 @@
   transition: .3s ease;
 }
 .contenedor-telas img:hover{
-  background-color: #dd0000;
+  background-color: #cc0000;
   padding: .25em;
   border: .25em solid white;
 }

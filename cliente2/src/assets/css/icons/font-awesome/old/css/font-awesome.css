@@ -102,6 +102,9 @@
 .pull-left {
   float: left;
 }
+.pull-center {
+  text-align:center;
+}
 
 .fa.pull-left {
   margin-right: .3em;
