@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {environment} from '../../../../../environments/environment.prod';
 import {ComprasService} from '../../compras/compras.service';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-compras-index',
@@ -10,6 +11,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./compras-index.component.css']
 })
 export class ComprasIndexComponent implements OnInit {
+  @ViewChild('overlay') overlay;
+  @ViewChild('popup') popup;
 
   compras: any = [];
   index: number = null;
@@ -20,9 +23,11 @@ export class ComprasIndexComponent implements OnInit {
   prev_page: any = null;
   next_page: any = null;
   environment = environment;
-
+  base = environment.base;
+  compra: any = null;
   constructor(protected comprasService: ComprasService,
               protected modalService: NgbModal,
+              protected toastr: ToastrService,
               protected router: Router) {}
 
   ngOnInit() {
@@ -115,5 +120,24 @@ export class ComprasIndexComponent implements OnInit {
       console.log('cancel');
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
+  }
+
+  updateNumGuia(compra) {
+    if ( compra.estado === 'verificando comprobante' ) {
+      this.router.navigate(['/admin/compras/editar/' + compra.compra_id]);
+    } else {
+      this.toastr.error('El cliente no subió su comprobante', 'Error');
+    }
+  }
+
+  openModal(compra) {
+    this.compra = compra;
+    this.overlay.nativeElement.classList.add('active');
+    this.popup.nativeElement.classList.add('active');
+  }
+
+  closeModal() {
+    this.overlay.nativeElement.classList.remove('active');
+    this.popup.nativeElement.classList.remove('active');
   }
 }

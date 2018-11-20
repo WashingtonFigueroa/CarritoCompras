@@ -26,6 +26,7 @@ export class ComprasEditComponent implements OnInit {
       this.comprasService.show(param.id)
         .subscribe(res => {
           this.compra = res;
+          console.log(this.compra);
           this.createForm(res);
         });
     });
@@ -41,7 +42,13 @@ export class ComprasEditComponent implements OnInit {
   }
 
   update() {
-    const form = new FormData();
+    this.comprasService
+        .updateNumGuia(this.compra.compra_id, this.compraGroup.value)
+        .subscribe((res: any) => {
+          this.router.navigate(['/admin/principal/listar']);
+        });
+/*    const form = new FormData();*/
+
 /*    if (file.files[0]) {
       form.append('imagen', file.files[0]);
       form.append('nombre', this.compraGroup.value.nombre);

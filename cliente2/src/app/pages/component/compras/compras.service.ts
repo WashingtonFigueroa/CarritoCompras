@@ -37,4 +37,7 @@ export class ComprasService {
   destroy(compra_id) {
     return this.http.delete(this.base + 'compras/' + compra_id);
   }
+  updateNumGuia(compra_id, req) {
+    return this.http.post(this.base + 'update-num-guia/' + compra_id, req);
+  }
 }

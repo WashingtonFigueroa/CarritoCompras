@@ -523,7 +523,7 @@ const routes: Routes = [
                     path: 'editar/:id',
                     component: ComprasEditComponent,
                     data: {
-                        title: 'EDITAR COMPRA', urls: [{
+                        title: 'ASIGNAR NÚMERO DE GUÍA', urls: [{
                             title: 'INICIO', url: '/admin/principal/listar'
                         }, {
                             title: 'LISTADO', url: 'compras/listar'

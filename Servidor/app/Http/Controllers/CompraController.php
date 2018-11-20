@@ -112,4 +112,28 @@ class CompraController extends Controller
         }
         return response()->json($response, 200);
     }
+
+    public function updateNumGuia($compra_id) {
+        $response = null;
+        $compra = Compra::find($compra_id);
+        if( $compra->estado === 'verificando comprobante') {
+            $compra->numero_guia = request()->input('numero_guia');
+            $compra->save();
+            $response = [
+                'estado' => 'exito',
+                'mensaje' => 'Número de guía asignado'
+            ];
+        } else {
+            $response = [
+                'estado' => 'error',
+                'mensaje' => 'El cliente no subió su comprobante'
+            ];
+        }
+        return response()->json($response, 200);
+    }
+
+    public function comprobantes ($url) {
+
+        return response()->file(storage_path('app/comprobantes/' . $url));
+    }
 }

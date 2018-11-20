@@ -109,3 +109,6 @@ Route::post('upload-comprobante/{compra_id}', 'CompraController@uploadComprobant
 
 Route::get('order-by/{estado}', 'CompraController@orderBy');
 Route::get('buscar-compras/{search}', 'CompraController@buscarCompras');
+
+Route::post('update-num-guia/{compra_id}', 'CompraController@updateNumGuia');
+Route::get('comprobantes/{url}', 'CompraController@comprobantes');

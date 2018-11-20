@@ -22,6 +22,7 @@ export class ProductoComponent implements OnInit {
   opened = false;
   selectedInventario: any = null;
   stock: any = [];
+  producto: any = null;
   cantidad = null;
   cantidad_total = 0;
   subtotal = 0;
@@ -57,6 +58,7 @@ export class ProductoComponent implements OnInit {
       this.stock.push({ value: i });
     }
   }
+
   selectImage(imagen_id) {
     this.settings.image_id = imagen_id;
     this.settings.image = this.environment.base + this.environment.imagen.articulo + imagen_id;
@@ -70,7 +72,7 @@ export class ProductoComponent implements OnInit {
       'precio': this.selectedInventario.precio,
       'puntos' : this.selectedInventario.puntos,
       'cantidad' : parseInt(this.cantidad, 10),
-/*      'producto' : this.producto*/
+      'producto' : this.producto
     };
     let registrado = false;
     for ( let i = 0; i < this.cartItems.length; i++) {

@@ -1,0 +1,66 @@
+.link {
+  color: #dd0000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* modal customized */
+a.btn-modal {
+  color: #d50000;
+  cursor: pointer;
+}
+a.btn-modal:hover {
+  color: #c20000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(27, 30, 33, 0.87);
+
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+}
+.active {
+  visibility: visible;
+}
+.overlay .popup {
+  width: 60vw;
+  height: 90vh;
+  padding: 1em;
+  background-color: whitesmoke;
+  z-index: 9999999;
+  overflow-y: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #2a3035;
+  transition: .3s ease all;
+  transform: scale(.7);
+  opacity: 0;
+}
+.overlay .popup.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.overlay .popup img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.overlay .popup .close {
+  display: block;
+  font-size: 1em;
+  transition: .3s ease all;
+  color: #2a3035;
+  outline: none;
+}
+.overlay .popup .close:hover {
+  color: #1d2124;
+}
+
+/* end modal customized */

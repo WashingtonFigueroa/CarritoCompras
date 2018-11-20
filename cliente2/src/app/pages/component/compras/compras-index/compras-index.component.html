@@ -30,10 +30,10 @@
             <thead>
             <tr>
               <th>
-                #
+                # Factura
               </th>
               <th>
-                Facturar a nombre
+                A nombre
               </th>
               <th>
                 Estado
@@ -41,12 +41,12 @@
               <th>
                 Num. Guía
               </th>
-              <th>
+<!--              <th>
                 Dirección
-              </th>
-              <th>
+              </th>-->
+<!--              <th>
                 Detalles
-              </th>
+              </th>-->
               <th>
                 Acciones
               </th>
@@ -55,38 +55,40 @@
             <tbody>
             <tr *ngFor="let compra of compras; let i = index">
               <td>
-                {{ i + 1 }}
+                {{ compra.compra_id }}
               </td>
               <td>
                 {{ compra.nombres | uppercase }} {{ compra.apellidos | uppercase }}
               </td>
               <td>
-                {{ compra.estado }}
+                <span *ngIf="compra.estado === 'verificando comprobante'"
+                      (click)="openModal(compra)"
+                      class="link"> {{ compra.estado }} </span>
+                <span *ngIf="compra.estado !== 'verificando comprobante'"> {{ compra.estado }} </span>
               </td>
               <td>
-                {{ compra.num_guia }}
+                {{ compra.numero_guia }}
               </td>
-              <td>
-                {{ compra.direccion }}
-              </td>
-              <td>
-                <a>detalles</a>
-              </td>
-<!--              <td>
-                <img [src]="environment.base+environment.imagen.categoria+categoria.categoria_id" alt="" height="80">
-              </td>-->
               <td class="acciones">
-<!--                <button
-                        type="button"
-                        title="Agregar numero de Guia"
-                        class="btn btn-info">
+                <button
+                    type="button"
+                    title="Detalles"
+                    class="btn btn-sm btn-success">
+                  <i class="fa fa-list"></i>
+                </button>
+                &nbsp;
+                <button
+                    (click)="updateNumGuia(compra)"
+                    type="button"
+                    title="Agregar numero de Guia"
+                    class="btn btn-sm btn-info">
                   G
-                </button>-->
-                &nbsp;&nbsp;
+                </button>
+                &nbsp;
                 <button type="button"
-                        class="btn btn-danger"
-                        title="Eliminar compra"
-                        (click)="confirm(i, compra.compra_id, confirmModal)">
+                    class="btn btn-sm btn-danger"
+                    title="Eliminar compra"
+                    (click)="confirm(i, compra.compra_id, confirmModal)">
                   <i class="fa fa-eraser" aria-hidden="true"></i>
                 </button>
               </td>
@@ -117,5 +119,14 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="overlay" #overlay>
+  <div class="popup" #popup>
+    <button class="close" (click)="closeModal()">
+      <i class="fa fa-times"></i>
+    </button>
+    <h4>Factura # {{ compra.compra_id }}</h4>
+    <img src="{{base}}{{compra.comprobante}}">
   </div>
 </div>
