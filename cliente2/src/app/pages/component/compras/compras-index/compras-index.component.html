@@ -121,7 +121,7 @@
     </div>
   </div>
 </div>
-<div class="overlay" #overlay>
+<div class="overlay" #overlay *ngIf="compra !== null">
   <div class="popup" #popup>
     <button class="close" (click)="closeModal()">
       <i class="fa fa-times"></i>
