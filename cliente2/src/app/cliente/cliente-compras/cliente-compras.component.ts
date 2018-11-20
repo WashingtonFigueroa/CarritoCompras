@@ -11,8 +11,11 @@ import {ToastrService} from 'ngx-toastr';
 })
 export class ClienteComprasComponent implements OnInit {
   @ViewChild('comprobante') comprobante;
+  @ViewChild('overlay') overlay;
+  @ViewChild('popup') popup;
   usuario: any = null;
   compras: any = null;
+  compra_id: any = null;
   closeResult: string;
   detallesCompras: any = null;
   constructor(private compraService: ComprasService,
@@ -27,18 +30,6 @@ export class ClienteComprasComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  openDetalles(contenido, compra_id) {
-    this.compraService.detallesCompras(compra_id)
-      .subscribe(res => {
-        this.detallesCompras = res;
-      });
-    this.modalService.open(contenido, { size: 'lg'}).result.then((result) => {
-      this.closeResult = `Cerrado por ${result}`;
-    }, (reason) => {
-      this.closeResult = `Cerrado por ${this.getDismissReason(reason)}`;
-    });
   }
 
   private getDismissReason(reason: any): string {
@@ -60,8 +51,8 @@ export class ClienteComprasComponent implements OnInit {
         .subscribe((res: any) => {
           if (res.estado === 'exito') {
             this.compraService.misCompras(this.usuario.usuario_id)
-              .subscribe(res => {
-                this.compras = res;
+              .subscribe((res2: any) => {
+                this.compras = res2;
               });
             this.toastr.success('El comprobante fue subido exitosamente', 'Exito');
           } else {
@@ -71,5 +62,21 @@ export class ClienteComprasComponent implements OnInit {
     }
 
   }
+
+  openModal(contenido, compra_id) {
+    this.compra_id = compra_id;
+    this.compraService.detallesCompras(compra_id)
+      .subscribe(res => {
+        this.detallesCompras = res;
+      });
+    this.overlay.nativeElement.classList.add('active');
+    this.popup.nativeElement.classList.add('active');
+  }
+
+  closeModal() {
+    this.overlay.nativeElement.classList.remove('active');
+    this.popup.nativeElement.classList.remove('active');
+  }
+
 
 }
