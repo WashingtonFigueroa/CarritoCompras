@@ -8,31 +8,36 @@
   </a>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu1">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">
-              LAS MEJORES OFERTAS</span> <span class="sr-only">(current)</span></a>
+      <li class="nav-item"
+          [class.active]="router.url === '/inicio/categorias'">
+        <a class="nav-link" routerLink="/inicio/categorias">
+          <span class="nav-header">LAS MEJORES OFERTAS</span> <span class="sr-only">(current)</span></a>
       </li>
+      &nbsp;
+      &nbsp;
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['design']" style="color: #ffffff">
+        <a class="nav-link" [routerLink]="['design']"
+           [class.active]="router.url === '/inicio/design'">
               <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
                 DISEÑA TU MANILLA
               </span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['camisas']" style="color: #ffffff">
+        <a class="nav-link" [routerLink]="['camisas']"
+           [class.active]="router.url === '/inicio/camisas'">
         <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
           PERSONALIZA TU CAMISA
         </span>
         </a>
       </li>
-      <li class="nav-item">
+<!--      <li class="nav-item">
         <a class="nav-link" [routerLink]="['camisas']" style="color: #ffffff">
         <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
           CANJEAR PUNTOS
         </span>
         </a>
-      </li>
+      </li>-->
     </ul>
 
     <ul class="header-links pull-right">
@@ -81,7 +86,7 @@
       </div>
       <li>
         <br><br>
-        <a *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
+        <a *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> <span>Mi cuenta</span></a>
         <a *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
         <a *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
       </li>

@@ -1,3 +1,24 @@
+.menu1 a{
+  display: block;
+  box-sizing: border-box;
+/*  height: 80px;
+  line-height: 80px;*/
+  text-align: center;
+  color: #FFFFFF;
+  font-size: .8em;
+  padding: 1em 2em;
+  transition: .3s ease all;
+  border-radius: 3px;
+  transform: scale(0.9);
+}
+
 .menu1 a:hover {
+  transform: scale(1);
+  background-color: #bb0000;
+  color: #FFFFFF;
+}
+.active {
+  transform: scale(1);
   background-color: #cc0000;
+  color: #FFFFFF;
 }

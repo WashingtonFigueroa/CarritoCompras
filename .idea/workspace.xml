@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94c87d1b-7e2a-430b-90cc-97d3253c131d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,17 +85,17 @@
           <entry key="SCHEMA:manillasdb" value="29" />
           <entry key="categorias" value="2" />
           <entry key="compras" value="10" />
-          <entry key="css" value="141" />
+          <entry key="css" value="148" />
           <entry key="detalle_compras" value="1" />
           <entry key="env" value="14" />
-          <entry key="html" value="352" />
+          <entry key="html" value="368" />
           <entry key="js" value="1" />
           <entry key="json" value="2" />
           <entry key="php" value="287" />
           <entry key="png" value="12" />
           <entry key="scss" value="2" />
           <entry key="sql" value="9" />
-          <entry key="ts" value="407" />
+          <entry key="ts" value="409" />
           <entry key="usuarios" value="3" />
         </counts>
       </usages-collector>
@@ -100,26 +103,26 @@
         <counts>
           <entry key=".env file" value="14" />
           <entry key="Blade" value="6" />
-          <entry key="CSS" value="141" />
+          <entry key="CSS" value="148" />
           <entry key="Database Element" value="16" />
-          <entry key="HTML" value="352" />
+          <entry key="HTML" value="368" />
           <entry key="Image" value="12" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="PHP" value="281" />
           <entry key="SCSS" value="2" />
           <entry key="Scratch" value="9" />
-          <entry key="TypeScript" value="407" />
+          <entry key="TypeScript" value="409" />
           <entry key="UML" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell_2" value="14" />
-          <entry key="css" value="2654" />
+          <entry key="css" value="2932" />
           <entry key="dummy" value="4" />
           <entry key="env" value="55" />
-          <entry key="html" value="7145" />
+          <entry key="html" value="7258" />
           <entry key="json" value="45" />
           <entry key="php" value="8655" />
           <entry key="sql" value="94" />
@@ -131,8 +134,8 @@
         <counts>
           <entry key=".env file" value="55" />
           <entry key="Blade" value="38" />
-          <entry key="CSS" value="2654" />
-          <entry key="HTML" value="7145" />
+          <entry key="CSS" value="2932" />
+          <entry key="HTML" value="7258" />
           <entry key="JSON" value="45" />
           <entry key="PHP" value="8617" />
           <entry key="PLAIN_TEXT" value="74" />
@@ -145,13 +148,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html">
+        <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="125" selection-start-line="125" selection-end-line="125" />
-              <folding>
-                <element signature="e#260#267#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="131">
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -160,11 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>principal</find>
-      <find>tipos</find>
-      <find>for</find>
-      <find>img</find>
-      <find>mi cuent</find>
       <find>fompras</find>
       <find>destroy</find>
       <find>buscar</find>
@@ -190,6 +185,11 @@
       <find>environ</find>
       <find>open</find>
       <find>url</find>
+      <find>mi cue</find>
+      <find>Mi cue</find>
+      <find>carrito</find>
+      <find>Mi cuenta</find>
+      <find>las mejore</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cliente2/src/assets/inicio/css/style.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.ts" />
         <option value="$PROJECT_DIR$/Servidor/resources/views/emails/boletin.blade.php" />
@@ -227,7 +226,6 @@
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/categorias/categorias-index/categorias-index.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/app/inicio/categorias/categorias.component.css" />
-        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
         <option value="$PROJECT_DIR$/cliente2/src/styles.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras.component.css" />
         <option value="$PROJECT_DIR$/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.css" />
@@ -249,6 +247,8 @@
         <option value="$PROJECT_DIR$/Servidor/app/Http/Controllers/CompraController.php" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts" />
         <option value="$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html" />
+        <option value="$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css" />
       </list>
     </option>
   </component>
@@ -349,8 +349,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -444,7 +444,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="comprasindexh&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html&#10;comprasinde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;api&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;categoriacontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;compracontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CompraController.php&#10;productohtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;comprashtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.component.html&#10;comprah&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.html&#10;compracss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.css&#10;comprahtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.html&#10;compra&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;compras&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.css&#10;comp&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.css&#10;producto&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;btn&#9;null&#9;null&#10;productocs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;page&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/pages-routing.module.ts&#10;css&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;comprasindex&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;compraedit&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-edit/compras-edit.component.ts&#10;comprasservice&#9;null&#9;null&#10;comprasedi&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-edit/compras-edit.component.ts&#10;productoedi&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/producto/producto-edit/producto-edit.component.html&#10;pagesrou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/pages-routing.module.ts&#10;productosts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;\&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;productots&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;clientemo&#9;null&#9;null&#10;factura&#9;null&#9;null&#10;comprasts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;misComp&#9;null&#9;null&#10;cors&#9;null&#9;null&#10;cors.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Middleware/Cors.php&#10;compraser&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.service.ts&#10;compraedi&#9;null&#9;null&#10;categoriaedit&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.ts&#10;comprainde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html&#10;categoria&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;categoriainde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-index/categorias-index.component.ts&#10;cat&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;compracont&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CompraController.php&#10;categoriaser&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias.service.ts&#10;compraserv&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.service.ts&#10;comprasser&#9;null&#9;null&#10;categoriaservice&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias.service.ts&#10;categoriaindex&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-index/categorias-index.component.ts&#10;detallecom&#9;null&#9;null&#10;compra.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Compra.php&#10;clientecomp&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.css&#10;clientecomprascss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/cliente/cliente-compras/cliente-compras.component.css" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.css&#10;compras&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html&#10;headerts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.ts&#10;headercss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.css&#10;headerhtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;header&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/header/header.component.html&#10;clientehea&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/cliente/cliente-header/cliente-header.component.html&#10;clienteheader&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/cliente/cliente-header/cliente-header.component.html&#10;comprasindexh&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html&#10;comprasinde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;api&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/routes/api.php&#10;categoriacontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;compracontro&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CompraController.php&#10;productohtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.html&#10;comprashtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.component.html&#10;comprah&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.html&#10;compracss&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.css&#10;comprahtml&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/compra/compra.component.html&#10;compra&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;comp&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.css&#10;producto&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;btn&#9;null&#9;null&#10;productocs&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;page&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/pages-routing.module.ts&#10;css&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;comprasindex&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;compraedit&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-edit/compras-edit.component.ts&#10;comprasservice&#9;null&#9;null&#10;comprasedi&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-edit/compras-edit.component.ts&#10;productoedi&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/producto/producto-edit/producto-edit.component.html&#10;pagesrou&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/pages-routing.module.ts&#10;productosts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/productos/productos.component.ts&#10;\&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.css&#10;productots&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/inicio/producto/producto.component.ts&#10;clientemo&#9;null&#9;null&#10;factura&#9;null&#9;null&#10;comprasts&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.ts&#10;misComp&#9;null&#9;null&#10;cors&#9;null&#9;null&#10;cors.php&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Middleware/Cors.php&#10;compraser&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.service.ts&#10;compraedi&#9;null&#9;null&#10;categoriaedit&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-edit/categorias-edit.component.ts&#10;comprainde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html&#10;categoria&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;categoriainde&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias-index/categorias-index.component.ts&#10;cat&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CategoriaController.php&#10;compracont&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/Servidor/app/Http/Controllers/CompraController.php&#10;categoriaser&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/categorias/categorias.service.ts&#10;compraserv&#9;FILE&#9;file://C:/Users/HP User/Documents/trabajos/washington/CarritoCompras/cliente2/src/app/pages/component/compras/compras.service.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cliente2/src/app/pages/component" />
@@ -504,12 +504,12 @@
       <workItem from="1542223626304" duration="4874000" />
       <workItem from="1542242625400" duration="6568000" />
       <workItem from="1542419127896" duration="10544000" />
-      <workItem from="1542673378368" duration="14256000" />
+      <workItem from="1542673378368" duration="16083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141234000" />
+    <option name="totallyTimeSpent" value="143061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -531,7 +531,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.7135417" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.7135417" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.5" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.3294271" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -552,27 +552,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Servidor/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/usuario/usuario-create/usuario-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/usuario/usuario-create/usuario-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -717,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="88" column="96" lean-forward="true" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -988,13 +960,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/cliente/cliente-header/cliente-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cliente2/src/app/pages/component/compras/compras-index/compras-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="231">
+          <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
           <folding>
             <element signature="e#260#267#1" expanded="true" />
+            <element signature="e#2648#2654#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#850#856#0" expanded="true" />
+            <element signature="e#863#869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente2/src/app/inicio/header/header.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
