@@ -9,7 +9,7 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu1">
       <li class="nav-item"
-          [class.active]="router.url === '/inicio/categorias'">
+          [class.activated]="router.url === '/inicio/categorias'">
         <a class="nav-link" routerLink="/inicio/categorias">
           <span class="nav-header">LAS MEJORES OFERTAS</span> <span class="sr-only">(current)</span></a>
       </li>
@@ -17,7 +17,7 @@
       &nbsp;
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['design']"
-           [class.active]="router.url === '/inicio/design'">
+           [class.activated]="router.url === '/inicio/design'">
               <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
                 DISEÑA TU MANILLA
               </span>
@@ -25,7 +25,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['camisas']"
-           [class.active]="router.url === '/inicio/camisas'">
+           [class.activated]="router.url === '/inicio/camisas'">
         <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
           PERSONALIZA TU CAMISA
         </span>
@@ -55,33 +55,12 @@
       </div>
       <div class="header-ctn" style="color: #ffffff">
         <div>
-          <a class="cart-menu" (click)="dropDownCart()">
+          <a class="cart-menu"
+             (click)="openCart()">
             <i class="fa fa-shopping-cart"></i>
             <span>Tú Carrito</span>
             <div class="qty">{{ cartItems.cantidad_total }}</div>
           </a>
-          <div [class]="displayCart ? 'carrito show': 'carrito hide'">
-            <div class="cart-list">
-              <div class="product-widget" *ngFor="let producto of cartItems.items">
-                <div class="product-img">
-                  <img src="{{producto_img_url}}{{producto.producto_id}}">
-                </div>
-                <div class="product-body">
-                  <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
-                  <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio }}</h4>
-                </div>
-                <button class="delete"><i class="fa fa-close"></i></button>
-              </div>
-            </div>
-            <div class="cart-summary">
-              <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
-              <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
-            </div>
-            <div class="cart-buttons">
-              <a *ngIf="cartItems.subtotal !== 0" routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
-              <a *ngIf="cartItems.subtotal !== 0" (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
         </div>
       </div>
       <li>
@@ -95,3 +74,44 @@
   </div>
 </nav>
 <hr>
+
+<div class="overlay" #overlay>
+  <div class="popup" #popup>
+    <button class="close" (click)="closeCart()">
+      <i class="fa fa-times"></i>
+    </button>
+    <h3>Productos en Carrito</h3>
+      <div class="cart-list">
+        <div class="product-widget" *ngFor="let producto of cartItems.items; let i = index">
+          <div class="product-img">
+            <img src="{{producto_img_url}}{{producto.producto_id}}">
+          </div>
+          <div class="product-body">
+            <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
+            <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio | number: '1.2-2'}}</h4>
+          </div>
+          <button class="delete pointer" (click)="destroy(producto, i)"><i class="fa fa-close"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-controls">
+        <div class="cart-summary">
+          <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
+          <h5>TOTAL: $ {{ cartItems.subtotal | number: '1.2-2'}}</h5>
+        </div>
+        <div class="cart-buttons">
+          <button *ngIf="cartItems.subtotal !== 0"
+                  title="Carrito de compras"
+                  (click)="carrito()">
+            <i class="fa fa-cart-plus"></i>
+          </button> &nbsp;&nbsp;
+          <button *ngIf="cartItems.subtotal !== 0"
+                  title="Comprar"
+                  (click)="comprar()">
+            <i class="fa fa-usd"></i>
+          </button>
+        </div>
+      </div>
+
+  </div>
+</div>

@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {ProductoService} from '../../pages/component/producto/producto.service';
 import {environment} from '../../../environments/environment.prod';
 import {ToastrService} from 'ngx-toastr';
@@ -30,6 +30,7 @@ export class ProductoComponent implements OnInit {
   closeResult: string;
   constructor(private route: ActivatedRoute,
               private toast: ToastrService,
+              private router: Router,
               private modalService: NgbModal,
               private inicioService: InicioService,
               private productoService: ProductoService) {

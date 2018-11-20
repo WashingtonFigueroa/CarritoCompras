@@ -32,21 +32,23 @@ export class CarritoComponent implements OnInit {
     }
   }
   destroy(producto, index) {
-    const cartItems = this.cartItems;
-    cartItems.items.splice(index, 1);
-    let cantidad = 0;
-    let subtotal = 0;
-    cartItems.items.forEach((cartItem: any) => {
-      cantidad += cartItem.cantidad;
-      subtotal += cartItem.cantidad * cartItem.precio;
-    });
-    cartItems.cantidad_total = cantidad;
-    cartItems.subtotal = subtotal;
-    this.inicioService.changeCartItems(cartItems);
-    this.inicioService.currentCartItems
+    if (window.confirm('¿Esta seguro de eliminar este producto?')) {
+      const cartItems = this.cartItems;
+      cartItems.items.splice(index, 1);
+      let cantidad = 0;
+      let subtotal = 0;
+      cartItems.items.forEach((cartItem: any) => {
+        cantidad += cartItem.cantidad;
+        subtotal += cartItem.cantidad * cartItem.precio;
+      });
+      cartItems.cantidad_total = cantidad;
+      cartItems.subtotal = subtotal;
+      this.inicioService.changeCartItems(cartItems);
+      this.inicioService.currentCartItems
         .subscribe((items: any) => {
           this.cartItems = items;
           console.log(items);
         });
+    }
   }
 }
