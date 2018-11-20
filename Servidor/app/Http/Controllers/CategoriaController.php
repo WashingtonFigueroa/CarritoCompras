@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Categoria;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoriaController extends Controller
 {
@@ -104,7 +105,7 @@ class CategoriaController extends Controller
     public function productos($categoria_id) {
         $productos = Categoria::find($categoria_id)
                                 ->productos()
-                                ->with('categoria')
+                                ->with('categoria','inventarios')
                                 ->orderBy('nombre')
                                 ->get();
         return response()->json($productos, 200);

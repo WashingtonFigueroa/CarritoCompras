@@ -15,35 +15,40 @@
     <div class="product-links">
       <a [routerLink]="['/inicio/productos/' + producto.categoria_id ]">&larr;	Atrás</a>
     </div>
-    <h1>{{ producto.nombre }}</h1>
-    <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong></h2>
+    <div class="card text-center">
+      <div class="card-header">
+        <h2>{{ producto.nombre }}</h2>
+      </div>
+      <div class="card-body">
+        <h4> <a (click)="openDetalles(contenido)" style="color: #ee0000">Guía de tallas</a> </h4>
 
-    <h3> <a (click)="openDetalles(contenido)" style="color: #ee0000">Guía de tallas</a> </h3>
-    <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
-         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="form-group">
-          <label for="cantidad">Cantidad</label>
-          <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
-            <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
-          </select>
+        <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong> &nbsp;&nbsp; Canjea &nbsp;{{ selectedInventario.puntos }} puntos</h2>
+        <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
+             (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
+                <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-10" *ngIf="selectedInventario !== null && cantidad !== null">
+            <br>
+            <button
+                    (click)="addCart()"
+                    class="btn btn-rounded btn-danger">Añadir a Carrito</button>
+          </div>
         </div>
       </div>
-      <div class="col-md-10" *ngIf="selectedInventario !== null && cantidad !== null">
-        <br>
-        <button
-          (click)="addCart()"
-          class="btn btn-rounded btn-danger">Añadir a Carrito</button>
+      <div class="card-footer text-muted">
+        <h4><strong>Descripción: </strong> {{ producto.descripcion }}</h4>
       </div>
     </div>
-    <br>
-    <h3><strong>Descripción</strong></h3>
-    <p>
-      {{ producto.descripcion }}
-    </p>
+
   </div>
 </div>
 

@@ -1,96 +1,92 @@
-<!-- HEADER -->
-<header>
-  <div class="container-fluid" style="background-color: black">
-    <br>
-    <div class="row">
-      <div class="col-md-2">
-        <a routerLink="/" class="logo-frado">
-          <img src="../../../assets/inicio/img/logo.png" width="150" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a routerLink="/" class="logo-frado">
+    <img src="../../../assets/inicio/img/logo.png" width="150" alt="">
+    &nbsp;&nbsp;&nbsp;
+  </a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu1">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">
+              LAS MEJORES OFERTAS</span> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['design']" style="color: #ffffff">
+              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
+                DISEÑA TU MANILLA
+              </span>
         </a>
-      </div>
-      <div class="col-md-4">
-        <ul class="header-links pull-left">
-          <li><a href="#"><i class="fa fa-phone"></i> +593 98 445 9620</a></li>
-          <li><a href="#"><i class="fa fa-envelope-o"></i> info@fradoo.com</a></li>
-          <li><a href="#"><i class="fa fa-map-marker"></i> Quito Ecuador</a></li>
-        </ul>
-      </div>
-      <div class="col-md-6">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['camisas']" style="color: #ffffff">
+        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
+          PERSONALIZA TU CAMISA
+        </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['camisas']" style="color: #ffffff">
+        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
+          CANJEAR PUNTOS
+        </span>
+        </a>
+      </li>
+    </ul>
 
-        <ul class="header-links pull-right">
-          <!--<li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
-          <li><a *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
-            <a *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-            <a *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> {{ usuario.cuenta }}</a>
-          </li>
-          <div class="header-ctn">
-            <!-- Wishlist -->
-            <div>
-              <a href="#">
-                <i class="fa fa-heart-o"></i>
-                <span>Tus Deseos</span>
-                <div class="qty">2</div>
-              </a>
-            </div>
-            <!-- /Wishlist -->
-          </div>
-          <div class="header-ctn" style="color: #ffffff">
-            <div>
-              <a class="cart-menu" (click)="dropDownCart()">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Tú Carrito</span>
-                <div class="qty">{{ cartItems.cantidad_total }}</div>
-              </a>
-              <div [class]="displayCart ? 'carrito show': 'carrito hide'">
-                <div class="cart-list">
-                  <div class="product-widget" *ngFor="let producto of cartItems.items">
-                    <div class="product-img">
-                      <img src="{{producto_img_url}}{{producto.producto_id}}">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
-                      <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio }}</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
+    <ul class="header-links pull-right">
+      <!--<li><a href="#"><i class="fa fa-dollar"></i> Puntos</a></li>-->
+      <div class="header-ctn">
+        <!-- Wishlist -->
+        <div>
+          <a href="#">
+            <i class="fa fa-heart-o"></i>
+            <span>Tus Deseos</span>
+            <div class="qty">2</div>
+          </a>
+        </div>
+        <!-- /Wishlist -->
+      </div>
+      <div class="header-ctn" style="color: #ffffff">
+        <div>
+          <a class="cart-menu" (click)="dropDownCart()">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Tú Carrito</span>
+            <div class="qty">{{ cartItems.cantidad_total }}</div>
+          </a>
+          <div [class]="displayCart ? 'carrito show': 'carrito hide'">
+            <div class="cart-list">
+              <div class="product-widget" *ngFor="let producto of cartItems.items">
+                <div class="product-img">
+                  <img src="{{producto_img_url}}{{producto.producto_id}}">
                 </div>
-                <div class="cart-summary">
-                  <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
-                  <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
+                <div class="product-body">
+                  <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
+                  <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio }}</h4>
                 </div>
-                <div class="cart-buttons">
-                  <a *ngIf="cartItems.subtotal !== 0" routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
-                  <a *ngIf="cartItems.subtotal !== 0" (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
+                <button class="delete"><i class="fa fa-close"></i></button>
               </div>
             </div>
+            <div class="cart-summary">
+              <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
+              <h5>TOTAL: $ {{ cartItems.subtotal }}</h5>
+            </div>
+            <div class="cart-buttons">
+              <a *ngIf="cartItems.subtotal !== 0" routerLink="carrito" (click)="dropDownCart()">Ver Carrito</a> &nbsp;&nbsp;
+              <a *ngIf="cartItems.subtotal !== 0" (click)="comprar()">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
           </div>
-
-        </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  <br>
-  <nav class="menu1">
-    <ul>
-      <li routerLinkActive="/"><a class="nav-link" routerLink="/inicio/categorias"><span class="nav-header">
-                <h6 style="color: #ffffff">LAS MEJORES OFERTAS</h6></span></a></li>
-      <li><a class="nav-link" [routerLink]="['design']">
-              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
-                <h6  style="color: #ffffff">DISEÑA TU MANILLA</h6>
-              </span>
-      </a></li>
-      <li><a class="nav-link" [routerLink]="['camisas']">
-        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
-          <h6  style="color: #ffffff">PERSONALIZA TU CAMISA</h6>
-        </span>
-      </a></li>
-      <li> <a class="nav-link" [routerLink]="['camisas']">
-        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
-          <h6  style="color: #ffffff">CANJEAR PUNTOS</h6>
-        </span>
-      </a></li>
+      <li>
+        <br><br>
+        <a *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> Mi cuenta</a>
+        <a *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
+        <a *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;
     </ul>
-  </nav>
-</header>
-<!-- /HEADER -->
+  </div>
+</nav>
+<hr>

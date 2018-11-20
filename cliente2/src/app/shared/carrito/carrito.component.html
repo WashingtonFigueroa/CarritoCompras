@@ -3,18 +3,20 @@
 </section>
 <div class="row carrito-container" *ngIf="cartItems.subtotal > 0">
   <div class="offset-2 col-md-8">
-    <h3>Carrito de Compras</h3>
+    <h3 style="color: #cc0000">Carrito de Compras</h3>
+
     <table class="table table-bordered table-hover">
       <thead>
       <tr>
         <th>N.</th>
-        <th>Producto</th>
-        <th>Nombre</th>
-        <th>Talla</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
-        <th>Subtotal</th>
-        <th>Quitar</th>
+        <th>PRODUCTO</th>
+        <th>NOMBRE</th>
+        <th>TALLA</th>
+        <th>PUNTOS</th>
+        <th>CANT.</th>
+        <th>V.UNIT.</th>
+        <th>V.TOTAL</th>
+        <th>ELIMINAR</th>
       </tr>
       </thead>
       <tbody>
@@ -25,6 +27,7 @@
         </td>
         <td>{{ producto.producto.nombre }}</td>
         <td>{{ producto.talla }}</td>
+        <td>{{ producto.puntos }}</td>
         <td>{{ producto.cantidad }}</td>
         <td>{{ producto.precio }}</td>
         <td>{{ producto.cantidad * producto.precio }}</td>
@@ -36,8 +39,19 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td class="text-right">Valor Envio</td>
+        <td><strong>4.25</strong></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td class="text-right">Total</td>
-        <td><strong>${{ cartItems.subtotal }}</strong></td>
+        <td><strong>${{ cartItems.subtotal+4.25 }}</strong></td>
       </tr>
       </tbody>
     </table>
@@ -47,7 +61,7 @@
   <div class="offset-2 col-md-8 text-center">
     <button
       (click)="comprar()"
-      class="btn btn-lg btn-red btn-rounded">Comprar</button>
+      class="btn btn-red btn-rounded">Comprar</button>
   </div>
 </div>
 <div class="bg-white text-center">
