@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
             this.toastr.success(res.mensaje, 'Iniciando sesión');
             console.log(res);
             if (res.usuario.tipo_usuario.toLowerCase() === 'cliente') {
-              this.router.navigate(['/cliente']);
+              this.router.navigate(['/cliente/carrito']);
             } else {
               this.router.navigate(['/admin']);
             }

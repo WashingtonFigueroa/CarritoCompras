@@ -38,7 +38,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'perfil',
+      redirectTo: 'carrito',
       pathMatch: 'full'
     }
   ]
