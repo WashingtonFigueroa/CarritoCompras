@@ -19,6 +19,9 @@ export class ComprasService {
   misCompras(usuario_id) {
     return this.http.get( this.base + 'mis-compras/' + usuario_id);
   }
+  show(compra_id) {
+    return this.http.get(this.base + 'compras/' + compra_id);
+  }
   store(req) {
     return this.http.post(this.base + 'compras', req);
   }

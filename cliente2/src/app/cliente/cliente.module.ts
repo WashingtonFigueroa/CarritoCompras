@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, DecimalPipe} from '@angular/common';
 
 import { ClienteRoutingModule } from './cliente-routing.module';
 import {ClienteComponent} from './cliente.component';
@@ -22,6 +22,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ClienteHeaderComponent,
     ClienteComprasComponent,
     ClienteFacturacionComponent
+  ],
+  providers: [
+    DecimalPipe
   ]
 })
 export class ClienteModule { }
