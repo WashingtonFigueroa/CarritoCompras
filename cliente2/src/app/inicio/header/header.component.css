@@ -12,12 +12,14 @@
   transform: scale(0.9);
 }
 
-.menu1 a:hover {
+.menu1 a:hover, .menu1 a:active, .menu1 a:visited, .menu1 a:focus{
+  border-radius: 3px;
   transform: scale(1);
   background-color: #bb0000;
   color: #FFFFFF;
 }
 .activated {
+  border-radius: 3px;
   transform: scale(1);
   background-color: #cc0000;
   color: #FFFFFF;
