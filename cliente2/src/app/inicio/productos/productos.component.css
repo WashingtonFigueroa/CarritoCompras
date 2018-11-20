@@ -13,13 +13,8 @@
 }
 
 .collection-sort {
-  padding: 15px 0px;
-}
-.collection-sort {
-  margin: 0 auto;
   width: 450px;
   border-radius: 25px;
-  background-color: #eeeeee;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -50,7 +45,10 @@
   border-radius: 0px 40px 40px 0px;
 }
 
-
+.collection-sort select {
+  width: 90%;
+  height: 80%;
+}
 
 /*products*/
 .products {

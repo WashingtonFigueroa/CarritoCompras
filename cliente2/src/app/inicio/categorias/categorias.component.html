@@ -23,10 +23,8 @@
 <button type="button" class="btn btn-dark btn-lg btn-block">Nuestros Productos</button>
 <hr style="background-color:#cc0000">
 <!-- SEARCH BAR -->
-<div style="text-align: right">
-  <div class="header-search">
-
-    <form *ngIf="categorias !== null">
+<div style="text-align: right; padding-right: 1em">
+    <form *ngIf="categorias !== null" class="collection-sort">
       Seleccione categoría &nbsp;&nbsp;
       <select [(ngModel)]="busqueda.categoria_id"
               (change)="go(busqueda.categoria_id)"
@@ -36,8 +34,6 @@
                 *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
       </select>
     </form>
-
-  </div>
 </div>
 <!-- /SEARCH BAR -->
 
