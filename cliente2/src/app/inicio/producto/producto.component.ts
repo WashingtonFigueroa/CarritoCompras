@@ -12,12 +12,14 @@ import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
+  @ViewChild('overlay') overlay;
+  @ViewChild('popup') popup;
   environment = environment;
   settings: any = {
     image: '',
     image_id: 0
   };
-  producto: any = null;
+  opened = false;
   selectedInventario: any = null;
   stock: any = [];
   cantidad = null;
@@ -68,7 +70,7 @@ export class ProductoComponent implements OnInit {
       'precio': this.selectedInventario.precio,
       'puntos' : this.selectedInventario.puntos,
       'cantidad' : parseInt(this.cantidad, 10),
-      'producto' : this.producto
+/*      'producto' : this.producto*/
     };
     let registrado = false;
     for ( let i = 0; i < this.cartItems.length; i++) {
@@ -97,15 +99,22 @@ export class ProductoComponent implements OnInit {
     console.log(this.cartItems);
   }
 
-    openDetalles(contenido) {
+/*    openDetalles(contenido) {
         this.modalService.open(contenido, { size: 'sm'}).result.then((result) => {
             this.closeResult = `Cerrado por ${result}`;
         }, (reason) => {
             this.closeResult = `Cerrado por ${this.getDismissReason(reason)}`;
         });
+    }*/
+
+    openModal() {
+      this.overlay.nativeElement.classList.add('active');
+      this.popup.nativeElement.classList.add('active');
     }
-    close() {
-        this.modalService
+
+    closeModal() {
+      this.overlay.nativeElement.classList.remove('active');
+      this.popup.nativeElement.classList.remove('active');
     }
 
     private getDismissReason(reason: any): string {

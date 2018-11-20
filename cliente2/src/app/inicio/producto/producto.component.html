@@ -22,6 +22,7 @@
       <div class="card-body">
         <h4> <a (click)="openDetalles(contenido)" style="color: #ee0000">Guía de tallas</a> </h4>
 
+<<<<<<< HEAD
         <h2 *ngIf="selectedInventario !== null"><strong>${{ selectedInventario.precio }}</strong> &nbsp;&nbsp; Canjea &nbsp;{{ selectedInventario.puntos }} puntos</h2>
         <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
              (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
@@ -42,6 +43,20 @@
                     (click)="addCart()"
                     class="btn btn-rounded btn-danger">Añadir a Carrito</button>
           </div>
+=======
+    <h3> <a (click)="openModal()" class="btn-modal">Guía de tallas</a> </h3>
+    <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
+         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <label for="cantidad">Cantidad</label>
+          <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
+            <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
+          </select>
+>>>>>>> 3d71536a9f05881dd77ed74713faff7887956c7e
         </div>
       </div>
       <div class="card-footer text-muted">
@@ -51,8 +66,15 @@
 
   </div>
 </div>
-
-<ng-template #contenido let-modal let-d="dismiss">
+<div class="overlay" #overlay>
+  <div class="popup" #popup>
+    <button class="close" (click)="closeModal()">
+      <i class="fa fa-times"></i>
+    </button>
+    <img src="../../../assets/inicio/img/guia.JPG" width="200">
+  </div>
+</div>
+<!--<ng-template #contenido let-modal let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">GUÍA DE TALLAS </h4>
     <button type="button" class="close cerrar" aria-label="Cerrar" (click)="d('Cross click')">
@@ -62,4 +84,4 @@
   <div class="modal-body">
     <img src="../../../assets/inicio/img/guia.JPG" width="899" alt="">
   </div>
-</ng-template>
+</ng-template>-->

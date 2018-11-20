@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal">
-    <data-source name="manillasdb@localhost" uuid="f384a68f-2716-4a9f-8432-12492e7bf30d">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
-    </data-source>
-  </component>
-</project>
