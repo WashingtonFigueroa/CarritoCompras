@@ -81,3 +81,15 @@
   position: relative;
   text-align: center;
   width: 100%; }
+.jumbotron .container {
+  max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+  background-color: #222;
+}
+
+.jumbotron h1 {
+  text-align: center; /* centers the heading */
+  color: #DDD;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}

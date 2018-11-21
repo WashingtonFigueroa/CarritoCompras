@@ -5,9 +5,13 @@
     </section>
   </div>
 </div>
-<br>
-<button type="button" class="btn btn-dark btn-lg btn-block">Nuestras Ofertas y Promociones</button>
-<hr style="background-color:#cc0000">
+
+<div class="jumbotron">
+  <div class="container">
+    <h1> Nuestras Ofertas y Promociones</h1>
+  </div>
+</div>
+
 <div id="carousel" class="carousel slide"  data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -19,24 +23,11 @@
     </div>
   </div>
 </div>
-<br>
-<button type="button" class="btn btn-dark btn-lg btn-block">Nuestros Productos</button>
-<hr style="background-color:#cc0000">
-<!-- SEARCH BAR -->
-<div style="text-align: right; padding-right: 1em">
-    <form *ngIf="categorias !== null" class="collection-sort">
-      Seleccione categoría &nbsp;&nbsp;
-      <select [(ngModel)]="busqueda.categoria_id"
-              (change)="go(busqueda.categoria_id)"
-              name="categoria_id" class="input-select" style="width: 300px">
-        <option [value]="categoria.categoria_id"
-                class="text-center"
-                *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-      </select>
-    </form>
+<div class="jumbotron">
+  <div class="container">
+    <h1> Nuestros Productos</h1>
+  </div>
 </div>
-<!-- /SEARCH BAR -->
-
 <section class="categories">
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">

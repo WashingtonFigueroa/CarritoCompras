@@ -7,7 +7,8 @@
   <h1 *ngIf="categoria !== null">{{ categoria.nombre | uppercase }}</h1>
     <div class="collection-sort">
       <label></label>
-      <select [(ngModel)]="ordenar_por" (change)="filtrar()">
+      <select [(ngModel)]="ordenar_por" (change)="filtrar()"
+              class="custom-select sources" placeholder="Source Type">
         <option value="nombre_asc">Ordenar por: Nombre: A - Z</option>
         <option value="nombre_desc">Ordenar por: Nombre: Z - A</option>
         <option value="fecha_desc">Ordenar por: Fecha: Nuevo a Antiguo</option>
