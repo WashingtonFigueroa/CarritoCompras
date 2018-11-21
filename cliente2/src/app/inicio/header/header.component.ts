@@ -22,6 +22,11 @@ export class HeaderComponent implements OnInit {
 
   cartItems = null;
   usuario = null;
+
+    busqueda = {
+        categoria_id: 0,
+        nombre: ''
+    };
   constructor(private inicioService: InicioService,
               private categoriaService: CategoriasService,
               private loginService: LoginService,
@@ -36,12 +41,9 @@ export class HeaderComponent implements OnInit {
     this.inicioService.currentCartItems
       .subscribe((cartItems: any) => {
         this.cartItems = cartItems;
-        console.log('Cart Items of Header');
-        console.log(this.cartItems);
       });
     this.inicioService.categorias()
       .subscribe(res => {
-        console.log(res);
         this.categorias = res;
       });
   }
@@ -99,5 +101,9 @@ export class HeaderComponent implements OnInit {
           console.log(items);
         });
     }
-  }
+ }
+    go(categoria_id) {
+        console.log(categoria_id);
+        this.router.navigate(['/inicio/productos/' + categoria_id]);
+    }
 }

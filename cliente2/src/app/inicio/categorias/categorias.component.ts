@@ -34,7 +34,6 @@ export class CategoriasComponent implements OnInit {
   ngOnInit() {
   }
     go(categoria_id) {
-        console.log(categoria_id);
         this.router.navigate(['/inicio/productos/' + categoria_id]);
     }
 
