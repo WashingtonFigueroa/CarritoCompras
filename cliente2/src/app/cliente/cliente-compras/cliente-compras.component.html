@@ -23,7 +23,7 @@
           </thead>
           <tbody>
           <tr *ngFor="let compra of compras; let i = index">
-            <td>{{ compra.compra_id }}</td>
+            <td >{{ compra.compra_id | number: '3.0-0' }}</td>
             <td>{{ compra.nombres }} {{ compra.apellidos }}</td>
             <td>{{ compra.fecha | date: 'dd-MM-yyyy' }}</td>
             <td>{{ compra.total | number: '1.2-2'}}</td>
@@ -31,7 +31,8 @@
                 {{ compra.estado }}
             </td>
             <td>
-              <a (click)="openDetalles(contenido, compra.compra_id)" class="detalles">detalles</a>
+              <a (click)="openModal(contenido, compra.compra_id)"
+                 class="detalles">detalles</a>
             </td>
             <td class="text-center">
               <label for="comprobante"
@@ -52,17 +53,58 @@
       </div>
     </div>
   </div>
-
 </div>
-<ng-template #contenido let-modal let-d="dismiss">
-  <div class="modal-header">
-    <h4 class="modal-title">Detalles de Compra</h4>
-    <button type="button" class="close cerrar" aria-label="Cerrar" (click)="d('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
+
+<div class="container-fluid" align="center" style="background-color: #ffffff">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4">
+          <br><br><br>
+          <h3>Envíos a todo el País</h3>
+          <h5>Sigue tu producto con el numero de guia</h5><br>
+          <a href="http://www.servientrega.com.ec/" target="_blank"> <img src="../../../assets/images/servientrega.jpg" alt=""></a>
+        </div>
+        <div class="col-md-4">
+          <br><br><br>
+          <h3>Medios de pago</h3>
+          <h5>Realiza tus transferencias desde:</h5><br>
+          <a href="https://www.pichincha.com/portal/Principal/Personas/Cuentas" target="_blank"> <img src="../../../assets/images/pichincha.png" width="180px" alt=""></a>
+          <a href="https://www.bancodelpacifico.com/personas/canales-de-atencion/virtuales/banca-virtual-intermatico" target="_blank"> <img src="../../../assets/images/pacifico.png" width="180px" alt=""></a>
+        </div>
+        <div class="col-md-4">
+          <br><br><br>
+          <h3>Realiza tu pago desde</h3>
+          <img src="../../../assets/images/paypal.png" width="300px" alt="">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="modal-body">
-    <div class="table-responsive">
+</div>
+
+<footer id="footer">
+  <div id="bottom-footer" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span class="copyright">
+			Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="overlay" #overlay>
+  <div class="popup" #popup>
+    <button class="close" (click)="closeModal()">
+      <i class="fa fa-times"></i>
+    </button>
+    <h4>Detalles de Compra</h4>
+    <h3>Compra # {{ compra_id | number: '3.0-0'}}</h3>
+    <div class="table-responsive" *ngIf="detallesCompras !== null">
       <table class="table table-hover">
         <thead>
         <tr>
@@ -89,48 +131,4 @@
       </table>
     </div>
   </div>
-</ng-template>
-
-<div class="container-fluid" align="center" style="background-color: #ffffff">
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-4">
-          <br><br><br>
-          <h3>Envíos a todo el País</h3>
-          <h5>Sigue tu producto con el numero de guia</h5><br>
-          <a href="http://www.servientrega.com.ec/" target="_blank"> <img src="../../../assets/images/servientrega.jpg" alt=""></a>
-        </div>
-        <div class="col-md-4">
-          <br><br><br>
-          <h3>Medios de pago</h3>
-          <h5>Realiza tus transferencias desde:</h5><br>
-          <a href="https://www.pichincha.com/portal/Principal/Personas/Cuentas" target="_blank"> <img src="../../../assets/images/pichincha.png" width="180px" alt=""></a>
-          <a href="https://www.bancodelpacifico.com/personas/canales-de-atencion/virtuales/banca-virtual-intermatico" target="_blank"> <img src="../../../assets/images/pacifico.png" width="180px" alt=""></a>
-
-        </div>
-        <div class="col-md-4">
-          <br><br><br>
-          <h3>Realiza tu pago desde</h3>
-          <img src="../../../assets/images/paypal.png" width="300px" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-
-<footer id="footer">
-  <div id="bottom-footer" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <span class="copyright">
-			Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
