@@ -123,7 +123,7 @@ export class ComprasIndexComponent implements OnInit {
   }
 
   updateNumGuia(compra) {
-    if ( compra.estado === 'verificando comprobante' ) {
+    if ( compra.estado === 'verificando comprobante' || compra.estado === 'completado') {
       this.router.navigate(['/admin/compras/editar/' + compra.compra_id]);
     } else {
       this.toastr.error('El cliente no subió su comprobante', 'Error');

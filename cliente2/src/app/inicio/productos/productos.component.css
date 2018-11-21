@@ -91,6 +91,14 @@
   border-radius: 50%;
   cursor: pointer;
 }
+button.wishlist {
+  border: none;
+  background-color: white;
+  color: #dd0000;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 @media (max-width: 920px) {
   .product-card {
     flex: 1 25%;

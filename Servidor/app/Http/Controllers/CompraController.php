@@ -118,6 +118,7 @@ class CompraController extends Controller
         $compra = Compra::find($compra_id);
         if( $compra->estado === 'verificando comprobante') {
             $compra->numero_guia = request()->input('numero_guia');
+            $compra->estado = 'completado';
             $compra->save();
             $response = [
                 'estado' => 'exito',
@@ -133,7 +134,6 @@ class CompraController extends Controller
     }
 
     public function comprobantes ($url) {
-
         return response()->file(storage_path('app/comprobantes/' . $url));
     }
 }

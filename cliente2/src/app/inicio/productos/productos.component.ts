@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {CategoriasService} from '../../pages/component/categorias/categorias.service';
 import {ActivatedRoute} from '@angular/router';
 import {environment} from '../../../environments/environment.prod';
+import {ClienteListaDeseosService} from '../../cliente/cliente-lista-deseos/cliente-lista-deseos.service';
+import {LoginService} from '../../login/login.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-productos',
@@ -15,6 +18,9 @@ export class ProductosComponent implements OnInit {
   categoria: any = null;
   ordenar_por: any = 'nombre_asc';
   constructor(private categoriaService: CategoriasService,
+              private listaService: ClienteListaDeseosService,
+              private toastr: ToastrService,
+              private loginService: LoginService,
               private route: ActivatedRoute) {
     this.route.data.subscribe(data => console.log(data.value));
     this.route.params.subscribe(params => {
@@ -40,4 +46,22 @@ export class ProductosComponent implements OnInit {
         });
   }
 
+  addWishList(producto_id) {
+    if (this.loginService.isLoggedIn()) {
+      const req = {
+        'producto_id' : producto_id,
+        'usuario_id' : this.loginService.getUsuario().usuario_id
+      };
+      this.listaService.store(req)
+        .subscribe((res: any) => {
+          if (res.estado === 'exito') {
+            this.toastr.success('Agregado a su lista de deseos', 'Exito');
+          } else {
+            this.toastr.error('El producto ya fue agregado a la lista de deseos', 'Producto Duplicado');
+          }
+        });
+    } else {
+      this.toastr.error('Ingrese a su cuenta', 'No se agrego a su lista');
+    }
+  }
 }

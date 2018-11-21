@@ -7,6 +7,7 @@ import {PerfilComponent} from '../shared/perfil/perfil.component';
 import {CarritoComponent} from '../shared/carrito/carrito.component';
 import {UsuarioEditarComponent} from '../shared/usuario-edit/usuario-edit.component';
 import {ChangePasswordComponent} from '../shared/change-password/change-password.component';
+import {ClienteListaDeseosComponent} from './cliente-lista-deseos/cliente-lista-deseos.component';
 
 const routes: Routes = [{
   path: '',
@@ -35,6 +36,10 @@ const routes: Routes = [{
     {
       path: 'facturacion',
       component: ClienteFacturacionComponent
+    },
+    {
+      path: 'lista-deseos',
+      component: ClienteListaDeseosComponent
     },
     {
       path: '',

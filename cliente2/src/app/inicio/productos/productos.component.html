@@ -27,6 +27,10 @@
     <div class="product-info">
       <h5>{{ producto.puntos }}</h5>
       <h6>{{ producto.descripcion }}</h6>
+      <button class="wishlist"
+              (click)="addWishList(producto.producto_id)"
+              title="Añadir a la lista de deseos"><i class="fa fa-heart-o"></i></button>
+
       <div class="text-center">
         <div class="color" [ngStyle]="{'background-color' : producto.color1}"></div>
         <div class="color" [ngStyle]="{'background-color' : producto.color2}"></div>

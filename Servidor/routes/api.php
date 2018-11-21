@@ -77,8 +77,9 @@ Route::get('lista_emails','EmailController@lista_emails');
 Route::resource('retiro_promociones', 'RetiroPromocionController', ['except' => ['create', 'edit']]);
 
 /*lista de deseos*/
-Route::resource('lista_deseos', 'ListaDeseoController', ['only' => ['store']]);
+Route::resource('lista-deseos', 'ListaDeseoController', ['only' => ['store', 'index', 'destroy']]);
 Route::get('lista-deseos/{usuario_id}', 'ListaDeseoController@listaDeseos');
+Route::get('lista-deseos-imagen/{url}', 'ListaDeseoController@imagen');
 
 /*boletines*/
 Route::get('boletines', 'BoletinController@index');

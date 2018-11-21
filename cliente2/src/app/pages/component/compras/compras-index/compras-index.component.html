@@ -55,7 +55,7 @@
             <tbody>
             <tr *ngFor="let compra of compras; let i = index">
               <td>
-                {{ compra.compra_id }}
+                {{ compra.compra_id | number: '3.0-0' }}
               </td>
               <td>
                 {{ compra.nombres | uppercase }} {{ compra.apellidos | uppercase }}

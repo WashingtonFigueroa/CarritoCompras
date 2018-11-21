@@ -8,6 +8,8 @@ import { ClienteComprasComponent } from './cliente-compras/cliente-compras.compo
 import { ClienteFacturacionComponent } from './cliente-facturacion/cliente-facturacion.component';
 import {SharedModule} from '../shared/shared.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ClienteListaDeseosComponent } from './cliente-lista-deseos/cliente-lista-deseos.component';
+import {ClienteListaDeseosService} from './cliente-lista-deseos/cliente-lista-deseos.service';
 
 @NgModule({
   imports: [
@@ -21,10 +23,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ClienteComponent,
     ClienteHeaderComponent,
     ClienteComprasComponent,
-    ClienteFacturacionComponent
+    ClienteFacturacionComponent,
+    ClienteListaDeseosComponent
   ],
   providers: [
-    DecimalPipe
+    DecimalPipe,
+    ClienteListaDeseosService,
   ]
 })
 export class ClienteModule { }

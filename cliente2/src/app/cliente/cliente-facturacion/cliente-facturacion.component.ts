@@ -90,7 +90,7 @@ export class ClienteFacturacionComponent implements OnInit {
     doc.addImage('../../../assets/images/logo.png', 'png', 20, 17, 37, 18, '', 'NONE',0);
     doc.setFontSize(16);
     doc.setFontStyle('bold');
-    doc.text('Factura ' + compra.compra_id, 95, 42);
+    doc.text('Factura ' + this.dp.transform(compra.compra_id, '3.0-0') , 95, 42);
     doc.setFontSize(10);
     doc.setFontStyle('bold');
     doc.text('Detalles de Facturación:', 20, 52);
