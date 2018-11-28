@@ -1,126 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-dark  bg-dark ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a routerLink="/" class="logo-frado">
-    <img src="../../../assets/inicio/img/logo.png" width="175" alt="">
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu1">
-      <li class="nav-item"
-          [class.activated]="router.url === '/inicio/categorias'">
-        <a class="nav-link" routerLink="/inicio/categorias">
-          <span class="nav-header">LAS MEJORES OFERTAS</span> <span class="sr-only">(current)</span></a>
-      </li>
-      &nbsp;
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['design']"
-           [class.activated]="router.url === '/inicio/design'">
-              <span [class]="router.url === '/inicio/design' ? 'nav-header nav-active' : 'nav-header'" >
-                DISEÑA TU MANILLA
-              </span>
-        </a>
-      </li>
-      &nbsp;
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['camisas']"
-           [class.activated]="router.url === '/inicio/camisas'">
-        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
-          PERSONALIZA TU CAMISA
+
+<nav class="banner">
+    <div class="banner__logo-box">
+        <a href="/"><img src="../../../assets/inicio/img/logo.png" alt="Logo" class="banner__logo"></a>
+    </div>
+    <ul class="navegacion">
+        <li><a id="aid" href="#">mejores ofertas</a></li>
+        <li><a id="aid" href="#">diseña tu manilla</a></li>
+        <li><a id="aid" href="#">Personaliza tu camisa</a></li>
+        </ul>
+    <div id="btnbtn" class="boton">
+        <span id="spbtn">
+            <a class="btn-carrito" href="#"><span class="lbtn"><i class="fa fa-magic"></i></span> <span class="tbtn"> Tu Carrito</span></a>
+            <a class="btn-deseo" href="#"><span class="lbtn"><i class="fa fa-heart"></i></span> <span class="tbtn"> Tus Deseos</span></a>
         </span>
-        </a>
-      </li>
-<!--      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['camisas']" style="color: #ffffff">
-        <span [class]="router.url === '/inicio/camisas' ? 'nav-header nav-active' : 'nav-header'" >
-          CANJEAR PUNTOS
-        </span>
-        </a>
-      </li>-->
-    </ul>
-
-    <ul class="header-links pull-left">
-      <div class="header-ctn">
-        <!-- Wishlist -->
-        <div>
-          <a href="#">
-            <i class="fa fa-heart-o"></i>
-            <span>Tus Deseos</span>
-            <div class="qty">2</div>
-          </a>
-        </div>
-        <!-- /Wishlist -->
-      </div>
-      <div class="header-ctn" style="color: #ffffff">
-        <div>
-          <a class="cart-menu"
-             (click)="openCart()">
-            <i class="fa fa-shopping-cart"></i>
-            <span>Tú Carrito</span>
-            <div class="qty">{{ cartItems.cantidad_total }}</div>
-          </a>
-        </div>
-      </div>
-    </ul>
-    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    <form *ngIf="categorias !== null" class="form-inline my-2 my-lg-0">
-      <select [(ngModel)]="busqueda.categoria_id"
-              (change)="go(busqueda.categoria_id)"
-              name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 250px; background-color: #f7f7f7">
-
-        <option [value]="categoria.categoria_id"
-                class="form-control"
-                *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-      </select>
-
-
-    </form>
-  </div>
-  &nbsp;&nbsp;&nbsp;
-    <a style="color: #9e9e9e" *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> <span>Mi cuenta</span></a>
-    <a style="color: #9e9e9e" *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
-    <a style="color: #9e9e9e" *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
-
+        
+        <select id="sel" class="select-type">
+            <option class="opnav" value="op1">camisas</option>
+            <option class="opnav" value="op2">pantalones</option>
+            <option class="opnav" value="op3">manillas</option>
+            <option class="opnav" value="op4">Opcion4</option>
+            <option class="opnav" value="op5">Opcion5</option>
+            <option class="opnav" value="op6">Opcion6</option>
+        </select>
+        <a class="btn-login" href="#"><i class="fa fa-user"></i> Iniciar Sesion</a>
+    </div>
 </nav>
-<hr>
-<div class="overlay" #overlay>
-  <div class="popup" #popup>
-    <button class="close" (click)="closeCart()">
-      <i class="fa fa-times"></i>
-    </button>
-    <h3>Tú Carrito</h3>
-      <div class="cart-list">
-        <div class="product-widget" *ngFor="let producto of cartItems.items; let i = index">
-          <div class="product-img">
-            <img src="{{producto_img_url}}{{producto.producto_id}}">
-          </div>
-          <div class="product-body">
-            <h3 class="product-name"><a href="#">{{ producto.producto.nombre }} - Talla {{ producto.talla }}</a></h3>
-            <h4 class="product-price"><span class="qty">{{ producto.cantidad }}x</span>$ {{ producto.precio | number: '1.2-2'}}</h4>
-          </div>
-          <button class="delete pointer" (click)="destroy(producto, i)"><i class="fa fa-close"></i></button>
-        </div>
-      </div>
-
-      <div class="cart-controls">
-        <div class="cart-summary">
-          <small>{{ cartItems.cantidad_total }} Productos(s) seleccionados</small>
-          <h5>TOTAL: $ {{ cartItems.subtotal | number: '1.2-2'}}</h5>
-        </div>
-        <div class="cart-buttons">
-          <button *ngIf="cartItems.subtotal !== 0"
-                  title="Carrito de compras"
-                  (click)="carrito()">
-            <i class="fa fa-cart-plus"></i>
-          </button> &nbsp;&nbsp;
-          <button *ngIf="cartItems.subtotal !== 0"
-                  title="Comprar"
-                  (click)="comprar()">
-            <i class="fa fa-usd"></i>
-          </button>
-        </div>
-      </div>
-  </div>
-</div>
