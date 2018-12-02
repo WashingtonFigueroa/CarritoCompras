@@ -68,7 +68,7 @@
     <form *ngIf="categorias !== null" class="form-inline my-2 my-lg-0">
       <select [(ngModel)]="busqueda.categoria_id"
               (change)="go(busqueda.categoria_id)"
-              name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 250px; background-color: #f7f7f7">
+              name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 200px; height: 2em; background-color: #f7f7f7">
 
         <option [value]="categoria.categoria_id"
                 class="form-control"
@@ -79,12 +79,11 @@
     </form>
   </div>
   &nbsp;&nbsp;&nbsp;
-    <a style="color: #9e9e9e" *ngIf="usuario === null" [routerLink]="['/login']"><i class="fa fa-user-o"></i> <span>Mi cuenta</span></a>
-    <a style="color: #9e9e9e" *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
-    <a style="color: #9e9e9e" *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"><i class="fa fa-user-o"></i> Bienvenido {{ usuario.cuenta }}</a>
+    <a style="color: #cc0000" *ngIf="usuario === null" [routerLink]="['/login']">   Inicias Sesion </a>
+    <a style="color: #cc0000" *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"> Bienvenido {{ usuario.cuenta }}</a>
+    <a style="color: #cc0000" *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"> Bienvenido {{ usuario.cuenta }}</a>
 
 </nav>
-<hr>
 <div class="overlay" #overlay>
   <div class="popup" #popup>
     <button class="close" (click)="closeCart()">
