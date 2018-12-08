@@ -1,88 +1,65 @@
-<div class="row bg-white">
-      <div class="col-md-12">
-        <div class="newsletter">
-          <br>
-          <p>Suscríbete a nuestra<strong> newsletter</strong></p>
-          <h6>Estaras al día de nuestras novedades y del lanzamiento de todas las nuevas colecciones.</h6>
-          <form (submit)="store()" [formGroup]="boletinGroup">
-            <input class="input"
-                   formControlName="email"
-                   type="email"
-                   placeholder="Ingresa tu Email">
-            <button class="newsletter-btn" type="submit"><i class="fa fa-envelope"></i> Suscríbete</button>
-          </form>
-          <ul class="newsletter-follow">
-            <li>
-              <a target="_blank" href="https://www.facebook.com/fradostore/"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.instagram.com/frado_store/"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
-          <br>  <br>
-        </div>
-      </div>
-</div>
+<hr>
+<h1>Suscríbete a nuestra<strong> newsletter</strong></h1>
+<section class="widget widget_blog_subscription">
+  <form (submit)="store()" [formGroup]="boletinGroup">
+    <p>Estaras al día de nuestras novedades y del lanzamiento de todas las nuevas colecciones.</p>
+    <p>
+      <input  type="text" formControlName="email"  name="email" style="width: 80%; padding: 1px 2px" placeholder="Ingresa tu Email" value="" id="subscribe-field">
+    </p>
+    <p>
+      <input type="submit" value="Suscríbete">
+    </p>
+  </form>
+</section>
 
-<footer id="footer">
-  <div class="container-fluid" align="center">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-4">
-            <br>
-            <h3 class="footer-title" style="color: #f7f7f7">Sobre Nosotros</h3>
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Sobre Nosotros</h4>
             <p>Lo más importante es recordar que puedes vestir la mejor ropa o los mejores zapatos, pero tienes que tener un buen espíritu en tu interior.</p>
-            <ul class="footer-links">
+            <ul class="list-unstyled">
               <li><a href="#"><i class="fa fa-map-marker"></i>Quito - Ecuador</a></li>
               <li><a href="#"><i class="fa fa-phone"></i>+593 98 445 9620</a></li>
               <li><a href="#"><i class="fa fa-envelope-o"></i>info@frado.ec</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <br>
-            <h3 class="footer-title" style="color: #f7f7f7">Servicios</h3>
-            <br><br>
-            <ul class="footer-links">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
               <li><a routerLink="/login">Mi cuenta</a></li>
               <li><a routerLink="/inicio/carrito">Ver carrito</a></li>
               <li><a routerLink="">Lista de deseos</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <br>
-            <h3 class="footer-title" style="color: #f7f7f7">Últimas Visitas</h3>
-            <!--************CODE GEOCOUNTER************-->
-            <a href="http://www.geovisites.com/es/directory/comercio-y-economia_Aeroespacial-y-defensa.php?compte=88n3m297p8al"  target="_blank"><img src="https://geoloc5.geostats.ovh/private/geocounter.php?compte=88n3m297p8al&base=geoloc5" border="0" alt="Aeroespacial y defensa"></a><!--************END CODE GEOCOUNTER************-->
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Encuentranos en</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="fa fa-facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="fa fa-facebook" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- bottom footer -->
-  <div id="bottom-footer" class="section">
-
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <ul class="footer-payments">
-            <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-            <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-            <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-            <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-            <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-            <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-          </ul>
-          <span class="copyright">
-			Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE
-          </span>
+        <div class="col-md-3">
+          <h4>Últimas Visitas</h4>
+          <a href="http://www.geovisites.com/es/directory/comercio-y-economia_Aeroespacial-y-defensa.php?compte=88n3m297p8al"  target="_blank"><img src="https://geoloc5.geostats.ovh/private/geocounter.php?compte=88n3m297p8al&base=geoloc5" border="0" alt="Aeroespacial y defensa"></a><!--************END CODE GEOCOUNTER************-->
         </div>
       </div>
-      <!-- /row -->
+      <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE</p>
+        </div>
+      </div>
+
     </div>
-    <!-- /container -->
   </div>
-  <!-- /bottom footer -->
 </footer>
-<!-- /FOOTER -->

@@ -22,11 +22,11 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/svg.select.js/dist/svg.select.min.css",
-              "src/styles.css",
-              "src/assets/inicio/css/style.css",
-              "src/assets/scss/style.scss",
-              "src/assets/scss/colors/default-dark.scss",
+//              "node_modules/svg.select.js/dist/svg.select.min.css",
+//              "src/styles.css",
+//              "src/assets/inicio/css/style.css",
+//              "src/assets/scss/style.scss",
+//              "src/assets/scss/colors/default-dark.scss",
               "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
@@ -96,10 +96,10 @@
               "node_modules/pace-js/pace.min.js"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/css/style.css",
-              "src/assets/css/colors/default.css"
+//              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+//              "src/assets/css/style.css",
+//              "src/assets/css/colors/default.css"
             ],
             "assets": [
               "src/assets",

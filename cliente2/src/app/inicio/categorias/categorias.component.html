@@ -6,11 +6,7 @@
   </div>
 </div>
 
-<div class="jumbotron">
-  <div class="container">
-    <h1> Nuestras Ofertas y Promociones</h1>
-  </div>
-</div>
+<h1> Nuestras Ofertas y Promociones</h1>
 
 <div id="carousel" class="carousel slide"  data-ride="carousel">
   <ol class="carousel-indicators">
@@ -19,15 +15,11 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item" [ngClass]="{'active' : 0 == i}" *ngFor="let promocion of promociones; let i=index">
-      <img [src]="environment.base+environment.imagen.promocion+promocion.promocion_id" alt="" height="80">
+      <img width="100%" [src]="environment.base+environment.imagen.promocion+promocion.promocion_id" alt="" height="500px">
     </div>
   </div>
 </div>
-<div class="jumbotron">
-  <div class="container">
-    <h1> Nuestros Productos</h1>
-  </div>
-</div>
+<h1> Categoria Productos</h1>
 <section class="categories">
   <div class="category-card" *ngFor="let categoria of categorias">
     <div class="category-image">
