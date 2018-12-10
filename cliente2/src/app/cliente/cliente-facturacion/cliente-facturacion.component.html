@@ -1,85 +1,99 @@
-<div class="row cliente-container">
-  <div class="col-sm-12 col-md-7">
-    <form (submit)="procesar()"
-          [formGroup]="facturacionGroup"
-          action="javascript:void()"
-          role="form">
-      <br>
-      <legend>
-        DETALLES DE FACTURACIÓN
-      </legend>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Nombres" formControlName="nombres" name="nombres" id="nombres" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Apellidos" formControlName="apellidos" name="apellidos" id="apellidos" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Número de celular" formControlName="celular" name="celular" id="celular" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Dirección" formControlName="direccion" name="direccion" id="direccion" class="form-control">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="alert alert-danger">
-            <strong>DETALLE DE DOMICILIO</strong>
+<br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="tabbable" id="tabs-273217">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#tab1" data-toggle="tab">Paso 1- Datos del cliente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link show" href="#tab2" data-toggle="tab">Paso 2- Datos de envió</a>
+          </li>
+        </ul>
+        <form (submit)="procesar()"
+              [formGroup]="facturacionGroup"
+              action="javascript:void()"
+              role="form">
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <br>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Nombres" formControlName="nombres" name="nombres" id="nombres" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Apellidos" formControlName="apellidos" name="apellidos" id="apellidos" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Número de celular" formControlName="celular" name="celular" id="celular" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Dirección" formControlName="direccion" name="direccion" id="direccion" class="form-control">
+            </div>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <br>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" placeholder="Provincia" formControlName="provincia" name="provincia" id="provincia" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Cantón" formControlName="canton" class="form-control" placeholder="Cantón">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Calle principal" formControlName="calle_principal" name="calle_principal" id="calle_principal" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Intersección" formControlName="interseccion" name="interseccion" id="interseccion" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Numeración de domicilio" formControlName="numero_domicilio" name="numero_domicilio" id="numero_domicilio" class="form-control">
+            </div>
+            <div class="col-md-12 form-group">
+              <input type="text" placeholder="Referencia" formControlName="referencia" name="referencia" id="referencia" class="form-control">
+            </div>
+            <button [disabled]="facturacionGroup.status === 'INVALID'"
+                    type="submit"
+                    class="btn-frado">REGISTRAR</button>
           </div>
         </div>
+        </form>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="form-group">
-            <input type="text" placeholder="Provincia" formControlName="provincia" name="provincia" id="provincia" class="form-control">
+    </div>
+    <div class="col-md-4">
+      <div class="col-sm-12" *ngIf="cartItems !== null">
+        <div class="row bg-white" *ngIf="cartItems.subtotal > 0">
+          <div class="col-12 cliente-orden">
+            <h3>Su Orden</h3>
+            <table class="table">
+              <thead>
+              <tr>
+                <th>PRODUCTO</th>
+                <th>TOTAL</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let producto of cartItems.items; let i = index">
+                <td>{{ producto.cantidad }}x {{ producto.producto.nombre }}({{ producto.talla | uppercase }})</td>
+                <td>${{ producto.cantidad * producto.precio | number: "1.2-2"}}</td>
+                <!--              <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>-->
+              </tr>
+              <tr>
+                <td class="total-title">Total</td>
+                <td class="total-item"><strong>${{ cartItems.subtotal | number: "1.2-2"}}</strong></td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Cantón" formControlName="canton" class="form-control" placeholder="Cantón">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Calle principal" formControlName="calle_principal" name="calle_principal" id="calle_principal" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Intersección" formControlName="interseccion" name="interseccion" id="interseccion" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Numeración de domicilio" formControlName="numero_domicilio" name="numero_domicilio" id="numero_domicilio" class="form-control">
-        </div>
-        <div class="col-md-12 form-group">
-          <input type="text" placeholder="Referencia" formControlName="referencia" name="referencia" id="referencia" class="form-control">
-        </div>
-      </div>
-      <button [disabled]="facturacionGroup.status === 'INVALID'"
-              type="submit"
-              class="btn-frado">REGISTRAR</button>
-    </form>
-  </div>
-  <div class="col-sm-12 col-md-5" *ngIf="cartItems !== null">
-    <div class="row bg-white" *ngIf="cartItems.subtotal > 0">
-      <div class="col-12 cliente-orden">
-        <h3>Su Orden</h3>
-        <table class="table">
-            <thead>
-            <tr>
-              <th>PRODUCTO</th>
-              <th>TOTAL</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr *ngFor="let producto of cartItems.items; let i = index">
-              <td>{{ producto.cantidad }}x {{ producto.producto.nombre }}({{ producto.talla | uppercase }})</td>
-              <td>${{ producto.cantidad * producto.precio | number: "1.2-2"}}</td>
-<!--              <td><button class="btn btn-sm btn-danger" (click)="destroy(producto, i)"><i class="fa fa-trash"></i></button></td>-->
-            </tr>
-            <tr>
-              <td class="total-title">Total</td>
-              <td class="total-item"><strong>${{ cartItems.subtotal | number: "1.2-2"}}</strong></td>
-            </tr>
-            </tbody>
-          </table>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+

@@ -1,41 +1,43 @@
-<header class="topbar">
-  <nav class="navbar">
-
-    <a routerLink="/" class="logo-frado">
-
-      <img src="../../../assets/inicio/img/logo.png" width="175" alt="">
-    </a>
-    &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;
-    <div class="navbar-links">
-      <a routerLink="/cliente/carrito"> <i class="fa fa-cart-plus"></i> Carrito</a>
-      <a routerLink="/cliente/compras"> <i class="fa fa-gift"></i> Compras</a>
-      <a routerLink="/cliente/lista-deseos"> <i class="fa fa-heart"></i> Lista de Deseos</a>
-<!--      <a routerLink=""> <i class="fa fa-star"></i> Mis Puntos</a>-->
+<nav class="fondobanner">
+  <div class="banner__logo-box">
+    <a href="/"><img src="../../../assets/inicio/img/logo.png" alt="Logo" class="banner__logo"></a>
+  </div>
+</nav>
+<nav class="banner">
+  <div class="banner__logo-box">
+    <a href="/"><img src="../../../assets/inicio/img/logo.png" alt="Logo" class="banner__logo"></a>
+  </div>
+  <ul class="navegacion">
+    <li>
+      <a style="color: #f7f7f7" routerLink="/cliente/carrito"> <i class="fa fa-cart-plus"></i> Carrito</a>
+    </li>
+    <li>
+      <a style="color: #f7f7f7" routerLink="/cliente/compras"> <i class="fa fa-gift"></i> Compras</a>
+    </li>
+    <li>
+      <a style="color: #f7f7f7" routerLink="/cliente/lista-deseos"> <i class="fa fa-heart"></i> Lista de Deseos</a>
+    </li>
+  </ul>
+  <div style="text-align: right">
+    <div class="logout noselect"
+         (click)="toggle = !toggle" style="color: #ffffff">
+      {{ cuenta }} <i class="fa fa-caret-down"></i>
     </div>
-    <div>
-      <div
-        class="logout noselect"
-        (click)="toggle = !toggle">
-        {{ cuenta }} <i class="fa fa-caret-down"></i>
+    <div class="desplegable-menu" *ngIf="toggle">
+      <div (click)="goPerfil()">Perfil <i class="icon-user"></i></div>
+      <div (click)="logout()">
+        Cerrar Sesión
+        <i class="fa fa-power-off"></i>
       </div>
-      <div class="desplegable-menu" *ngIf="toggle">
-        <div (click)="goPerfil()">Perfil <i class="icon-user"></i></div>
-        <div (click)="logout()">
-          Cerrar Sesión
-          <i class="fa fa-power-off"></i>
-        </div>
-      </div>
     </div>
+  </div>
 
-    <!-- ============================================================== -->
-    <!-- End Logo -->
-    <!-- ============================================================== -->
-    <div class="navbar-collapse">
-      <ul class="navbar-nav mr-auto mt-md-0">
-        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="icon-arrow-left-circle ti-menu"></i></a> </li>
-      </ul>
-    </div>
-  </nav>
-
-</header>
+  <!-- ============================================================== -->
+  <!-- End Logo -->
+  <!-- ============================================================== -->
+  <div class="navbar-collapse">
+    <ul class="navbar-nav mr-auto mt-md-0">
+      <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="icon-arrow-left-circle ti-menu"></i></a> </li>
+    </ul>
+  </div>
+</nav>

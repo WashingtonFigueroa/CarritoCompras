@@ -1,0 +1,145 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    color: #dda;
+    box-sizing: border-box;
+}
+nav.fondobanner {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    padding-bottom: 6%;
+}
+nav.banner {
+    display: inline-block;
+}
+
+nav.banner::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.banner {
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+    box-sizing: border-box;
+    padding-bottom: .8%;
+    background-image: linear-gradient(to right, rgb(4, 2, 2), rgb(22, 34, 42));
+}
+
+.banner__logo-box {
+    position: absolute;
+    top: .41rem;
+    left: .8rem;
+    z-index: 101;
+}
+
+.banner__logo {
+    height: 3.5rem;
+}
+
+.navegacion {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    float: left;
+}
+.navegacion li {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 1.5rem;
+}
+.navegacion li:first-child {
+    margin-left: 11rem;
+}
+.navegacion li a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: .5rem .7rem;
+}
+a#aid {
+    color: #eee;
+}
+.navegacion li a:hover {
+    font-size: 1rem;
+    color: #fff !important;
+    border-radius: .3rem;
+    background-color: #c00;
+}
+
+.boton {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: .5rem;
+    margin-top: .3rem;
+}
+div#btnbtn a.btn-login, a.btn-carrito, a.btn-deseo {
+    color: #ddd;
+}
+
+option.opnav {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+select.select-type option.opnav:hover {
+    background-color: rgba(255, 102, 102, 0.7) !important;
+}
+
+select.select-type {
+    border-radius: .35rem;
+    margin-right: .5rem;
+    margin-top: 1rem !important;
+    height: 1.5rem;
+    width: 7.5rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #555;
+    background-color: #f1f1f1;
+}
+a.btn-login:visited, a.btn-login:link {
+    padding: .5rem .5rem !important;
+    margin-top: 1rem !important;
+
+}
+
+.btn-carrito:link, .btn-deseo:link, .btn-login:link {
+    margin-right: .5rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ddd !important;
+    font-size: .9rem;
+}
+.btn-login:hover, .btn-carrito:hover, .btn-deseo:hover {
+    color: #fff !important;
+    border-radius: .3rem;
+    background-color: #c00;
+}
+
+.tbtn, .lbtn {
+    text-align: center;
+    padding: 0 .3rem;
+    display: block;
+    font-size: .8rem !important;
+}
+.lbtn {
+    padding: .1rem 0;
+}
+span#spbtn {
+    margin-top: 1.3rem !important;
+    width: 100%;
+    height: 100%;
+}

@@ -5,8 +5,7 @@
   <div class="row" *ngIf="compras !== null">
 
     <div class="col-sm-12 offset-md-1 col-md-10">
-      <br><br>
-      <h3 style="color: #cc0000">Mis Compras</h3>
+      <h3 >Mis Compras</h3>
       <div class="table-responsive">
         <table class="table table-hover">
           <thead>
@@ -55,43 +54,111 @@
   </div>
 </div>
 
-<div class="container-fluid" align="center" style="background-color: #ffffff">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" align="center">
       <div class="row">
         <div class="col-md-4">
-          <br><br><br>
-          <h3>Envíos a todo el País</h3>
-          <h5>Sigue tu producto con el numero de guia</h5><br>
-          <a href="http://www.servientrega.com.ec/" target="_blank"> <img src="../../../assets/images/servientrega.jpg" alt=""></a>
+          <div class="card">
+            <br>
+            <img alt="Bootstrap Thumbnail First" src="../../../assets/images/servientrega.jpg" width="80%"/>
+            <div class="card-block">
+              <hr>
+              <h5 class="card-title">
+                Envíos a todo el País
+              </h5>
+              <br>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <br><br><br>
-          <h3>Medios de pago</h3>
-          <h5>Realiza tus transferencias desde:</h5><br>
-          <a href="https://www.pichincha.com/portal/Principal/Personas/Cuentas" target="_blank"> <img src="../../../assets/images/pichincha.png" width="180px" alt=""></a>
-          <a href="https://www.bancodelpacifico.com/personas/canales-de-atencion/virtuales/banca-virtual-intermatico" target="_blank"> <img src="../../../assets/images/pacifico.png" width="180px" alt=""></a>
+          <div class="card">
+            <br> <br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="https://www.pichincha.com/portal/Principal/Personas/Cuentas" target="_blank"> <img src="../../../assets/images/pichincha.png" width="180px" alt=""></a>
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.bancodelpacifico.com/personas/canales-de-atencion/virtuales/banca-virtual-intermatico" target="_blank"> <img src="../../../assets/images/pacifico.png" width="180px" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <hr>
+              <h5 class="card-title">
+                Medios de pago
+              </h5>
+              <br>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <br><br><br>
-          <h3>Realiza tu pago desde</h3>
-          <img src="../../../assets/images/paypal.png" width="300px" alt="">
+          <div class="card">
+            <br>
+            <img alt="Bootstrap Thumbnail Third" src="../../../assets/images/paypal.png" width="80%"/>
+            <div class="card-block">
+              <hr>
+              <h5 class="card-title">
+                Realiza tu pago desde
+              </h5>
+              <br>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<footer id="footer">
-  <div id="bottom-footer" class="section">
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <span class="copyright">
-			Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE
-          </span>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Sobre Nosotros</h4>
+            <p>Lo más importante es recordar que puedes vestir la mejor ropa o los mejores zapatos, pero tienes que tener un buen espíritu en tu interior.</p>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-map-marker"></i>Quito - Ecuador</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+593 98 445 9620</a></li>
+              <li><a href="#"><i class="fa fa-envelope-o"></i>info@frado.ec</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
+              <li><a routerLink="/login">Mi cuenta</a></li>
+              <li><a routerLink="/inicio/carrito">Ver carrito</a></li>
+              <li><a routerLink="">Lista de deseos</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Encuentranos en</h4>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="fa fa-facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="fa fa-facebook" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Últimas Visitas</h4>
+          <a href="http://www.geovisites.com/es/directory/comercio-y-economia_Aeroespacial-y-defensa.php?compte=88n3m297p8al"  target="_blank"><img src="https://geoloc5.geostats.ovh/private/geocounter.php?compte=88n3m297p8al&base=geoloc5" border="0" alt="Aeroespacial y defensa"></a><!--************END CODE GEOCOUNTER************-->
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">Copyright 2018 &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Frado | DTE</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </footer>
