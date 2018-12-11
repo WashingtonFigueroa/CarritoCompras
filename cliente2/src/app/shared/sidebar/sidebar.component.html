@@ -1,28 +1,37 @@
-<!-- ============================================================== -->
-<!-- Left Sidebar - style you can find in sidebar.scss  -->
-<!-- ============================================================== -->
-<aside class="left-sidebar">
-  <!-- Sidebar scroll-->
-  <div class="scroll-sidebar">
-
-    <nav class="sidebar-nav">
-      <ul id="sidebarnav">
-        <li [class.active]="showMenu === 'start'">
-          <a [routerLink]="['principal']"  [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Principal</span></a>
-          <a [routerLink]="['boletines']"  [routerLinkActive]="['router-link-active']"><i class="icon-target"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Boletines</span></a>
-          <a [routerLink]="['categorias']" [routerLinkActive]="['router-link-active']"><i class="icon-list"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Categorias</span></a>
-          <a [routerLink]="['productos']" [routerLinkActive]="['router-link-active']"><i class="icon-grid"></i><span class="hide-menu">Producto</span></a>
-          <a [routerLink]="['inventarios']" [routerLinkActive]="['router-link-active']"><i class="icon-chart"></i><span class="hide-menu">Inventario</span></a>
-          <a [routerLink]="['articulos']" [routerLinkActive]="['router-link-active']"><i class="icon-camera"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Galería</span></a>
-          <a [routerLink]="['promociones']" [routerLinkActive]="['router-link-active']"><i class="icon-star"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Promociones</span></a>
-          <a [routerLink]="['compras']" [routerLinkActive]="['router-link-active']"><i class="icon-wallet"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Compras</span></a>
-          <a [routerLink]="['compras']" [routerLinkActive]="['router-link-active']"><i class="icon-tag"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Retiros</span></a>
-          <a [routerLink]="['manillas']" [routerLinkActive]="['router-link-active']"><i class="icon-pie-chart"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Manillas</span></a>
-          <a [routerLink]="['camisas']" [routerLinkActive]="['router-link-active']"><i class="icon-plus"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu">Camisas</span></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- End Sidebar navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav>
+        <ol class="breadcrumb" style="background-color: #1b1e21">
+           <li class="breadcrumb-item">
+             <a style="color: #ffffff" [routerLink]="['principal']"  [routerLinkActive]="['router-link-active']"><i class="icon-speedometer"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> PRINCIPAL</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['categorias']" [routerLinkActive]="['router-link-active']"><i class="icon-list"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> CATEGORIAS</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['productos']" [routerLinkActive]="['router-link-active']"><i class="icon-grid"></i><span class="hide-menu"> PRODUCTO</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['inventarios']" [routerLinkActive]="['router-link-active']"><i class="icon-chart"></i><span class="hide-menu"> INVENTARIO</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['articulos']" [routerLinkActive]="['router-link-active']"><i class="icon-camera"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> GALERIA</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['promociones']" [routerLinkActive]="['router-link-active']"><i class="icon-star"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> PROMOCIONES</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['manillas']" [routerLinkActive]="['router-link-active']"><i class="icon-pie-chart"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> MANILLAS</span></a>
+           </li>
+           <li class="breadcrumb-item">
+          <a style="color: #ffffff" [routerLink]="['camisas']" [routerLinkActive]="['router-link-active']"><i class="icon-plus"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> CAMISAS</span></a>
+           </li>
+            <li class="breadcrumb-item">
+                <a style="color: #ffffff" [routerLink]="['boletines']"  [routerLinkActive]="['router-link-active']"><i class="icon-target"></i>&nbsp;&nbsp;&nbsp;<span class="hide-menu"> BOLETINES</span></a>
+            </li>
+        </ol>
+      </nav>
+    </div>
   </div>
-  <!-- End Sidebar scroll-->
-</aside>
+</div>

@@ -60,12 +60,12 @@
                   {{ usuario.cuenta}}
                 </td>
                 <td align="center">
-                  <button (click)="edit(usuario.usuario_id)" type="button" class="btn btn-info">
-                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                  <button (click)="edit(usuario.usuario_id)" type="button" class="btn btn-sm btn-info">
+Modificar
                   </button>
                   &nbsp;&nbsp;
-                  <button type="button" class="btn btn-danger" (click)="confirm(i, usuario.usuario_id,confirmModal)">
-                    <i class="fa fa-eraser" aria-hidden="true"></i>
+                  <button type="button" class="btn btn-sm btn-danger" (click)="confirm(i, usuario.usuario_id,confirmModal)">
+Eliminar
                   </button>
                 </td>
             </tr>

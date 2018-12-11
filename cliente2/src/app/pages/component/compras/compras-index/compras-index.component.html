@@ -22,11 +22,11 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-4">
-              <input type="search" *ngIf="compras !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar compra.." class="form-control">
+              <input type="search" *ngIf="compras !== null" (keypress)="buscar(search)" [(ngModel)]="search" placeholder="Buscar compra..." class="form-control">
             </div>
           </div>
           <hr>
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-responsive-lg">
             <thead>
             <tr>
               <th>
@@ -69,7 +69,7 @@
               <td>
                 {{ compra.numero_guia }}
               </td>
-              <td class="acciones">
+              <td class="acciones" align="center">
 <!--                <button
                     type="button"
                     title="Detalles"
@@ -82,14 +82,14 @@
                     type="button"
                     title="Agregar numero de Guia"
                     class="btn btn-sm btn-info">
-                  G
+                  Modificar
                 </button>
                 &nbsp;
                 <button type="button"
                     class="btn btn-sm btn-danger"
                     title="Eliminar compra"
                     (click)="confirm(i, compra.compra_id, confirmModal)">
-                  <i class="fa fa-eraser" aria-hidden="true"></i>
+Eliminar
                 </button>
               </td>
             </tr>

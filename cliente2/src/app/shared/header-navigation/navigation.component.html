@@ -1,30 +1,21 @@
-<header class="topbar">
-    <nav class="navbar">
-        <div class="navbar-header" style="background-color: #040202; align-content: center">
-            <a class="navbar-brand" routerLink="/">
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../assets/images/logo.png" width="100px" alt="">
-            </a>
+<div class="container-fluid">
+    <div class="row" style="background-color: #1b1e21">
+        <div class="col-md-12">
+            <ul class="nav">
+                <li>
+                    <a href="/"> <img src="../../../assets/inicio/img/logo.png" width="200px" alt=""></a>
+                </li>
+                <li class="nav-item dropdown ml-md-auto">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: #f7f7f7">Bienvenid@ {{ cuenta }}</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/admin/perfil">Perfil</a>
+                        <a class="dropdown-item" (click)="go('usuarios')">Usuario</a>
+                        <div class="dropdown-divider">
+                        </div> <a class="dropdown-item" (click)="logout()">Cerrar Sesión</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div>
-          <div
-            class="logout noselect"
-            (click)="toggle = !toggle">
-            {{cuenta}}
-            <i class="fa fa-caret-down"></i>
-          </div>
-<s></s>     <div class="desplegable-menu" *ngIf="toggle">
-            <div routerLink="/admin/perfil">Perfil <i class="icon-user-follow"></i></div>
-            <div (click)="go('usuarios')">Usuario <i class="icon-user"></i></div>
-            <div (click)="logout()">
-              Cerrar Sesión
-              <i class="fa fa-power-off"></i>
-            </div>
-          </div>
-        </div>
-        <div class="navbar-collapse">
-        <ul class="navbar-nav mr-auto mt-md-0">
-            <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="icon-arrow-left-circle ti-menu"></i></a> </li>
-        </ul>
     </div>
-    </nav>
-</header>
+</div>
+<hr>

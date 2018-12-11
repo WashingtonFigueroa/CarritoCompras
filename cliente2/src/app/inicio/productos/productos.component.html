@@ -1,47 +1,69 @@
-<br>
-<section class="loading" *ngIf="categoria === null">
-  <i class="fa fa-spinner fa-spin"></i>
-</section>
-<ng-template ngIf="categoria !== null">
-<nav class="product-filter">
-  <h1 *ngIf="categoria !== null">{{ categoria.nombre | uppercase }}</h1>
-    <div class="collection-sort">
-      <label></label>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+        <h2 *ngIf="categoria !== null">{{ categoria.nombre | uppercase }}</h2>
+          <hr>
+          <select [(ngModel)]="ordenar_por" (change)="filtrar()"
+                  class="custom-select sources" placeholder="Ordenar por: ">
+            <option value="nombre_asc">Ordenar por: Nombre: A - Z</option>
+            <option value="nombre_desc">Ordenar por: Nombre: Z - A</option>
+            <option value="fecha_desc">Ordenar por: Fecha: Nuevo a Antiguo</option>
+            <option value="fecha_asc">Ordenar por: Fecha: Antiguo a Nuevo</option>
+          </select>
+      <br>
+      <br>
       <select [(ngModel)]="ordenar_por" (change)="filtrar()"
-              class="custom-select sources" placeholder="Source Type">
-        <option value="nombre_asc">Ordenar por: Nombre: A - Z</option>
-        <option value="nombre_desc">Ordenar por: Nombre: Z - A</option>
-        <option value="fecha_desc">Ordenar por: Fecha: Nuevo a Antiguo</option>
-        <option value="fecha_asc">Ordenar por: Fecha: Antiguo a Nuevo</option>
+              class="custom-select sources" placeholder="Ordenar por: ">
+        <option value="nombre_asc">Seleccione el Material: Seda</option>
+        <option value="nombre_desc">Seleccione el Material: Algodon</option>
+        <option value="fecha_desc">Seleccione el Material: Polo</option>
+        <option value="fecha_asc">Seleccione el Material: Jean</option>
       </select>
-    </div>
-</nav>
-  <section class="loading" *ngIf="categoria !== null && productos !== null && productos.length === 0">
-    <h1><i class="fa fa-exclamation-triangle"></i> No existen productos en esta categoría</h1>
-  </section>
+      <br>
+      <br>
+      <select [(ngModel)]="ordenar_por" (change)="filtrar()"
+              class="custom-select sources" placeholder="Ordenar por: ">
+        <option value="nombre_asc">Buscar por color: Amarillo</option>
+        <option value="nombre_desc">Buscar por color: Rojo</option>
+        <option value="fecha_desc">Buscar por color: Azul</option>
+        <option value="fecha_asc">Buscar por color: Negro</option>
+      </select>
 
-<section class="products" *ngIf="productos !== null">
-  <div class="product-card" *ngFor="let producto of productos">
-    <div class="product-image">
-      <img [src]="environment.base + environment.imagen.producto + producto.producto_id" height="400px" >
     </div>
-    <div class="product-info">
-      <h5>{{ producto.puntos }}</h5>
-      <h6>{{ producto.descripcion }}</h6>
-      <button class="wishlist"
-              (click)="addWishList(producto.producto_id)"
-              title="Añadir a la lista de deseos"><i class="fa fa-heart-o"></i></button>
-
-      <div class="text-center">
-        <div class="color" [ngStyle]="{'background-color' : producto.color1}"></div>
-        <div class="color" [ngStyle]="{'background-color' : producto.color2}"></div>
-      </div>
-      <div class="btn-container">
-        <button
-          [routerLink]="['/inicio/producto/' + producto.producto_id]"
-          class="btn btn-rounded btn-danger">Ver {{ producto.nombre }}</button>
-      </div>
+    <div class="col-md-9">
+      <section class="loading" *ngIf="categoria === null">
+        <i class="fa fa-spinner fa-spin"></i>
+      </section>
+      <ng-template ngIf="categoria !== null">
+        <section class="loading" *ngIf="categoria !== null && productos !== null && productos.length === 0">
+          <h1><i class="fa fa-exclamation-triangle"></i> No existen productos en esta categoría</h1>
+        </section>
+        <section class="products" *ngIf="productos !== null">
+          <div class="product-card" *ngFor="let producto of productos">
+            <div class="product-image">
+              <img [src]="environment.base + environment.imagen.producto + producto.producto_id" height="400px" >
+            </div>
+            <div class="product-info">
+              <h5>{{ producto.puntos }}</h5>
+              <h6>{{ producto.descripcion }}</h6>
+              <button class="wishlist"
+                      (click)="addWishList(producto.producto_id)"
+                      title="Añadir a la lista de deseos"><i class="fa fa-heart-o"></i></button>
+              <div class="text-center">
+                <div class="color" [ngStyle]="{'background-color' : producto.color1}"></div>
+                <div class="color" [ngStyle]="{'background-color' : producto.color2}"></div>
+              </div>
+              <div class="btn-container">
+                <button
+                        [routerLink]="['/inicio/producto/' + producto.producto_id]"
+                        class="btn btn-rounded btn-danger">Ver {{ producto.nombre }}</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ng-template>
     </div>
   </div>
-</section>
-</ng-template>
+</div>
+
+

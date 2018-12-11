@@ -82,7 +82,9 @@ const routes: Routes = [
                     path: 'listar',
                     component: ComprasIndexComponent,
                     data: {
-                        title: 'Bienvenidos'
+                        title: 'Bienvenidos',
+
+
                     }
                 }]
             },

@@ -1,32 +1,3 @@
-*, *::after, *::before {
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    line-height: 1.5;
-    color: #dda;
-    box-sizing: border-box;
-}
-nav.fondobanner {
-    z-index: 1;
-    width: 100%;
-    position: relative;
-    padding-bottom: 6%;
-}
-nav.banner {
-    display: inline-block;
-}
-
-nav.banner::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .banner {
     top: 0;
     z-index: 1000;

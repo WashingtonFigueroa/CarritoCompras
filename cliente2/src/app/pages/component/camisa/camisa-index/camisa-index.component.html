@@ -9,7 +9,7 @@
             </div>
           </div>
           <hr>
-          <table class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered table-responsive-lg ">
             <thead>
             <tr>
               <th>
@@ -34,12 +34,12 @@
               <td>
                 {{ camisa.detalle }}
               </td>
-              <td>
-                <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id" alt="" height="80">
+              <td align="center">
+                <img [src]="environment.base+environment.imagen.camisa+camisa.camisa_id" alt="" height="80px" width="150px">
               </td>
               <td align="center">
-                <button type="button" class="btn btn-danger" (click)="confirm(i, camisa.camisa_id ,confirmModal)">
-                  <i class="fa fa-eraser" aria-hidden="true"></i>
+                <button type="button" class="btn btn-sm btn-danger" (click)="confirm(i, camisa.camisa_id ,confirmModal)">
+                  Eliminar
                 </button>
               </td>
             </tr>

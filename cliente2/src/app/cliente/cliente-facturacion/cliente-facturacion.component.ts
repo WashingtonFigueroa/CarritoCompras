@@ -61,7 +61,7 @@ export class ClienteFacturacionComponent implements OnInit {
       'calle_principal' : ['', Validators.required],
       'interseccion' : ['', Validators.required],
       'numero_domicilio' : ['', Validators.required],
-      'referencia' : ['', Validators.required],
+      'referencia' : [''],
       'fecha' : [formattedDate, Validators.required],
       'total' : [cartItems.subtotal],
       'estado' : ['pendiente', Validators.required],

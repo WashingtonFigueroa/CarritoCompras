@@ -1,37 +1,71 @@
-<nav class="fondobanner">
-  <div class="banner__logo-box">
-    <a href="/"><img src="../../../assets/inicio/img/logo.png" alt="Logo" class="banner__logo"></a>
-  </div>
-</nav>
-<nav class="banner">
-  <div class="banner__logo-box">
-    <a href="/"><img src="../../../assets/inicio/img/logo.png" alt="Logo" class="banner__logo"></a>
-  </div>
-  <ul class="navegacion">
-    <li><a  style="color: #f7f7f7" routerLink="/inicio/categorias">mejores ofertas</a></li>
-    <li><a style="color: #f7f7f7" [routerLink]="['design']">diseña tu manilla</a></li>
-    <li><a  style="color: #f7f7f7" [routerLink]="['camisas']" >Personaliza tu camisa</a></li>
-  </ul>
-  <div id="btnbtn" class="boton">
-        <span id="spbtn">
-            <a class="btn-carrito" href="#"><span class="lbtn"><i class="fa fa-shopping-cart"></i></span> <span class="tbtn"> Tu Carrito</span></a>
-            <a class="btn-deseo" href="#"><span class="lbtn"><i class="fa fa-heart"></i></span> <span class="tbtn"> Tus Deseos</span></a>
-        </span>
+<div class="container-fluid banner" style="background-color: #1b1e21">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav">
+        <li>
+          <a href="/"> <img src="../../../assets/inicio/img/logo.png" width="200px" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <br>
+          <a  style="color: #f7f7f7" routerLink="/inicio/categorias">Mejores ofertas</a>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <br>
+          <a style="color: #f7f7f7" [routerLink]="['design']">Diseña tu manilla</a>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <br>
+          <a  style="color: #f7f7f7" [routerLink]="['camisas']" >Personaliza tu camisa</a>
+        </li>
+        <li class="nav-item">
+          <br>
+          <form *ngIf="categorias !== null" class="form-inline my-2 my-lg-0">
+          <select [(ngModel)]="busqueda.categoria_id"
+                  (change)="go(busqueda.categoria_id)"
+                  name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 200px; height: 2em; background-color: #f7f7f7">
+            <option [value]="categoria.categoria_id"
+                    class="form-control"
+                    *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
+          </select>
+        </form></li>
+        <li class="nav-item  ml-md-auto">
+          <div class="header-ctn">
+            <!-- Wishlist -->
+            <div>
+              <a href="#">
+                <i class="fa fa-heart-o"></i>
+                <span>Tus Deseos</span>
+                <div class="qty">2</div>
+              </a>
+            </div>
+            <!-- /Wishlist -->
+          </div>
+        </li>
+        <li class="nav-item  ml-md-auto">
 
-    <form *ngIf="categorias !== null" class="form-inline my-2 my-lg-0">
-      <select [(ngModel)]="busqueda.categoria_id"
-              (change)="go(busqueda.categoria_id)"
-              name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 200px; height: 2em; background-color: #f7f7f7">
-        <option [value]="categoria.categoria_id"
-                class="form-control"
-                *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-      </select>
-    </form>
-    <a style="color: #cc0000" *ngIf="usuario === null" [routerLink]="['/login']">   Inicias Sesion </a>
-    <a style="color: #cc0000" *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"> Bienvenido {{ usuario.cuenta }}</a>
-    <a style="color: #cc0000" *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"> Bienvenido {{ usuario.cuenta }}</a>
+          <div class="header-ctn" style="color: #ffffff">
+            <div>
+              <a class="cart-menu"
+                 (click)="openCart()">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Tú Carrito</span>
+                <div class="qty">{{ cartItems.cantidad_total }}</div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown ml-md-auto">
+          <br>
+          <a style="color: #ffffff" *ngIf="usuario === null" [routerLink]="['/login']">   Inicias Sesion </a>
+          <a style="color: #ffffff" *ngIf="usuario !== null && usuario.tipo_usuario === 'administrador'" [routerLink]="['/admin']"> Bienvinid@ {{ usuario.cuenta }} &nbsp;&nbsp;</a>
+          <a style="color: #ffffff" *ngIf="usuario !== null && usuario.tipo_usuario === 'cliente'" [routerLink]="['/cliente']"> Bienvinid@ {{ usuario.cuenta }} &nbsp;&nbsp;</a>
+        </li>
+      </ul>
+
+    </div>
   </div>
-</nav>
+</div>
+
 
 <div class="overlay" #overlay>
   <div class="popup" #popup>
@@ -72,3 +106,5 @@
     </div>
   </div>
 </div>
+
+

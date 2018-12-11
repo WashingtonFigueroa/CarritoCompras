@@ -37,7 +37,6 @@ export class SidebarComponent implements AfterViewInit {
                     $('.scroll-sidebar, .slimScrollDiv').css('overflow', 'hidden').parent().css('overflow', 'visible');
                     $('body').removeClass('mini-sidebar');
                     $('.navbar-brand span').show();
-                    //$('.sidebartoggler i').addClass('ti-menu');
                 }
                 else {
                     $('body').trigger('resize');

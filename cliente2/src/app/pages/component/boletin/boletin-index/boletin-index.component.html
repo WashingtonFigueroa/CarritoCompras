@@ -2,7 +2,6 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Correos Registrados al Boletín</h4>
         <div class="row">
           <div class="col-md-4">
             <form [formGroup]="boletinGroup" class="form-busqueda">
@@ -27,7 +26,7 @@
               <td>
                 <button class="btn btn-sm btn-danger"
                         (click)="destroy(boletin.boletin_id, i)">
-                  <i class="fa fa-trash"></i>
+                  Eliminar
                 </button>
               </td>
             </tr>
