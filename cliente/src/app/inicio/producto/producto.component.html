@@ -1,56 +1,84 @@
-<div *ngIf="producto !== null" class="row bg-white">
-  <div class="col-md-3">
-    <div class="gallery-column">
-      <img
-          [class]="settings.image_id === imagen.imagen_id ? 'gallery-column-active' : 'gallery-column-inactive' "
-          (click)="selectImage(imagen.imagen_id)"
-          [src]="environment.base + environment.imagen.articulo + imagen.imagen_id"
-          *ngFor="let imagen of producto.imagenes" height="250px">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1">
     </div>
-  </div>
-  <div class="col-md-5">
-      <app-image-zoom [settings]="settings"></app-image-zoom>
-  </div>
-  <div class="col-md-4">
-    <div class="product-links">
-      <a [routerLink]="['/inicio/productos/' + producto.categoria_id ]">&larr;	Atrás</a>
-    </div>
-    <div class="card text-center">
-      <div class="card-header">
-        <h2>{{ producto.nombre }}</h2>
-      </div>
-      <div class="card-body">
-    <h3> <a (click)="openModal()" class="btn-modal">Guía de tallas</a> </h3>
-    <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'"
-         (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="form-group">
-          <label for="cantidad">Cantidad</label>
-          <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
-            <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
-          </select>
+    <div class="col-md-10">
+      <div *ngIf="producto !== null" class="row bg-white">
+        <div class="col-md-2">
+          <div class="gallery-column">
+            <div class="product-links">
+              <h5> <a [routerLink]="['/inicio/productos/' + producto.categoria_id ]">&larr; Atrás</a></h5>
+            </div>
+            <img [class]="settings.image_id === imagen.imagen_id ? 'gallery-column-active' : 'gallery-column-inactive' " (click)="selectImage(imagen.imagen_id)" [src]="environment.base + environment.imagen.articulo + imagen.imagen_id" *ngFor="let imagen of producto.imagenes"
+                 height="75px">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <app-image-zoom [settings]="settings"></app-image-zoom>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+
+
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <h5>{{ producto.nombre | uppercase}}</h5>
+                    </div>
+                    <div class="col-md-3">
+                      <h6> <a (click)="openModal()" class="btn-modal">Guía Tallas</a> </h6>
+                    </div>
+                    <div>
+                      <p><strong>Descripción: </strong> {{ producto.descripcion }}</p>
+
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div [class]="selectedInventario !== null && inventario.inventario_id === selectedInventario.inventario_id  ?  'product-size product-size-active' : 'product-size'" (click)="generateStock(inventario)" *ngFor="let inventario of producto.inventarios">{{ inventario.talla | uppercase }}</div>
+                    <br><br>
+
+                          <label for="cantidad">Cantidad</label><br>
+                          <div class="form-group">
+                            <select [(ngModel)]="cantidad" name="cantidad" id="cantidad" *ngIf="stock.length > 0">
+                              <option [value]="q.value" *ngFor="let q of stock">{{q.value}}</option>
+                            </select>
+                          </div>
+
+                        <div class="col-md-6" *ngIf="selectedInventario !== null && cantidad !== null">
+                          <button (click)="addCart()" class="btn btn-danger">Añadir al Carrito</button>
+                        </div>
+
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
-      <div class="col-md-10" *ngIf="selectedInventario !== null && cantidad !== null">
-        <br>
-        <button
-          (click)="addCart()"
-          class="btn btn-rounded btn-danger">Añadir a Carrito</button>
-      </div>
     </div>
-          <div class="card-footer text-muted">
-              <h4><strong>Descripción: </strong> {{ producto.descripcion }}</h4>
-          </div>
+    <div class="col-md-1">
+    </div>
   </div>
 </div>
+
+
+
+
 <div class="overlay" #overlay>
   <div class="popup" #popup>
+    <img src="../../../assets/inicio/img/guia.JPG" width="150px">
     <button class="close" (click)="closeModal()">
       <i class="fa fa-times"></i>
     </button>
-    <img src="../../../assets/inicio/img/guia.JPG" width="200">
   </div>
 </div>

@@ -86,14 +86,14 @@
   background-color: #222;
 }
 
-.jumbotron h1 {
+.jumbotron h3 {
   text-align: center; /* centers the heading */
   color: #DDD;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
-h1 {
+h3 {
   text-align: center;
   margin: 30px 15px;
 }

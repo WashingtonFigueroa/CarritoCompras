@@ -1,36 +1,39 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
         <h2 *ngIf="categoria !== null">{{ categoria.nombre | uppercase }}</h2>
           <hr>
+      <p>Ordenar por:</p>
           <select [(ngModel)]="ordenar_por" (change)="filtrar()"
                   class="custom-select sources" placeholder="Ordenar por: ">
-            <option value="nombre_asc">Ordenar por: Nombre: A - Z</option>
-            <option value="nombre_desc">Ordenar por: Nombre: Z - A</option>
-            <option value="fecha_desc">Ordenar por: Fecha: Nuevo a Antiguo</option>
-            <option value="fecha_asc">Ordenar por: Fecha: Antiguo a Nuevo</option>
+            <option value="nombre_asc">Nombre: A - Z</option>
+            <option value="nombre_desc">Nombre: Z - A</option>
+            <option value="fecha_desc">Fecha: Nuevo a Antiguo</option>
+            <option value="fecha_asc">Fecha: Antiguo a Nuevo</option>
           </select>
       <br>
       <br>
+      <p>Seleccione material:</p>
       <select [(ngModel)]="ordenar_por" (change)="filtrar()"
               class="custom-select sources" placeholder="Ordenar por: ">
-        <option value="nombre_asc">Seleccione el Material: Seda</option>
-        <option value="nombre_desc">Seleccione el Material: Algodon</option>
-        <option value="fecha_desc">Seleccione el Material: Polo</option>
-        <option value="fecha_asc">Seleccione el Material: Jean</option>
+        <option value="nombre_asc">Seda</option>
+        <option value="nombre_desc">Algodon</option>
+        <option value="fecha_desc">Polo</option>
+        <option value="fecha_asc">Jean</option>
       </select>
       <br>
       <br>
+      <p>Seleccione color:</p>
       <select [(ngModel)]="ordenar_por" (change)="filtrar()"
               class="custom-select sources" placeholder="Ordenar por: ">
-        <option value="nombre_asc">Buscar por color: Amarillo</option>
-        <option value="nombre_desc">Buscar por color: Rojo</option>
-        <option value="fecha_desc">Buscar por color: Azul</option>
-        <option value="fecha_asc">Buscar por color: Negro</option>
+        <option value="nombre_asc">Amarillo</option>
+        <option value="nombre_desc">Rojo</option>
+        <option value="fecha_desc">Azul</option>
+        <option value="fecha_asc">Negro</option>
       </select>
 
     </div>
-    <div class="col-md-9">
+    <div class="col-md-10">
       <section class="loading" *ngIf="categoria === null">
         <i class="fa fa-spinner fa-spin"></i>
       </section>

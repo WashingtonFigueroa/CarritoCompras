@@ -3,12 +3,8 @@
     <div class="col-md-12">
       <ul class="nav">
         <li>
-          <a href="/"> <img src="../../../assets/inicio/img/logo.png" width="200px" alt=""></a>
+          <a routerLink="/inicio/categorias"> <img src="../../../assets/inicio/img/logo.png" width="200px" alt=""></a>
         </li>
-        <li class="nav-item">
-          <br>
-          <a  style="color: #f7f7f7" routerLink="/inicio/categorias">Mejores ofertas</a>
-        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <li class="nav-item">
           <br>
           <a style="color: #f7f7f7" [routerLink]="['design']">Diseña tu manilla</a>
@@ -20,14 +16,15 @@
         <li class="nav-item">
           <br>
           <form *ngIf="categorias !== null" class="form-inline my-2 my-lg-0">
-          <select [(ngModel)]="busqueda.categoria_id"
-                  (change)="go(busqueda.categoria_id)"
-                  name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 200px; height: 2em; background-color: #f7f7f7">
-            <option [value]="categoria.categoria_id"
-                    class="form-control"
-                    *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
-          </select>
-        </form></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select [(ngModel)]="busqueda.categoria_id"
+                    (change)="go(busqueda.categoria_id)"
+                    name="categoria_id" class="custom-select sources" placeholder="Buscar Producto" style="width: 200px; height: 2em; background-color: #f7f7f7">
+              <option [value]="categoria.categoria_id"
+                      class="form-control"
+                      *ngFor="let categoria of categorias">{{ categoria.nombre | uppercase }}</option>
+            </select>
+          </form></li>
         <li class="nav-item  ml-md-auto">
           <div class="header-ctn">
             <!-- Wishlist -->
@@ -106,5 +103,4 @@
     </div>
   </div>
 </div>
-
 

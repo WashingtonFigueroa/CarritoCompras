@@ -47,13 +47,13 @@ export class CategoriasEditComponent implements OnInit {
         const  file = this.imagen.nativeElement;
         if (file.files[0]) {
             form.append('imagen', file.files[0]);
-            form.append('nombre', this.categoriaGroup.value.nombre);
+            form.append('nombre', this.categoriaGroup.value.nombre.toUpperCase());
             form.append('descripcion', this.categoriaGroup.value.descripcion);
             this.categoriaService.update(form, this.categoria_id)
                 .subscribe(res => {
                     this.toastr.success('Categoria actualizada', 'Exito');
                     this.router.navigate(['/admin/categorias/listar']);
-                    location.reload();
+                   // location.reload();
                 });
         }else {
             this.toastr.info('Seleccione la Imagen');
